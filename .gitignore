@@ -1,3 +1,8 @@
+deeplearning-using-pytorch/fashion_mnist_data
+deeplearning-using-pytorch/runs
+deeplearning-using-pytorch/results.json
+deeplearning-using-pytorch/results.csv
+.vscode
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
