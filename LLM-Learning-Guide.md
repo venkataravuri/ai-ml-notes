@@ -2,7 +2,7 @@
 A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks to gain in-depth knowledge & skills on below Generative AI topics,
 - 🧠 Large Language Models (LLM) such as openAI ChatGPT, Meta Llama and other Generative Pretrained Transformers
 - ChatGPT prompting techniques
-- 🤖 Autonoums AI Agents 
+- 🤖 Autonomous AI Agents 
 - AI Agent frameworks
 
 ## Intro to ChatGPT, LLMs, Generative AI Concepts
@@ -15,7 +15,7 @@ A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books
 - :star: [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 ## Generative AI / LLMs Model Hub 
-[Huggingface](https://huggingface.co/) - A repository of open-source and propiriteray LLM model hub. Provides LLM models, hosting, inference endpoints and more.
+[Huggingface](https://huggingface.co/) - A repository of open-source and proprietary LLM model hub. Provides LLM models, hosting, inference endpoints and more.
 
 [Hugging Face Transformer Tutorial](https://huggingface.co/learn/nlp-course/chapter2/1?fw=pt) - A library to download open-source LLMs to your machine, run LLMs locally and perform inferences. 
 
