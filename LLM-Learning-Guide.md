@@ -5,14 +5,22 @@ A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books
 - 🤖 Autonomous AI Agents 
 - AI Agent frameworks
 
-## Intro to ChatGPT, LLMs, Generative AI Concepts
+## Generative AI Concepts
+
+### GPT Internals
+- :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
+- :tv: [Let's build GPT: from scratch, in code, spelled out](https://youtu.be/kCc8FmEb1nY)
+
+### Gen AI Youtube Channels
 - :tv: [Youtube @AllaboutAI Channel](https://www.youtube.com/@AllAboutAI/videos)
 - :tv: [Youtube @mreflow Channel](https://www.youtube.com/@mreflow/videos)
-- :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
 
 ### Prompting Guide
 - :star::star: [Learn Prompting](https://learnprompting.org/docs/intro)
 - :star: [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+#### Open LLM Leaderboard
+https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 
 ## Generative AI / LLMs Model Hub 
 [Huggingface](https://huggingface.co/) - A repository of open-source and proprietary LLM model hub. Provides LLM models, hosting, inference endpoints and more.
