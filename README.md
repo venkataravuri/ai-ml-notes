@@ -9,8 +9,11 @@
 
 ## Generative AI
 
-[Generative AI Learning Guide](LLM-Learning-Guide.md)
+Take me to [Generative AI Learning Guide](LLM-Learning-Guide.md)
 
-## Neural Network / Deeplearning / Pytorch
+## Neural Networks / Deeplearning
 
+Take me to [Neural Networks Learning Guide](ai-ml.md)
+
+## Deeplearning using Pytorch
 [Pytorch Learning Guide]()
