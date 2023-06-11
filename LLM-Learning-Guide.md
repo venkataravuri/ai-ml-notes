@@ -1,36 +1,32 @@
 # :brain: Generative AI - Learning Guide :robot:
+> "_A.I. might not replace you, but a person who uses A.I. could._"
 
-"A.I. might not replace you, but a person who uses A.I. could"
-
-A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks to gain in-depth knowledge & skills on below Generative AI topics,
-- 🧠 Large Language Models (LLM) such as openAI ChatGPT, Meta's LlaMa, Google's PalM and other Generative Pretrained Transformers
+A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks to gain in-depth knowledge & skills on below topics,
+- Large Language Models (LLM) such as OpenAI's ChatGPT, Meta's LlaMa, Google's PalM and other Generative Pretrained Transformers
 - ChatGPT prompting techniques
-- 🤖 Autonomous AI Agents 
+- Autonomous AI Agents 
 - AI Agent frameworks
-
+---
 ### What is ChatGPT? What are LLMs?
-
 ChatGPT is able to generate human-like text in response to a given prompt. It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
 
 ChatGPT is a variant of the GPT (Generative Pre-training Transformer) model, which is a type of transformer-based neural network architecture.
 The model is trained on a large dataset of text
-
 
 ### What can I do with ChatGPT?
 
 - :star::star: https://research.aimultiple.com/chatgpt-use-cases/
 - SQL: https://www.sqlservercentral.com/articles/chatgpt-in-sql-server-practical-examples
 
-### Other ML Tools
-#### Text-to-Video
+#### Text to Image & Text to Video Generators
 
-#### Audio-to-Text <-> Text-to-Audio
+[Midjourney](https://www.midjourney.com/showcase/recent/) is a text-to-image AI that generates visually appealing images based on text prompts.
+[DALL-E 2](https://openai.com/dall-e-2)
 
+#### Speech Recognition - Audio to Text & Text to Audio
+[Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
 
-## Generative AI Concepts
-
-### GPT Internals
-What is GPT? 
+## GPT Internals
 - :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
 - :tv: [Let's build GPT: from scratch, in code, spelled out](https://youtu.be/kCc8FmEb1nY)
 
