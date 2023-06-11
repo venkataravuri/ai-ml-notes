@@ -31,6 +31,7 @@ The model is trained on a [large dataset of text](https://en.wikipedia.org/wiki/
 
 #### Text to Image & Text to Video Generators
 - [Midjourney](https://www.midjourney.com/showcase/recent/) is a text-to-image AI that generates visually appealing images based on text prompts.
+  - [ Midjourney + ChatGPT-4 = INSANE Prompts and Images!]https://www.youtube.com/watch?v=Asg1e_IYzR8
 - [DALL-E 2](https://openai.com/dall-e-2)
 
 #### Code Generators
