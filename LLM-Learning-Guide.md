@@ -1,9 +1,31 @@
 # :brain: Generative AI - Learning Guide :robot:
+
+"A.I. might not replace you, but a person who uses A.I. could"
+
 A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks to gain in-depth knowledge & skills on below Generative AI topics,
-- 🧠 Large Language Models (LLM) such as openAI ChatGPT, Meta Llama and other Generative Pretrained Transformers
+- 🧠 Large Language Models (LLM) such as openAI ChatGPT, Meta's LlaMa, Google's PalM and other Generative Pretrained Transformers
 - ChatGPT prompting techniques
 - 🤖 Autonomous AI Agents 
 - AI Agent frameworks
+
+### What is ChatGPT? What are LLMs?
+
+ChatGPT is able to generate human-like text in response to a given prompt. It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
+
+ChatGPT is a variant of the GPT (Generative Pre-training Transformer) model, which is a type of transformer-based neural network architecture.
+The model is trained on a large dataset of text
+
+
+### What can I do with ChatGPT?
+
+- :star::star: https://research.aimultiple.com/chatgpt-use-cases/
+- SQL: https://www.sqlservercentral.com/articles/chatgpt-in-sql-server-practical-examples
+
+### Other ML Tools
+#### Text-to-Video
+
+#### Audio-to-Text <-> Text-to-Audio
+
 
 ## Generative AI Concepts
 
