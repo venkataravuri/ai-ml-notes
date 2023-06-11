@@ -8,23 +8,37 @@ A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books
 - AI Agent frameworks
 ---
 ### What is ChatGPT? What are LLMs?
-ChatGPT is able to generate human-like text in response to a given prompt. It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
+ChatGPT is an AI model that uses Neural Networks (Deeplearning) to generate human-like text in response to a given prompt. I predicts next word in a given text, based on patterns it has learned from massive dataset used during its training process. 
+
+It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
+It is showing sparks of cleverness that can accelerate automation.
 
 ChatGPT is a variant of the GPT (Generative Pre-training Transformer) model, which is a type of transformer-based neural network architecture.
-The model is trained on a large dataset of text
+The model is trained on a [large dataset of text](https://en.wikipedia.org/wiki/GPT-3) which contains entire internet, books, Wikipedia and more.
+
+#### GPT-3 Vs. ChatGPT Vs. GPT-4
+[A Complete Comparison of ChatGPT, GPT-3, and GPT-4](https://simplified.com/blog/ai-writing/chatgpt-vs-gpt-3/)
+
+### How ChatGPT works?
+[How GPT3 Works - Visualizations and Animations](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
 
 ### What can I do with ChatGPT?
-
 - :star::star: https://research.aimultiple.com/chatgpt-use-cases/
+- [Coding Won’t Exist In 5 Years. This Is Why](https://javascript.plainenglish.io/coding-wont-exist-in-5-years-this-is-why-6da748ba676c)
 - SQL: https://www.sqlservercentral.com/articles/chatgpt-in-sql-server-practical-examples
 
-#### Text to Image & Text to Video Generators
+### Generative AI Tools
 
-[Midjourney](https://www.midjourney.com/showcase/recent/) is a text-to-image AI that generates visually appealing images based on text prompts.
-[DALL-E 2](https://openai.com/dall-e-2)
+#### Text to Image & Text to Video Generators
+- [Midjourney](https://www.midjourney.com/showcase/recent/) is a text-to-image AI that generates visually appealing images based on text prompts.
+- [DALL-E 2](https://openai.com/dall-e-2)
+
+#### Code Generators
+- CodeX
+- Github Copilot
 
 #### Speech Recognition - Audio to Text & Text to Audio
-[Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
+- [Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
 
 ## GPT Internals
 - :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
