@@ -2,11 +2,17 @@
 
 - [Evaulation Metrics](#evaluation-metrics)
 
+
 ## Feature Engineering
 
 |Rating|Type|Topic
 ------------: | ------------- | -------------
 |:star:|:newspaper:|[Dealing with missing values](https://www.kaggle.com/alexisbcook/missing-values)
+
+## General FAQ
+|Question|Notes|Reference|
+|------------| ------------- | -------------|
+|What are Logits in machine learning?|Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.|[Logits Explanation](https://datascience.stackexchange.com/questions/31041/what-does-logits-in-machine-learning-mean)|
 
 ### Evaluation Metrics
 
