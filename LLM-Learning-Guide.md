@@ -74,3 +74,11 @@ https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 :star::star::star: [LangChain](https://python.langchain.com/en/latest/index.html) Framework to build Automous AI Agent
 
 :tv: :star: [LangChain Tutorials](https://www.youtube.com/@lucidateAI)
+
+
+### LLM Evaluation Libraries & Metrics
+
+Perplexity (PPL) is one of the most common metrics for evaluating language models. 
+https://huggingface.co/docs/transformers/perplexity
+
+https://github.com/openai/evals

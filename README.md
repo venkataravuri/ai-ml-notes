@@ -13,7 +13,15 @@ Take me to [Generative AI Learning Guide](LLM-Learning-Guide.md)
 
 ## Neural Networks / Deeplearning
 
-Take me to [Neural Networks Learning Guide](ai-ml.md)
+Take me to [Neural Networks Learning Guide](nn-dl.md)
+
+## Machine Learning
+
+Take me to [Neural Networks Learning Guide](ml.md)
 
 ## Deeplearning using Pytorch
 [Pytorch Learning Guide]()
+
+|Rating|Type|Topic
+------------: | ------------- | -------------
+|:star:|:newspaper:|[Pytorch introduction - www.kdnuggets.com](https://www.kdnuggets.com/2019/09/gentle-introduction-pytorch-12.html)
