@@ -19,7 +19,19 @@
 |Category|Task|Metric|Metric Summary|Reference|
 |-----|-----|------|------|-----|
 ||Binary Classification|Confusion Matrix, Accuracy, Precision Recall and F1 Score|Shouldn’t use accuracy on imbalanced problems. Its easy to get a high accuracy score by simply classifying all observations as the majority class.|[Confusion Matrix, Accuracy, Precision, Recall, F1 Score](https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd)|
-|LLM / NLP|Text Summary & Translation|ROGUE|Used for evaluating test summarization and machine translation. Metric compares an automatically produced summary or translation against human-produced summary or translation.|[An intro to ROUGE, and how to use it to evaluate summaries](https://www.freecodecamp.org/news/what-is-rouge-and-how-it-works-for-evaluation-of-summaries-e059fb8ac840/)|
+|LLM / NLP|Text Summary & Translation|ROGUE|Used for evaluating test summarization and machine translation. Metric compares an automatically produced summary or translation against human-produced summary or translation. It measures how many of the n-grams in the references are in the predicted candidate.|[An intro to ROUGE, and how to use it to evaluate summaries](https://www.freecodecamp.org/news/what-is-rouge-and-how-it-works-for-evaluation-of-summaries-e059fb8ac840/)|
+
+Perplexity
+https://chiaracampagnola.io/2020/05/17/perplexity-in-language-models/
+https://medium.com/@priyankads/perplexity-of-language-models-41160427ed72
+
+Intuitively, perplexity means to be surprised. We measure how much the model is surprised by seeing new data. The lower the perplexity, the better the training is.
+
+Perplexity is calculated as exponent of the loss obtained from the model. 
+
+Perplexity is usually used only to determine how well a model has learned the **training set**. Other metrics like BLEU, ROUGE etc., are used on the **test set** to measure test performance.
+
+GLUE benchmark that measures the general language understanding ability
 
 ### Info
 
@@ -27,6 +39,9 @@
 
 1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
 2. Computers are capable of almost anything, except exact numeric representation.
+
+Entropy
+https://www.javatpoint.com/entropy-in-machine-learning
 
 #### Cross Entropy Loss
 
