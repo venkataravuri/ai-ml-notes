@@ -1,5 +1,7 @@
 # Machine Learning
 
+- [Evaulation Metrics](#evaluation-metrics)
+
 ## Feature Engineering
 
 |Rating|Type|Topic
@@ -8,14 +10,10 @@
 
 ### Evaluation Metrics
 
-#### Binary Classfication Metric
-
-Confusion Matrix, Accuracy, Precision, Recall and F1Score
-
-:star::star::star: https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd
-
-You shouldn’t use accuracy on imbalanced problems. Then, it is easy to get a high accuracy score by simply classifying all observations as the majority class.
-
+|Category|Task|Metric|Metric Summary|Reference|
+|-----|-----|------|------|-----|
+||Binary Classification|Confusion Matrix, Accuracy, Precision Recall and F1 Score|Shouldn’t use accuracy on imbalanced problems. Its easy to get a high accuracy score by simply classifying all observations as the majority class.|[Confusion Matrix, Accuracy, Precision, Recall, F1 Score](https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd)|
+|LLM / NLP|Text Summary & Translation|ROGUE|Used for evaluating test summarization and machine translation. Metric compares an automatically produced summary or translation against human-produced summary or translation.|[An intro to ROUGE, and how to use it to evaluate summaries](https://www.freecodecamp.org/news/what-is-rouge-and-how-it-works-for-evaluation-of-summaries-e059fb8ac840/)|
 
 ### Info
 
