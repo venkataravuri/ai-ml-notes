@@ -1,7 +1,7 @@
 # Machine Learning
-
+- [Activation Functions]()
+- [Loss Functions]()
 - [Evaulation Metrics](#evaluation-metrics)
-
 
 ## Feature Engineering
 
