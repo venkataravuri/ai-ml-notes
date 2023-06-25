@@ -1,6 +1,6 @@
 # Machine Learning
-- [Activation Functions]()
-- [Loss Functions]()
+- [Activation Functions](#activation-functions)
+- [Loss Functions](#loss-functions)
 - [Evaulation Metrics](#evaluation-metrics)
 
 ## Feature Engineering
@@ -30,6 +30,44 @@
 1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
 2. Computers are capable of almost anything, except exact numeric representation.
 
+## Activation Functions
+
+Activation functions transforms the weighted sum of a neuron so that the output is non-linear.
+Activation function decides whether a neuron should be activated or not.
+
+#### [Cheatsheet](https://miro.medium.com/v2/resize:fit:720/format:webp/1*o7sNtf4Cmou-3eSW35Sx4g.png)
+
+### Sigmoid or Logistic Activtion Function
+
+It is generally used in logistic regression and binary classification models in the output layer.
+
+The output of sigmoid activation function lies between 0 and 1, making it perfect to model probability. Hence it is used to convert the real-valued output of a linear layer to a probability.
+
+The function is differentiable but saturates quickly because of the boundedness leading to a vanishing gradient when used in a deep neural network. Contributes to the vanishing gradient problem.
+
+https://machinelearningmastery.com/using-activation-functions-in-neural-networks/
+
+### Softmax
+
+Extension of sigmoid activation function taking advantage of range of the output between 0 and 1. This is mainly used in the output layer of a multiclass, multinomial classification problem with a useful property of sum of the output probabilities adding up to 1.
+
+Softmax is used for multi-classification, the probabilities sum will be 1.
+
+### Tanh or hyperbolic tangent Activation Function
+tanh is also like logistic sigmoid but better. The range of the tanh function is from (-1 to 1). tanh is also sigmoidal (s - shaped).
+
+### ReLU (Rectified Linear Unit) Activation Function
+
+The ReLU is the most used activation function in the world right now.Since, it is used in almost all the convolutional neural networks or deep learning.
+
+
+### Swish
+### GeLU
+https://towardsdatascience.com/fantastic-activation-functions-and-when-to-use-them-481fe2bb2bde
+https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+
+
+## Loss Functions
 Entropy
 https://www.javatpoint.com/entropy-in-machine-learning
 
