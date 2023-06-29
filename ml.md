@@ -14,6 +14,14 @@
 |------------| ------------- | -------------|
 |What are Logits in machine learning?|Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.|[Logits Explanation](https://datascience.stackexchange.com/questions/31041/what-does-logits-in-machine-learning-mean)|
 
+In a classification problem, the model’s output is usually a vector of probability for each category. Often, this vector is usually expected to be “logits,” i.e., real numbers to be transformed to probability using the softmax function, or the output of a softmax activation function.
+
+##### What is distiction between Gradient and Derivative?
+Simply put, a gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location. Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
+
+What is the Difference Between Gradient and Partial Derivative?
+A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
+
 ### Evaluation Metrics
 
 |Category|Task|Metric|Metric Summary|Reference|
@@ -66,15 +74,23 @@ The ReLU is the most used activation function in the world right now.Since, it i
 https://towardsdatascience.com/fantastic-activation-functions-and-when-to-use-them-481fe2bb2bde
 https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
 
-
 ## Loss Functions
-Entropy
+
+In neural networks, loss functions help optimize the performance of the model. They are usually used to measure some penalty that the model incurs on its predictions, such as the deviation of the prediction away from the ground truth label.
+
+All machine learning models are one optimization problem or another, the loss is the objective function to minimize. In neural networks, the optimization is done with gradient descent and backpropagation. [Source](https://machinelearningmastery.com/loss-functions-in-pytorch-models/)
+### Loss functions for Regression
+- Mean Absolute Error (MAE)
+- Mean Square Error (MSE)
+For details refer [this](https://machinelearningmastery.com/loss-functions-in-pytorch-models/)
+
+### Loss functions for classification
+
+### Entropy
+**Entropy** measures the degree of randomness.
 https://www.javatpoint.com/entropy-in-machine-learning
 
 #### Cross Entropy Loss
-
-**Entropy** measures the degree of randomness.
-
 https://datajello.com/cross-entropy-and-negative-log-likelihood/
 
 Cross refers to the fact that it needs to relate two distributions. It’s called the cross entropy of distribution q relative to a distribution p.
@@ -82,7 +98,6 @@ Cross refers to the fact that it needs to relate two distributions. It’s calle
 - q is the estimated (observed) distribution of X (this is the predicted value of y-hat value in a ML problem)
 
 ##### Log Loss - Binary Cross-Entropy Loss
-
 
 
 # Natural Language Processing (NLP)
