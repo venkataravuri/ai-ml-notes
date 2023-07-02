@@ -12,6 +12,8 @@ Credits: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej K
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
+https://karpathy.ai/stateofgpt.pdf
+
 Large Language Models (LLM) undergo following "_training pipeline_" to become AI assistenats,
 - Stage 1: **Un-supervised learning** using internnet archive, Wikipedia, books and more. Outcome is "_Base Model_"
 - Stage 2: **Supervised Finetuning** with manually composed dataset "_prompt and ideal response_". Outcome "_SFT model_" can act as AI assistants.
