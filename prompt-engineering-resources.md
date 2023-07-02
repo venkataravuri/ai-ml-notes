@@ -81,6 +81,13 @@ https://dreamstudio.ai/generate
 
 https://hero.page/samir
 
+## System Roles
+
+https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
+https://www.allabtai.com/chatgpt-4-prompt-engineering-the-ultimate-problem-solver-prompt/
+
+## Prompt Techniques
+
 ## Chain of Thought Prompting
 
 Chain-of-thought prompting is an approach to improve the reasoning ability of large language models in arithmetic, commonsense, and symbolic reasoning tasks.
@@ -97,3 +104,4 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 
 
+https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
