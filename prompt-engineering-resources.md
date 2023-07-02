@@ -99,6 +99,7 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ### ReAct - Reason and Acttion Prompting
 
+https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/agents/react/wiki_prompt.py#L4
 
 ## Plan and Execute Prompting
 
@@ -107,4 +108,7 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
 
 https://prompthero.com/
+
+https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/experimental/plan_and_execute/planners/chat_planner.py
+
 
