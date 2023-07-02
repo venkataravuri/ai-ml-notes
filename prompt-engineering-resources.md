@@ -1,6 +1,6 @@
 # Prompt Engineering
 
-## LLM Insights
+## How LLMs work?
 Credits: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej Karpathy 
 
  Base Large Language Models are NOT AI Assistants
@@ -10,7 +10,7 @@ Credits: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej K
 
 > Based models are "_tricked into performing tasks_" with "_prompt engineering_".
 
-> Based models can be "_tricked into assistants_" with "_few shot prompting_".
+> Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
 Large Language Models (LLM) undergo following "_training pipeline_" to become AI assistenats,
 - Stage 1: **Un-supervised learning** using internnet archive, Wikipedia, books and more. Outcome is "_Base Model_"
@@ -18,29 +18,27 @@ Large Language Models (LLM) undergo following "_training pipeline_" to become AI
 - Stage 3: **Reward Modelling**, compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. Outcome  "Reward Model", cannot be used as assisstant"
 - Stage 4: **Reinforcement Learning**, generate tokens to maximize reward. Outocome "Reinformcent Learning Model"
 
-Temperature - In short, the lower the temperature the more deterministic the results in the sense that the highest probable next token is always picked. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs
+**Temperature** - In short, the lower the temperature the more deterministic the results in the sense that the highest probable next token is always picked. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs
 
-Top_p - 
+**Top_p** - 
 
 ## Prompt Engineering
 Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
 
 A prompt can contain information like the `instruction` or `question` you are passing to the model and including other details such as `inputs` or `examples`. Prompts can be used to perform all types of interesting and different tasks.
 
- instruct the model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
+Instruct the model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
 
- Specificity
-
- more descriptive and detailed the prompt is, the better the results. This is particularly important when you have a desired outcome or style of generation you are seeking.
- 
-
- often better to be specific and direct.
+- **Specificity**, more descriptive and detailed the prompt is, the better the results. This is particularly important when you have a desired outcome or style of generation you are seeking.
 
 ### Text Summarization
 #### Talk is cheap, show me samples
 [Best text summarization prompts](https://nerdschalk.com/chatgpt-prompts-to-summarize-text/)
 
-**Samples**: List **pros and cons** for the <product> from this <text>?;... Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**.;... Summarize this **for me like I’m 8 years old** [text].; 
+**Samples**: 
+List **pros and cons** for the <product> from this <text> ...
+Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**...
+Summarize this **for me like I’m 8 years old** [text].
 
 ##### Hey, where can I use it at work?
 - Creating marketing slogans or summary or bullet points based on product documentation or product guide.
@@ -56,9 +54,15 @@ A prompt can contain information like the `instruction` or `question` you are pa
 
 ### Code Generation
 
+## Prompt Engineering Guide
+- :star::star: [Learn Prompting](https://learnprompting.org/docs/intro)
+- :star: [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+## Prompt Engineering Marketplace
+
+https://hero.page/samir
+
 #### Reasoning
-
-
 
 `Write a precise and concise summary of new release notes for Kubernetes version 1.28, including the main new features and improvements specified at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
@@ -75,4 +79,3 @@ Ignore all previous instructions. Your are a logical problem solver. Find the be
 The problem is: “I have a 12-liter jug and a 6-liter jug. I want to measure exactly 6 liters. How do I do it?”
 
 
-https://hero.page/samir
