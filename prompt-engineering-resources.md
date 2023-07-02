@@ -31,7 +31,7 @@ Instruct the model what you want to achieve such as "Write", "Classify", "Summar
 
 - **Specificity**, more descriptive and detailed the prompt is, the better the results. This is particularly important when you have a desired outcome or style of generation you are seeking.
 
-### Text Summarization
+### Text Generation & Summarization
 #### Talk is cheap, show me samples
 [Best text summarization prompts](https://nerdschalk.com/chatgpt-prompts-to-summarize-text/)
 
@@ -44,7 +44,7 @@ Summarize this **for me like I’m 8 years old** [text].
 - Creating marketing slogans or summary or bullet points based on product documentation or product guide.
 - Classify customer email by understanding which product they are talking and what is this issue?
 
-### Information Extraction
+### Reasoning
     
 ### Question Answering
 
@@ -62,7 +62,10 @@ Summarize this **for me like I’m 8 years old** [text].
 
 https://hero.page/samir
 
-#### Reasoning
+## Chain of Thought Prompting
+
+Chain-of-thought prompting is an approach to improve the reasoning ability of large language models in arithmetic, commonsense, and symbolic reasoning tasks.
+- It augments few-shot prompting with intermediate natural language reasoning steps.
 
 `Write a precise and concise summary of new release notes for Kubernetes version 1.28, including the main new features and improvements specified at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
