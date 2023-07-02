@@ -55,13 +55,17 @@ https://github.com/orgs/kubernetes/projects/140/views/1`
 3. Categorize features specified in above URL into ‘New Features’, ‘Improvements’, ‘Bug Fixes’, and ‘Known Issues’.” 
 4. Describe how to use the new features in Kubernetes version 1.28 in a way that would allow me to create a GIF or a short video clip to illustrate it.
 
-Ignore all previous instructions. Your are a logical problem solver. Find the best and most simple solution. Let’s talk about this in a step-by-step way.
-
-The problem is: “I have a 12-liter jug and a 6-liter jug. I want to measure exactly 6 liters. How do I do it?”
-
 ### Reasoning
+
+:star::star::star: https://www.allabtai.com/the-gpt-4-jug-problem-prompt/
     
 ### Question Answering
+
+### Image Gnerators
+https://www.allabtai.com/master-midjourney-in-1-minute/
+
+https://labs.openai.com/e/HmoeRVI28qQX9pfeJvJr2ePB
+https://dreamstudio.ai/generate
 
 ### Text Classification
 
