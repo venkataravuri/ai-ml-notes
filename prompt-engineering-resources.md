@@ -105,3 +105,6 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 
 https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
+
+https://prompthero.com/
+
