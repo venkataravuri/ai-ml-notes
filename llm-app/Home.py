@@ -15,4 +15,4 @@ model = llm_catalog.get_model(Models.AZURE_OPEN_AI)
 agent = initialize_agent(tools=tools, llm=model, 
                           agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
 
-prompt_section(agent)
+prompt_section(agent, "REACT")

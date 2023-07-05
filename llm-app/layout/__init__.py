@@ -1,2 +1,3 @@
 from layout.sidebar import display_sidebar
 from layout.prompt_widget import display_samples
+from layout.prompt_widget import prompt_section
