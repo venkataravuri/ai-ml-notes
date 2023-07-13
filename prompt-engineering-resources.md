@@ -33,7 +33,7 @@ Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
 
 Prompts are set of tricks that consistently improve the models’ responses. A prompt can contain information like the `instruction` or `question` and including other details such as `inputs` or `examples`. 
 
-Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
+Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", “paraphrase”, “simplify” etc.
 
 ## How to come up with good prompts?
 
@@ -71,20 +71,11 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
 
 
-> Please acknowledge 'Yes', if you understand the context and *stay idle*.
+> If you understand the context, please acknowledge 'Yes' and *stay idle*.
 
 > Ignore all my previous instructions.
 
-> Do not make up stuff if you know the real answer
-
-
-Given an customer  about product issue, try to extract folloiwng data,
-- name: string or don't specify
-- product: string or don't specify
-- email: string
-- issue summary: string or don't specify
-
-Respond with JSON with extracted data. If you don't find a data field, don't specify it.
+> Do not make up stuff if you don't know the real answer
 
 ### Text Generation & Summarization
 #### Talk is cheap, show me samples
@@ -108,9 +99,20 @@ https://github.com/orgs/kubernetes/projects/140/views/1`
 3. Categorize features specified in above URL into ‘New Features’, ‘Improvements’, ‘Bug Fixes’, and ‘Known Issues’.” 
 4. Describe how to use the new features in Kubernetes version 1.28 in a way that would allow me to create a GIF or a short video clip to illustrate it.
 
-### Reasoning
+
+Given an customer email about an issue, try to extract folloiwng data,
+- name: string or don't specify
+- product: string or don't specify
+- email: string
+- issue type: string or on of {specified list}
+- issue summary: string or don't specify
+
+Respond with JSON with extracted data. If you don't find a data field, don't specify it.
+
+### Logical Reasoning
 
 :star::star::star: https://www.allabtai.com/the-gpt-4-jug-problem-prompt/
+
     
 ### Question Answering
 
