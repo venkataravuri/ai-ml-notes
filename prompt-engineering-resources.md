@@ -63,11 +63,13 @@ Good prompts follow two basic principles:
 Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
 
 - I want you to act as an ... (DevOps engineer), 
-- You are a ... (customer support manager, ...), 
+- You are a ... (customer support manager, ...),
+- You are an excellent copywriter skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line. 
   
-### Style
+### Style/Tone
 
-### Tone
+Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
+
 
 > Please acknowledge 'Yes', if you understand the context and *stay idle*.
 
