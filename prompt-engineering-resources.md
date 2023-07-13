@@ -15,7 +15,7 @@ Having good intution how LLMs work makes you prompt better and get desired resul
  - Often **responds to questions with more questions**
 
 > Based models are "_tricked into performing tasks_" with "_prompt engineering_".
-> 
+
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
 Large Language Models (LLM) undergo following "_training pipeline_" to become AI assistenats,
@@ -70,6 +70,10 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
 
+| Text Generation | Image Generation | Audio Generation |
+| --- | --- | --- |
+| ? | ? | ? |
+| ? | ? | ? |
 
 > If you understand the context, please acknowledge 'Yes' and *stay idle*.
 
