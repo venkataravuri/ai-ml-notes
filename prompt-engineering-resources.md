@@ -15,6 +15,10 @@
 [Plan and Execute Prompt]()
 [ReAct - Reason and Action Prompt]()
 
+ limited context window (also called "token limit")
+ GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
+
+ Chain of Thought prompting encourages the LLM to explain its reasoning.
 
 ## Pre-read: Introduction to LLMs
 
