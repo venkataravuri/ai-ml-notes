@@ -1,15 +1,16 @@
-# Prompt Engineering Resources
-This page includes videos, articles and tutorials to learn prompt engineering.
+# :loudspeaker: Prompt Engineering Resources :studio_microphone:
+
+Stuff on Internet says about Prompt Engineering, includes intereseting videos, articles and tutorials that I come across on internet.
 
 ## Pre-read: Introduction to LLMs
 
-Having good intution how LLMs work makes you prompt better and get desired results.
+Understanding functioning and constraints of Language Models (LLMs) enables you to effectively formulate prompts that yield the desired outcomes.
 
 :star::star::star:
 - :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej Karpathy, watch this video to know how LLMs are built?
 - :scroll: [State of GPT - Slides](https://karpathy.ai/stateofgpt.pdf)
 
-*Foundation* Large Language Models (LLM) are NOT AI Assistants
+*Foundation/Base* Large Language Models (LLM) are NOT AI Assistants such as GPT-3, Falcon, ...
  - Base model does not answer questions
  - Just want to complete internet documents, they are "_document completers_".
  - Often **responds to questions with more questions**
@@ -70,9 +71,11 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
 
-| Text Generation | Image Generation | Audio Generation |
+### Talk is cheap, show me examples :)
+
+| Text Generation/Summarization | Image Generation | Audio Generation |
 | --- | --- | --- |
-| ? | ? | ? |
+| ? | AI-generated Photography - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/) | ? |
 | ? | ? | ? |
 
 > If you understand the context, please acknowledge 'Yes' and *stay idle*.
@@ -82,7 +85,7 @@ Give the AI specific instructions on how to format the output, including the ton
 > Do not make up stuff if you don't know the real answer
 
 ### Text Generation & Summarization
-#### Talk is cheap, show me samples
+
 [Best text summarization prompts](https://nerdschalk.com/chatgpt-prompts-to-summarize-text/)
 
 **Samples**: 
