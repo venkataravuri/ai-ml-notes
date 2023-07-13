@@ -1,6 +1,20 @@
 # :loudspeaker: Prompt Engineering Resources :studio_microphone:
 
-Stuff on Internet says about Prompt Engineering, includes intereseting videos, articles and tutorials that I come across on internet.
+**Stuff on Internet** says about **Prompt Engineering**, includes intereseting `videos`, `articles` and `tutorials` that I come across on internet.
+
+`Table of Contents`
+
+[Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
+[Prompt Engineering]()
+[Prompt Structure]()
+[Prompt Types]()
+[Text Generation/Summary]()
+[Zero CoT, One-Shot CoT, Few-Shot CoT]()
+[Advanced & Programable Prompts]()
+[Retrieval and Augment Prompts]()
+[Plan and Execute Prompt]()
+[ReAct - Reason and Action Prompt]()
+
 
 ## Pre-read: Introduction to LLMs
 
