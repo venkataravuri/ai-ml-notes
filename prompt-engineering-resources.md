@@ -111,10 +111,22 @@ Respond with JSON with extracted data. If you don't find a data field, don't spe
 
 ### Logical Reasoning
 
+:question: Problem: “I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?”
+
+:-1: ChatGPT stumbles to answer with below answer
+
+To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can follow these steps:
+- Fill the 12-liter jug completely with water.
+- Pour the water from the 12-liter jug into the 6-liter jug. This will leave you with 6 liters of water in the 12-liter jug.
+- Empty the 6-liter jug.
+- ...
+- Pour water from the 12-liter jug into the 6-liter jug until it is full. This time, you will only need to pour 1 liter of water, as there are already 5 liters in the 6-liter jug.
+- You now have 6 liters of water in the 12-liter jug.
+
+
 ![](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fape-zero-shot-cot.75c0f75c.png&w=1920&q=75)
 
 :star::star::star: https://www.allabtai.com/the-gpt-4-jug-problem-prompt/
-
     
 ### Question Answering
 
