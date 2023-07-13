@@ -19,7 +19,7 @@ Understanding functioning and constraints of Language Models (LLMs) enables you 
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
-Large Language Models (LLM) undergo following "_training pipeline_" to become AI assistenats,
+Foundational or Base Large Language Models (LLM) undergo following process to become AI assistants,
 - Stage 1: **Un-supervised learning** using internnet archive, Wikipedia, books and more. Outcome is "_Base Model_"
 - Stage 2: **Supervised Finetuning** with manually composed dataset "_prompt and ideal response_". Outcome "_SFT model_" can act as AI assistants.
 - Stage 3: **Reward Modelling**, compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. Outcome  "Reward Model", cannot be used as assisstant"
