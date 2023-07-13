@@ -86,6 +86,10 @@ Give the AI specific instructions on how to format the output, including the ton
 
 ### Text Generation & Summarization
 
+##### Where can I use it at work?
+- Creating marketing slogans or summary or bullet points based on product documentation or product guide.
+- Classify customer email by understanding which product they are talking and what is this issue?
+
 [Best text summarization prompts](https://nerdschalk.com/chatgpt-prompts-to-summarize-text/)
 
 **Samples**: 
@@ -93,19 +97,18 @@ Give the AI specific instructions on how to format the output, including the ton
 - Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**...
 - Summarize this **for me like I’m 8 years old** [text].
 
-##### Hey, where can I use it at work?
-- Creating marketing slogans or summary or bullet points based on product documentation or product guide.
-- Classify customer email by understanding which product they are talking and what is this issue?
+#### Release notes preparation sample
 
-`Write a precise and concise summary of new release notes for Kubernetes version 1.28, including the main new features and improvements specified at below URL.
+`Write a precise and concise summary of new release notes` for Kubernetes version 1.28, include new features and improvements in storyboard capturd at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
 
 `Consider following while preparing release notes,`
-1. Explain the new features  in simple, non-technical language, detailing how it is now more efficient and user-friendly.
+1. Explain `new features in simple, non-technical language`, detailing how it is now more efficient and user-friendly.
 2. The release notes should capture the reader’s attention and makes them want to learn more about the new release of Kubernetes version 1.28.
-3. Categorize features specified in above URL into ‘New Features’, ‘Improvements’, ‘Bug Fixes’, and ‘Known Issues’.” 
+3. Categorize features specified in above URL into `‘New Features’`, `‘Improvements’`, `‘Bug Fixes’`, and `‘Known Issues’`.
 4. Describe how to use the new features in Kubernetes version 1.28 in a way that would allow me to create a GIF or a short video clip to illustrate it.
 
+#### Customer email classification sample
 
 Given an customer email about an issue, try to extract folloiwng data,
 - name: string or don't specify
