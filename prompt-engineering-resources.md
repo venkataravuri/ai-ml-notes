@@ -1,18 +1,22 @@
 # Prompt Engineering Resources
+This page includes videos, articles and tutorials to learn prompt engineering.
 
-## Preread: How LLMs work?
-Credits: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej Karpathy 
+## Pre-read: Introduction to LLMs
 
- Base Large Language Models are NOT AI Assistants
+Having good intution how LLMs work makes you prompt better to get desired results quickly.
+
+:star::star::star:
+- :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej Karpathy, watch this video to know how LLMs are built?
+- :scroll: [State of GPT - Slides](https://karpathy.ai/stateofgpt.pdf)
+
+*Foundation* Large Language Models (LLM) are NOT AI Assistants
  - Base model does not answer questions
  - Just want to complete internet documents, they are "_document completers_".
  - Often **responds to questions with more questions**
 
 > Based models are "_tricked into performing tasks_" with "_prompt engineering_".
-
+> 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
-
-https://karpathy.ai/stateofgpt.pdf
 
 Large Language Models (LLM) undergo following "_training pipeline_" to become AI assistenats,
 - Stage 1: **Un-supervised learning** using internnet archive, Wikipedia, books and more. Outcome is "_Base Model_"
@@ -27,11 +31,48 @@ Large Language Models (LLM) undergo following "_training pipeline_" to become AI
 ## Prompt Engineering
 Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
 
-A prompt can contain information like the `instruction` or `question` you are passing to the model and including other details such as `inputs` or `examples`. Prompts can be used to perform all types of interesting and different tasks.
+Prompts are set of tricks that consistently improve the models’ responses. A prompt can contain information like the `instruction` or `question` and including other details such as `inputs` or `examples`. 
 
-Instruct the model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
+Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
 
-- **Specificity**, more descriptive and detailed the prompt is, the better the results. This is particularly important when you have a desired outcome or style of generation you are seeking.
+Good prompts follow two basic principles: 
+- Clarity: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy.
+Example of an unclear prompt:
+Who won the election?
+Example of a clear prompt:
+Which party won the 2023 general election in Paraguay?
+
+
+- Specificity: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
+
+Example of an unspecific prompt:
+
+Generate a list of titles for my autobiography.
+
+Example of a specific prompt:
+
+Generate a list of ten titles for my autobiography. The book is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.
+
+## How to come up with good prompts?
+
+
+### Role
+Examples
+- I want you to act as an ....., 
+- You are a ...customer support manager..., 
+  
+### Style
+
+### Tone
+
+> Please acknowledge 'Yes', if you understand the context and *stay idle*.
+
+> Ignore all my previous instructions.
+
+
+
+Tone 
+
 
 ### Text Generation & Summarization
 #### Talk is cheap, show me samples
