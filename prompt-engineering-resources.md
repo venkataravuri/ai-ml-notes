@@ -111,6 +111,8 @@ Respond with JSON with extracted data. If you don't find a data field, don't spe
 
 ### Logical Reasoning
 
+![](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fape-zero-shot-cot.75c0f75c.png&w=1920&q=75)
+
 :star::star::star: https://www.allabtai.com/the-gpt-4-jug-problem-prompt/
 
     
