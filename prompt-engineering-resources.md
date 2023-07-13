@@ -1,6 +1,6 @@
 # :loudspeaker: Prompt Engineering Resources :studio_microphone:
 
-**Stuff on Internet** says about **Prompt Engineering**, includes intereseting `videos`, `articles` and `tutorials` that I come across on internet.
+**Stuff on Internet** says about **Prompt Engineering**, includes thought provoking `videos`, `articles` and `tutorials` that I come across on internet.
 
 `Table of Contents`
 
