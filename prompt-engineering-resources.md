@@ -3,7 +3,7 @@ This page includes videos, articles and tutorials to learn prompt engineering.
 
 ## Pre-read: Introduction to LLMs
 
-Having good intution how LLMs work makes you prompt better to get desired results quickly.
+Having good intution how LLMs work makes you prompt better and get desired results.
 
 :star::star::star:
 - :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) by Andrej Karpathy, watch this video to know how LLMs are built?
@@ -35,31 +35,35 @@ Prompts are set of tricks that consistently improve the models’ responses. A p
 
 Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", etc.
 
-Good prompts follow two basic principles: 
-- Clarity: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy.
-Example of an unclear prompt:
-Who won the election?
-Example of a clear prompt:
-Which party won the 2023 general election in Paraguay?
-
-
-- Specificity: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
-
-Example of an unspecific prompt:
-
-Generate a list of titles for my autobiography.
-
-Example of a specific prompt:
-
-Generate a list of ten titles for my autobiography. The book is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.
-
 ## How to come up with good prompts?
 
+Good prompts follow two basic principles: 
+- **Clarity**: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy. Give clear concise instructions.
 
-### Role
-Examples
-- I want you to act as an ....., 
-- You are a ...customer support manager..., 
+  Example of an unclear prompt:
+
+  `Who won the election?`
+
+  Example of a clear prompt:
+
+  `Which party won the 2023 general election in Paraguay?`
+
+- **Specificity**: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
+
+  Example of an unspecific prompt:
+
+  `Generate a list of titles for my autobiography.`
+
+  Example of a specific prompt:
+
+  `Generate a list of ten titles for my autobiography. The book is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+
+### Role Play
+
+Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
+
+- I want you to act as an ... (DevOps engineer), 
+- You are a ... (customer support manager, ...), 
   
 ### Style
 
@@ -69,10 +73,16 @@ Examples
 
 > Ignore all my previous instructions.
 
+> Do not make up stuff if you know the real answer
 
 
-Tone 
+Given an customer  about product issue, try to extract folloiwng data,
+- name: string or don't specify
+- product: string or don't specify
+- email: string
+- issue summary: string or don't specify
 
+Respond with JSON with extracted data. If you don't find a data field, don't specify it.
 
 ### Text Generation & Summarization
 #### Talk is cheap, show me samples
