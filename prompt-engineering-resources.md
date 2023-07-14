@@ -93,6 +93,8 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 - `You are a` ... (customer support manager, ...),
 - `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
 
+Role play narrows down responses based on the expected expertise. It shows significant improvements in the quality of the answers.
+
 #### System Roles
 - https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
 - https://www.allabtai.com/chatgpt-4-prompt-engineering-the-ultimate-problem-solver-prompt/
@@ -101,18 +103,33 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
 
+### A Typical Prompt Template
+
+**A Fresh Start**:
+
+`Ignore all previous instructions before this one. Your new role and persona is:` 
+
+**Role Play**:
+
+`You are a` ...
+
+**Task Setting & Context**:
+
+e.g., 
+
+> Do not make up stuff, if you don't know the real answer
+
+**Acknowledgment**:
+
+`Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
+
+
 ### Talk is cheap, show me examples :)
 
 | Text Generation/Summarization | Image Generation | Audio Generation |
 | --- | --- | --- |
 | ? | AI-generated Photography - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/) | ? |
 | ? | ? | ? |
-
-> If you understand the context, please acknowledge 'Yes' and *stay idle*.
-
-> Ignore all my previous instructions.
-
-> Do not make up stuff if you don't know the real answer
 
 ### Text Generation / Summarization / Classification
 
