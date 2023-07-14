@@ -1,6 +1,6 @@
 # :loudspeaker: Prompt Engineering - Knowledge Base :studio_microphone:
 
-**Stuff on Internet** says about **Prompt Engineering**, includes thought provoking `videos`, `articles` and `tutorials` that I come across on internet.
+**Stuff on :globe_with_meridians: Internet** says about **Prompt Engineering**, includes thought provoking :tv: `videos`, `articles` and `tutorials` that I come across on internet.
 
 `Table of Contents`
 
@@ -12,13 +12,13 @@
       - [Logical Reasoining]()
       - [Conversation / Question Reasoining]()
       - [Code Generation]()
-   - [Prompt Techniques]()
+   - :boom: [Prompt Techniques]()
       - [Zero-shot Prompting]()
       - [Few-Shot Promptiong]()
       - [Chain of Thought Prompting]()
       - [Tree of Thoughts]()
   - [Prompt Engineering Guides]()
-- [Advanced & Programable Prompts]()
+- :red_circle: [Advanced & Programable Prompts]()
    - [Retrieval and Augment Prompts]()
    - [Plan and Execute Prompt]()
    - [ReAct - Reason and Action Prompt]()
