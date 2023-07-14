@@ -4,21 +4,21 @@
 
 `Table of Contents`
 
-[Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
-[Prompt Engineering]()
-[Prompt Structure]()
-[Prompt Types]()
-[Text Generation/Summary]()
-[Zero CoT, One-Shot CoT, Few-Shot CoT]()
-[Advanced & Programable Prompts]()
-[Retrieval and Augment Prompts]()
-[Plan and Execute Prompt]()
-[ReAct - Reason and Action Prompt]()
-
- limited context window (also called "token limit")
- GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
-
- Chain of Thought prompting encourages the LLM to explain its reasoning.
+- [Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
+- [Prompt Engineering]()
+   - [Prompt Structure]()
+   - [Prompt Categories]()
+      - [Text Generation/Summary]()
+   - [Prompt Techniques]()
+      - [Zero-shot Prompting]()
+      - [Few-Shot Promptiong]()
+      - [Chain of Thought Prompting]()
+      - [Tree of Thoughts]()
+  - [Prompt Engineering Guides]()
+- [Advanced & Programable Prompts]()
+   - [Retrieval and Augment Prompts]()
+   - [Plan and Execute Prompt]()
+   - [ReAct - Reason and Action Prompt]()
 
 ## Pre-read: Introduction to LLMs
 
@@ -47,12 +47,17 @@ Foundational or Base Large Language Models (LLM) undergo following process to be
 
 **Top_p** - 
 
+#### LLM limitations / Constraints
+- Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
+- Only aware of 2021 events, 
+
 ## Prompt Engineering
-Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
 
 Prompts are set of tricks that consistently improve the models’ responses. A prompt can contain information like the `instruction` or `question` and including other details such as `inputs` or `examples`. 
 
 Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", “paraphrase”, “simplify” etc.
+
+Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
 
 ## How to come up with good prompts?
 
@@ -81,9 +86,13 @@ Good prompts follow two basic principles:
 
 Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
 
-- I want you to act as an ... (DevOps engineer), 
-- You are a ... (customer support manager, ...),
-- You are an excellent copywriter skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line. 
+- `I want you to act as an` ... (DevOps engineer), 
+- `You are a` ... (customer support manager, ...),
+- `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
+
+#### System Roles
+- https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
+- https://www.allabtai.com/chatgpt-4-prompt-engineering-the-ultimate-problem-solver-prompt/
   
 ### Style/Tone
 
@@ -102,7 +111,7 @@ Give the AI specific instructions on how to format the output, including the ton
 
 > Do not make up stuff if you don't know the real answer
 
-### Text Generation & Summarization
+### Text Generation / Summarization / Classification
 
 ##### Where can I use it at work?
 - Creating marketing slogans or summary or bullet points based on product documentation or product guide.
@@ -139,9 +148,9 @@ Respond with JSON with extracted data. If you don't find a data field, don't spe
 
 ### Logical Reasoning
 
-:question: Problem: “I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?”
+:question: Problem: “_I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?_”
 
-:-1: ChatGPT stumbles to answer with below answer
+:-1: ChatGPT stumbles to answer,
 
 To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can follow these steps:
 - Fill the 12-liter jug completely with water.
@@ -151,6 +160,7 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
 - Pour water from the 12-liter jug into the 6-liter jug until it is full. This time, you will only need to pour 1 liter of water, as there are already 5 liters in the 6-liter jug.
 - You now have 6 liters of water in the 12-liter jug.
 
+`Chain of Thought` prompting encourages the LLM to explain its reasoning.
 
 ![](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fape-zero-shot-cot.75c0f75c.png&w=1920&q=75)
 
@@ -158,13 +168,11 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
     
 ### Question Answering
 
-### Image Gnerators
+### Image Generators
 https://www.allabtai.com/master-midjourney-in-1-minute/
 
 https://labs.openai.com/e/HmoeRVI28qQX9pfeJvJr2ePB
 https://dreamstudio.ai/generate
-
-### Text Classification
 
 ### Conversation
 
@@ -175,13 +183,7 @@ https://dreamstudio.ai/generate
 - :star: [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 ## Prompt Engineering Marketplace
-
-https://hero.page/samir
-
-## System Roles
-
-https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
-https://www.allabtai.com/chatgpt-4-prompt-engineering-the-ultimate-problem-solver-prompt/
+- https://hero.page/samir
 
 ## Prompt Techniques
 
