@@ -15,7 +15,7 @@
    - :boom: [Prompt Techniques]()
       - [Zero-shot Prompting]()
       - [Few-Shot Promptiong]()
-      - [Chain of Thought Prompting]()
+      - [Chain of Thought (CoT) Prompting]()
       - [Tree of Thoughts]()
   - [Prompt Engineering Guides]()
 - :red_circle: [Advanced & Programable Prompts]()
@@ -109,26 +109,21 @@ Give the AI specific instructions on how to format the output, including the ton
 
 ### A Typical Prompt Template
 
-A prompt template has following structure,
+A prompt template usually folloiwng structure,
 
-**A Fresh Start**: `Ignore all previous instructions before this one. Your new role and persona is:` 
+> **A Fresh Start**: `Ignore all previous instructions before this one. Your new role and persona is:` 
 
-**Role Play**: `You are a` ...
+> **Role Play**: `You are a` ...
 
-**Task Setting & Context**: e.g., 
+> **Task Setting & Context**: e.g., ... `Do not make up stuff, if you don't know the real answer.`
 
-Do not make up stuff, if you don't know the real answer
+> **Acknowledgment**: `Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
 
-**Acknowledgment**: `Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
+### Talk is cheap, show me examples :)
 
-#### Talk is cheap, show me examples :)
+### Image Generation
 
-Generative is NOT just text ori
-
-| Text Generation/Summarization | Image Generation | Audio Generation |
-| --- | --- | --- |
-| ? | AI-generated Photography - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/) | ? |
-| ? | ? | ? |
+AI-generated Photography - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/)
 
 ### Text Generation / Summarization / Classification
 
@@ -175,9 +170,11 @@ Respond with JSON with extracted data. If you don't find a data field, don't spe
 
 ### Logical Reasoning
 
-:question: Problem: “_I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?_”
+:question: **Problem**: “_I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?_”
 
-:-1: ChatGPT stumbles to answer,
+<details> 
+
+<summary> :-1: ChatGPT stumbles to answer, </summary>
 
 To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can follow these steps:
 - Fill the 12-liter jug completely with water.
@@ -186,6 +183,8 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
 - ...
 - Pour water from the 12-liter jug into the 6-liter jug until it is full. This time, you will only need to pour 1 liter of water, as there are already 5 liters in the 6-liter jug.
 - You now have 6 liters of water in the 12-liter jug.
+
+</details>
 
 `Chain of Thought` prompting encourages the LLM to explain its reasoning.
 
@@ -214,7 +213,7 @@ https://dreamstudio.ai/generate
 
 ## Prompt Techniques
 
-## Chain of Thought Prompting
+## Chain of Thought (CoT) Prompting
 
 Chain-of-thought prompting is an approach to improve the reasoning ability of large language models in arithmetic, commonsense, and symbolic reasoning tasks.
 - It augments few-shot prompting with intermediate natural language reasoning steps.
