@@ -127,7 +127,9 @@ Give the AI specific instructions on how to format the output, including the ton
 - Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**...
 - Summarize this **for me like I’m 8 years old** [text].
 
-#### Release notes preparation sample
+<details>
+
+<summary>Release notes preparation sample</summary>
 
 `Write a precise and concise summary of new release notes` for Kubernetes version 1.28, include new features and improvements in storyboard capturd at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
@@ -137,10 +139,14 @@ https://github.com/orgs/kubernetes/projects/140/views/1`
 2. The release notes should capture the reader’s attention and makes them want to learn more about the new release of Kubernetes version 1.28.
 3. Categorize features specified in above URL into `‘New Features’`, `‘Improvements’`, `‘Bug Fixes’`, and `‘Known Issues’`.
 4. Describe how to use the new features in Kubernetes version 1.28 in a way that would allow me to create a GIF or a short video clip to illustrate it.
+   
+</details>
 
-#### Customer email classification sample
+<details>
 
-Given an customer email about an issue, try to extract folloiwng data,
+<summary>Customer email classification example</summary>
+
+Given an email from customer about an product issue, try to extract folloiwng data,
 - name: string or don't specify
 - product: string or don't specify
 - email: string
@@ -148,6 +154,8 @@ Given an customer email about an issue, try to extract folloiwng data,
 - issue summary: string or don't specify
 
 Respond with JSON with extracted data. If you don't find a data field, don't specify it.
+
+</details>
 
 ### Logical Reasoning
 
