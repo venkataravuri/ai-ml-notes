@@ -109,7 +109,7 @@ A perfect prompt sample (non-technical),
 A perfect developer prompt sample,
 
 ```markdown
-Ignore all previous instructions. I want you to act as a `{Python / Full Stack / GoLang}` developer.
+Ignore all my previous instructions. I want you to act as a `{Python / Full Stack / GoLang}` developer.
 
 I am working on a project that involves {project description}
 I have already set up project, imported required libraries, APIs, and dependencies. My project's structure looks like this ...
@@ -118,37 +118,41 @@ I have already set up project, imported required libraries, APIs, and dependenci
 - cfg.py {include code here}
 - ...
 
+Please ensure that the code is robust and implements defensive programming techniques,
+such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur.
+
+Provide a solution to the following problem, taking into account the updated version and any changes in the library/framework.
+
+Acknowledge that you understood above by responding “Yes” and stay idle.
+
+{Include problem description here}
+```
+
+```markdown
+Ignore all my previous instructions. I want you to act as a `{Software Developer / System Designer/ Opertating System (OS) Expert}`.
+
 I have a piece of code that I have to refactor to accomodate new change request (CR). 
 I would like you to provide suggestions for changes or improvements to following specific part(s) of the code:
 
 - {Insert the specific part(s) of code here}
 
-Please ensure that the code is robust and implements defensive programming techniques,
-such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur.
-
 You have to adhere to S.O.L.I.D principles and apply Gang-of-Four patterns whereever applicable.
 
 Please help me with the following task, taking into consideration the existing setup:
-I need help designing an intuitive navigation system for my new mobile application.
-(Or) Provide a solution to the following problem, taking into account the updated version and any changes in the library/framework:
 
-<Insert problem description here>
-
+{Include your task description here}
 ```
+
 :tada: Hey, can you show more such [coding prompt examples](https://github.com/RimaBuilds/Master-coding-prompts-with-ChatGPT/tree/main)?
 
 ### Role Play
 
-When you use foundation model without any customization, the output tends to be generic and similar across different users.
+The outputs of a foundation model without any customization tends to be generic and similar across different users.
 
-Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
+Role play shapes AI’s behavior to cater to specific use cases, which can lead to more accurate, relevant, and contextually appropriate responses. It shows significant improvements in the quality of the answers.
 
 - `I want you to act as an` ... (DevOps engineer / Product Manager / Rapper). e.g., 
-- `You are a` ... (customer support manager, ...). e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
-
-Role play narrows down responses based on the expected expertise. It shows significant improvements in the quality of the answers.
-
-Role essentially shapes AI’s behavior to cater to specific use cases, which can lead to more accurate, relevant, and contextually appropriate responses.
+- `You are a` ... (customer support manager, marketing content creator, ...). e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
 
 #### System Roles
 - https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
@@ -177,10 +181,9 @@ Give the AI specific instructions on how to format the output, including the ton
 - Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**...
 - Summarize this **for me like I’m 8 years old** [text].
 
-<details>
+Release notes preparation sample,
 
-<summary>Release notes preparation sample</summary>
-
+```markdown
 `Write a precise and concise summary of new release notes` for Kubernetes version 1.28, include new features and improvements in storyboard capturd at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
 
@@ -189,14 +192,13 @@ https://github.com/orgs/kubernetes/projects/140/views/1`
 2. The release notes should capture the reader’s attention and makes them want to learn more about the new release of Kubernetes version 1.28.
 3. Categorize features specified in above URL into `‘New Features’`, `‘Improvements’`, `‘Bug Fixes’`, and `‘Known Issues’`.
 4. Describe how to use the new features in Kubernetes version 1.28 in a way that would allow me to create a GIF or a short video clip to illustrate it.
-   
-</details>
+```
 
-<details>
+Customer email classification example,
 
-<summary>Customer email classification example</summary>
-
-Given an email from customer about an product issue, try to extract folloiwng data,
+```markdown
+From email message from customer about product issue, try to extract folloiwng data,
+email message: {include email message here}
 - name: string or don't specify
 - product: string or don't specify
 - email: string
@@ -204,17 +206,15 @@ Given an email from customer about an product issue, try to extract folloiwng da
 - issue summary: string or don't specify
 
 Respond with JSON with extracted data. If you don't find a data field, don't specify it.
-
-</details>
+```
 
 ### Logical Reasoning
 
 :question: **Problem**: “_I have a 12-liter jug and a 6-liter jug. I want to measure 6 liters. How do I do it?_”
+ 
+:-1: :poop: ChatGPT stumbles to answer,
 
-<details> 
-
-<summary> :-1: :poop: ChatGPT stumbles to answer, </summary>
-
+```markdown
 To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can follow these steps:
 - Fill the 12-liter jug completely with water.
 - Pour the water from the 12-liter jug into the 6-liter jug. This will leave you with 6 liters of water in the 12-liter jug.
@@ -222,10 +222,9 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
 - ...
 - Pour water from the 12-liter jug into the 6-liter jug until it is full. This time, you will only need to pour 1 liter of water, as there are already 5 liters in the 6-liter jug.
 - You now have 6 liters of water in the 12-liter jug.
+```
 
-</details>
-
-`Chain of Thought` prompting encourages the LLM to explain its reasoning.
+`Chain of Thought` prompting makes LLM to thought through and reason about.
 
 ![](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fape-zero-shot-cot.75c0f75c.png&w=1920&q=75)
 
