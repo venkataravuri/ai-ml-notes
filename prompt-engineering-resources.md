@@ -39,17 +39,17 @@ Understanding functioning and constraints of Language Models (LLMs) enables you 
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
-Visit [open-source LLMs leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+:point_right: Visit [open-source LLMs leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
 
 Foundational or Base Large Language Model (LLM) undergo following process to become AI assistants,
 
-| Stage 1 | Stage 2 | Stage 3 | Stage 4 |
+| Stage :one: | Stage :two: | Stage :three: | Stage :four: |
 | :---: | :---: | :---: | :--: |
 | **Un-supervised learning** | **Supervised Finetuning** | **Reward Modelling** | **Reinforcement Learning** |
 | Trained with internnet archive, Wikipedia, books, ... | Finetune with manually composed dataset "_prompt and ideal response_". | Compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. | Generate tokens which maximize reward. |
 | Outcome is "_Base Model_" | Outcome "_SFT model_" can act as AI assistants. | Outcome  "Reward Model", cannot be used as assisstant" | Outocome "Reinformcent Learning Model" |
 
-Credits: Andrej Karpathy, See his one-liner [profile](https://karpathy.ai/)
+Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai/)
 
 #### LLM Configuration Settings
 
@@ -73,15 +73,29 @@ Prompting is nothing but instructing a model what you want to achieve such as "W
 Good prompts follow two basic principles: 
 - **Clarity**: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy. Give clear concise instructions.
 
-> Example of an unclear prompt: `Who finished third place in the world cup?`
+> :heavy_multiplication_x: Example of an unclear prompt: `Who finished third place in the world cup?`
 
-> Example of a clear prompt: `Who clinched the FIFA World Cup 2022 bronze medal?` or `Which country finished third place the FIFA 2022 world cup?`
+> :heavy_check_mark: Example of a clear prompt: `Who clinched the FIFA World Cup 2022 bronze medal?` or `Which country finished third place in the FIFA 2022 world cup?`
 
 - **Specificity**: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
 
-> Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
+> :heavy_multiplication_x: Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
 
-> Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+> :heavy_check_mark: Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+
+### A Typical Prompt Template
+
+A prompt template usually folloiwng structure,
+
+> **A Fresh Start**: `Ignore all previous instructions. Your new role and persona is:` 
+
+> **Role Play**: `You are a` ... More about role play is [here]().
+
+> **Task Setting & Context**: e.g., ... `Do not make up stuff, if you don't know the real answer.`
+
+> **Acknowledgment**: `Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
+
+> **Final Instruction/Question**:  
 
 ### Role Play
 
@@ -99,20 +113,6 @@ Role play narrows down responses based on the expected expertise. It shows signi
 ### Style/Tone
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
-
-### A Typical Prompt Template
-
-A prompt template usually folloiwng structure,
-
-> **A Fresh Start**: `Ignore all previous instructions before this one. Your new role and persona is:` 
-
-> **Role Play**: `You are a` ...
-
-> **Task Setting & Context**: e.g., ... `Do not make up stuff, if you don't know the real answer.`
-
-> **Acknowledgment**: `Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
-
-### Talk is cheap, show me examples :)
 
 ### Image Generation
 
@@ -167,7 +167,7 @@ Respond with JSON with extracted data. If you don't find a data field, don't spe
 
 <details> 
 
-<summary> :-1: ChatGPT stumbles to answer, </summary>
+<summary> :-1: :poop: ChatGPT stumbles to answer, </summary>
 
 To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can follow these steps:
 - Fill the 12-liter jug completely with water.
