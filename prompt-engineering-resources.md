@@ -2,7 +2,7 @@
 
 **Stuff on :globe_with_meridians: Internet** says about **Prompt Engineering**, includes thought provoking :tv: `videos`, `articles` and `tutorials` that I come across on internet.
 
-`Table of Contents`
+## 📚 Table of Contents
 
 - [Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
 - [Prompt Engineering]()
@@ -62,6 +62,7 @@ Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai
    - What is Tokenization? Which tokenization method ChatGPT uses? What is difference between Tokens & Word Embeddings? 
 - ChatGPT has a knowledge cutoff date of 2021, it does not know latest events. It may not have access to latest events, access to updated libraries, frameworks. GPT-4 has web/search plug-in which enables to access external data. 
 
+---
 ## Prompt Engineering
 
 Prompts are bunch of tricks to perform a given taks and improves the models’ responses. A prompt can be a `instruction` or `question` along with `inputs` or `examples`. 
@@ -96,6 +97,45 @@ A prompt template usually folloiwng structure,
 > **Acknowledgment**: `Acknowledge that you understood above by responding “Yes” and stay idle.`
 
 > **Final Instruction/Question**:
+
+A perfect prompt sample (non-technical),
+
+```markdown
+????
+????
+????
+```
+
+A perfect developer prompt sample,
+
+```markdown
+Ignore all previous instructions. I want you to act as a `{Python / Full Stack / GoLang}` developer.
+
+I am working on a project that involves {project description}
+I have already set up project, imported required libraries, APIs, and dependencies. My project's structure looks like this ...
+
+- main.py {include code here}
+- cfg.py {include code here}
+- ...
+
+I have a piece of code that I have to refactor to accomodate new change request (CR). 
+I would like you to provide suggestions for changes or improvements to following specific part(s) of the code:
+
+- {Insert the specific part(s) of code here}
+
+Please ensure that the code is robust and implements defensive programming techniques,
+such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur.
+
+You have to adhere to S.O.L.I.D principles and apply Gang-of-Four patterns whereever applicable.
+
+Please help me with the following task, taking into consideration the existing setup:
+I need help designing an intuitive navigation system for my new mobile application.
+(Or) Provide a solution to the following problem, taking into account the updated version and any changes in the library/framework:
+
+<Insert problem description here>
+
+```
+:tada: Hey, can you show more such [coding prompt examples](https://github.com/RimaBuilds/Master-coding-prompts-with-ChatGPT/tree/main)?
 
 ### Role Play
 
