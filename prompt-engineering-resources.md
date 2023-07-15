@@ -30,16 +30,18 @@ Understanding functioning and constraints of Language Models (LLMs) enables you 
 - :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) - Deep insights into how ChatGPT has been built by [Andrej] (https://karpathy.ai/)? :star::star::star:
 - :scroll: [State of GPT - Slides](https://karpathy.ai/stateofgpt.pdf)
 
-*Foundation/Base* Large Language Models (LLM) are NOT AI Assistants. See list of [open-source LLMs](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
- - Base model does not answer questions
- - Just want to complete internet documents, they are "_document completers_".
- - Often **responds to questions with more questions**
+*Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants. 
+ - Base model does NOT answer questions
+ - Just want to complete internet documents, they are "**_document completers_**".
+ - Often _"responds to questions with more questions"._
 
 > Based models are "_tricked into performing tasks_" with "_prompt engineering_".
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
-Foundational or Base Large Language Models (LLM) undergo following process to become AI assistants (in particular ChatGPT & GPT-4),
+Visit [open-source LLMs leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+
+Foundational or Base Large Language Model (LLM) undergo following process to become AI assistants,
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | :---: | :---: | :---: | :--: |
