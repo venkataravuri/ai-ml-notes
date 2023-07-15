@@ -242,6 +242,11 @@ https://dreamstudio.ai/generate
 
 ### Code Generation
 
+- [SQL Query Prompts](https://www.patterns.app/blog/2023/01/18/crunchbot-sql-analyst-gpt/)
+- 
+
+[Github Copilot](https://github.com/features/copilot)
+
 ## Prompt Engineering Guide
 - :star::star: [Learn Prompting](https://learnprompting.org/docs/intro)
 - :star: [Prompt Engineering Guide](https://www.promptingguide.ai/)
@@ -260,18 +265,30 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ## Zero-shot CoT prompting
 
-### ReAct - Reason and Acttion Prompting
+## Advanced Programmable Prompting
+
+Prompt Selection, Auto Prompt Generation
+
+### Autonomous AI Agents
+
+**Prediction**: In near future :hourglass:, Autonomous AI Agents 🤖 will explode market, which can automate complex tasks. 
+
+### ReAct - Reason & Act Prompting
+
+https://learnprompting.org/docs/advanced_applications/react
 
 https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/agents/react/wiki_prompt.py#L4
 
-## Plan and Execute Prompting
+### Plan and Execute Prompting
 
 
 
-https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
-
-https://prompthero.com/
 
 https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/experimental/plan_and_execute/planners/chat_planner.py
+
+
+## References
+- https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
+
 
 
