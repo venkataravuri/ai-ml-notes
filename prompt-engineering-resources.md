@@ -91,13 +91,15 @@ A prompt template usually folloiwng structure,
 
 > **Role Play**: `You are a` ... More about role play is [here]().
 
-> **Task Setting & Context**: e.g., ... `Do not make up stuff, if you don't know the real answer.`
+> **Context Setting**: Supplying additional context enhances model's understanding and generate more accurate and relevant responses. Context can be response format, length, information from an article or dataset, and tone, hepls model to tailor its output to the given situation, making it more unique and engaging.  e.g., ... `Do not make up stuff, if you don't know the real answer.`
 
-> **Acknowledgment**: `Acknowledge that you understood above instructions by responding “Yes” and stay idle.`
+> **Acknowledgment**: `Acknowledge that you understood above by responding “Yes” and stay idle.`
 
-> **Final Instruction/Question**:  
+> **Final Instruction/Question**:
 
 ### Role Play
+
+When you use foundation model without any customization, the output tends to be generic and similar across different users.
 
 Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
 
@@ -105,6 +107,8 @@ Start your prompt by telling the model to ’role play’ to establish the conte
 - `You are a` ... (customer support manager, ...). e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
 
 Role play narrows down responses based on the expected expertise. It shows significant improvements in the quality of the answers.
+
+Role essentially shapes AI’s behavior to cater to specific use cases, which can lead to more accurate, relevant, and contextually appropriate responses.
 
 #### System Roles
 - https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
@@ -116,9 +120,11 @@ Give the AI specific instructions on how to format the output, including the ton
 
 ### Image Generation
 
-AI-generated Photography - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/)
+### :city_sunset: AI-generated Photography
 
-### Text Generation / Summarization / Classification
+- [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/)
+
+### Text Generation / Summarization / Classification / Extracting Essential Information
 
 ##### Where can I use it at work?
 - Creating marketing slogans or summary or bullet points based on product documentation or product guide.
