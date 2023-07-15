@@ -60,7 +60,7 @@ Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai
 #### LLM limitations / Constraints
 - Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
    - What is Tokenization? Which tokenization method ChatGPT uses? What is difference between Tokens & Word Embeddings? 
-- ChatGPT knows the world as of 2021, it does not know latest events. Hence we need to augment latest events/information as input context before questioning. 
+- ChatGPT has a knowledge cutoff date of 2021, it does not know latest events. It may not have access to latest events, access to updated libraries, frameworks. GPT-4 has web/search plug-in which enables to access external data. 
 
 ## Prompt Engineering
 
