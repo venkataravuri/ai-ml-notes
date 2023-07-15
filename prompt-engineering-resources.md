@@ -59,46 +59,36 @@ Credits: Andrej Karpathy, See his one-liner [profile](https://karpathy.ai/)
 
 #### LLM limitations / Constraints
 - Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
-- Only aware of 2021 events, 
+   - What is Tokenization? Which tokenization method ChatGPT uses? What is difference between Tokens & Word Embeddings? 
+- ChatGPT knows the world as of 2021, it does not know latest events. Hence we need to augment latest events/information as input context before questioning. 
 
 ## Prompt Engineering
 
-Prompts are set of tricks that consistently improve the models’ responses. A prompt can contain information like the `instruction` or `question` and including other details such as `inputs` or `examples`. 
+Prompts are bunch of tricks to perform a given taks and improves the models’ responses. A prompt can be a `instruction` or `question` along with `inputs` or `examples`. 
 
-Prompting is instructing model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", “paraphrase”, “simplify” etc.
-
-Credits: [Source](https://github.com/shimon-d/prompt-eng-guide)
+Prompting is nothing but instructing a model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", “paraphrase”, “simplify” etc.
 
 ## How to come up with good prompts?
 
 Good prompts follow two basic principles: 
 - **Clarity**: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy. Give clear concise instructions.
 
-  Example of an unclear prompt:
+> Example of an unclear prompt: `Who finished third place in the world cup?`
 
-  `Who won the election?`
-
-  Example of a clear prompt:
-
-  `Which party won the 2023 general election in Paraguay?`
+> Example of a clear prompt: `Who clinched the FIFA World Cup 2022 bronze medal?` or `Which country finished third place the FIFA 2022 world cup?`
 
 - **Specificity**: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
 
-  Example of an unspecific prompt:
+> Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
 
-  `Generate a list of titles for my autobiography.`
-
-  Example of a specific prompt:
-
-  `Generate a list of ten titles for my autobiography. The book is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+> Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
 
 ### Role Play
 
 Start your prompt by telling the model to ’role play’ to establish the context and its core skills.
 
-- `I want you to act as an` ... (DevOps engineer), 
-- `You are a` ... (customer support manager, ...),
-- `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
+- `I want you to act as an` ... (DevOps engineer / Product Manager / Rapper). e.g., 
+- `You are a` ... (customer support manager, ...). e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
 
 Role play narrows down responses based on the expected expertise. It shows significant improvements in the quality of the answers.
 
