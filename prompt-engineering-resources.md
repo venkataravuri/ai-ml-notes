@@ -27,13 +27,10 @@
 
 Understanding functioning and constraints of Language Models (LLMs) enables you to effectively formulate prompts that yield the desired outcomes.
 
-:star::star::star:
-- :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A), watch this video to know how LLMs are built?
+- :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) - Deep insights into how ChatGPT has been built by [Andrej] (https://karpathy.ai/)? :star::star::star:
 - :scroll: [State of GPT - Slides](https://karpathy.ai/stateofgpt.pdf)
 
-Credits: Andrej Karpathy, See his one-liner [profile](https://karpathy.ai/)
-
-*Foundation/Base* Large Language Models (LLM) are NOT AI Assistants such as GPT-3, Falcon, ...
+*Foundation/Base* Large Language Models (LLM) are NOT AI Assistants. See list of [open-source LLMs](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
  - Base model does not answer questions
  - Just want to complete internet documents, they are "_document completers_".
  - Often **responds to questions with more questions**
@@ -42,15 +39,19 @@ Credits: Andrej Karpathy, See his one-liner [profile](https://karpathy.ai/)
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
-Foundational or Base Large Language Models (LLM) undergo following process to become AI assistants,
-- Stage 1: **Un-supervised learning** using internnet archive, Wikipedia, books and more. Outcome is "_Base Model_"
-- Stage 2: **Supervised Finetuning** with manually composed dataset "_prompt and ideal response_". Outcome "_SFT model_" can act as AI assistants.
-- Stage 3: **Reward Modelling**, compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. Outcome  "Reward Model", cannot be used as assisstant"
-- Stage 4: **Reinforcement Learning**, generate tokens to maximize reward. Outocome "Reinformcent Learning Model"
+Foundational or Base Large Language Models (LLM) undergo following process to become AI assistants (in particular ChatGPT & GPT-4),
 
-_Wanna see LLM leaderboard?_ [Click here](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+| Stage 1 | Stage 2 | Stage 3 | Stage 4 |
+| :---: | :---: | :---: | :--: |
+| **Un-supervised learning** | **Supervised Finetuning** | **Reward Modelling** | **Reinforcement Learning** |
+| Trained with internnet archive, Wikipedia, books, ... | Finetune with manually composed dataset "_prompt and ideal response_". | Compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. | Generate tokens which maximize reward. |
+| Outcome is "_Base Model_" | Outcome "_SFT model_" can act as AI assistants. | Outcome  "Reward Model", cannot be used as assisstant" | Outocome "Reinformcent Learning Model" |
 
-**Temperature** - In short, the lower the temperature the more deterministic the results in the sense that the highest probable next token is always picked. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs
+Credits: Andrej Karpathy, See his one-liner [profile](https://karpathy.ai/)
+
+#### LLM Configuration Settings
+
+**Temperature** - LLMs are non-deterministic by design, temparature setting can tweak this behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs.
 
 **Top_p** - 
 
