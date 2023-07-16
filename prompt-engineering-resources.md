@@ -267,7 +267,7 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ## Advanced Programmable Prompting
 
-Prompt Selection, Auto Prompt Generation
+Auto prompting thorugh programming would be the way forward. Prompt Selection, Auto Prompt Generation
 
 ### Autonomous AI Agents
 
@@ -280,9 +280,6 @@ https://learnprompting.org/docs/advanced_applications/react
 https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/agents/react/wiki_prompt.py#L4
 
 ### Plan and Execute Prompting
-
-
-
 
 https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/experimental/plan_and_execute/planners/chat_planner.py
 
