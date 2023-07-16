@@ -11,17 +11,17 @@
 
 Take me to [Generative AI Learning Guide](LLM-Learning-Guide.md)
 
+## Prompt Engineering
+
+Take me to [Prompt Engineering - Knowledge Base](prompt-engineering-resources.md)
+
 ## Neural Networks / Deeplearning
 
 Take me to [Neural Networks Learning Guide](nn-dl.md)
 
 ## Machine Learning
 
-Take me to [Neural Networks Learning Guide](ml.md)
+Take me to [Machine Learning](ml.md)
 
 ## Deeplearning using Pytorch
 [Pytorch Learning Guide]()
-
-|Rating|Type|Topic
-------------: | ------------- | -------------
-|:star:|:newspaper:|[Pytorch introduction - www.kdnuggets.com](https://www.kdnuggets.com/2019/09/gentle-introduction-pytorch-12.html)
