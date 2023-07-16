@@ -2,6 +2,8 @@
 
 **Stuff on :globe_with_meridians: Internet** says about **Prompt Engineering**, includes thought provoking :tv: `videos`, `articles` and `tutorials` that I come across on internet.
 
+> _"A.I. might not replace you, but a person who uses A.I. could."_
+
 ## 📚 Table of Contents
 
 - [Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
