@@ -281,11 +281,14 @@ LLM powered Agent: Understand customer request and come up with list of sub-task
 - Task 3: Generate summary of travel options along with cost, duration and timings.
 - Task 4: Invoke airlines API ...
 
-### ReAct - Reason & Act Prompting
+What to know more about
 
-https://learnprompting.org/docs/advanced_applications/react
+:fire: **Crazy Thought** - In future there won't be REST APIs, LLM powered AI agents talk to each other in natural language to peform tasks. Every company will have AI agents.
 
-https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/agents/react/wiki_prompt.py#L4
+### ReAct Prompt - Reason & Act
+
+- [Reason and Act Prompt](https://learnprompting.org/docs/advanced_applications/react)
+- [Automated ReAct Prompt implementation using LangChain](https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/agents/react/wiki_prompt.py#L4)
 
 ### Plan and Execute Prompting
 
