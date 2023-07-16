@@ -267,22 +267,19 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ## Advanced Programmable Prompting
 
-Realworld use cases are implementated a set of related tasks which may happen in certain sequence. Also a task outcome dictates next task.
+Realworld applications usually achieve certain function through a series of tasks. The tasks are performed in certain order to achieve a goal, where preceding task outcome decides next task. 
 
-As _**LLMs exhibit logical reasoning capabailities**_, we can use them to identify tasks to achieve a goal, then automate execution of these tasks and feed LLM with task output to analyze & choose next task. 
+As LLMs has logical reasoning capabailities, we can use them to automate execution of tasks. We can use LLMs reasoning to chain these tasks to achieve the goal. LLMs can be used to analyse a task output and select next appropriate task. 
 
-As as result, you are building "Autonomous AI Agents".
+**Trend**: :hourglass: LLM powered "Autonomous AI Agents" 🤖 are the trend of today, they automate complex application tasks. 
 
-e.g., An AI agent can automate, "Book a economy class flight ticket from Bangalore to Mumbai for next Sunday evening". This goal involves following set of tasks,
+For example, an Autonomous AI agent powered by LLMs can "Book a economy class flight ticket from Bangalore to Mumbai for next Sunday evening". Booking a airline ticket involves following set of tasks,
 
-LLM - Understand user goal and come up with list of sub-tasks to acheive the goal. The tasks could be,
-   - Search for flights on www.google.com, www.cheapflights.com, ariline websites, ...
-   - Compare ticket prices, look at user reviews & ratings, journey duration, timings and more.
-   - Generate summary of travel options along with cost, duration and timings.
-
-### Autonomous AI Agents
-
-**Prediction**: In near future :hourglass:, Autonomous AI Agents 🤖 will explode market, which can automate complex tasks. 
+LLM powered Agent: Understand customer request and come up with list of sub-tasks to acheive the goal.
+- Task 1: Search for flights on www.google.com, www.cheapflights.com, ariline websites, ...
+- Task 2: Compare ticket prices, look at user reviews & ratings, journey duration, timings and more.
+- Task 3: Generate summary of travel options along with cost, duration and timings.
+- Task 4: Invoke airlines API ...
 
 ### ReAct - Reason & Act Prompting
 
