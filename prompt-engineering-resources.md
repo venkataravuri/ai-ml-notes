@@ -258,14 +258,33 @@ https://dreamstudio.ai/generate
 
 ## Prompt Techniques
 
-## Chain of Thought (CoT) Prompting
+### Zero-Shot Prompting
+
+[Prompting Guide](https://www.promptingguide.ai/techniques/zeroshot)
+
+### Few-Shot Prompting
+
+[Few shot Prompting](https://www.promptingguide.ai/techniques/fewshot)
+
+```markdown
+Bug: Application crashed during boot up.
+Severity: P0
+Bug: Application label and field is not matching.
+Severity: P4
+Bug: Appication is not starting and errored during start.
+Severity: 
+```
+
+### Chain of Thought (CoT) Prompting
 
 Chain-of-thought prompting is an approach to improve the reasoning ability of large language models in arithmetic, commonsense, and symbolic reasoning tasks.
 - It augments few-shot prompting with intermediate natural language reasoning steps.
 
 https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
-## Zero-shot CoT prompting
+#### Zero-shot CoT prompting
+
+[Learning Prompting - Zero Shot CoT](https://learnprompting.org/docs/intermediate/zero_shot_cot)
 
 ## Advanced Programmable Prompting
 
