@@ -267,7 +267,18 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ## Advanced Programmable Prompting
 
-Auto prompting thorugh programming would be the way forward. Prompt Selection, Auto Prompt Generation
+Realworld use cases are implementated a set of related tasks which may happen in certain sequence. Also a task outcome dictates next task.
+
+As _**LLMs exhibit logical reasoning capabailities**_, we can use them to identify tasks to achieve a goal, then automate execution of these tasks and feed LLM with task output to analyze & choose next task. 
+
+As as result, you are building "Autonomous AI Agents".
+
+e.g., An AI agent can automate, "Book a economy class flight ticket from Bangalore to Mumbai for next Sunday evening". This goal involves following set of tasks,
+
+LLM - Understand user goal and come up with list of sub-tasks to acheive the goal. The tasks could be,
+   - Search for flights on www.google.com, www.cheapflights.com, ariline websites, ...
+   - Compare ticket prices, look at user reviews & ratings, journey duration, timings and more.
+   - Generate summary of travel options along with cost, duration and timings.
 
 ### Autonomous AI Agents
 
