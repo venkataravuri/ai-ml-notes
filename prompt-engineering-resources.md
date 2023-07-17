@@ -62,7 +62,11 @@ Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai
 
 **Temperature** - LLMs are non-deterministic by design, temparature setting can tweak this behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs.
 
-**Top_p** - 
+**Top-K, Top-p Sampling** - LLM takes in an input sequence of tokens and then tries to predict the next token, by generating a discrete probability distribution over all possible tokens. 
+- Top-K sampling orders tokens in descending order of probability and select one of first K of those tokens.
+- Top-p sampling aka. nucleus sampling orders tokens in descending order of probability and select top tokens such tha their cumulative probability is at least p.
+
+Source: [Token selection strategies](https://peterchng.com/blog/2023/05/02/token-selection-strategies-top-k-top-p-and-temperature/)
 
 #### LLM limitations / Constraints
 - Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
