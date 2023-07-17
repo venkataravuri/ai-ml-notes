@@ -366,5 +366,9 @@ LLM powered Agent: Understand customer request and come up with list of sub-task
 - [Plan and Execute Agent](https://blog.langchain.dev/plan-and-execute-agents/)
 - [How it works?](https://github.com/hwchase17/langchain/blob/6a64870ea05ad6a750b8753ce7477a5355539f0d/langchain/experimental/plan_and_execute/planners/chat_planner.py)
 
+### Retrieval Augmented Generation
+
+- [Retrieval Augmented Generation (RAG)](https://www.promptingguide.ai/techniques/rag)
+
 ## References
 - https://nordnet.blob.core.windows.net/bilde/20-Effective-ChatGPT-Prompts.pdf
