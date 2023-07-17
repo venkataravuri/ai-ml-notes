@@ -7,8 +7,8 @@
 ## 📚 Table of Contents
 
 - [Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
-- [Prompt Engineering]()
-   - [Prompt Structure]()
+- [Prompt Engineering](#prompt-engineering)
+   - [A Typical Prompt Structure](#a-typical-prompt-template)
    - [Prompt Categories]()
       - [Image Generation](#image-generation)
       - [Text Generation / Summarization / Classification / Extract Info](#text-generation--summarization--classification--extracting-essential-information)
