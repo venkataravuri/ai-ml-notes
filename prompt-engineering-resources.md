@@ -81,15 +81,15 @@ Prompting is nothing but instructing a model what you want to achieve such as "W
 Good prompts follow two basic principles: 
 - **Clarity**: Use simple, unambiguous language that avoids jargon and overly complex vocabulary. Keep queries short and snappy. Give clear concise instructions.
 
-> :heavy_multiplication_x: Example of an unclear prompt: `Who finished third place in the world cup?`
+> :x: Example of an unclear prompt: `Who finished third place in the world cup?`
 
-> :heavy_check_mark: Example of a clear prompt: `Who clinched the FIFA World Cup 2022 bronze medal?` or `Which country finished third place in the FIFA 2022 world cup?`
+> :white_check_mark: Example of a clear prompt: `Who clinched the FIFA World Cup 2022 bronze medal?` or `Which country finished third place in the FIFA 2022 world cup?`
 
 - **Specificity**: Tell your model as much as it needs to know to answer your question. More descriptive and detailed the prompt can give you better results.
 
-> :heavy_multiplication_x: Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
+> :x: Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
 
-> :heavy_check_mark: Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+> :white_check_mark: Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
 
 ### A Typical Prompt Template
 
@@ -186,6 +186,11 @@ Give the AI specific instructions on how to format the output, including the ton
 ### :city_sunset: AI-generated Photography
 
 - [GPT-4 + Midjourney Photo Examples](https://www.allabtai.com/gpt-4-midjourney-v5-the-future-of-photography/)
+- [Master Midjourney](https://www.allabtai.com/master-midjourney-in-1-minute/)
+
+Text-to-Image Diffusion Models
+- [Dall-E](https://labs.openai.com/e/HmoeRVI28qQX9pfeJvJr2ePB)
+- [Leonardo.io](https://app.leonardo.ai/ai-generations)
 
 ### Text Generation / Summarization / Classification / Extracting Essential Information
 
@@ -251,20 +256,19 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
     
 ### Question Answering
 
-### Image Generators
-https://www.allabtai.com/master-midjourney-in-1-minute/
 
-https://labs.openai.com/e/HmoeRVI28qQX9pfeJvJr2ePB
-https://dreamstudio.ai/generate
+### Chat / Conversation
 
-### Conversation
+- ChatGPT / GPT-4
 
 ### Code Generation
 
+- [GPT-4 Code Interpretor](chat.openai.com/) - Now we can upload code rather cut & paste.
+- IDE Plugins - [Github Copilot](https://github.com/features/copilot)
+
+Intereseting Code Generation Prompts
 - [SQL Query Prompts](https://www.patterns.app/blog/2023/01/18/crunchbot-sql-analyst-gpt/)
 - 
-
-[Github Copilot](https://github.com/features/copilot)
 
 ## Prompt Engineering Guide
 - :star::star: [Learn Prompting](https://learnprompting.org/docs/intro)
