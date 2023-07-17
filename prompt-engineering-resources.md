@@ -165,7 +165,7 @@ Role play shapes AI’s behavior to cater to specific use cases, which can lead 
 - https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
 - https://www.allabtai.com/chatgpt-4-prompt-engineering-the-ultimate-problem-solver-prompt/
   
-### Style/Tone
+### Style / Tone
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
 
