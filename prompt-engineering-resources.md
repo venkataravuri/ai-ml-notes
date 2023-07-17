@@ -9,6 +9,8 @@
 - [Pre-read: Introduction to LLMs](#pre-read-introduction-to-llms)
 - [Prompt Engineering](#prompt-engineering)
    - [A Typical Prompt Structure](#a-typical-prompt-template)
+      - [Role Play](#role-play)
+      - [Tone / Style](#style-tone)
    - [Prompt Categories]()
       - [Image Generation](#image-generation)
       - [Text Generation / Summarization / Classification / Extract Info](#text-generation--summarization--classification--extracting-essential-information)
