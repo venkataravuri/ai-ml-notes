@@ -288,7 +288,7 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 
 ## Advanced Programmable Prompting
 
-Realworld applications usually achieve certain function through a series of tasks. The tasks are performed in certain order to achieve a goal, where preceding task outcome decides next task. 
+Applications in realworld scenarios realize use cases as a series of tasks. The tasks are performed in certain order to achieve a goal, wherein preceding task's outcome decides next task. 
 
 As LLMs has logical reasoning capabailities, we can use them to automate execution of tasks. We can use LLMs reasoning to chain these tasks to achieve the goal. LLMs can be used to analyse a task output and select next appropriate task. 
 
