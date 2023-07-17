@@ -1,6 +1,6 @@
 # :loudspeaker: Prompt Engineering - Knowledge Base :studio_microphone:
 
-**Stuff on :globe_with_meridians: Internet** says about **Prompt Engineering**, includes thought provoking :tv: `videos`, `articles` and `tutorials` that I come across on internet.
+**Stuff on :globe_with_meridians: Internet** says about **`Prompt Engineering`**, includes thought provoking :tv: `videos`, :page_with_curl: `articles` and :orange_book: `tutorials` that I come across on internet.
 
 > _"A.I. might not replace you, but a person who uses A.I. could."_
 
@@ -34,10 +34,10 @@
 
 Understanding functioning and constraints of Language Models (LLMs) enables you to effectively formulate prompts that yield the desired outcomes.
 
-- :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) - Deep insights into how ChatGPT has been built by [Andrej] (https://karpathy.ai/)? :star::star::star:
+- :tv: [State of GPT - Video](https://www.youtube.com/watch?v=bZQun8Y4L2A) - Deep insights into how ChatGPT has been built by [Andrej](https://karpathy.ai/)? :star::star::star:
 - :scroll: [State of GPT - Slides](https://karpathy.ai/stateofgpt.pdf)
 
-*Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants. 
+Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants. 
  - Base model does NOT answer questions
  - Just want to complete internet documents, they are "**_document completers_**".
  - Often _"responds to questions with more questions"._
