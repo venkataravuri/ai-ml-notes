@@ -205,7 +205,7 @@ Text-to-Image Diffusion Models
 [Best text summarization prompts](https://nerdschalk.com/chatgpt-prompts-to-summarize-text/)
 
 **Samples**: 
-- List **pros and cons** for the <product> from this <text> ...
+- List **pros and cons** for the {product} from this {text} ...
 - Summarize [text] into 2 paragraphs with **simple language to make it easier to understand**...
 - Summarize this **for me like I’m 8 years old** [text].
 
@@ -260,10 +260,31 @@ To measure exactly 6 liters using a 12-liter jug and a 6-liter jug, you can foll
     
 ### Question Answering
 
+- [Multiple Choice Questions](https://learnprompting.org/docs/applied_prompting/mc_tutorial)
 
 ### Chat / Conversation
 
-- ChatGPT / GPT-4
+Base models are NOT 'Assistants', they can be tricked to be assistants by, Few-shot Prompt + Make it look like a document + Query completion. For example,
+
+```markdown
+[Human]
+Hi, How are you?
+
+[Assistant]
+I'm great, thank you for asking. How can I help you?
+
+[Human]
+I would like to know what is 2+2 thanks
+
+[Assistant] 2+2 is 4
+
+[Human]
+What is the capital of Andhra Pradesh state in India?
+
+[Assistant]
+```
+
+- ChatGPT / GPT-4 are already assistants, you no need to do anything.
 
 ### Code Generation
 
