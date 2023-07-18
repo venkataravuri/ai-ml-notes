@@ -26,7 +26,7 @@
       - :evergreen_tree: [Tree of Thoughts](#zero-shot-cot-prompting)
   - :blue_book: [Prompt Engineering Guides](#prompt-engineering-guide)
   - [Prompt Engineering Marketplace](#prompt-engineering-marketplace)
-- :red_circle: [Advanced & Programable Prompts](#advanced-programmable-prompting)
+- :red_circle: [Advanced & Programable Prompts & Autonomous AI Agents](#advanced-programmable-prompting)
    - [ReAct - Reason and Action Prompt](#react-prompt---reason--act)
    - [Plan and Execute Prompt](#plan-and-execute-prompting)
    - [Retrieval and Augment Prompts](#retrieval-augmented-generation)
@@ -40,7 +40,7 @@ Understanding functioning and constraints of Language Models (LLMs) enables you 
 
 Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants. 
  - Base model does NOT answer questions
- - Just want to complete internet documents, they are "**_document completers_**".ƒ
+ - Just want to complete internet documents, they are "**_document completers_**".
  - Often _"responds to questions with more questions"._
 
 > Based models are "_tricked into performing tasks_" through "_prompt engineering_".
