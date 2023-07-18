@@ -329,11 +329,13 @@ Intereseting Code Generation Prompts
 [Few shot Prompting](https://www.promptingguide.ai/techniques/fewshot)
 
 ```markdown
-Bug: Application crashed during boot up.
-Severity: P0
-Bug: Application label and field is not matching.
-Severity: P4
-Bug: Appication is not starting and errored during start.
+Bug: My website crashes after some minutes when I am on it. I get error code 5 from browser. The website crashes on all browsers.
+Severity & Priority: Catastrophic & P0
+
+Bug: After upgrading to Xcode 11.2 from Xcode 11.1, app crashes due to _UITextLayoutView.
+Severity & Priority: Critical & P4
+
+Bug:  I have created a website with the latest version of Angular. I have it hosted through Firebase. The issue is that the website crashes on scroll.
 Severity: 
 ```
 
