@@ -43,7 +43,7 @@ Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants.
  - Just want to complete internet documents, they are "**_document completers_**".
  - Often _"responds to questions with more questions"._
 
-> Based models are "_tricked into performing tasks_" with "_prompt engineering_".
+> Based models are "_tricked into performing tasks_" through "_prompt engineering_".
 
 > Based models can also be "_tricked into assistants_" with "_few shot prompting_".
 
@@ -54,20 +54,20 @@ Foundational or Base Large Language Model (LLM) undergo following process to bec
 | Stage :one: | Stage :two: | Stage :three: | Stage :four: |
 | :---: | :---: | :---: | :--: |
 | **Un-supervised learning** | **Supervised Finetuning** | **Reward Modelling** | **Reinforcement Learning** |
-| Trained with internnet archive, Wikipedia, books, ... | Finetune with manually composed dataset "_prompt and ideal response_". | Compare multiple completions of a prompt from SFT model and rank them. Perform binary classification reward best completion. | Generate tokens which maximize reward. |
+| Trained with internnet archive, Wikipedia, books, ... | Finetune with manually composed dataset "_prompt and ideal response_". | Compare multiple completions of a prompt from SFT model and rank them. Perform binary classification, reward best completion. | Generate tokens which maximize reward. |
 | Outcome is "_Base Model_" | Outcome "_SFT model_" can act as AI assistants. | Outcome  "Reward Model", cannot be used as assisstant" | Outocome "Reinformcent Learning Model" |
 
 Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai/)
 
 #### LLM Configuration Settings
 
-**Temperature** - LLMs are non-deterministic by design, temparature setting can tweak this behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs.
+**Temperature** - LLMs are non-deterministic by design, temparature setting can tweak their behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs. [ChatGPT Playground](https://platform.openai.com/playground)
 
 **Top-K, Top-p Sampling** - LLM takes in an input sequence of tokens and then tries to predict the next token, by generating a discrete probability distribution over all possible tokens. 
-- Top-K sampling orders tokens in descending order of probability and select one of first K of those tokens.
-- Top-p sampling aka. nucleus sampling orders tokens in descending order of probability and select top tokens such tha their cumulative probability is at least p.
+- [Top-K sampling](https://peterchng.com/blog/2023/05/02/token-selection-strategies-top-k-top-p-and-temperature/)
+- [Top-p sampling](https://peterchng.com/blog/2023/05/02/token-selection-strategies-top-k-top-p-and-temperature/)
 
-Source: [Token selection strategies](https://peterchng.com/blog/2023/05/02/token-selection-strategies-top-k-top-p-and-temperature/)
+Top-K and Top-p operate directly on the output probabilities.
 
 #### LLM limitations / Constraints
 - Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
@@ -77,7 +77,7 @@ Source: [Token selection strategies](https://peterchng.com/blog/2023/05/02/token
 ---
 ## Prompt Engineering
 
-Prompts are bunch of tricks to perform a given taks and improves the models’ responses. A prompt can be a `instruction` or `question` along with `inputs` or `examples`. 
+Prompts trick LLM to perform a given task and they improve models’ responses. A prompt can be a `instruction` or `question` along with `inputs` or `examples`. 
 
 Prompting is nothing but instructing a model what you want to achieve such as "Write", "Classify", "Summarize", "Translate", "Order", “paraphrase”, “simplify” etc.
 
@@ -229,7 +229,7 @@ AI voice cloning & generation, `Give 2 hours of your audio voice, it mimics your
 Release notes preparation sample,
 
 ```markdown
-`Write a precise and concise summary of new release notes` for Kubernetes version 1.28, include new features and improvements in storyboard capturd at below URL.
+Write a precise and concise release notes summary for upcoming Kubernetes version 1.28 release, include new features and improvements in storyboard captured at below URL.
 https://github.com/orgs/kubernetes/projects/140/views/1`
 
 `Consider following while preparing release notes,`
@@ -242,7 +242,7 @@ https://github.com/orgs/kubernetes/projects/140/views/1`
 Customer email classification example,
 
 ```markdown
-From email message from customer about product issue, try to extract folloiwng data,
+From email message below from customer about an issue, try to extract folloiwng data,
 email message: {include email message here}
 - name: string or don't specify
 - product: string or don't specify
@@ -358,9 +358,9 @@ Applications in realworld scenarios realize use cases as a series of tasks. The 
 
 As LLMs has logical reasoning capabailities, we can use them to automate execution of tasks. We can use LLMs reasoning to chain these tasks to achieve the goal. LLMs can be used to analyse a task output and select next appropriate task. 
 
-**Trend**: :hourglass: LLM powered "Autonomous AI Agents" 🤖 are the trend of today, they automate complex application tasks. 
+**Trend**: :hourglass: LLM powered "**Autonomous AI Agents**" 🤖 are the trend of today, they automate complex application tasks. 
 
-For example, an Autonomous AI agent powered by LLMs can "Book a economy class flight ticket from Bangalore to Mumbai for next Sunday evening". Booking a airline ticket involves following set of tasks,
+For example, an Autonomous AI agents powered by LLMs can "Book a economy class flight ticket from Bangalore to Mumbai for next Sunday evening". Booking a airline ticket involves following set of tasks,
 
 LLM powered Agent: Understand customer request and come up with list of sub-tasks to acheive the goal.
 - Task 1: Search for flights on www.google.com, www.cheapflights.com, ariline websites, ...
