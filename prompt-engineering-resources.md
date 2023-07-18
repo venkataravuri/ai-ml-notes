@@ -291,9 +291,10 @@ What is the capital of Andhra Pradesh state in India?
 - [GPT-4 Code Interpretor](chat.openai.com/) - Now we can upload code rather cut & paste.
 - IDE Plugins - [Github Copilot](https://github.com/features/copilot)
 
+Data Analysis is made easy with GPT-4 Code Interpretor. Let's analyse and get insights from [Zomato Restaurants Dataset for Metropolitan Areas](https://www.kaggle.com/datasets/narsingraogoud/zomato-restaurants-dataset-for-metropolitan-areas?resource=download) from [Kaggle](https://www.kaggle.com/competitions).
+
 Intereseting Code Generation Prompts
 - [SQL Query Prompts](https://www.patterns.app/blog/2023/01/18/crunchbot-sql-analyst-gpt/)
-- 
 
 ## Prompt Engineering Guide
 - :star::star: [Learn Prompting](https://learnprompting.org/docs/intro)
