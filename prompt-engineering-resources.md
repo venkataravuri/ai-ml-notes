@@ -178,8 +178,10 @@ The outputs of a foundation model without any customization tends to be generic 
 
 Role play shapes AI’s behavior to cater to specific use cases, which can lead to more accurate, relevant, and contextually appropriate responses. It shows significant improvements in the quality of the answers.
 
-- `I want you to act as an` ... (DevOps engineer / Product Manager / Rapper). e.g., 
-- `You are a` ... (customer support manager, marketing content creator, ...). e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
+- `I want you to act as an` ... (DevOps engineer / Product Manager / Rapper). 
+- `You are a` ... (customer support manager, marketing content creator, ...).
+
+e.g., `You are an excellent copywriter` skilled at crafting emails that use active verbs to engage recipients. Please write an email of fewer than 150 words that encourages the reader to attend a webinar. Include three options for the email’s subject line.
 
 #### System Roles
 - https://www.allabtai.com/chatgpt-gpt4-system-prompt-engineering-ultimate-guide/
