@@ -13,7 +13,7 @@
       - [Style / Tone](#style--tone)
    - [Prompt Categories]()
       - [Image Generation](#image-generation)
-      - [Audio Generation, Translation, Dubbing]()
+      - [Audio Generation, Dubbing]()
       - [Text Generation / Summarization / Classification / Extract Info](#text-generation--summarization--classification--extracting-essential-information)
       - [Logical Reasoining](#logical-reasoning)
       - [Conversation / Chat](#conversation-chat)
@@ -196,6 +196,18 @@ Give the AI specific instructions on how to format the output, including the ton
 Text-to-Image Diffusion Models
 - [Dall-E](https://labs.openai.com/e/HmoeRVI28qQX9pfeJvJr2ePB)
 - [Leonardo.io](https://app.leonardo.ai/ai-generations)
+
+### Audio Transcription & Dubbing
+
+Text-to-Audio & Audio-to-Text Gen AI models which can transcription, translation, music generation and more.
+
+- [OpenAI Whishper](https://openai.com/research/whisper)
+
+AI voice cloning & generation, `Give 2 hours of your audio voice, it mimics your voice & tone`. 
+
+- [Eleven Labs](https://elevenlabs.io/) - Generate high-quality spoken audio in any voice, style, and language. :tv: Watch this fiery ficticious debate between Sam Altman (OpenAI CEO) & Elon Musk (SpaceX + Tesla CEO) about `[What came first, the chicken or the egg?](https://youtu.be/OtW6mtetjXg)`. This is built using GPT-4 & elevenlabs.io with 100 lines of Python code.
+
+> Dub any video into Spanish, Hindi, English, Portugese and more. [Google's Area 120 Initiative](https://blog.google/technology/area-120/aloud/), [Aloud](https://aloud.area120.google.com/)
 
 ### Text Generation / Summarization / Classification / Extracting Essential Information
 
