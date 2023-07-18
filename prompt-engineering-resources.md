@@ -40,7 +40,7 @@ Understanding functioning and constraints of Language Models (LLMs) enables you 
 
 Foundation Large Language Models (LLMs) aka. Base Models are NOT AI Assistants. 
  - Base model does NOT answer questions
- - Just want to complete internet documents, they are "**_document completers_**".
+ - Just want to complete internet documents, they are "**_document completers_**".ƒ
  - Often _"responds to questions with more questions"._
 
 > Based models are "_tricked into performing tasks_" through "_prompt engineering_".
@@ -189,7 +189,7 @@ Role play shapes AI’s behavior to cater to specific use cases, which can lead 
 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in.
 
-e.g., Be very helpful and motivating.
+e.g., Be very helpful and motivating. Be polite. Be sarcastic and funny in your approach.
 
 ---
 
