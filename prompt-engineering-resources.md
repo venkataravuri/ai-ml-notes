@@ -11,7 +11,7 @@
    - [A Typical Prompt Structure](#a-typical-prompt-template)
       - [Role Play](#role-play)
       - :lips: [Style / Tone](#style--tone)
-   - [Prompt Categories]()
+   - [Prompt Types & Categories](#prompt-types--categories)
       - :ok_woman: [Image Generation](#image-generation)
       - :microphone: [Audio Transcription & Dubbing](#audio-transcription--dubbing)
       - [Text Generation / Summarization / Classification / Extract Info](#text-generation--summarization--classification--extracting-essential-information)
@@ -187,6 +187,10 @@ Role play shapes AI’s behavior to cater to specific use cases, which can lead 
 Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in.
 
 e.g., Be very helpful and motivating.
+
+---
+
+## Prompt Types & Categories
 
 ### Image Generation
 
