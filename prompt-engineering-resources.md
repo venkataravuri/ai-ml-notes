@@ -13,7 +13,7 @@
       - [Style / Tone](#style--tone)
    - [Prompt Categories]()
       - [Image Generation](#image-generation)
-      - [Audio Generation, Dubbing]()
+      - [Audio Transcription & Dubbing](#audio-transcription--dubbing)
       - [Text Generation / Summarization / Classification / Extract Info](#text-generation--summarization--classification--extracting-essential-information)
       - [Logical Reasoining](#logical-reasoning)
       - [Conversation / Chat](#conversation-chat)
