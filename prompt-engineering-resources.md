@@ -71,7 +71,10 @@ Top-K and Top-p operate directly on the output probabilities.
 
 #### LLM limitations / Constraints
 - Context window (also called "token limit") limitation. GPT-4 has a token limit of 8,192, with another variant increased to 32,768.
-   - What is Tokenization? Which tokenization method ChatGPT uses? What is difference between Tokens & Word Embeddings? 
+   - [What is Tokenization?](https://ankur3107.github.io/blogs/intro-to-tokenization-using-openai-chatgpt/)
+   - [Which tokenization method ChatGPT uses?](https://huggingface.co/learn/nlp-course/chapter6/5?fw=pt)
+   - [What is difference between Tokens & Word Embeddings?](https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037)
+     
 - ChatGPT has a knowledge cutoff date of 2021, it does not know latest events. It may not have access to latest events, access to updated libraries, frameworks. GPT-4 has web/search plug-in which enables to access external data. 
 
 ---
