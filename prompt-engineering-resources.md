@@ -324,6 +324,8 @@ Intereseting Code Generation Prompts
 ## Prompt Engineering Marketplace
 - https://hero.page/samir
 
+---
+
 ## Prompt Techniques
 
 ### Zero-Shot Prompting
@@ -355,6 +357,8 @@ https://paperswithcode.com/paper/chain-of-thought-prompting-elicits-reasoning
 #### Zero-shot CoT prompting
 
 [Learning Prompting - Zero Shot CoT](https://learnprompting.org/docs/intermediate/zero_shot_cot)
+
+----
 
 ## Advanced Programmable Prompting
 
