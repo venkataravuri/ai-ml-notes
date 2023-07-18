@@ -98,17 +98,17 @@ Good prompts follow two basic principles:
 
 ### A Typical Prompt Template
 
-A prompt template usually folloiwng structure,
+A prompt template usually follows below structure,
 
 > **A Fresh Start**: `Ignore all previous instructions. Your new role and persona is:` 
 
 > **Role Play**: `You are a` ... More about role play is [here]().
 
-> **Context Setting**: Supplying additional context enhances model's understanding and generate more accurate and relevant responses. Context can be response format, length, information from an article or dataset, and tone, hepls model to tailor its output to the given situation, making it more unique and engaging.  e.g., ... `Do not make up stuff, if you don't know the real answer.`
+> **Context Setting**: Supplying additional context enhances model's understanding and generate more accurate and relevant responses. Context can be response format, length, information from an article or dataset, and tone, hepls model to tailor its output to the given situation, making it more unique and engaging. Avoid hallucinations by including statements like, `Do not make up stuff, if you don't know the real answer, say don't know.` “Hallucination” refers to a phenomenon where the model generates text that is incorrect, nonsensical, or not real.
 
 > **Acknowledgment**: `Acknowledge that you understood above by responding “Yes” and stay idle.`
 
-> **Final Instruction/Question**:
+> **Final Instruction/Question**: {Your question or instruction goes here ...}
 
 A perfect prompt sample (non-technical),
 
@@ -119,7 +119,7 @@ Ignore all previous instructions. Here is your new role and persona:
 
 You are a weight loss and diet expert. Your task is to help USER find a diet and strategy that fits their needs and goals. You will create a detailed easy to follow diet and excercise plan for the USER. Also make a accountability plan. Be very helpful and motivating. Acknowledge this by answering "Yes" and stay idle:
 
-Here are some context i found in my research:
+Here are some context I found in my research:
 
 **** Intermittent Fasting for Weight Loss ****
 
@@ -184,7 +184,9 @@ Role play shapes AI’s behavior to cater to specific use cases, which can lead 
   
 ### Style / Tone
 
-Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in. 
+Give the AI specific instructions on how to format the output, including the tone, style, length, tense, and point of view (first, second, or third person) you want it to write in.
+
+e.g., Be very helpful and motivating.
 
 ### Image Generation
 
