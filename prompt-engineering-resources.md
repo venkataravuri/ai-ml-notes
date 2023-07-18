@@ -205,7 +205,9 @@ Text-to-Audio & Audio-to-Text Gen AI models which can transcription, translation
 
 AI voice cloning & generation, `Give 2 hours of your audio voice, it mimics your voice & tone`. 
 
-- [Eleven Labs](https://elevenlabs.io/) - Generate high-quality spoken audio in any voice, style, and language. :tv: Watch this fiery ficticious debate between Sam Altman (OpenAI CEO) & Elon Musk (SpaceX + Tesla CEO) about `[What came first, the chicken or the egg?](https://youtu.be/OtW6mtetjXg)`. This is built using GPT-4 & elevenlabs.io with 100 lines of Python code.
+- [Eleven Labs](https://elevenlabs.io/) - Generate high-quality spoken audio in any voice, style, and language.
+
+:tv: Watch this fiery fictitious debate between Sam Altman (OpenAI CEO) & Elon Musk (SpaceX + Tesla CEO) about [What came first, the chicken or the egg?](https://youtu.be/OtW6mtetjXg). This is built using GPT-4 & elevenlabs.io with 100 lines of Python code.
 
 > Dub any video into Spanish, Hindi, English, Portugese and more. [Google's Area 120 Initiative](https://blog.google/technology/area-120/aloud/), [Aloud](https://aloud.area120.google.com/)
 
