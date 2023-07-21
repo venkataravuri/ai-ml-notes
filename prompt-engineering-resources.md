@@ -97,7 +97,7 @@ Good prompts follow two basic principles:
 
 > :x: Example of an unspecific prompt: `Generate a list of titles for my Youtube video.`
 
-> :white_check_mark: Example of a specific prompt: `Generate a list of ten titles for my Youttube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
+> :white_check_mark: Example of a specific prompt: `Generate a list of ten titles for my Youtube video. The video is about my journey as an adventurer who has lived an unconventional life, meeting many different personalities and finally finding peace in gardening.`
 
 ### A Typical Prompt Template
 
