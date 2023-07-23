@@ -154,3 +154,16 @@ Part of Speech (PoS) Filter: Read through text and give each word a PoS based on
 |Rating|Type|Topic
 ------------: | ------------- | -------------
 |:star:|:newspaper:|[?](https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/)
+
+## How NLP engines works in past?
+https://rasa.com/blog/intents-entities-understanding-the-rasa-nlu-pipeline/
+
+
+#### What is Normalization? How it is done in Neural Networks?
+
+https://towardsdatascience.com/intuitions-on-l1-and-l2-regularisation-235f2db4c261
+
+#### What is difference between Cosine Similarity & Ecludian Distance?
+
+https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
+https://cmry.github.io/notes/euclidean-v-cosine
