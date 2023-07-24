@@ -1,22 +1,13 @@
 #  🧠 🤖 Artificial Intelligence & Machine Learning [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
-> A curated list of awesome AI & ML tutorials, articles, videos and frameworks.
+> A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: articles, :tv: videos and frameworks.
 
-## Generative AI
+## [Generative AI Learning Guide](docs/generative-ai.md)
 
-Take me to [Generative AI Learning Guide](LLM-Learning-Guide.md)
+### [Prompt Engineering - Knowledge Base](docs/prompt-engineering-resources.md)
 
-## Prompt Engineering
+## [Machine Learning](docs/machine-learning.md)
 
-Take me to [Prompt Engineering - Knowledge Base](prompt-engineering-resources.md)
+### [Neural Networks & Deeplearning Guide](docs/neural-networks-deeplearning.md)
 
-## Neural Networks / Deeplearning
-
-Take me to [Neural Networks Learning Guide](nn-dl.md)
-
-## Machine Learning
-
-Take me to [Machine Learning](ml.md)
-
-## Deeplearning using Pytorch
-[Pytorch Learning Guide]()
+### [Deeplearning using Pytorch](deeplearning-using-pytorch)
