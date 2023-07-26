@@ -4,6 +4,22 @@
 
 🚧 <strike>Doc is under construction</strike> 🚧
 
+**Table of Contents**
+- [Introduction](#introduction)
+- [What are Autonomous LLM Agents?](#what-are-autonomous-llm-agents)
+- [How do you Autonomous LLM Agents work?](#how-do-autonomous-llm-agents-work)
+- [How to build Autonomous LLM Agents?](#how-do-autonomous-llm-agents-work)
+    - Task Planning
+    - Tools
+    - Memory
+- [Frameworks & Libraries](#frameworks--libraries)
+    - [Vector Databases](#vector-datatabases)
+- [Demo 1: Autonomous Travel Agent](#example-autonomous-travel-agent)
+- [Demo 2: Tanzu Kubernetes Autonomous AI Agent](#example-tanzu-kubernetes-autonomous-ai-agent)
+- [Self-Learning Tutorials](#self-learning-tutorials)
+
+## Introduction
+
 Large Language Models have potential use beyond text generation, summarization, and code generation, as they can act as **reasoning engines**. They can be,
 - turned into a powerful general problem solver.
 - extend to automate complex workflows with several intervined tasks.
@@ -122,11 +138,11 @@ It uses ReAct prompting techinque. It allow the model to “reason” (with a ch
 
 #### Demonstration
 
-https://github.com/venkataravuri/ai-ml/tree/master/llm-powered-autonomous-agents
+[Source Code](https://github.com/venkataravuri/ai-ml/tree/master/llm-powered-autonomous-agents)
 
 #### Code Walkthrough
 
-https://github.com/venkataravuri/ai-ml/blob/master/llm-powered-autonomous-agents/pages/1_%E2%9B%93%EF%B8%8F_React.py
+[ReAct Pattern implementation using LangChain](https://github.com/venkataravuri/ai-ml/blob/master/llm-powered-autonomous-agents/pages/1_%E2%9B%93%EF%B8%8F_React.py)
 
 ## Example: Tanzu Kubernetes Autonomous AI Agent
 
@@ -134,7 +150,9 @@ A sample autonoums agent that peforms Tanzu Kubernetes automation activities.
 
 ### Demo & Code Walkthrough
 
-https://github.com/venkataravuri/ai-ml/blob/master/llm-powered-autonomous-agents/pages/2_%E2%9C%8D%EF%B8%8F_Plan_and_Execute.py
+[Google Colab Notebook](https://colab.research.google.com/drive/11VbZ0T7HI-5I_tU2Nl1XH78LkJUN8mFg)
 
-### Credits & References
-- https://www.eweek.com/artificial-intelligence/autonomous-ai-agents/
+## Self-Learning Tutorials
+
+- [LangChain tutorial #1: Build an LLM-powered app in 18 lines of code](https://blog.streamlit.io/langchain-tutorial-1-build-an-llm-powered-app-in-18-lines-of-code/)
+- [LangChain tutorial #4: Build an Ask the Doc app](https://blog.streamlit.io/langchain-tutorial-4-build-an-ask-the-doc-app/)
