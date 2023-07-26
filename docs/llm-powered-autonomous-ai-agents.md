@@ -11,6 +11,12 @@ Large Language Models have potential to use beyond text generation, summarizatio
 
 Autonomous LLM "agents" or "copilots" are new generation of AI assistants which can perform complex tasks when commanded to by a human, without needing close supervision. They can make logical decisions, and handle a number of tasks without consistent human intervention.
 
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81555af-0b76-4a61-9b53-595e3d47580a_1005x317.png" width="65%" height="65%" alt="AI Engineer"/>
+
+Source: [Latent Space](https://www.latent.space/p/ai-engineer)
+
+A new role "AI Engineer" is emerging who integrate large language models into software products to enhance use experience and make them more autonomous.
+
 ## What are Autonomous LLM Agents?
 
 “Autonomous” LLM agents are goal-driven self-executing software that can generate, execute and priortize tasks to achieve a certain goal. They translate natural language prompts into actions and execute them.
@@ -101,6 +107,8 @@ Most popular vector databases are,
 ## Example: Autonomous Travel Agent
 
 An autonomous travel agent powered by LLMs such as ChatGPT to automate airline ticket booking process.
+
+It uses ReAct prompting techinque. It allow the model to “reason” (with a chain-of-thoughts) and “act” (by being able to use a tool from a predefined set of tools, such as being able to search the internet).
 
 #### Demonstration
 

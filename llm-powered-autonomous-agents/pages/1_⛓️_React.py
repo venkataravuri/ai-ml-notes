@@ -18,19 +18,19 @@ st.markdown("#### Try these sample prompts!")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.button(label="Book a flight ticket", use_container_width=True,
+    st.button(label="Book a flight ticket sample", use_container_width=True,
             key='col1',
             on_click=selected_sample_prompt, args=('Book an economy class flight ticket from Bangalore to Mumbai for next Sunday evening.',))
 
 with col2:
     st.button(label="Elon Musk's net worth", use_container_width=True,
             key='col2',
-            on_click=selected_sample_prompt, args=('?',))
+            on_click=selected_sample_prompt, args=('Who is the richest person in the world now? What is net worth of the richest person?',))
 
 with col3:
-    st.button(label="?", use_container_width=True,
+    st.button(label="AWS resources rampup sample.", use_container_width=True,
             key='col3',
-            on_click=selected_sample_prompt, args=("?",))
+            on_click=selected_sample_prompt, args=("I have a website hosed on AWS in US East Ohio region which uses 10 EC2 instances of type 'm5.2xlarge'. The website supports 100 requests per second. I have plans to run a marketing campaign next Monday, which will drive additional traffic to my website which will be 200 requests per second. To support additional web traffic, I need to add additional EC2 instances. I'm planning to use EC2 On-Demand instances. Can you suggest me how many EC2 On-Demand instances needed? What would be my additional cost?",))
 
 
 with st.form('AgentForm'):
