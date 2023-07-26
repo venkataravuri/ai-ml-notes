@@ -1,39 +1,37 @@
 # LLM-powered Autonomous AI Agents
 
-> In the future, Large Language Models will be an integral part of virtually every software product, enhancing user experiences and turn them into more autonomous.
+> In near future, Large Language Models (LLMs) will be virtually part of every software product to make them more autonomous and enhance user experience (UX).
 
-🚧 Doc is under construction 🚧
+🚧 <strike>Doc is under construction</strike> 🚧
 
-Large Language Models have potential to use beyond text generation, summarization, and code generation. LLMs can act as reasoning engines. They can be,
-- Turned into a powerful general problem solver.
-- Extend to automate complex workflows.
-- Could power autonomous systems.
+Large Language Models have potential use beyond text generation, summarization, and code generation, as they can act as **reasoning engines**. They can be,
+- turned into a powerful general problem solver.
+- extend to automate complex workflows with several intervined tasks.
+- could power autonomous systems.
 
-Autonomous LLM "agents" or "copilots" are new generation of AI assistants which can perform complex tasks when commanded to by a human, without needing close supervision. They can make logical decisions, and handle a number of tasks without consistent human intervention.
+LLMs powering idea of Autonomous AI Agents. These Autonomous LLM "agents" or "copilots" are new generation of AI assistants which can perform complex tasks when commanded to by a human, without needing close supervision. They can make logical decisions, and handle a number of tasks without consistent human intervention.
+
+A new role "AI Engineer" is emerging, with accountability to productize large language models. They integrate developed models into software products.
 
 <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81555af-0b76-4a61-9b53-595e3d47580a_1005x317.png" width="65%" height="65%" alt="AI Engineer"/>
 
 Source: [Latent Space](https://www.latent.space/p/ai-engineer)
 
-A new role "AI Engineer" is emerging who integrate large language models into software products to enhance use experience and make them more autonomous.
-
 ## What are Autonomous LLM Agents?
 
-“Autonomous” LLM agents are goal-driven self-executing software that can generate, execute and priortize tasks to achieve a certain goal. They translate natural language prompts into actions and execute them.
+“Autonomous” LLM agents are goal-driven, self-executing software that can plan, execute and priortize tasks to achieve a certain goal. They translate natural language prompts into actions and execute them.
 
-Notable examples of browser based autonomous LLM agents are,
-- AgentGPT
-- BabyAGI
-- Godmode.space
-- AutoGPT (non browser based)
+Here are few browser-based autonomous LLM agents,
+- [AgentGPT](https://agentgpt.reworkd.ai/) - Assemble, configure, and deploy autonomous AI Agents in your browser.
+- [BabyAGI](https://babyagi.org/) - AI-powered task management system that uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks.
+- [Godmode.space](https://godmode.space/) - Explore the Power of Generative Agents on Godmode.space. Inspired by Auto-GPT and BabyAGI. Supports GPT-3.5 & GPT-4.
+- [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT)(non-browser based) - A program, driven by GPT-4, chains together LLM "thoughts", to autonomously achieve whatever goal you set. As one of the first examples of GPT-4 running fully autonomously, Auto-GPT pushes the boundaries of what is possible with AI.
 
-Autonomous agents achieve specified goals by breaking them into tasks, execute them independently without human intervention.
-
-Agents use a LLM to determine which actions to take and in what order. The agent creates a chain-of-thought sequence on the fly by decomposing the user request.
+Autonomous agents achieve specified goals by breaking it into tasks, execute them independently without human intervention. Agents use a LLM to determine which actions to take and in what order. The agent creates a **Chain-of-Thought** sequence on the fly by decomposing the user request.
 
 ## How do Autonomous LLM Agents Work?
 
-Agents make use of LLMs & tools to perform actions in autonomous fashion. LLMs act as agent’s brain, where in tools enable an agent to take certain actions. Agents follow a chain-of-thought reasoning approach to decompose a problem into sequence of steps. 
+Agents make use of LLMs & tools to perform actions in autonomous fashion. LLMs act as agent’s brain, wherein tools enable an agent to take certain actions. Agents follow a Chain-of-Thought reasoning approach to decompose a problem into sequence of steps. 
 
 <img src="assets/ai-agents-overiew.png" width="60%" height="60%" alt="AI Agents Overview"/>
 
@@ -49,23 +47,23 @@ Agents are autonomous with regards to,
 
 ## How to build Autonomous LLM Agents?
 
-Critical functional components autonomous agent application are,
+Critical components of autonomous agent are,
 
 #### Task Planning
 
 Agent decomposes complex tasks or goals into smaller steps. Task decomposing is done through LLM prompting. Different prompting techniques can be employeed such as,
 1. ReAct - Reason and Act. See LangChain prompt template [here](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/langchain/agents/react/wiki_prompt.py).
 2. Modular Reasoning, Knowledge and Language (MRKL) prompt. See LangChain prompt template [here](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/langchain/agents/mrkl/prompt.py)
-3. ?
+3. [Plan and execute](https://python.langchain.com/docs/modules/agents/agent_types/plan_and_execute)
 
 #### Tools
 
 Tools are interfaces that an agent can use to interact with the world. These tools can be generic utilities (e.g. search), other chains, or even other agents.
 
 Tools can be,
-- Shell Tool
-- Search Tools
-- Requests
+- [Shell Tool](https://python.langchain.com/docs/integrations/tools/bash)
+- [Search Tools](https://python.langchain.com/docs/integrations/tools/ddg)
+- [Requests](https://python.langchain.com/docs/integrations/tools/requests)
 - Others ...
 
 #### Memory
@@ -86,15 +84,27 @@ LangChain framework components,
 
 ### Vector Datatabases
 
-Vector databasse have advanced indexing and search algorithms that make them particularly efficient for similiarity searches. Vector databases can measure the distance between two vectors, which defines their relationship. Small distances suggest high relatedness, while larger distances suggest low relatedness.
+#### Why Vector Databases needed in context of LLMs.
+
+By default, the LLMs bases its responses on textual content it has ingested during training. The training data may not include company's private data resulting inaccurate answer. To make LLM base its answer on private unseen data, we can agument user query with more context. For example, a legal document, a technical manual, or search results. We can then instruct the model to generate its answer based on that data. 
+
+To faster agument data relevant to user query, you can use 'Search Engines'. But they are only capable of keyword search
+
+Vector databases provide efficient and quicker way to augument models with relevant context informaton. They have advanced indexing and search algorithms top perform efficient similiarity searches. 
 
 #### What is a vector?
 A vector is an array of numbers like [0, 1, 2, 3, 4, … ]. Vector can represent more complex objects such as words, sentences, images, and audio files in an embedding.
 
-#### What is embedding? 
+#### What is Word Embedding? 
 In the context of large language models, embeddings represent text as a dense vector of numbers to capture the meaning of words. They map the semantic meaning of words together or similar features into vectors. These embeddings can then be used for search engines, recommendation systems, and generative AIs such as ChatGPT. 
 
-Vector databases enhance the memory of LLMs thorugh context injection. Prompt augmentation feeds LLMs with contextual data.
+More concepts,
+- [What is Tokenization?](https://ankur3107.github.io/blogs/intro-to-tokenization-using-openai-chatgpt/)
+- [Which tokenization method ChatGPT uses?](https://huggingface.co/learn/nlp-course/chapter6/5?fw=pt)
+- [What is difference between Tokens & Word Embeddings?](https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037)
+
+- Vector databases can measure the distance between two vectors, which defines their relationship. Small distances suggest high relatedness, while larger distances suggest low relatedness.
+- Vector databases enhance the memory of LLMs thorugh context injection. Prompt augmentation feeds LLMs with contextual data.
 
 <img src="assets/vector-db-llms.png" width="50%" height="50%" alt="Vector DBs"/>
 
