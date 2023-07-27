@@ -1,4 +1,4 @@
-# LLM-powered Autonomous AI Agents
+# LLM-powered Apps aka. Autonomous AI Agents
 
 > In near future, Large Language Models (LLMs) will be virtually part of every software product to make them more autonomous and enhance user experience (UX).
 
@@ -20,22 +20,22 @@
 
 ## Introduction
 
-Large Language Models have potential use beyond text generation, summarization, and code generation, as they can act as **reasoning engines**. They can be,
-- turned into a powerful general problem solver.
-- extend to automate complex workflows with several intervined tasks.
-- could power autonomous systems.
+Large Language Models have potential use beyond text generation, summarization, and code generation. LLMs can be used as **reasoning engines**. They can be,
+- Turned into a powerful general problem solver.
+- Leveraged to automate complex workflows with several intervined tasks.
+- Could power autonomous systems.
 
-LLMs powering idea of Autonomous AI Agents. These Autonomous LLM "agents" or "copilots" are new generation of AI assistants which can perform complex tasks when commanded to by a human, without needing close supervision. They can make logical decisions, and handle a number of tasks without consistent human intervention.
+LLMs powering idea of Autonomous AI Agents. These Autonomous LLM "agents" or "copilots" are new generation of AI assistants which can perform complex tasks when commanded by a human, without needing close supervision. They can make logical decisions, and handle a number of tasks without consistent human intervention.
 
-A new role "AI Engineer" is emerging, with accountability to productize large language models. They integrate developed models into software products.
+After LLMs are out in market, a new role "AI Engineer" is emerging, with accountability to productize large language models. AI Engineer role is to integrate developed models into software products.
 
-<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81555af-0b76-4a61-9b53-595e3d47580a_1005x317.png" width="65%" height="65%" alt="AI Engineer"/>
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa81555af-0b76-4a61-9b53-595e3d47580a_1005x317.png" width="75%" height="75%" alt="AI Engineer"/>
 
 Source: [Latent Space](https://www.latent.space/p/ai-engineer)
 
 ## What are Autonomous LLM Agents?
 
-“Autonomous” LLM agents are goal-driven, self-executing software that can plan, execute and priortize tasks to achieve a certain goal. They translate natural language prompts into actions and execute them.
+“Autonomous” LLM agents are goal-driven, self-executing software to plan, execute and priortize tasks to achieve a certain goal. They translate natural language prompts into actions and execute them.
 
 Here are few browser-based autonomous LLM agents,
 - [AgentGPT](https://agentgpt.reworkd.ai/) - Assemble, configure, and deploy autonomous AI Agents in your browser.
@@ -45,9 +45,9 @@ Here are few browser-based autonomous LLM agents,
 
 Autonomous agents achieve specified goals by breaking it into tasks, execute them independently without human intervention. Agents use a LLM to determine which actions to take and in what order. The agent creates a **Chain-of-Thought** sequence on the fly by decomposing the user request.
 
-## How do Autonomous LLM Agents Work?
+## How do Autonomous LLM Agents (Or) Apps Work?
 
-Agents make use of LLMs & tools to perform actions in autonomous fashion. LLMs act as agent’s brain, wherein tools enable an agent to take certain actions. Agents follow a Chain-of-Thought reasoning approach to decompose a problem into sequence of steps. 
+Agents make use of LLMs, tools & memory to perform actions in autonomous fashion. LLMs act as agent’s brain, wherein tools enable an agent to take certain actions. Agents follow a Chain-of-Thought reasoning approach to decompose a problem into sequence of steps. 
 
 <img src="assets/ai-agents-overiew.png" width="60%" height="60%" alt="AI Agents Overview"/>
 
@@ -61,7 +61,7 @@ Agents are autonomous with regards to,
 
 <img src="assets/agent-architecture.png" width="60%" height="60%" alt="AI Agents Components" />
 
-## How to build Autonomous LLM Agents?
+## How to build Autonomous LLM Agents (Or) Apps?
 
 Critical components of autonomous agent are,
 
@@ -106,7 +106,7 @@ LangChain framework components,
 
 By default, the LLMs bases its responses on textual content it has ingested during training. The training data may not include company's private data resulting inaccurate answer. To make LLM base its answer on private unseen data, we can agument user query with more context. For example, a legal document, a technical manual, or search results. We can then instruct the model to generate its answer based on that data. 
 
-To faster agument data relevant to user query, you can use 'Search Engines'. But they are only capable of keyword search
+To faster agument data relevant to user query, you can use 'Search Engines'. But they are only capable of keyword search.
 
 Vector databases provide efficient and quicker way to augument models with relevant context informaton. They have advanced indexing and search algorithms top perform efficient similiarity searches. 
 
