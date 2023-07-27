@@ -2,6 +2,8 @@
 
 > In near future, Large Language Models (LLMs) will be virtually part of every software product to make them more autonomous and enhance user experience (UX).
 
+> "_A.I. might not replace you, but a person who uses A.I. could._"
+
 🚧 <strike>Doc is under construction</strike> 🚧
 
 **Table of Contents**

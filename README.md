@@ -3,6 +3,8 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) 
 > A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: articles, :tv: videos and frameworks.
 
+> "_A.I. might not replace you, but a person who uses A.I. could._"
+
 #### Table of Contents
 
 - [Generative AI - Learning Guide](docs/generative-ai.md)
