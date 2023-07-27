@@ -94,6 +94,8 @@ Popular frameworks to build LLM powered applications,
 | --- | --- | --- |
 |[LangChain](https://www.langchain.com/) is an open-source Python library that enables anyone who can write code to build LLM-powered applications. <br/>The package provides a generic interface to many foundation models, enables prompt management, and acts as a central interface to other components like prompt templates, other LLMs, external data, and other tools via agents.| [LlamaIndex](https://www.llamaindex.ai/) is an open-source project that provides a simple interface between LLMs and external data sources like APIs, PDFs, SQL etc.<br/>It provides indices over structured and unstructured data, helping to abstract away the differences across data sources. It can store context required for prompt engineering, deal with limitations when the context window is too big, and help make a trade-off between cost and performance during queries. | [Chainlit](https://docs.chainlit.io/overview) library is similar to Python’s Streamlit Library.<br/>This library is seamlessly integrated with LangFlow and LangChain(the library to build applications with Large Language Models), which we will do later in this guide.<br/>Chainlit even allows for visualizing multi-step reasoning.
 
+[Langflow](https://langflow.org/) - A low-code solution to build LLM powered Apps.
+
 LangChain framework components,
 
 <img src="assets/langchain-components.png" width="60%" height="60%" alt="LangChain Components"/>

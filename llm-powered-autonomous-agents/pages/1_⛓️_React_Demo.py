@@ -4,12 +4,17 @@ from globals import llm_azure_openai_chatgpt
 from tools import tools
 from sidebar import sidebar
 from langchain.callbacks.streamlit import StreamlitCallbackHandler
+import langchain
+
+langchain.debug = True
+langchain.verbose = True
 
 st.header('⛓️ ReAct Prompt - Reason & Act')
 sidebar()
 
 agent = initialize_agent(tools=tools, llm=llm_azure_openai_chatgpt, 
-                         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
+                         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True,
+                         handle_parsing_errors=True)
 
 def selected_sample_prompt(args):
     st.session_state.prompt = args
@@ -37,7 +42,7 @@ with st.form('AgentForm'):
     if 'prompt' not in st.session_state:
         st.session_state['prompt'] = ''
 
-    text = st.text_area(label='Prompt', value=st.session_state['prompt'],
+    text = st.text_area(label='Prompt', 
                         height=3, key='prompt')
     submitted = st.form_submit_button(label="Submit", type="primary")
 
@@ -48,7 +53,7 @@ with st.form('AgentForm'):
     streamlit_callback = StreamlitCallbackHandler(parent_container=res,
         max_thought_containers=4,
         expand_new_thoughts=True,
-        collapse_completed_thoughts=True)
+        collapse_completed_thoughts=False)
         
     if submitted:
         question_container.write(f"**Question:** {text}")

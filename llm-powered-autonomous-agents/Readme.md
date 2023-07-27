@@ -26,6 +26,8 @@ Install dependencies,
 pip install -r requirements.txt
 ```
 
+pip install streamlit langchain
+
 # Run Applicaiton
 
 Run application,
