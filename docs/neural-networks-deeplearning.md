@@ -1,4 +1,30 @@
-# Neural Networks / Deeplearning
+# Neural Networks & Deep Learning
+
+### Artificial Neuron / Perceptron
+
+<img src="https://miro.medium.com/v2/resize:fit:640/1*sPg-0hha7o3iNPjY4n-vow.jpeg" width="50%" height="50%" />
+
+#### Backpropagation
+
+#### Forward Pass
+
+Forward pass computes network output and “error”
+
+Input data -> Neural Network -> Prediction
+
+Backpropagation (Backward pass)
+
+- Backward pass to compute gradients
+- A fraction of the weight’s gradient is subtracted from the weight. (based on learning rate)
+
+Neural Network <- Measure of Error
+
+Adujst to reduce error
+
+Learning is an Optimization Problem
+
+-Update the weights and biases to decrease loss function
+
 
 A Neural Network introductory videos with nice intutions. A 4-part series that explaines neural networks very intutively.
 
@@ -10,7 +36,29 @@ A Neural Network introductory videos with nice intutions. A 4-part series that e
 
 ## Neural Networks
 
-### Deep Learning
+## Deep Learning
+
+Deep learning is a type of neural networks with multiple layers which can handle higher-level computation tasks, such as natural language processing, fraud detection, autonomous vehicle driving, and image recognition.
+
+Deep learning models and their neural networks include the following:
+- Convolution neural network (CNN).
+- Recurrent neural network (RNN).
+- Generative adversarial network (GAN).
+- Autoencoder.
+- Generative pre-trained transformer (GPT).
+
+
+#### Generative Adversarial Network (GAN)
+
+GANs are a way to make generative model by having two neural network models compete each other.
+
+- [Face Generation Using Generative Adversarial Networks (GAN)](https://medium.com/nerd-for-tech/face-generation-using-generative-adversarial-networks-gan-6d279c2d5759)
+
+- [Deep Convolutional Generative Adversarial Networks(DCGANs)](https://medium.datadriveninvestor.com/deep-convolutional-generative-adversarial-networks-dcgans-3176238b5a3d)
+
+#### Diffusions
+
+
 
 |Rating|Type|Topic
 ------------: | ------------- | -------------
@@ -72,9 +120,56 @@ The *loss* is way of measuring difference between target label(s) and prediction
 
 The optimization strategies aim at minimizing the cost function.
 
-#### Loss Function Vs. Cost Function
+#### Loss Function
+
+Loss function quantifies gap between prediction and ground truth.
+
+For regression:
+- Mean Squared Error (MSE)
+
+For classification:
+- Cross Entropy Loss
+
+##### Loss Function Vs. Cost Function
+
 Cost function and loss function are synonymous and used interchangeably, they are different.
 
 A loss function is for a single training example. It is also sometimes called an error function. A cost function, on the other hand, is the average loss over the entire training dataset.
 
 the log magnifies the mistake in the classification, so the misclassification will be penalized much more heavily compared to any linear loss functions. The closer the predicted value is to the opposite of the true value, the higher the loss will be, which will eventually become infinity. That’s exactly what we want a loss function to be.
+
+
+
+Overfitting & Regularization
+
+
+
+Help the network generalize to data it hasn’t seen.
+
+
+Overfitting: The error decreases in the training set but increases in the test set
+Overfitting example (a sine curve vs 9-degree polynomial)
+
+Regularization
+
+Early Stoppage - Stop training (or at least save a checkpoint) when performance on the validation set decreases
+
+Dropout - Randomly remove some nodes in the network (along with incoming and outgoing edges)
+- Usually p >= 0.5 (pis probability of keeping node)
+- Input layers pshould be much higher (and use noise instead of dropout)
+- Most deep learning frameworks come with a dropout layer
+
+
+Regularization: Weight Penalty (aka Weight Decay)
+
+
+Batch Normalization (BatchNorm, BN)
+- Normalize hidden layer inputsto mini-batch mean & variance
+- Reduces impact of earlier layers on later layers
+
+
+
+# References
+
+https://www.dropbox.com/s/c0g3sc1shi63x3q/deep_learning_basics.pdf?dl=0
+

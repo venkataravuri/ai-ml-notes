@@ -17,7 +17,12 @@
 In a classification problem, the model’s output is usually a vector of probability for each category. Often, this vector is usually expected to be “logits,” i.e., real numbers to be transformed to probability using the softmax function, or the output of a softmax activation function.
 
 ##### What is distiction between Gradient and Derivative?
-Simply put, a gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location. Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
+Simply put, a gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location.
+
+The derivative of a function is the change of the function for a given input.
+The gradient is simply a derivative vector for a multivariate function.
+
+Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
 
 What is the Difference Between Gradient and Partial Derivative?
 A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
@@ -43,6 +48,8 @@ A gradient represents the vector pointing in the direction of the steepest ascen
 Activation functions transforms the weighted sum of a neuron so that the output is non-linear.
 Activation function decides whether a neuron should be activated or not.
 
+<img src="https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/627d12431fbd5e61913b7423_60be4975a399c635d06ea853_hero_image_activation_func_dark.png" height="35%" width="35%">
+
 #### [Cheatsheet](https://miro.medium.com/v2/resize:fit:720/format:webp/1*o7sNtf4Cmou-3eSW35Sx4g.png)
 
 ### Sigmoid or Logistic Activtion Function
@@ -54,6 +61,8 @@ The output of sigmoid activation function lies between 0 and 1, making it perfec
 The function is differentiable but saturates quickly because of the boundedness leading to a vanishing gradient when used in a deep neural network. Contributes to the vanishing gradient problem.
 
 https://machinelearningmastery.com/using-activation-functions-in-neural-networks/
+
+https://www.v7labs.com/blog/neural-networks-activation-functions
 
 ### Softmax
 
@@ -99,71 +108,59 @@ Cross refers to the fact that it needs to relate two distributions. It’s calle
 
 ##### Log Loss - Binary Cross-Entropy Loss
 
+### Regularization
 
-# Natural Language Processing (NLP)
+Regularization helps in preventing the over-fitting of the model and the learning process becomes more efficient.
 
-* [Tokenization](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#tokenization)
-* [Stemming](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#stemming)
-* [Lemmatization](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#lemmatization)
-* [Stop Words Removal](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#stop-words-removal)
-* [Parts of Speech (POS) Tagging](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#parts-of-speech)
-* [TF-IDF](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#tf-idf)
-* [Word Embeddings](https://github.com/venkataravuri/learning-diary/blob/master/data-science.md#word-embeddings)
+Regularization techniques,
 
-## Text Analysis / Text Mining
-
-### Tokenization
-
-Break the text into words.
-
-### TF-IDF
-
-|Rating|Type|Topic
-------------: | ------------- | -------------
-|:star::star::star:|:newspaper:|[?](https://www.analyticsvidhya.com/blog/2020/02/quick-introduction-bag-of-words-bow-tf-idf/)
-||:newspaper:|[?](https://www.slideshare.net/DanSullivan10/a-first-look-at-tf-idfpdx-data-science-meetup)
-
-### Normalizing
-
-|Rating|Type|Topic
-------------: | ------------- | -------------
-|:star:|:newspaper:|[?](https://qbox.io/blog/introduction-to-elasticsearch-analyzers)
-||:newspaper:|[?](https://engineering.linkedin.com/blog/2019/04/how-natural-language-processing-help-support)
-||:newspaper:|[?](https://logz.io/blog/language-analyzers-tokenizers-not-built-elasticsearch-where-find-them/)
-||:newspaper:|[?](https://www.elastic.co/blog/text-classification-made-easy-with-elasticsearch)
-
-#### Stemming
-
-Helps normalize the spelling of words, for instance translating the tokens 'sing', 'sings', and 'singing' all into the single stem 'sing'.
-In ElasticSeaarch, you can use 'snowball' analyzer.
-
-#### Lemmatization
-
-Find the basic form of each word variation in the context. Examples are "account" from "accounts" and "break" from "broke."
-
-### Stop Word Removal
-
-Stop Word Filter: Filter out common words. In English, there are hundreds of stop words like "a," "my," and "on," to name a few, that have little bearing on relevance or meaning, and thus can safely be removed from the query in order to target the more valuable words.
-
-### Part of Speech (PoS) Tagging
-
-Part of Speech (PoS) Filter: Read through text and give each word a PoS based on the context. There are nine parts in English: adjective, adverb, conjunction, determiner, noun, number, preposition, pronoun, and verb. We only capture nouns, verbs, proper nouns, and adjectives, as they together represent the purpose of a text.
-
-### Word Embeddings
-
-|Rating|Type|Topic
-------------: | ------------- | -------------
-|:star:|:newspaper:|[?](https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/)
-
-## How NLP engines works in past?
-https://rasa.com/blog/intents-entities-understanding-the-rasa-nlu-pipeline/
-
+early stopping, dropout, weight initialization techniques, and batch normalization. 
 
 #### What is Normalization? How it is done in Neural Networks?
 
 https://towardsdatascience.com/intuitions-on-l1-and-l2-regularisation-235f2db4c261
 
+Normalization is a data pre-processing tool used to bring the numerical data to a common scale without distorting its shape.
+
+
+#### Normalization Vs. Standardization
+
+<img height="50%" width="50%" src="assets/Normalization-Standardization.png">
+
+[Source](https://www.youtube.com/watch?v=of4-jeKtyB4)
+
+#### Batch Normalization
+
+Batch Normalization is a supervised learning technique that converts interlayer outputs into of a neural network into a standard format, called normalizing. 
+
+This approach leads to faster learning rates since normalization ensures there’s no activation value that’s too high or too low, as well as allowing each layer to learn independently of the others.
+
+For each layer in the neural network, batch normalization normalizes the activations by adjusting them to have a standardized mean and variance.
+
+In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batch’s standard deviation.
+
 #### What is difference between Cosine Similarity & Ecludian Distance?
 
 https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
 https://cmry.github.io/notes/euclidean-v-cosine
+
+
+#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
+
+[Source](https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ)
+
+Gradient Descent
+
+Gradient Descent is an optimization method used to optimize the parameters of a model using the gradient of an objective function ( loss function in NN ). It optimizes the parameters until the value of the loss function is the minimum ( of we've reached the minima of the loss function ). It is often referred to as back propagation in terms of Neural Networks.
+
+Batch Gradient Descent:
+
+The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
+
+Stochastic Gradient Descent:
+
+Stochastic GD computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
+
+Mini Batch Gradient Descent:
+
+Instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
