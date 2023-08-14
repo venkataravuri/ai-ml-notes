@@ -29,10 +29,63 @@ A gradient represents the vector pointing in the direction of the steepest ascen
 
 ### Evaluation Metrics
 
-- **Sensitivity** (also known as recall) refers to the fraction of positive examples identified
-  - it is calculated by taking the number of positive predictions that are correct and dividing them by the total number of positive examples.
-- **Precision** refers to the fraction of positive predictions that are correct.
-  - It is calculated by the number of positive predictions that are correct divided by the total number of positive predictions.
+A confusion matrix is a table used to evaluate the performance of a classification model by comparing its predictions to the actual ground truth labels. It provides a summary of the model’s true positive (TP), true negative (TN), false positive (FP), and false negative (FN) predictions for each class in a multi-class classification problem or for the positive class in a binary classification problem.
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yshTLPeqgL9Nm5vTfGpMFQ.jpeg" width="50%" height="50%" />
+
+**Accuracy** measures the overall correctness of the model’s predictions.
+
+It is calculated as the ratio of the correctly predicted instances (TP + TN) to the total number of instances in the dataset. High accuracy is desirable, but it can be _**misleading when dealing with imbalanced datasets**_.
+
+```
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+```
+
+In **imbalanced datasets**, accuracy may not be a reliable measure, as a high accuracy score could be driven by the model’s ability to predict the majority class accurately while performing poorly on the minority class.
+
+**Precision** measures the proportion of true positive predictions among the instances predicted as positive. It is useful when the cost of false positives is high, and you want to minimize the number of false positives.
+
+```
+Precision = TP / (TP + FP)
+```
+
+- Use precision when the cost of false positives is high and you want to minimize false alarms or false positive predictions. (minimizing false positives)
+- For example, in fraud detection, precision is crucial because it indicates how many flagged cases are actually true frauds, reducing the need for manual investigation of false positives.
+
+**Recall** (Sensitivity or True Positive Rate) measures the proportion of true positive predictions among all instances that are actually positive.
+
+```
+Recall = TP / (TP + FN)
+```
+
+- Use recall when the cost of false negatives is high, and you want to ensure that you capture as many positive instances as possible, even at the expense of some false positives. (minimizing false negatives)
+- For example, in medical diagnosis, a high recall rate is crucial because it means correctly identifying individuals with a disease, even if it leads to some false alarms.
+
+**F1 score** is the harmonic mean of precision and recall, providing a balanced metric for situations where both precision and recall are important.
+
+```
+F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+```
+
+- F1 score strikes a balance between precision and recall in the presence of an imbalanced dataset.
+- For example, in sentiment analysis of customer reviews, F1 score is a suitable metric when dealing with imbalanced sentiment classes. It helps strike a balance between correctly identifying positive and negative sentiment reviews, taking into account both precision and recall.
+
+
+AUC-ROC (Area Under the Receiver Operating Characteristic) curve is a graphical representation that showcases the relationship between the true positive rate (TPR)(sensitivity) and the false positive rate (FPR) as the classification threshold varies.
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9JT5mrixTcelpsk4yyTjgQ.jpeg" width="50%" height="50%" />
+
+```
+TPR = TP / (TP+FN); FPR = FP / (FP+TN)
+```
+
+The AUC ranges from 0 to 1, where:
+
+- AUC = 0.5 implies that the model’s performance is no better than random guessing.
+- AUC > 0.5 and < 1 implies better-than-random performance, where higher values indicate better discrimination between classes.
+- AUC = 1 implies that the model is a perfect classifier, meaning it achieves a TPR of 1 for all FPR values. This suggests that the model can completely separate the two classes without any errors.
+
+- While precision, recall, and F1 score are threshold-specific, the AUC-ROC curve considers multiple thresholds simultaneously.
 
 |Category|Task|Metric|Metric Summary|Reference|
 |-----|-----|------|------|-----|
@@ -169,3 +222,8 @@ Stochastic GD computes the gradients for each and every sample in the dataset an
 Mini Batch Gradient Descent:
 
 Instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
+
+References
+
+- https://sharkyun.medium.com/complete-guide-to-confusion-matrix-accuracy-precision-recall-and-f1-score-easy-to-understand-8772c2403df3
+
