@@ -13,5 +13,5 @@
 - [Machine Learning](docs/machine-learning.md)
     - [Neural Networks & Deeplearning Guide](docs/neural-networks-deeplearning.md)
     - [Deeplearning using Pytorch](deeplearning-using-pytorch)
-    - [Machine Learning Models & Sci-kit Learn](docs/ml-algorithms.md)
+    - [ML Models & Sci-kit Learn](docs/ml-algorithms.md)
 - [NLP - Natural Language Processing](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md) & [Search Concepts](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
