@@ -4,12 +4,6 @@
 - [Loss Functions](#loss-functions)
 - [Evaulation Metrics](#evaluation-metrics)
 
-## Feature Engineering
-
-|Rating|Type|Topic
-------------: | ------------- | -------------
-|:star:|:newspaper:|[Dealing with missing values](https://www.kaggle.com/alexisbcook/missing-values)
-
 ## Concepts - Statistics & Linear Algebra
 
 #### What are Logits in machine learning?
@@ -37,60 +31,57 @@ A gradient is a vector that goes in the direction of a function’s sharpest asc
 
 A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
 
-### Regularization
+#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
+
+**Gradient Descent** is an optimization method used to optimize the parameters of a model using the gradient of an objective function (loss function in NN). It optimizes the parameters until the value of the loss function is the minimum (of we've reached the minima of the loss function). It is often referred to as back propagation in terms of Neural Networks.
+
+**Batch Gradient Descent**
+The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
+
+**Stochastic Gradient Descent** computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
+
+**Mini Batch Gradient Descent**, instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
+
+#### What is Regularization?
 
 Regularization helps in preventing the over-fitting of the model and the learning process becomes more efficient.
 
 Regularization techniques,
+- Early stopping
+- Dropout
+- Weight initialization techniques
+- and _batch normalization_. 
 
-early stopping, dropout, weight initialization techniques, and batch normalization. 
-
-#### What is Normalization? How it is done in Neural Networks?
+#### What is Normalization?
 
 Normalization is a data pre-processing tool used to bring the numerical data to a common scale without distorting its shape.
 
 #### Normalization Vs. Standardization
 
-<img height="50%" width="50%" src="assets/Normalization-Standardization.png">
-
-[Source](https://www.youtube.com/watch?v=of4-jeKtyB4)
+|<img height="50%" width="50%" src="assets/Normalization-Standardization.png">|[![Alt text](https://img.youtube.com/vi/of4-jeKtyB4/0.jpg)](https://www.youtube.com/watch?v=of4-jeKtyB4)|
+|----|----|
 
 #### Batch Normalization
 
 Batch Normalization is a supervised learning technique that converts interlayer outputs into of a neural network into a standard format, called normalizing. 
 
-This approach leads to faster learning rates since normalization ensures there’s no activation value that’s too high or too low, as well as allowing each layer to learn independently of the others.
-
-For each layer in the neural network, batch normalization normalizes the activations by adjusting them to have a standardized mean and variance.
+This approach leads to faster learning rates since normalization ensures there’s no activation value that’s too high or too low, as well as allowing each layer to learn independently of the others. For each layer in the neural network, batch normalization normalizes the activations by adjusting them to have a standardized mean and variance.
 
 In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batch’s standard deviation.
 
 #### What is difference between Cosine Similarity & Ecludian Distance?
 
-https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
-https://cmry.github.io/notes/euclidean-v-cosine
+<img src="https://miro.medium.com/v2/resize:fit:1170/format:webp/1*MhX64CBNBUQdQyM30jiaYA.png" width="50%" height="50%" />
 
+Cosine similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. 
 
-#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
+- It is thus a judgment of orientation and not magnitude (length)
+- two vectors with the same orientation have a cosine similarity of 1 (The cosine of 0° is 1)
+- two vectors oriented at 90° relative to each other have a similarity of 0
+- and two vectors diametrically opposed have a similarity of -1, independent of their magnitude. 
 
-[Source](https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ)
-
-Gradient Descent
-
-Gradient Descent is an optimization method used to optimize the parameters of a model using the gradient of an objective function ( loss function in NN ). It optimizes the parameters until the value of the loss function is the minimum ( of we've reached the minima of the loss function ). It is often referred to as back propagation in terms of Neural Networks.
-
-Batch Gradient Descent:
-
-The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
-
-Stochastic Gradient Descent:
-
-Stochastic GD computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
-
-Mini Batch Gradient Descent:
-
-Instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
-
+- Cosine similarity is generally used as a metric for measuring distance when the magnitude of the vectors does not matter. 
+- Text data is the most typical example for when to use this metric.
 
 ## Evaluation Metrics
 
@@ -225,7 +216,12 @@ Cross refers to the fact that it needs to relate two distributions. It’s calle
 ##### Log Loss - Binary Cross-Entropy Loss
 
 
-References
+## Feature Engineering
+
+- [Dealing with missing values](https://www.kaggle.com/alexisbcook/missing-values)
+
+### References
 
 - https://sharkyun.medium.com/complete-guide-to-confusion-matrix-accuracy-precision-recall-and-f1-score-easy-to-understand-8772c2403df3
-
+- https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ
+- https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
