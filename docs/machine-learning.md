@@ -29,6 +29,11 @@ A gradient represents the vector pointing in the direction of the steepest ascen
 
 ### Evaluation Metrics
 
+- **Sensitivity** (also known as recall) refers to the fraction of positive examples identified
+  - it is calculated by taking the number of positive predictions that are correct and dividing them by the total number of positive examples.
+- **Precision** refers to the fraction of positive predictions that are correct.
+  - It is calculated by the number of positive predictions that are correct divided by the total number of positive predictions.
+
 |Category|Task|Metric|Metric Summary|Reference|
 |-----|-----|------|------|-----|
 |-|Binary Classification|Confusion Matrix, Accuracy, Precision Recall and F1 Score|Shouldn’t use accuracy on imbalanced problems. Its easy to get a high accuracy score by simply classifying all observations as the majority class.|[Confusion Matrix, Accuracy, Precision, Recall, F1 Score](https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd)[Beyond Accuracy: Recall, Precision, F1-Score, ROC-AUC](https://medium.com/@priyankads/beyond-accuracy-recall-precision-f1-score-roc-auc-6ef2ce097966)|
