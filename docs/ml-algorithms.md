@@ -1,4 +1,25 @@
+# ML Models
 
+- [K-Nearest Neighbor](#k-nearest-neighbor)
+- [Random Forest](#random-forest)
+
+
+### K-Nearest Neighbor
+
+K-nearest neighbors (KNN) is a type of supervised learning algorithm used for both regression and classification. 
+KNN tries to predict the correct class for the test data by calculating the distance between the test data and all the training points.
+  - Then select the K number of points which is closet to the test data.
+  - The KNN algorithm calculates the probability of the test data belonging to the classes of ‘K’ training data and class holds the highest probability will be selected.
+  - In the case of regression, the value is the mean of the ‘K’ selected training points.
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*34SajbTO2C5Lvigs.png" height="50%" width="50%" />
+<img src="https://miro.medium.com/v2/resize:fit:810/format:webp/0*KxkMe86skK9QRcJu.jpg" height="75%" width="75%" />
+
+'K' value indicates the count of the nearest neighbors. We have to compute distances between test points and trained labels points. Updating distance metrics with every iteration is computationally expensive, and that’s why KNN is a lazy learning algorithm.
+
+There are various methods for calculating this distance, of which the most commonly known methods are,
+- Euclidian, Manhattan (for continuous)
+- Hamming distance (for categorical).
 
 ### Random Forest
 
@@ -37,3 +58,5 @@ watchlist: list to store training and validation accuracy to evaluate the perfor
 ##### References
 
 - https://github.com/kabiromohd/machine-learning-zoomcamp/blob/master/06-trees/07-boosting.md
+- https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4
+
