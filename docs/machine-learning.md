@@ -83,6 +83,35 @@ Cosine similarity is a measure of similarity between two non-zero vectors of an 
 - Cosine similarity is generally used as a metric for measuring distance when the magnitude of the vectors does not matter. 
 - Text data is the most typical example for when to use this metric.
 
+### Bayes Theorem
+
+**Conditional Probability** is the probability that something will happen, given that something else has already happened.
+
+```
+P(A | B) = P(B | A) x P(A)/P(B)
+```
+
+Pr(A | B): Conditional probability of A : i.e. probability of A, given that all we know is B;  Probability of A happening given that B has already happened. P(A|B) is the conditional probability.
+
+"Probability of A given B" is the same as the "probability of B given A" times the "probability of A" divided by the "probability of B".
+
+**Understanding Bayes Rule**
+
+P(Outcome given that we know some Evidence) = P(Evidence given that we know the Outcome) times Prob(Outcome), scaled by the P(Evidence)
+
+The classic example to understand Bayes' Rule:
+
+```
+Probability of Disease D given Test-positive = 
+
+               P(Test is positive|Disease) * P(Disease)
+     _______________________________________________________________
+     (scaled by) P(Testing Positive, with or without the disease)
+```
+
+**Naive Bayes'**
+
+
 ## Evaluation Metrics
 
 A confusion matrix is a table used to evaluate the performance of a classification model by comparing its predictions to the actual ground truth labels. It provides a summary of the model’s true positive (TP), true negative (TN), false positive (FP), and false negative (FN) predictions for each class in a multi-class classification problem or for the positive class in a binary classification problem.
