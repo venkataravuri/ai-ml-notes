@@ -1,4 +1,5 @@
 # Machine Learning
+- [Concepts - Statistics & Linear Algebra]()
 - [Activation Functions](#activation-functions)
 - [Loss Functions](#loss-functions)
 - [Evaulation Metrics](#evaluation-metrics)
@@ -9,25 +10,89 @@
 ------------: | ------------- | -------------
 |:star:|:newspaper:|[Dealing with missing values](https://www.kaggle.com/alexisbcook/missing-values)
 
-## General FAQ
-|Question|Notes|Reference|
-|------------| ------------- | -------------|
-|What are Logits in machine learning?|Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.|[Logits Explanation](https://datascience.stackexchange.com/questions/31041/what-does-logits-in-machine-learning-mean)|
+## Concepts - Statistics & Linear Algebra
+
+#### What are Logits in machine learning?
+
+Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.
+
+[Logits Explanation](https://datascience.stackexchange.com/questions/31041/what-does-logits-in-machine-learning-mean)|
 
 In a classification problem, the model’s output is usually a vector of probability for each category. Often, this vector is usually expected to be “logits,” i.e., real numbers to be transformed to probability using the softmax function, or the output of a softmax activation function.
 
-##### What is distiction between Gradient and Derivative?
-Simply put, a gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location.
+#### Why we want to wrap everything with a logarithm?
 
-The derivative of a function is the change of the function for a given input.
-The gradient is simply a derivative vector for a multivariate function.
+1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
+2. Computers are capable of almost anything, except exact numeric representation.
 
-Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
+#### What is distiction between Gradient and Derivative?
 
-What is the Difference Between Gradient and Partial Derivative?
+A gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location.
+
+- The derivative of a function is the change of the function for a given input.
+- The gradient is simply a derivative vector for a multivariate function.
+ - Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
+
+#### What is the Difference Between Gradient and Partial Derivative?
+
 A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
 
-### Evaluation Metrics
+### Regularization
+
+Regularization helps in preventing the over-fitting of the model and the learning process becomes more efficient.
+
+Regularization techniques,
+
+early stopping, dropout, weight initialization techniques, and batch normalization. 
+
+#### What is Normalization? How it is done in Neural Networks?
+
+Normalization is a data pre-processing tool used to bring the numerical data to a common scale without distorting its shape.
+
+#### Normalization Vs. Standardization
+
+<img height="50%" width="50%" src="assets/Normalization-Standardization.png">
+
+[Source](https://www.youtube.com/watch?v=of4-jeKtyB4)
+
+#### Batch Normalization
+
+Batch Normalization is a supervised learning technique that converts interlayer outputs into of a neural network into a standard format, called normalizing. 
+
+This approach leads to faster learning rates since normalization ensures there’s no activation value that’s too high or too low, as well as allowing each layer to learn independently of the others.
+
+For each layer in the neural network, batch normalization normalizes the activations by adjusting them to have a standardized mean and variance.
+
+In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batch’s standard deviation.
+
+#### What is difference between Cosine Similarity & Ecludian Distance?
+
+https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
+https://cmry.github.io/notes/euclidean-v-cosine
+
+
+#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
+
+[Source](https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ)
+
+Gradient Descent
+
+Gradient Descent is an optimization method used to optimize the parameters of a model using the gradient of an objective function ( loss function in NN ). It optimizes the parameters until the value of the loss function is the minimum ( of we've reached the minima of the loss function ). It is often referred to as back propagation in terms of Neural Networks.
+
+Batch Gradient Descent:
+
+The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
+
+Stochastic Gradient Descent:
+
+Stochastic GD computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
+
+Mini Batch Gradient Descent:
+
+Instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
+
+
+## Evaluation Metrics
 
 A confusion matrix is a table used to evaluate the performance of a classification model by comparing its predictions to the actual ground truth labels. It provides a summary of the model’s true positive (TP), true negative (TN), false positive (FP), and false negative (FN) predictions for each class in a multi-class classification problem or for the positive class in a binary classification problem.
 
@@ -94,13 +159,6 @@ The AUC ranges from 0 to 1, where:
 |LLM / NLP|Text Summary & Translation|Perplexity|Intuitively, perplexity means to be surprised. We measure how much the model is surprised by seeing new data. The lower the perplexity, the better the training is. Perplexity is calculated as exponent of the loss obtained from the model. Perplexity is usually used only to determine how well a model has learned the **training set**. Other metrics like BLEU, ROUGE etc., are used on the **test set** to measure test performance.|[Perplexity in Language Models](https://chiaracampagnola.io/2020/05/17/perplexity-in-language-models/)[Perplexity of Language Models](https://medium.com/@priyankads/perplexity-of-language-models-41160427ed72)|
 |LLM / NLP|Text Summary & Translation|GLUE benchmark|GLUE benchmark that measures the general language understanding ability.|[Perplexity in Language Models](https://chiaracampagnola.io/2020/05/17/perplexity-in-language-models/)[Perplexity of Language Models](https://medium.com/@priyankads/perplexity-of-language-models-41160427ed72)|
 
-### Info
-
-> Why we want to wrap everything with a logarithm?
-
-1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
-2. Computers are capable of almost anything, except exact numeric representation.
-
 ## Activation Functions
 
 Activation functions transforms the weighted sum of a neuron so that the output is non-linear.
@@ -166,62 +224,6 @@ Cross refers to the fact that it needs to relate two distributions. It’s calle
 
 ##### Log Loss - Binary Cross-Entropy Loss
 
-### Regularization
-
-Regularization helps in preventing the over-fitting of the model and the learning process becomes more efficient.
-
-Regularization techniques,
-
-early stopping, dropout, weight initialization techniques, and batch normalization. 
-
-#### What is Normalization? How it is done in Neural Networks?
-
-https://towardsdatascience.com/intuitions-on-l1-and-l2-regularisation-235f2db4c261
-
-Normalization is a data pre-processing tool used to bring the numerical data to a common scale without distorting its shape.
-
-
-#### Normalization Vs. Standardization
-
-<img height="50%" width="50%" src="assets/Normalization-Standardization.png">
-
-[Source](https://www.youtube.com/watch?v=of4-jeKtyB4)
-
-#### Batch Normalization
-
-Batch Normalization is a supervised learning technique that converts interlayer outputs into of a neural network into a standard format, called normalizing. 
-
-This approach leads to faster learning rates since normalization ensures there’s no activation value that’s too high or too low, as well as allowing each layer to learn independently of the others.
-
-For each layer in the neural network, batch normalization normalizes the activations by adjusting them to have a standardized mean and variance.
-
-In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batch’s standard deviation.
-
-#### What is difference between Cosine Similarity & Ecludian Distance?
-
-https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
-https://cmry.github.io/notes/euclidean-v-cosine
-
-
-#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
-
-[Source](https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ)
-
-Gradient Descent
-
-Gradient Descent is an optimization method used to optimize the parameters of a model using the gradient of an objective function ( loss function in NN ). It optimizes the parameters until the value of the loss function is the minimum ( of we've reached the minima of the loss function ). It is often referred to as back propagation in terms of Neural Networks.
-
-Batch Gradient Descent:
-
-The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
-
-Stochastic Gradient Descent:
-
-Stochastic GD computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
-
-Mini Batch Gradient Descent:
-
-Instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
 
 References
 
