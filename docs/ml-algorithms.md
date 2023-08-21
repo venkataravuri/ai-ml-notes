@@ -3,6 +3,9 @@
 - [K-Nearest Neighbor](#k-nearest-neighbor)
 - [Random Forest](#random-forest)
 
+### Logisitic Regression
+
+Logistic regression, by default, is limited to two-class classification problems. It can also be applied to multiclass problems.
 
 ### K-Nearest Neighbor
 
