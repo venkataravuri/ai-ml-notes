@@ -23,7 +23,6 @@ Learning is an Optimization Problem
 
 -Update the weights and biases to decrease loss function
 
-
 A Neural Network introductory videos with nice intutions. A 4-part series that explaines neural networks very intutively.
 
 - :tv: [What is a neural network? | Chapter 1, Deep learning](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
@@ -156,14 +155,13 @@ A loss function is for a single training example. It is also sometimes called an
 
 the log magnifies the mistake in the classification, so the misclassification will be penalized much more heavily compared to any linear loss functions. The closer the predicted value is to the opposite of the true value, the higher the loss will be, which will eventually become infinity. That’s exactly what we want a loss function to be.
 
+#### Cross Entropy Loss
 
+when designing a neural network multi-class classifier, you can you CrossEntropyLoss with no activation, or you can use NLLLoss with log-SoftMax activation.
 
-Overfitting & Regularization
-
-
+#### Overfitting & Regularization
 
 Help the network generalize to data it hasn’t seen.
-
 
 Overfitting: The error decreases in the training set but increases in the test set
 Overfitting example (a sine curve vs 9-degree polynomial)
@@ -184,6 +182,7 @@ Regularization: Weight Penalty (aka Weight Decay)
 Batch Normalization (BatchNorm, BN)
 - Normalize hidden layer inputsto mini-batch mean & variance
 - Reduces impact of earlier layers on later layers
+
 
 
 
