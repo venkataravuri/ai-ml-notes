@@ -4,15 +4,13 @@
 
 <img src="https://miro.medium.com/v2/resize:fit:640/1*sPg-0hha7o3iNPjY4n-vow.jpeg" width="50%" height="50%" />
 
-#### Backpropagation
-
 #### Forward Pass
 
 Forward pass computes network output and “error”
 
 Input data -> Neural Network -> Prediction
 
-Backpropagation (Backward pass)
+#### Backpropagation (Backward pass)
 
 - Backward pass to compute gradients
 - A fraction of the weight’s gradient is subtracted from the weight. (based on learning rate)
@@ -47,6 +45,30 @@ Deep learning models and their neural networks include the following:
 - Autoencoder.
 - Generative pre-trained transformer (GPT).
 
+Deep Learning modeling is still an art, in other words, intelligent trial and error. There is no universal answer for NNs.
+
+### Convolutional Neural Networks (CNN)
+
+#### CNN Layer Types
+
+There are many types of layers used to build Convolutional Neural Networks, but the ones you are most likely to encounter include:
+
+* Convolutional (CONV)
+* Activation (ACT or RELU, where we use the same or the actual activation function)
+* Pooling (POOL)
+* Fully connected (FC)
+* Batch normalization (BN)
+* Dropout (DO)
+
+Stacking a series of these layers in a specific manner yields a CNN. 
+
+A simple text diagram to describe a CNN: ```INPUT => CONV => RELU => FC => SOFTMAX```
+
+[Source](https://pyimagesearch.com/2021/05/14/convolutional-neural-networks-cnns-and-layer-types/)
+
+### NN Vs. RNN
+
+Fundamental difference in the preservation of the network state, which is absent in the feed-forward network.
 
 #### Generative Adversarial Network (GAN)
 
