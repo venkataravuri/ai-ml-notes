@@ -57,6 +57,14 @@ xgb.train(): method to train xgboost model.
 xgb_params: key-value pairs of hyperparameters to train xgboost model.
 watchlist: list to store training and validation accuracy to evaluate the performance of the model after each training iteration. The list takes tuple of train and validation set from DMatrix wrapper, for example, watchlist = [(dtrain, 'train'), (dval, 'val')].
 
+### Additional Concepts
+
+#### Bias
+
+A simpler way to understand what the bias is: it is somehow similar to the constant b of a linear function ```y = ax + b```
+- It allows you to move the line up and down to fit the prediction with the data better.
+- Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
+- A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
 
 ##### References
 
