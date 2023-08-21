@@ -7,6 +7,10 @@
 
 Logistic regression, by default, is limited to two-class classification problems. It can also be applied to multiclass problems.
 
+### Bayes Theorem & Navie Bayes
+
+https://machinelearningmastery.com/intuition-for-bayes-theorem-with-worked-examples/
+
 ### K-Nearest Neighbor
 
 K-nearest neighbors (KNN) is a type of supervised learning algorithm used for both regression and classification. 
