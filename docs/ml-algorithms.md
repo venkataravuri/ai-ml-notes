@@ -32,14 +32,13 @@ There are various methods for calculating this distance, of which the most commo
 
 Random Forest approach is an ensemble learning method based on many decision trees.
 
-To illustrate the process of building a Random Forest classifier, consider a two-dimensional dataset with N cases (rows) that has M variables (columns).
-The Random Forest algorithm will build independent decision trees but only using a random subset of the data.
-For each tree, a random subset of n cases is sampled from all available N cases; the cases not used in the tree construction are called the Out Of Bag (OOB) cases. 
-In addition, at each node (decision point) of a tree, a random number of m variables is used from all available M variables.
+https://datagy.io/sklearn-random-forests/
 
 - A forest is made up of trees and these trees are randomly build.
 - Random Forests are often used for feature selection in a data science workflow.
 - In random forest, decision trees are trained independent to each other.
+
+- The idea behind is a random forest is the automated handling of creating more decision trees. Each tree receives a vote in terms of how to classify. Some of these votes will be wildly overfitted and inaccurate. However, by creating a hundred trees the classification returned by the most trees is very likely to be the most accurate.
 
 Classes, functions, and methods:
 
