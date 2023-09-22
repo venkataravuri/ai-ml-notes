@@ -50,4 +50,12 @@ PyTorch makes a tensor by converting an underlying block of contiguous memory in
 nn.Dropout is not a trainable layer
 nn.Dropout changes behaviour when doing model.eval() and model.train()
 
+#### PyTorch training with dropout and/or batch-normalization
 
+All modules that make up a model may have two modes, training and test mode. These modules either have learnable parameters that need to be updated during training, like Batch Normalization or affect network topology in a sense like Dropout (by disabling some features during forward pass). some modules such as ReLU() only operate in one mode and thus do not have any change when modes change.
+
+In ```.train()``` mode, when you feed an image, it passes trough layers until it faces a dropout and here, some features are disabled, thus their responses to the next layer is omitted, the output goes to other layers until it reaches the end of the network and you get a prediction.
+
+the network may have correct or wrong predictions, which will accordingly update the weights. if the answer was right, the features/combinations of features that resulted in the correct answer will be positively affected and vice versa. So during training you do not need and should not disable dropout, as it affects the output and should be affecting it so that the model learns a better set of features.
+
+In ```.eval()``` mode, before the forward pass, effectively disables all modules that has different phases for train/test mode such as Batch Normalization and Dropout (basically any module that has updateable/learnable parameters, or impacts network topology like dropout) will be disabled and you will not see them contributing to your network learning.
