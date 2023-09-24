@@ -59,3 +59,5 @@ In ```.train()``` mode, when you feed an image, it passes trough layers until it
 the network may have correct or wrong predictions, which will accordingly update the weights. if the answer was right, the features/combinations of features that resulted in the correct answer will be positively affected and vice versa. So during training you do not need and should not disable dropout, as it affects the output and should be affecting it so that the model learns a better set of features.
 
 In ```.eval()``` mode, before the forward pass, effectively disables all modules that has different phases for train/test mode such as Batch Normalization and Dropout (basically any module that has updateable/learnable parameters, or impacts network topology like dropout) will be disabled and you will not see them contributing to your network learning.
+
+[Why Pytorch officially use mean=[0.485, 0.456, 0.406] and std=[0.229, 0.224, 0.225] to normalize images?](https://stackoverflow.com/questions/58151507/why-pytorch-officially-use-mean-0-485-0-456-0-406-and-std-0-229-0-224-0-2)
