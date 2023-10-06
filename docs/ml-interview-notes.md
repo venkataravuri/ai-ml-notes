@@ -3,7 +3,10 @@
 #### Explain overfitting and regularization
 #### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 #### When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
+
 #### Explain the bias-variance tradeoff.
+#### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
+
 #### How do you handle data imbalance issues?
 #### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
 #### Can you explain logistic regression and derive gradient descent for Logistic regression
@@ -14,12 +17,22 @@
 #### Can you use MSE for evaluating your classification problem instead of Cross entropy
 
 #### How does the loss curve for Cross entropy look?
+#### What is the cross-entropy of loss?
 
 #### What does the “minus” in cross-entropy mean?
 
 #### Explain how Momentum differs from RMS prop optimizer?
 
+####  What is a hyperparameter? How to find the best hyperparameters?
 
+#### When is Ridge regression favorable over Lasso regression?
+
+
+#### When is one hot encoding favored over label encoding?
+
+
+
+#### What is the curse of dimensionality? Why do we need to reduce it?
 
 #### What is PCA, why is it helpful, and how does it work?
 
@@ -28,9 +41,23 @@ PCA stands for principal component analysis
 - A dimensionality reduction technique
 - ?
 
+#### What is the goal of A/B testing?
+
+#### Why is a validation set necessary?
+#### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
+
+#### What is the purpose of a ROC curve?
+
+#### Mention one disadvantage of Stochastic Gradient Descent.
+
+#### What is Transfer Learning? Give an example.
+
+#### What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
 
 #### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
+
+#### How will you implement dropout during forward and backward passes?
 
 
 
@@ -69,3 +96,5 @@ For a new user who hasn’t made any past purchases, there are several ways to h
 ### References 
 - [Source-1](https://medium.com/bitgrit-data-science-publication/11-machine-learning-interview-questions-77650cb89918)
 - [Source-2](https://medium.com/@reachpriyaa/how-to-crack-machine-learning-interviews-at-faang-78a2882a05c5)
+- [Source-3](https://sukanyabag.medium.com/top-15-important-machine-learning-interview-questions-32e6093c70e2)
+- 
