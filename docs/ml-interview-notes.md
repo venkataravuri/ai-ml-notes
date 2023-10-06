@@ -1,6 +1,5 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
-
 #### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
 ### What is the difference between overfitting and underfitting?
@@ -31,10 +30,31 @@
 
 **Regularization** is a set of techniques designed to prevent overfitting and enhance the generalization ability of a model.
 
+Regularization is a technique used to avoid overfitting where the coefficients, if needed, are restricted or shrunken to zero. 
+
+Reducing the impact of less important features directly affects the quality of predictions as it reduces the _degree of freedom_ which in turn makes it harder for the model to get more complex or overfit the data.
+
 Regularization methods introduce additional constraints or penalties to the learning process to ensure that the model does not become overly complex and is better suited for making accurate predictions on new data.
 
-- Adding a penalty term to the loss function to prevent the model from becoming too complex
+A penalty term is added to the cost function which lets us control the type and amount of regularization to be performed on the model at hand. This is done by modifying the traditional Linear Regression Cost function that is shown below.
 
+```math
+J(\theta) = MSE(\theta) = (\frac{1}{m}).\displaystyle\sum_{i=1}^{n}(\theta^T x^{(i)} - y^{(i)})^2
+```
+<p align="center">Linear Regression Cost Function</p>
+
+Ridge Regression :
+
+This type of regularized regression has a penalty term representing half the square of L2 norm added to the cost function. This forces the learning algorithm to not only fit the data but also keep the model weights as small as possible. The equation for Ridge Regression is shown below.
+
+```math
+J(\theta)_{Ridge} = MSE(\theta) + \lambda.(\frac{1}{2}).\displaystyle\sum_{i=1}^{n}(\theta^2_{i})
+```
+<p align="center">Ridge Regression Cost Function</p>
+
+> The L2 norm is the sum of the squares of the differences between predicted and target values over the feature vector. Its also known as Euclidean Distance and Root Mean Square Error (RMSE).
+
+The shrinkage hyperparameter λ (lambda) controls the amount of regularization and needs to be chosen properly because if λ = 0, then Ridge Regression is the same as Linear Regression and on the other hand, if λ is very large, then all weights end up very close to zero resulting in an underfitting model. One good way to select the right λ is to perform cross-validation.
 
 #### Explain the difference between likelihood and probability.
 
