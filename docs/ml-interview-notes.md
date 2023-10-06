@@ -85,6 +85,12 @@ J(\theta)_{Ridge} = MSE(\theta) + r.\lambda.\displaystyle\sum_{i=1}^{n}(|\theta_
 
 The mix between Ridge and Lasso regularization can be controlled by the Ratio hyperparameter (r). When r = 0, Elastic Net is equivalent to Ridge Regression and when r = 1, it is equivalent to Lasso Regression.
 
+|Lasso|Rasso|Elasitc Net|
+|---|---|---|
+|• Shrinks coefficients to 0<br/>• Good for variable selection|Makes coefficients smaller|Tradeoff between variable selection and small coefficients|
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*-aJ9MXozOKv6joiX.png" width="70%" height="70%" />
+
 #### Explain the difference between likelihood and probability.
 
 #### What is instance normalisation?
