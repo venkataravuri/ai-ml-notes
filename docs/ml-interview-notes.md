@@ -22,8 +22,6 @@
 |**Deep learning illustration**|<img src="https://stanford.edu/%7Eshervine/teaching/cs-229/illustrations/deep-learning-underfit-en.png" width="50%" height="50%" />|<img src="https://stanford.edu/%7Eshervine/teaching/cs-229/illustrations/deep-learning-just-right-en.png" width="50%" height="50%" />|<img src="https://stanford.edu/%7Eshervine/teaching/cs-229/illustrations/deep-learning-overfit-en.png" width="50%" height="50%" />|
 |**Possible remedies**|• Complexify model<br/>• Add more features<br/>• Train longer||• Perform regularization<br/>• Get more data|
 
-<img src="https://www.researchgate.net/publication/359896238/figure/fig1/AS:1144038711402499@1649771492927/Examples-of-model-underfitting-model-fitting-good-and-a-model-overfitting-to-the-data.png" width="50%" height="50%" />
-
 [Reference-1](https://stanford.edu/%7Eshervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
 [Reference-2](https://medium.com/@nerdjock/lesson-15-machine-learning-overfitting-underfitting-and-model-complexity-intuition-ba6874224a2c)
 
@@ -52,16 +50,18 @@ L2 regularization can keep the parameter values from going too extreme. While L1
 
 #### Explain the bias-variance tradeoff.
 
-Bias is the difference between y prediction & y actual.
+- **Bias** is the tendency of the model to make predictions that differ from the actual values. Bias is the difference between y prediction & y actual.
+- while **Variance** is the deviation of predictions on different samples of data.
 
-**High Bias** means the model is unable to capture important features in our dataset.
-**Low Bias** always make small assumptions when the model is too simple.
+A model with **high bias** tries to oversimplify the model whereas a model with **high variance** fails to generalize on unseen data. Upon reducing the bias, the model becomes susceptible to high variance and vice versa. Hence, a trade-off or balance between these two measures is what defines a good predictive model.
 
 Bias Variance Complexity:
 - Low bias & low variance is the ideal condition in theory only, but practically it is not achievable.
 - Low bias & high variance is the reason of overfitting where the line touch all points which will lead us to poor performance on test data.
 - High bias & low variance is the reason of underfitting which performs poor on both train & test data.
 - High bias & high variance will also lead us to high error.
+
+> A model which has _low bias_ and _high variance_ is said to be _overfitting_ which is the case where the model performs really well on the training set but fails to do so on the unseen set of instances, resulting in high values of error. One way to tackle overfitting is _Regularization_.
 
 > When the Bias increases automatically variance decreases and vice versa also.
 
