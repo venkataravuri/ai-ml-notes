@@ -2,9 +2,32 @@
 
 
 #### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
-#### Explain overfitting and regularization
-#### Explain the difference between likelihood and probability.
+
 #### What is the difference between overfitting and underfitting?
+
+**Overfitting** occurs when a model learns to perform exceptionally well on the training data but fails to perform well on new, unseen data.
+
+- Overfitting occurs when a model learns the training data too well, **capturing even the noise or random fluctuations** present in the data.
+- Model is too complex and adapts to the training data’s peculiarities rather than learning the underlying pattern.
+
+**Underfitting** occurs when a model is too simple and cannot capture the underlying pattern in the data, resulting in poor performance on both the training and test data.
+
+- Model doesn’t have enough capacity or complexity to learn the true relationship between the input features and the target variable.
+  
+[Reference](https://medium.com/@nerdjock/lesson-15-machine-learning-overfitting-underfitting-and-model-complexity-intuition-ba6874224a2c)
+
+#### Explain overfitting and regularization
+
+**Overfitting** occurs when a model learns to perform exceptionally well on the training data but fails to perform well on new, unseen data.
+
+**Regularization** is a set of techniques designed to prevent overfitting and enhance the generalization ability of a model.
+
+Regularization methods introduce additional constraints or penalties to the learning process to ensure that the model does not become overly complex and is better suited for making accurate predictions on new data.
+
+- Adding a penalty term to the loss function to prevent the model from becoming too complex
+
+
+#### Explain the difference between likelihood and probability.
 
 #### What is instance normalisation?
 
@@ -60,6 +83,9 @@ PCA stands for principal component analysis
 #### What is the goal of A/B testing?
 
 #### Why is a validation set necessary?
+
+A method for assessing the performance of a model on unseen data by partitioning the dataset into training and validation sets multiple times, and averaging the evaluation metric across all partitions.
+
 #### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
 
