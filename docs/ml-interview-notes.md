@@ -1,4 +1,4 @@
-# Machine Learning Interview Notes
+# :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
 
 #### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
@@ -32,11 +32,32 @@ Regularization methods introduce additional constraints or penalties to the lear
 #### What is instance normalisation?
 
 #### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
+
+Lasso will be unable to make model if there is multicollinearity.
+
 #### When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
 
 L2 regularization can keep the parameter values from going too extreme. While L1 regularization can help remove unimportant features. 
 
 #### Explain the bias-variance tradeoff.
+
+Bias is the difference between y prediction & y actual.
+
+**High Bias** means the model is unable to capture important features in our dataset.
+**Low Bias** always make small assumptions when the model is too simple.
+
+Bias Variance Complexity:
+- Low bias & low variance is the ideal condition in theory only, but practically it is not achievable.
+- Low bias & high variance is the reason of overfitting where the line touch all points which will lead us to poor performance on test data.
+- High bias & low variance is the reason of underfitting which performs poor on both train & test data.
+- High bias & high variance will also lead us to high error.
+
+> When the Bias increases automatically variance decreases and vice versa also.
+
+Total error = error due to Bias + error due to Variance
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*rW2XEw2lDyjSslo9F0O-WA.png" width="50%" height="50%" />
+
 #### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
 
 #### How do you handle data imbalance issues?
