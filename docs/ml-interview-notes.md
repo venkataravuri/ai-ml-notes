@@ -1,6 +1,11 @@
 # Machine Learning Interview Notes
 
+
+#### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 #### Explain overfitting and regularization
+#### Explain the difference between likelihood and probability.
+#### What is the difference between overfitting and underfitting?
+
 #### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 #### When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
 
@@ -46,21 +51,32 @@ PCA stands for principal component analysis
 #### Why is a validation set necessary?
 #### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
+
+#### Define precision, recall, and F1 and discuss the trade-off between them.
 #### What is the purpose of a ROC curve?
+#### Explain the ROC Curve and AUC.
 
 #### Mention one disadvantage of Stochastic Gradient Descent.
 
 #### What is Transfer Learning? Give an example.
 
 #### What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
+#### Mention three ways to handle missing or corrupted data in a dataset.?
 
 #### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
 
 #### How will you implement dropout during forward and backward passes?
 
+#### Briefly explain the K-Means clustering and how can we find the best value of K.
+#### Explain the difference between KNN and k-means clustering.
+#### What is the Bayes’ Theorem? Why do we use it?
+#### What are Naive Bayes classifiers? Why do we use them?
 
 
+
+#### Describe the motivation behind random forests.
+#### What are the differences and similarities between gradient boosting and random forest?
 
 ## Interview Case Studies
 
@@ -97,4 +113,5 @@ For a new user who hasn’t made any past purchases, there are several ways to h
 - [Source-1](https://medium.com/bitgrit-data-science-publication/11-machine-learning-interview-questions-77650cb89918)
 - [Source-2](https://medium.com/@reachpriyaa/how-to-crack-machine-learning-interviews-at-faang-78a2882a05c5)
 - [Source-3](https://sukanyabag.medium.com/top-15-important-machine-learning-interview-questions-32e6093c70e2)
+- [Source-4](https://medium.com/@365datascience/10-machine-learning-interview-questions-and-answers-you-need-to-know-c9c78823954a)
 - 
