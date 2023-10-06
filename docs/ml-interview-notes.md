@@ -6,8 +6,12 @@
 #### Explain the difference between likelihood and probability.
 #### What is the difference between overfitting and underfitting?
 
+#### What is instance normalisation?
+
 #### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 #### When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
+
+L2 regularization can keep the parameter values from going too extreme. While L1 regularization can help remove unimportant features. 
 
 #### Explain the bias-variance tradeoff.
 #### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
@@ -17,7 +21,12 @@
 #### Can you explain logistic regression and derive gradient descent for Logistic regression
 #### What do eigenvalues and eigenvectors mean in PCA
 #### Explain different types of Optimizers — How is Adam optimizer different from Rmsprop?
-#### What are the different types of activation functions and explain about vanishing gradient problem>
+#### What are the different types of activation functions and explain about vanishing gradient problem
+
+#### What is the exploding gradient problem when using the backpropagation technique?
+
+What is a Box-Cox transformation?
+Water Tapping problem
 
 #### Can you use MSE for evaluating your classification problem instead of Cross entropy
 
@@ -35,7 +44,9 @@
 
 #### When is one hot encoding favored over label encoding?
 
-
+    How to deal with outliers?
+    How to deal with missing values?
+    How to deal with an imbalanced dataset?
 
 #### What is the curse of dimensionality? Why do we need to reduce it?
 
@@ -69,14 +80,52 @@ PCA stands for principal component analysis
 #### How will you implement dropout during forward and backward passes?
 
 #### Briefly explain the K-Means clustering and how can we find the best value of K.
+#### For k-means or kNN, why do we use Euclidean distance over Manhattan distance?
+
 #### Explain the difference between KNN and k-means clustering.
+
+#### Explain the difference between the normal soft margin SVM and SVM with a linear kernel.
+
 #### What is the Bayes’ Theorem? Why do we use it?
 #### What are Naive Bayes classifiers? Why do we use them?
 
+#### You build a random forest model with 10,000 trees. Training error as at 0.00, but the validation error is 34.23. Explain what went wrong.
 
+Your model is likely overfitted. A training error of 0.00 means that the classifier has mimicked training data patterns. This means that they aren’t available for our unseen data, returning a higher error.
+
+When using random forest, this will occur if we use a large number of trees.
 
 #### Describe the motivation behind random forests.
 #### What are the differences and similarities between gradient boosting and random forest?
+
+#### Why does XGBoost perform better than SVM?
+
+XGBoost is an ensemble method that uses many trees. This means it improves as it repeats itself.
+
+SVM is a linear separator. So, if our data is not linearly separable, SVM requires a Kernel to get the data to a state where it can be separated. This can limit us, as there is not a perfect Kernel for every given dataset.
+
+####  You are told that your regression model is suffering from multicollinearity. How do verify this is true and build a better model?
+
+You should create a correlation matrix to identify and remove variables with a correlation above 75%. Keep in mind that our threshold here is subjective.
+
+You could also calculate VIF (variance inflation factor) to check for the presence of multicollinearity. A VIF value greater than or equal to 4 suggests that there is no multicollinearity. A value less than or equal to 10 tells us there are serious multicollinearity issues.
+
+You can’t just remove variables, so you should use a penalized regression model or add random noise in the correlated variables, but this approach is less ideal.
+
+#### You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?
+
+The data is spread across the median, so we can assume we’re working with normal distribution. This means that approximately 68% of the data lies at 1 standard deviation from the mean. So, around 32% of the data is unaffected.
+
+#### How would you prevent a neural network from overfitting?
+
+#### Explain how to apply drop-out. Does it differ for train and test?
+
+#### Describe convolution types and the motivation behind them.
+
+#### Why do we need positional encoding in transformers?
+#### Describe several attention mechanisms, what are advantages and disadvantages?
+#### What techniques for NLP data augmentation do you know?
+
 
 ## Interview Case Studies
 
@@ -85,6 +134,9 @@ PCA stands for principal component analysis
 ### Design Google contact ranking(Google)
 ### Design an item replacement recommendation(Instacart)
 ### Design an ML System to optimize coupon distribution with a set budget(Netflix)
+
+
+#### What are the metrics for search ranking?
 
 
 ####  Imagine you’re building a system to recommend users items similar to those they’ve bought. How would you go about building this?
@@ -114,4 +166,4 @@ For a new user who hasn’t made any past purchases, there are several ways to h
 - [Source-2](https://medium.com/@reachpriyaa/how-to-crack-machine-learning-interviews-at-faang-78a2882a05c5)
 - [Source-3](https://sukanyabag.medium.com/top-15-important-machine-learning-interview-questions-32e6093c70e2)
 - [Source-4](https://medium.com/@365datascience/10-machine-learning-interview-questions-and-answers-you-need-to-know-c9c78823954a)
-- 
+- [Source-5](https://medium.com/swlh/cheat-sheets-for-machine-learning-interview-topics-51c2bc2bab4f)
