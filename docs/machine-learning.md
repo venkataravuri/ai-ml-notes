@@ -114,55 +114,32 @@ Probability of Disease D given Test-positive =
 
 ## Evaluation Metrics
 
-A confusion matrix is a table used to evaluate the performance of a classification model by comparing its predictions to the actual ground truth labels. It provides a summary of the model’s true positive (TP), true negative (TN), false positive (FP), and false negative (FN) predictions for each class in a multi-class classification problem or for the positive class in a binary classification problem.
+### Confustion Matrix
+
+A confusion matrix is a table used to evaluate the performance of a _classification model_ by comparing its predictions to the actual ground truth labels.
+
+It provides a summary of the model’s true positive (TP), true negative (TN), false positive (FP), and false negative (FN) predictions for each class in a multi-class classification problem or for the positive class in a binary classification problem.
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yshTLPeqgL9Nm5vTfGpMFQ.jpeg" width="50%" height="50%" />
 
-**Accuracy** measures the overall correctness of the model’s predictions.
+|Metric|Description|Formula|Interpretation|
+|---|---|---|---|
+|**Accuracy**|Accuracy measures the overall correctness of the model’s predictions.|$\frac{(TP + TN)}{(TP + TN + FP + FN)}$|• It is calculated as the ratio of the correctly predicted instances (TP + TN) to the total number of instances in the dataset.<br/>• In **imbalanced datasets**, _accuracy may not be a reliable measure_, as a high accuracy score could be driven by the model’s ability to predict the majority class accurately while performing poorly on the minority class.|
+|**Precision**|Precision measures the proportion of true positive predictions among the instances predicted as positive.|$\frac{(TP)}{(TP + FP)}$|• How accurate the positive predictions are?<br/>• It is useful when the cost of false positives is high, and you want to minimize the number of false positives.<br/>• Use precision when the cost of false positives is high and you want to minimize false alarms or false positive predictions. (minimizing false positives)<br/>• For example, in fraud detection, precision is crucial because it indicates how many flagged cases are actually true frauds, reducing the need for manual investigation of false positives.|
+|**Recall** (Sensitivity or True Positive Rate)| measures the proportion of true positive predictions among all instances that are actually positive..|$\frac{(TP)}{(TP + FN)}$|• Use recall when the cost of false negatives is high, and you want to ensure that you capture as many positive instances as possible, even at the expense of some false positives. (minimizing false negatives)<br/>• For example, in medical diagnosis, a high recall rate is crucial because it means correctly identifying individuals with a disease, even if it leads to some false alarms.|
+|**Specificity**||$\frac{(TP)}{(TP + FP)}$|• Coverage of actual negative sample.|
+|**F1 score**| is the harmonic mean of precision and recall, providing a balanced metric for situations where both precision and recall are important.|$2 . \frac{(TP)}{(TP + FN)}$|• F1 score strikes a balance between precision and recall in the presence of an imbalanced dataset.<br/>• For example, in sentiment analysis of customer reviews, F1 score is a suitable metric when dealing with imbalanced sentiment classes. It helps strike a balance between correctly identifying positive and negative sentiment reviews, taking into account both precision and recall.|
 
-It is calculated as the ratio of the correctly predicted instances (TP + TN) to the total number of instances in the dataset. High accuracy is desirable, but it can be _**misleading when dealing with imbalanced datasets**_.
-
-```
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
-```
-
-In **imbalanced datasets**, accuracy may not be a reliable measure, as a high accuracy score could be driven by the model’s ability to predict the majority class accurately while performing poorly on the minority class.
-
-**Precision** measures the proportion of true positive predictions among the instances predicted as positive. It is useful when the cost of false positives is high, and you want to minimize the number of false positives.
-
-```
-Precision = TP / (TP + FP)
-```
-
-- Use precision when the cost of false positives is high and you want to minimize false alarms or false positive predictions. (minimizing false positives)
-- For example, in fraud detection, precision is crucial because it indicates how many flagged cases are actually true frauds, reducing the need for manual investigation of false positives.
-
-**Recall** (Sensitivity or True Positive Rate) measures the proportion of true positive predictions among all instances that are actually positive.
-
-```
-Recall = TP / (TP + FN)
-```
-
-- Use recall when the cost of false negatives is high, and you want to ensure that you capture as many positive instances as possible, even at the expense of some false positives. (minimizing false negatives)
-- For example, in medical diagnosis, a high recall rate is crucial because it means correctly identifying individuals with a disease, even if it leads to some false alarms.
-
-**F1 score** is the harmonic mean of precision and recall, providing a balanced metric for situations where both precision and recall are important.
-
-```
-F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
-```
-
-- F1 score strikes a balance between precision and recall in the presence of an imbalanced dataset.
-- For example, in sentiment analysis of customer reviews, F1 score is a suitable metric when dealing with imbalanced sentiment classes. It helps strike a balance between correctly identifying positive and negative sentiment reviews, taking into account both precision and recall.
-
+### ROC
+ROC The receiver operating curve, also noted ROC, is the plot of TPR versus FPR by varying the threshold. These metrics are are summed up in the table below:
+|Metric|Formula|Equivalent|
+|---|---|---|
+|True Positive Rate<br/>TPR|$\frac{TP}{(TP + FN)}$|Recall, sensitivity|
+|False Positive Rate<br/>FPR|$\frac{TP}{(TN + FP)}$|1-specificity|
 
 AUC-ROC (Area Under the Receiver Operating Characteristic) curve is a graphical representation that showcases the relationship between the true positive rate (TPR)(sensitivity) and the false positive rate (FPR) as the classification threshold varies.
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9JT5mrixTcelpsk4yyTjgQ.jpeg" width="50%" height="50%" />
-
-```
-TPR = TP / (TP+FN); FPR = FP / (FP+TN)
-```
 
 The AUC ranges from 0 to 1, where:
 
