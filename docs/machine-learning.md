@@ -19,6 +19,26 @@ In a classification problem, the model’s output is usually a vector of probabi
 1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
 2. Computers are capable of almost anything, except exact numeric representation.
 
+## Class Imbalance data in Machine Learning
+
+In machine learning, class imbalance is the issue of target class distribution.
+
+### Balanced and Imbalanced datasets
+
+|Balanced datasets|Imbalanced datasests|
+|---|---|
+|For balanced datasets, the target class distribution is nearly equal.| For imbalanced datasest, the target distribution is not equal.|
+|Balanced datasets<br/>• A random sampling of a coin trail<br/>• Classifying images to cat or dog<br/>• Sentiment analysis of movie reviews|Class Imbalance dataset<br/>• Email spam or ham dataset<br/>• Credit card fraud detection<br/>• Network failure detections|
+
+### Techniques for handling imbalanced data
+
+|Oversampling|Undersampling|Ensemble Techniques|
+|---|---|---|
+|Increase the number of samples in minority class to match up to the number of samples of the majority class.|Decrease the number of samples in the majority class to match the number of samples of the minority class.|Ensemble methods, which combine multiple base learners to produce a more accurate and robust model, can be adapted to handle imbalanced data effectively|
+|||Bagging for Imbalanced Data - Bagging, or bootstrap aggregating, involves training multiple base learners on different random subsets of the data and combining their predictions.<br/>Boosting for Imbalanced Data - Boosting is an ensemble method that trains a series of base learners sequentially, where each learner tries to correct the errors made by its predecessor. 
+
+[Reference](https://dataaspirant.com/handle-imbalanced-data-machine-learning/)
+
 #### What is distiction between Gradient and Derivative?
 
 A gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location.
