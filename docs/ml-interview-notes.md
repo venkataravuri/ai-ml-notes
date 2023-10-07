@@ -143,7 +143,10 @@ Total error = error due to Bias + error due to Variance
 
 #### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
 
-#### How do you handle data imbalance issues?
+### How do you handle data imbalance issues?
+
+
+
 #### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
 #### Can you explain logistic regression and derive gradient descent for Logistic regression
 #### What do eigenvalues and eigenvectors mean in PCA
