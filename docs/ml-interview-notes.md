@@ -1,7 +1,6 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
 ## Table of Contents
-
 - [Statistics & Probability]()
   - ?
   - ? 
@@ -12,6 +11,9 @@
   - ?
   - ?
 - [Neural Networks]()
+  - ?
+  - ?
+- [Model Design Questions]()
   - ?
   - ?
 
