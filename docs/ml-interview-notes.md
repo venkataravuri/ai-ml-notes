@@ -26,10 +26,19 @@
 [Reference-1](https://stanford.edu/%7Eshervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
 [Reference-2](https://medium.com/@nerdjock/lesson-15-machine-learning-overfitting-underfitting-and-model-complexity-intuition-ba6874224a2c)
 
-### Explain overfitting and regularization
+### Explain regularization
+### When is 'Ridge regression' favorable over 'Lasso regression'?
 
 Refer to,
 - [Regularization](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
+
+### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
+
+Lasso will be unable to make model if there is multicollinearity.
+
+###  When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
+
+L2 regularization can keep the parameter values from going too extreme. While L1 regularization can help remove unimportant features. 
 
 |Lasso|Rasso|Elasitc Net|
 |---|---|---|
@@ -58,15 +67,7 @@ Batch Normalisation normalises the feature map across the entire batch of fixed 
 
 Instance norm normalises the contrast of the input image making the stylised image independent of the input image contrast, thus improving the output quality
 
-#### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
-
-Lasso will be unable to make model if there is multicollinearity.
-
-#### When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?
-
-L2 regularization can keep the parameter values from going too extreme. While L1 regularization can help remove unimportant features. 
-
-#### Explain the bias-variance tradeoff.
+### Explain the bias-variance tradeoff.
 
 - **Bias** is the tendency of the model to make predictions that differ from the actual values. Bias is the difference between y prediction & y actual.
 - while **Variance** is the deviation of predictions on different samples of data.
@@ -87,7 +88,7 @@ Total error = error due to Bias + error due to Variance
 
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*rW2XEw2lDyjSslo9F0O-WA.png" width="50%" height="50%" />
 
-#### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
+### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
 
 ### How do you handle data imbalance issues?
 
@@ -107,35 +108,43 @@ https://medium.com/intro-to-artificial-intelligence/logistic-regression-using-gr
 https://medium.com/intro-to-artificial-intelligence/multiple-linear-regression-with-gradient-descent-e37d94e60ec5
 https://medium.com/intro-to-artificial-intelligence/linear-regression-using-gradient-descent-753c58a2b0c
 
-#### Explain different types of Optimizers — How is Adam optimizer different from Rmsprop?
-#### What are the different types of activation functions and explain about vanishing gradient problem
+### Explain different types of Optimizers — How is Adam optimizer different from Rmsprop?
+### Explain how Momentum differs from RMS prop optimizer?
+### Mention one disadvantage of Stochastic Gradient Descent.
 
-#### What is the exploding gradient problem when using the backpropagation technique?
+### Define precision, recall, and F1 and discuss the trade-off between them.
+
+Refer to,
+- [Evaluation Metrics](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#evaluation-metrics)
+ 
+### Explain the ROC Curve and AUC.
+### What is the purpose of a ROC curve?
+
+Refer to,
+- [ROC](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#roc)
+
+### What are the different types of Activation Functions? Explain vanishing gradient problem? What is the exploding gradient problem when using the backpropagation technique?
 
 What is a Box-Cox transformation?
 Water Tapping problem
 
-#### Can you use MSE for evaluating your classification problem instead of Cross entropy
+### Can you use MSE for evaluating your classification problem instead of Cross entropy
 
-#### How does the loss curve for Cross entropy look?
-#### What is the cross-entropy of loss?
+### How does the loss curve for Cross entropy look?
+### What is the cross-entropy of loss?
 
-#### What does the “minus” in cross-entropy mean?
-
-#### Explain how Momentum differs from RMS prop optimizer?
-
-####  What is a hyperparameter? How to find the best hyperparameters?
-
-#### When is Ridge regression favorable over Lasso regression?
+### What does the “minus” in cross-entropy mean?
 
 
-#### When is one hot encoding favored over label encoding?
+###  What is a hyperparameter? How to find the best hyperparameters?
+
+### When is one hot encoding favored over label encoding?
 
     How to deal with outliers?
     How to deal with missing values?
     How to deal with an imbalanced dataset?
 
-#### What is the curse of dimensionality? Why do we need to reduce it?
+### What is the curse of dimensionality? Why do we need to reduce it?
 
 ### What is PCA, why is it helpful, and how does it work?
 ### What do eigenvalues and eigenvectors mean in PCA
@@ -145,57 +154,55 @@ PCA stands for principal component analysis
 - A dimensionality reduction technique
 - ?
 
-#### What is the goal of A/B testing?
+### What is the goal of A/B testing?
 
-#### Why is a validation set necessary?
+### Why is a validation set necessary?
 
 A method for assessing the performance of a model on unseen data by partitioning the dataset into training and validation sets multiple times, and averaging the evaluation metric across all partitions.
 
-#### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
+### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
 
-#### Define precision, recall, and F1 and discuss the trade-off between them.
-#### What is the purpose of a ROC curve?
-#### Explain the ROC Curve and AUC.
-
-#### Mention one disadvantage of Stochastic Gradient Descent.
-
-#### What is Transfer Learning? Give an example.
-
-#### What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
-#### Mention three ways to handle missing or corrupted data in a dataset.?
-
-#### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
 
-#### How will you implement dropout during forward and backward passes?
 
-#### Briefly explain the K-Means clustering and how can we find the best value of K.
-#### For k-means or kNN, why do we use Euclidean distance over Manhattan distance?
 
-#### Explain the difference between KNN and k-means clustering.
+### What is Transfer Learning? Give an example.
 
-#### Explain the difference between the normal soft margin SVM and SVM with a linear kernel.
+### What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
+### Mention three ways to handle missing or corrupted data in a dataset.?
 
-#### What is the Bayes’ Theorem? Why do we use it?
-#### What are Naive Bayes classifiers? Why do we use them?
+### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
-#### You build a random forest model with 10,000 trees. Training error as at 0.00, but the validation error is 34.23. Explain what went wrong.
+
+### How will you implement dropout during forward and backward passes?
+
+### Briefly explain the K-Means clustering and how can we find the best value of K.
+### For k-means or kNN, why do we use Euclidean distance over Manhattan distance?
+
+### Explain the difference between KNN and k-means clustering.
+
+### Explain the difference between the normal soft margin SVM and SVM with a linear kernel.
+
+### What is the Bayes’ Theorem? Why do we use it?
+### What are Naive Bayes classifiers? Why do we use them?
+
+### You build a random forest model with 10,000 trees. Training error as at 0.00, but the validation error is 34.23. Explain what went wrong.
 
 Your model is likely overfitted. A training error of 0.00 means that the classifier has mimicked training data patterns. This means that they aren’t available for our unseen data, returning a higher error.
 
 When using random forest, this will occur if we use a large number of trees.
 
-#### Describe the motivation behind random forests.
-#### What are the differences and similarities between gradient boosting and random forest?
+### Describe the motivation behind random forests.
+### What are the differences and similarities between gradient boosting and random forest?
 
-#### Why does XGBoost perform better than SVM?
+### Why does XGBoost perform better than SVM?
 
 XGBoost is an ensemble method that uses many trees. This means it improves as it repeats itself.
 
 SVM is a linear separator. So, if our data is not linearly separable, SVM requires a Kernel to get the data to a state where it can be separated. This can limit us, as there is not a perfect Kernel for every given dataset.
 
-####  You are told that your regression model is suffering from multicollinearity. How do verify this is true and build a better model?
+###  You are told that your regression model is suffering from multicollinearity. How do verify this is true and build a better model?
 
 You should create a correlation matrix to identify and remove variables with a correlation above 75%. Keep in mind that our threshold here is subjective.
 
@@ -203,19 +210,19 @@ You could also calculate VIF (variance inflation factor) to check for the presen
 
 You can’t just remove variables, so you should use a penalized regression model or add random noise in the correlated variables, but this approach is less ideal.
 
-#### You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?
+### You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?
 
 The data is spread across the median, so we can assume we’re working with normal distribution. This means that approximately 68% of the data lies at 1 standard deviation from the mean. So, around 32% of the data is unaffected.
 
-#### How would you prevent a neural network from overfitting?
+### How would you prevent a neural network from overfitting?
 
-#### Explain how to apply drop-out. Does it differ for train and test?
+### Explain how to apply drop-out. Does it differ for train and test?
 
-#### Describe convolution types and the motivation behind them.
+### Describe convolution types and the motivation behind them.
 
-#### Why do we need positional encoding in transformers?
-#### Describe several attention mechanisms, what are advantages and disadvantages?
-#### What techniques for NLP data augmentation do you know?
+### Why do we need positional encoding in transformers?
+### Describe several attention mechanisms, what are advantages and disadvantages?
+### What techniques for NLP data augmentation do you know?
 
 
 ## Interview Case Studies
@@ -227,10 +234,10 @@ The data is spread across the median, so we can assume we’re working with norm
 ### Design an ML System to optimize coupon distribution with a set budget(Netflix)
 
 
-#### What are the metrics for search ranking?
+### What are the metrics for search ranking?
 
 
-####  Imagine you’re building a system to recommend users items similar to those they’ve bought. How would you go about building this?
+###  Imagine you’re building a system to recommend users items similar to those they’ve bought. How would you go about building this?
 
 - Item-item similarity matrix: Create an item-item similarity matrix to measure the similarity between pairs of items. You can use cosine similarity or Jaccard similarity methods to compute the similarity scores.
 - Item-based recommendation: Once the item-item similarity matrix is built, recommend items to users based on the items they have bought. For each item a user has purchased, find the most similar items and recommend those to the user.
