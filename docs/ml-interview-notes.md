@@ -104,7 +104,13 @@ The mix between Ridge and Lasso regularization can be controlled by the Ratio hy
 
 [Reference](https://medium.com/@banerjeesoumya15/probability-vs-likelihood-d2b412b0f43a)
 
-#### What is instance normalisation?
+### What is instance normalisation?
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*N0uMSJp3_0X-De3qjvfdEg.png" width="70%" height="70%" />
+
+Batch Normalisation normalises the feature map across the entire batch of fixed size using the mean and variance of the entire batch. **Instance normalisation** (a.k.a. Contrast Normalisation) on the other hand normalises each channel for each sample.
+
+Instance norm normalises the contrast of the input image making the stylised image independent of the input image contrast, thus improving the output quality
 
 #### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 
