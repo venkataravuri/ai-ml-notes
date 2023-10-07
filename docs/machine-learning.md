@@ -51,15 +51,22 @@ A gradient is a vector that goes in the direction of a function’s sharpest asc
 
 A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
 
-#### Gradient Descent Vs. Stochastic Gradient Descent Vs. Batch Gradient Descent Vs. Mini-batch Gradient Descent
+### Optimization Methods
+
+#### Gradient Descent
 
 **Gradient Descent** is an optimization method used to optimize the parameters of a model using the gradient of an objective function (loss function in NN). It optimizes the parameters until the value of the loss function is the minimum (of we've reached the minima of the loss function). It is often referred to as back propagation in terms of Neural Networks.
+
+#### Stochastic Gradient Descent
+
+**Stochastic Gradient Descent** computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
+
+#### Batch Gradient Descent
 
 **Batch Gradient Descent**
 The samples from the whole dataset are used to optimize the parameters i.e to compute the gradients for a single update. For a dataset of 100 samples, updates occur only once.
 
-**Stochastic Gradient Descent** computes the gradients for each and every sample in the dataset and hence makes an update for every sample in the dataset. For a dataset of 100 samples, updates occur 100 times.
-
+#### Mini-batch Gradient Descent
 **Mini Batch Gradient Descent**, instead of a single sample ( Stochastic GD ) or the whole dataset ( Batch GD ), we take small batches or chunks of the dataset and update the parameters accordingly. For a dataset of 100 samples, if the batch size is 5 meaning we have 20 batches. Hence, updates occur 20 times.
 
 #### What is Regularization?
