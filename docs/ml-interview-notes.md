@@ -91,7 +91,18 @@ The mix between Ridge and Lasso regularization can be controlled by the Ratio hy
 
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*-aJ9MXozOKv6joiX.png" width="70%" height="70%" />
 
-#### Explain the difference between likelihood and probability.
+### Explain the difference between likelihood and probability.
+
+**Probability** is used to find the chances of occurrence of a particular event whereas **likelihood** is used to maximize the chances of occurrence of a particular event.
+
+|Probability|Likelihood|
+|---|---|
+|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*s7gd7r0HIDutc_h6iE62gA.png" width="110%" height="110%" />|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*TtpklBikcior40IGSs59ig.png" width="80%" height="80%" />|
+|Probability is simply how likely something is to happen. It is attached to the possible results.|Likelihood talks about the model parameters or the evidence. In likelihood, the data or the outcome is known and the model parameters or the distribution have to be found.|
+|Probabilities are the areas under a fixed distribution. Mathematically denoted by: p( data \| distribution )|Likelihoods are the y-axis values for fixed data points with different distributions. Mathematically denoted by: L( distribution \| data )|
+|p(x1 ≤ x ≤ x2 \| μ, σ)|L(mean=μ, sd=σ \| X=x0) = y0|
+
+[Reference](https://medium.com/@banerjeesoumya15/probability-vs-likelihood-d2b412b0f43a)
 
 #### What is instance normalisation?
 
