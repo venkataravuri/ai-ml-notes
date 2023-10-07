@@ -145,7 +145,9 @@ Total error = error due to Bias + error due to Variance
 
 ### How do you handle data imbalance issues?
 
-
+Refer to,
+- [Class Imbalance data in Machine Learning](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
+- [Techniques for handling imbalanced data](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
 #### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
 #### Can you explain logistic regression and derive gradient descent for Logistic regression
