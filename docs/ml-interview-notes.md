@@ -149,9 +149,18 @@ Refer to,
 - [Class Imbalance data in Machine Learning](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
 - [Techniques for handling imbalanced data](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
-#### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
-#### Can you explain logistic regression and derive gradient descent for Logistic regression
-#### What do eigenvalues and eigenvectors mean in PCA
+### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
+
+Refer to,
+- [Gradient Descent](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#gradient-descent)
+- [Stochastic Gradient Descent](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#stochastic-gradient-descent)
+
+### Can you explain logistic regression and derive gradient descent for Logistic regression
+
+https://medium.com/intro-to-artificial-intelligence/logistic-regression-using-gradient-descent-bf8cbe749ceb
+https://medium.com/intro-to-artificial-intelligence/multiple-linear-regression-with-gradient-descent-e37d94e60ec5
+https://medium.com/intro-to-artificial-intelligence/linear-regression-using-gradient-descent-753c58a2b0c
+
 #### Explain different types of Optimizers — How is Adam optimizer different from Rmsprop?
 #### What are the different types of activation functions and explain about vanishing gradient problem
 
@@ -182,7 +191,8 @@ Water Tapping problem
 
 #### What is the curse of dimensionality? Why do we need to reduce it?
 
-#### What is PCA, why is it helpful, and how does it work?
+### What is PCA, why is it helpful, and how does it work?
+### What do eigenvalues and eigenvectors mean in PCA
 
 PCA stands for principal component analysis
 
