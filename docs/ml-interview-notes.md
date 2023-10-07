@@ -1,6 +1,8 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
-#### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
+### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
+
+?
 
 ### What is the difference between overfitting and underfitting?
 
@@ -26,64 +28,8 @@
 
 ### Explain overfitting and regularization
 
-**Overfitting** occurs when a model learns to perform exceptionally well on the training data but fails to perform well on new, unseen data.
-
-**Regularization** is a set of techniques designed to prevent overfitting and enhance the generalization ability of a model.
-
-Regularization is a technique used to avoid overfitting where the coefficients, if needed, are restricted or shrunken to zero. 
-
-Reducing the impact of less important features directly affects the quality of predictions as it reduces the _degree of freedom_ which in turn makes it harder for the model to get more complex or overfit the data.
-
-Regularization methods introduce additional constraints or penalties to the learning process to ensure that the model does not become overly complex and is better suited for making accurate predictions on new data.
-
-A penalty term is added to the cost function which lets us control the type and amount of regularization to be performed on the model at hand. This is done by modifying the traditional Linear Regression Cost function that is shown below.
-
-```math
-J(\theta) = MSE(\theta) = (\frac{1}{m}).\displaystyle\sum_{i=1}^{n}(\theta^T x^{(i)} - y^{(i)})^2
-```
-<p align="center">Linear Regression Cost Function</p>
-
-Ridge Regression :
-
-This type of regularized regression has a penalty term representing half the square of L2 norm added to the cost function. This forces the learning algorithm to not only fit the data but also keep the model weights as small as possible. The equation for Ridge Regression is shown below.
-
-```math
-J(\theta)_{Ridge} = MSE(\theta) + \lambda.(\frac{1}{2}).\displaystyle\sum_{i=1}^{n}(\theta^2_{i})
-```
-<p align="center">Ridge Regression Cost Function</p>
-
-> The L2 norm is the sum of the squares of the differences between predicted and target values over the feature vector. Its also known as Euclidean Distance and Root Mean Square Error (RMSE).
-
-The shrinkage hyperparameter λ (lambda) controls the amount of regularization and needs to be chosen properly because if λ = 0, then Ridge Regression is the same as Linear Regression and on the other hand, if λ is very large, then all weights end up very close to zero resulting in an underfitting model. One good way to select the right λ is to perform cross-validation.
-
-#### Lasso Regression
-
-Short for Least Absolute Shrinkage and Selection Operator Regression, this type of Regularized Regression uses the L1 norm instead of half the square of L2 norm as the penalty term in the cost function. An important characteristic of Lasso Regression is that it tends to completely eliminate the weights of the least important features and thus, automatically performs feature selection.
-
-> The L1 norm is the sum of the magnitudes of the differences between predicted and target values over the feature vector or could be understood as the sum of absolute differences. Its also known as Manhattan Distance, Taxicab Norm, and Mean Absolute Error (MAE).
-
-```math
-J(\theta)_{Ridge} = MSE(\theta) + \lambda.\displaystyle\sum_{i=1}^{n}(|\theta_{i}|)
-```
-<p align="center">Lasso Regression Cost Function</p>
-
-The shrinkage hyperparameter λ works similar to as in Ridge Regression, too little results in no regularization and too much ends up in an underfit model.
-
-The key difference between Ridge and Lasso regression is that even though both the regression techniques shrink the coefficients closer to zero, only Lasso regression actually sets them to zero if the shrinkage parameter is large enough. Thus, resulting in a model having a selected set of features (sparse model) making it much easier to interpret and work with.
-
-Elastic Net Regression :
-
-This kind of regression is simply a mix of both, Ridge and Lasso Regressions. The penalty term in Elastic Nets is a combination of both absolute value and squared value penalties.
-
-> Elastic Net first emerged as a result of critique on Lasso, whose variable selection can be too dependent on data and thus unstable. The solution is to combine the penalties of Ridge regression and Lasso to get the best of both worlds. (Source)
->
-> 
-```math
-J(\theta)_{Ridge} = MSE(\theta) + r.\lambda.\displaystyle\sum_{i=1}^{n}(|\theta_{i}|) +  [{(1-r)/2}].\alpha.\displaystyle\sum_{i=1}^{n}(\theta^2_{i})
-```
-<p align="center"Elastic Nets Cost Function</p>
-
-The mix between Ridge and Lasso regularization can be controlled by the Ratio hyperparameter (r). When r = 0, Elastic Net is equivalent to Ridge Regression and when r = 1, it is equivalent to Lasso Regression.
+Refer to,
+- [Regularization](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
 
 |Lasso|Rasso|Elasitc Net|
 |---|---|---|
