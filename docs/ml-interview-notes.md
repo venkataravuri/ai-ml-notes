@@ -2,18 +2,18 @@
 
 ## Table of Contents
 
-- Statistics & Probability
- - ?
- - ? 
-- Machine Learning Concepts
- - ?
- - ?
-- Machine Learning Algorithms
- - ?
- - ?
-- Neural Networks
- - ?
- - ?
+- [Statistics & Probability]()
+  - ?
+  - ? 
+- [Machine Learning Concepts]()
+  - ?
+  - ?
+- [Machine Learning Algorithms]()
+  - ?
+  - ?
+- [Neural Networks]()
+  - ?
+  - ?
 
 ### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
