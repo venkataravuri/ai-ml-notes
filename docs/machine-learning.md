@@ -31,11 +31,11 @@ In a classification problem, the model’s output is usually a vector of probabi
   - Label Encoding
   - Target Guided Ordinal Encoding
 
-### Categorical Feature Encoders
-
-|Label Encoding|One Hot Encoding||
-|---|---|---|
-|map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.||
+|Label Encoding|One Hot Encoding|Frequency Encoding|Mean Encoding|
+|---|---|---|---|
+|map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.|Frequency of the categories as labels|Mean Encoding or Target Encoding is similar to label encoding, except here labels are correlated directly with the target. For example, in mean target encoding for each category in the feature label is decided with the mean value of the target variable on a training data.|
+|<img src="https://miro.medium.com/v2/resize:fit:550/format:webp/1*UhTyTyIIOaos5jVlbeQllw.png" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UB3J51jn2XtIkmIp4HWRQA.png" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*l0mPlpqFEK_DSu4OqSnvLg.jpeg" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lK9mSxuPJ4b9SUXA3dN-A.png" height="100%" width="100%" />|
+||For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.|||
 
 ## Class Imbalance data in Machine Learning
 
