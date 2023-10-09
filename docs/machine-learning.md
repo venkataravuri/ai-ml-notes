@@ -29,9 +29,9 @@ Nominal data is defined as data that is used for naming or labelling variables, 
 
 |One Hot Encoding|One Hot Encoding with many categorical (like Pincode)|Mean Encoding|
 |---|---|---|
-|Frequency of the categories as labels||Mean Encoding or Target Encoding is similar to label encoding, except here labels are correlated directly with the target. For example, in mean target encoding for each category in the feature label is decided with the mean value of the target variable on a training data.|
+|Frequency of the categories as labels|• Suppose there are more than 20 categories of a variable then we can’t apply direct One Hot Encoding. <br />• Find most top k categories repeating most frequent. <br />• Then take that k category and create k new features.|• Mean Encoding or Target Encoding is similar to label encoding, except here labels are correlated directly with the target.<br/>• For example, in mean target encoding for each category in the feature label is decided with the mean value of the target variable on a training data.|
 |<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UB3J51jn2XtIkmIp4HWRQA.png" height="100%" width="100%" />||<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lK9mSxuPJ4b9SUXA3dN-A.png" height="100%" width="100%" />|
-|For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.||Advantages: <br/>Capture information within the label, therefore rendering more predictive features<br/>Creates a monotonic relationship between the variable and the targetDisadvantages:<br/>It may cause over-fitting in the model.|
+|For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.||Advantages: <br/>• Capture information within the label, therefore rendering more predictive features<br/>• Creates a monotonic relationship between the variable and the target. <br/>Disadvantages:<br/>• It may cause over-fitting in the model.|
 
 #### Ordinal Encoding — Where Order of data matters
 
