@@ -23,19 +23,28 @@ In a classification problem, the model’s output is usually a vector of probabi
 
 ### Encoding Methodologies
 
-- **Nominal Encoding** - Where Order of data does not matter
-  - One Hot Encoding
-  - One Hot Encoding With Many Categories
-  - Mean Encoding
-- **Ordinal Encoding** — Where Order of data matters
-  - Label Encoding
-  - Target Guided Ordinal Encoding
+#### Nominal Encoding - Where Order of data does not matter
 
-|Label Encoding|One Hot Encoding|Frequency Encoding|Mean Encoding|
-|---|---|---|---|
-|map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.|Frequency of the categories as labels|Mean Encoding or Target Encoding is similar to label encoding, except here labels are correlated directly with the target. For example, in mean target encoding for each category in the feature label is decided with the mean value of the target variable on a training data.|
-|<img src="https://miro.medium.com/v2/resize:fit:550/format:webp/1*UhTyTyIIOaos5jVlbeQllw.png" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UB3J51jn2XtIkmIp4HWRQA.png" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*l0mPlpqFEK_DSu4OqSnvLg.jpeg" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lK9mSxuPJ4b9SUXA3dN-A.png" height="100%" width="100%" />|
-||For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.|||
+Nominal data is defined as data that is used for naming or labelling variables, without any quantitative value.
+
+|One Hot Encoding|One Hot Encoding with many categorical (like Pincode)|Mean Encoding|
+|---|---|---|
+|Frequency of the categories as labels||Mean Encoding or Target Encoding is similar to label encoding, except here labels are correlated directly with the target. For example, in mean target encoding for each category in the feature label is decided with the mean value of the target variable on a training data.|
+|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UB3J51jn2XtIkmIp4HWRQA.png" height="100%" width="100%" />||<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lK9mSxuPJ4b9SUXA3dN-A.png" height="100%" width="100%" />|
+|For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.||Advantages: <br/>Capture information within the label, therefore rendering more predictive features<br/>Creates a monotonic relationship between the variable and the targetDisadvantages:<br/>It may cause over-fitting in the model.|
+
+#### Ordinal Encoding — Where Order of data matters
+
+Ordinal data is a categorical data type where the variables have natural, ordered categories and the distances between the categories are not known. Example: Rating, rank, etc.
+
+|Label Encoding|Target guided Ordinal Encoding|Count Encoding|
+|---|---|---|
+|Map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.|Labels are given on the bases of the mean. Highest the mean, highest the label<br/>Ordering the labels according to the target variable.<br/>Replace the labels by the joint probability.|Replace the categories with there count.<br/>It is used when are lots of categories of a variable.<br/>It does not create a new feature.<br/>Disadvantage: If the same labels have the same count then replaced by the same count and we will lose some valuable information.|
+|<img src="https://miro.medium.com/v2/resize:fit:550/format:webp/1*UhTyTyIIOaos5jVlbeQllw.png" height="100%" width="100%" />|||
+
+Frequency Encoding
+
+<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*l0mPlpqFEK_DSu4OqSnvLg.jpeg" height="100%" width="100%" />
 
 ## Class Imbalance data in Machine Learning
 
