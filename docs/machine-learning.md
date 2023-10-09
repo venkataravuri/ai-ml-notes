@@ -19,6 +19,24 @@ In a classification problem, the model’s output is usually a vector of probabi
 1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
 2. Computers are capable of almost anything, except exact numeric representation.
 
+## Feature Engineering
+
+### Encoding Methodologies
+
+- **Nominal Encoding** - Where Order of data does not matter
+  - One Hot Encoding
+  - One Hot Encoding With Many Categories
+  - Mean Encoding
+- **Ordinal Encoding** — Where Order of data matters
+  - Label Encoding
+  - Target Guided Ordinal Encoding
+
+### Categorical Feature Encoders
+
+|Label Encoding|One Hot Encoding||
+|---|---|---|
+|map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.||
+
 ## Class Imbalance data in Machine Learning
 
 In machine learning, class imbalance is the issue of target class distribution.
