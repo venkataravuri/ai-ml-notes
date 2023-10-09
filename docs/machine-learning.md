@@ -8,6 +8,8 @@
 
 probability in order to convey our predictive insights with certain degree of certainty.
 
+Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
+
 ## Probability Distribution
 
 **Probability** is the chance of event occurring success(1) or failure(0).
