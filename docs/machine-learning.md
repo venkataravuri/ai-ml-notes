@@ -33,7 +33,7 @@ Check out this site to learn about 76 types of univariate distribution
 
 |Binomial Distribution|Bernoulli Distribution|Poisson Distribution|
 |---|---|---|
-|exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). ||Represents how many times an event can occur over a specific time period. |
+|exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). ||Represents how many times an event can occur over a specific time period.|
 |||Examples, <br />• The number of users who visited a website in an interval can be thought of as a Poisson process.|
 |||The probability mass function is given by:<br/>|
 |Problem Statement: Hospital records show that of patients suffering from a specific disease, `75%` die of it. What is the probability that of six randomly selected Patients, four will recover?|||
