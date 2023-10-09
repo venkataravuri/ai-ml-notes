@@ -6,6 +6,8 @@
 
 ## Concepts - Statistics & Linear Algebra
 
+probability in order to convey our predictive insights with certain degree of certainty.
+
 ## Probability Distribution
 
 **Probability** is the chance of event occurring success(1) or failure(0).
@@ -360,6 +362,8 @@ For details refer [this](https://machinelearningmastery.com/loss-functions-in-py
 ### Entropy
 **Entropy** measures the degree of randomness.
 https://www.javatpoint.com/entropy-in-machine-learning
+
+Entropy in simple words is the element of surprise expressed mathematically.
 
 #### Cross Entropy Loss
 https://datajello.com/cross-entropy-and-negative-log-likelihood/
