@@ -113,6 +113,9 @@ Refer to,
 - [Class Imbalance data in Machine Learning](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
 - [Techniques for handling imbalanced data](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
+### How to deal with outliers?
+### How to deal with missing values?
+
 ### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
 
 Refer to,
@@ -129,13 +132,16 @@ https://medium.com/intro-to-artificial-intelligence/linear-regression-using-grad
 ### Explain how Momentum differs from RMS prop optimizer?
 ### Mention one disadvantage of Stochastic Gradient Descent.
 
+### When is One Hot encoding favored over label encoding?
+
+Refer to, [Feature Engineering]()
+
 ### Define precision, recall, and F1 and discuss the trade-off between them.
 
 Refer to,
 - [Evaluation Metrics](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#evaluation-metrics)
  
-### Explain the ROC Curve and AUC.
-### What is the purpose of a ROC curve?
+### Explain the ROC Curve and AUC. What is the purpose of a ROC curve?
 
 Refer to,
 - [ROC](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#roc)
@@ -145,21 +151,15 @@ Refer to,
 What is a Box-Cox transformation?
 Water Tapping problem
 
-### Can you use MSE for evaluating your classification problem instead of Cross entropy
 
-### How does the loss curve for Cross entropy look?
-### What is the cross-entropy of loss?
-
-### What does the “minus” in cross-entropy mean?
-
+### What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?
+### Can you use MSE for evaluating your classification problem instead of Cross entropy?
 
 ###  What is a hyperparameter? How to find the best hyperparameters?
 
-### When is one hot encoding favored over label encoding?
 
-    How to deal with outliers?
-    How to deal with missing values?
-    How to deal with an imbalanced dataset?
+
+
 
 ### What is the curse of dimensionality? Why do we need to reduce it?
 
