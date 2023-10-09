@@ -24,3 +24,4 @@
     - [Statistical Models]()
         - ARIMA - Forecasting trends in a time series
 - [NLP - Natural Language Processing](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md) & [Search Concepts](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
+- [:robot: Machine Learning - :briefcase: Interview Notes :clipboard:](docs/ml-interview-notes.md)
