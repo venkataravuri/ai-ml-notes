@@ -6,6 +6,12 @@
 
 ## Concepts - Statistics & Linear Algebra
 
+## Probability Distribution
+
+This is a univariate probability distribution, which is the probability distribution of a single random variable. This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
+
+Check out this site to learn about 76 types of univariate distribution
+
 #### What are Logits in machine learning?
 
 Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.
