@@ -23,7 +23,7 @@ In a classification problem, the model’s output is usually a vector of probabi
 
 ### Encoding Methodologies
 
-#### Nominal Encoding - Where Order of data does not matter
+### Nominal Encoding - Where Order of data does not matter
 
 Nominal data is defined as data that is used for naming or labelling variables, without any quantitative value.
 
@@ -33,7 +33,7 @@ Nominal data is defined as data that is used for naming or labelling variables, 
 |<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*UB3J51jn2XtIkmIp4HWRQA.png" height="100%" width="100%" />||<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lK9mSxuPJ4b9SUXA3dN-A.png" height="100%" width="100%" />|<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*l0mPlpqFEK_DSu4OqSnvLg.jpeg" height="100%" width="100%" />|
 |For high cardinality features, this method produces a lot of columns that slows down the learning significantly.<br/> One hot encoding produces the number of columns equal to the number of categories and dummy producing is one less.||Advantages: <br/>• Capture information within the label, therefore rendering more predictive features<br/>• Creates a monotonic relationship between the variable and the target. <br/>Disadvantages:<br/>• It may cause over-fitting in the model.||
 
-#### Ordinal Encoding — Where Order of data matters
+### Ordinal Encoding — Where Order of data matters
 
 Ordinal data is a categorical data type where the variables have natural, ordered categories and the distances between the categories are not known. Example: Rating, rank, etc.
 
