@@ -276,13 +276,15 @@ The data is spread across the median, so we can assume we’re working with norm
 
 The dropout will randomly mute some neurons in the neural network. At each training stage, individual nodes are either dropped out of the net 
 
-### How would you prevent a neural network from overfitting? How does Dropout prevent overfitting?
+### How would you prevent a neural network from overfitting? How does Dropout prevent overfitting? Does it differ for train and test?
 
 Dropout is a technique to regularize in neural networks. When we drop certain nodes out, these units are not considered during a particular forward or backward pass in a network.
 
 Dropout forces a neural network to learn more robust features that are useful in conjunction with many different random subsets of the other neurons. It will make the weights spread over the input features instead of focusing on just some features.
 
-### Explain how to apply drop-out. Does it differ for train and test?
+Dropout is used in the training phase to reduce the chance of overfitting. As you mention this layer deactivates certain neurons. The model will become more insensitive to weights of other nodes. Basically with the dropout layer the trained model will be the average of many thinned models. 
+
+dropout is disabled in test phase.
 
 ### Describe convolution types and the motivation behind them.
 
