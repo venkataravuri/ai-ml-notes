@@ -19,7 +19,25 @@
 
 ### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
-?
+In **supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided, while in **unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
+
+**Supervised Learning Model Types**
+
+- In regression models, the output is continuous
+- In classification models, the output is discrete.
+
+**Models**
+
+- Linear Regression
+- Linear Support Vector Machines (SVMs)
+- Naive Bayes
+
+
+**Unsupervised learning**
+
+Principal Component Analysis (PCA)
+Clustering - Clustering is an unsupervised technique that involves the grouping, or clustering, of data points.
+  - K-Means Clustering
 
 ### What is the difference between overfitting and underfitting?
 
@@ -115,6 +133,8 @@ Refer to,
 
 ### How to deal with outliers?
 ### How to deal with missing values?
+
+Missing data can be handled by imputing values using techniques such as mean imputation or regression imputation. Outlier values can be detected and removed using methods such as Z-score or interquartile range (IQR) based outlier detection.
 
 ### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
 
