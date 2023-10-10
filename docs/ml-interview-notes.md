@@ -249,6 +249,14 @@ A method for assessing the performance of a model on unseen data by partitioning
 
 ### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
+Time series cross-validation
+
+There is a task called time series forecasting, which often arises in the form of “What will happen to the indicators of our product in the nearest day/month/year?”.
+
+Cross-validation of models for such a task is complicated by the fact that the data should not overlap in time: the training data should come before the validation data, and the validation data should come before the test data. Taking into account these features, the folds in cross-validation for time series are arranged along the time axis as shown in the following image:
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jRZTjEK21X1iSSsisie-5Q.png" weight="50%" height="50%" />
+
 Cross-validation is a method used for evaluating the performance of a model, It helps to compare different models and select the best one for a specific task. 
 
 - Hold-out - The hold-out method is a simple division of data into train and test sets.
@@ -256,7 +264,8 @@ Cross-validation is a method used for evaluating the performance of a model, It 
   - 33.3% Setosa
   - 33.3% Versicolor
   - 33.3% Virginica
-- k-Fold - The k-Fold method is often referred to when talking about cross-validation. 
+- k-Fold - The k-Fold method is often referred to when talking about cross-validation.
+- Stratified k-Fold - The stratified k-Fold method is a k-Fold method that uses stratification when dividing into folds: each fold contains approximately the same class ratio as the entire original set.
 
 K-fold cross-validation is a technique used in machine learning to assess the performance and generalization ability of a model. It helps us understand how well our model will perform on unseen data.
 
