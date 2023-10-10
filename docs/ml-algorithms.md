@@ -28,6 +28,26 @@ There are various methods for calculating this distance, of which the most commo
 - Euclidian, Manhattan (for continuous)
 - Hamming distance (for categorical).
 
+## K-Means Clustering
+
+Clustering is the task of _grouping a set of objects_, such that objects in the same group (cluster) are more similar to each other than to those in other groups (clusters).
+
+K-means is a centroid-based clustering technique that partitions the dataset into k distinct clusters, where each data point belongs to the cluster with the nearest center.
+
+K-means clustering is a widely-used unsupervised machine learning technique for data segmentation.
+
+K-means can be employed for,
+- Customer segmentation
+- Image compression
+- Document clustering
+- and anomaly detection.
+
+Centroid-Based Clustering
+
+In centroid-based clustering, each cluster is represented by a central vector, called the cluster center or centroid, which is not necessarily a member of the dataset. The cluster centroid is typically defined as the mean of the points that belong to that cluster.
+
+Our goal in centroid-based clustering is to divide the data points into k clusters in such a way that the points are as close as possible to the centroids of the clusters they belong to.
+
 ### Random Forest
 
 Random Forest approach is an ensemble learning method based on many decision trees.
