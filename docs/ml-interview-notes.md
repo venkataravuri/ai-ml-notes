@@ -234,9 +234,6 @@ Number of Epochs
 
 An epoch represents a full pass through the entire training dataset. Too few epochs might lead to underfitting, while too many can lead to overfitting. Finding the right number of epochs involves monitoring validation performance. 
 
-
-
-
 ### What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?
 
 PCA stands for principal component analysis
@@ -252,6 +249,20 @@ A method for assessing the performance of a model on unseen data by partitioning
 
 ### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
+Cross-validation is a method used for evaluating the performance of a model, It helps to compare different models and select the best one for a specific task. 
+
+- Hold-out - The hold-out method is a simple division of data into train and test sets.
+- Stratification - Simple random splitting of a dataset into training and test sets (as shown in the examples above) can lead to a situation where the distributions of the training and test sets are not the same as the original dataset. The class distribution in this dataset is uniform:
+  - 33.3% Setosa
+  - 33.3% Versicolor
+  - 33.3% Virginica
+- k-Fold - The k-Fold method is often referred to when talking about cross-validation. 
+
+K-fold cross-validation is a technique used in machine learning to assess the performance and generalization ability of a model. It helps us understand how well our model will perform on unseen data.
+
+how K-fold cross-validation works:
+1. Splitting the dataset: First, you divide your dataset into K equal-sized subsets or folds. For example, let’s use K=5, so you’ll have 5 subsets, each containing 200 images.
+2. Training and testing: Now, you iterate through each fold, treating it as a testing set, while the remaining K-1 folds serve as the training set. 
 
 ### What is Transfer Learning? Give an example.
 
