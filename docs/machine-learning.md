@@ -237,25 +237,23 @@ Before any distance measurement, text have to be tokenzied.
 
 In NLP, we also want to find the similarity among sentence or document. 
 
-|Euclidean Distance|Jaccard similarity||
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*FTVRr_Wqz-3_k6Mk6G4kew.png" width="50% height="50%" />
+
+|Euclidean Distance|Cosine similarity|Jaccard similarity|
 |---|---|---|
-|Comparing the shortest distance among two objects. It uses Pythagorean Theorem which learnt from secondary school.|Jaccard similarity is based on the ratio of the intersection to the union of the sets of words that represent the documents. The higher the ratio, the more similar the documents are. ||
-|Cosine similarity is based on the angle between two vectors that represent the documents. The closer the angle is to zero, the more similar the documents are. Cosine similarity is easy to compute, especially with sparse matrices, and it can capture the overall similarity of the documents regardless of their length.||
-|<img src="https://miro.medium.com/v2/resize:fit:640/0*Bd8VtxN8ql4qw4vo" weight="50%" height="50%" />|||
+|Comparing the shortest distance among two objects. It uses Pythagorean Theorem which learnt from secondary school.|Jaccard similarity is based on the ratio of the intersection to the union of the sets of words that represent the documents. The higher the ratio, the more similar the documents are. |Cosine similarity is based on the angle between two vectors that represent the documents. The closer the angle is to zero, the more similar the documents are. Cosine similarity is easy to compute, especially with sparse matrices, and it can capture the overall similarity of the documents regardless of their length.||
+|<img src="https://miro.medium.com/v2/resize:fit:640/0*Bd8VtxN8ql4qw4vo" weight="25%" height="25%" />|<img src="https://miro.medium.com/v2/resize:fit:1170/format:webp/1*MhX64CBNBUQdQyM30jiaYA.png" width="40%" height4050%" />
+||
+||Cosine similarity is calculated using only the dot product and magnitude of each vector, and is therefore affected only by the terms the two vectors have in common, whereas Euclidean has a term for every dimension which is non-zero in either vector.<br/>Cosine similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. 
+<br/>It is thus a judgment of orientation and not magnitude (length)
+<br/>two vectors with the same orientation have a cosine similarity of 1 (The cosine of 0° is 1)
+<br/>two vectors oriented at 90° relative to each other have a similarity of 0
+<br/>and two vectors diametrically opposed have a similarity of -1, independent of their magnitude.||
 
 #### What is difference between Cosine Similarity & Ecludian Distance?
 
-<img src="https://miro.medium.com/v2/resize:fit:1170/format:webp/1*MhX64CBNBUQdQyM30jiaYA.png" width="50%" height="50%" />
 
-Cosine similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. 
 
-- It is thus a judgment of orientation and not magnitude (length)
-- two vectors with the same orientation have a cosine similarity of 1 (The cosine of 0° is 1)
-- two vectors oriented at 90° relative to each other have a similarity of 0
-- and two vectors diametrically opposed have a similarity of -1, independent of their magnitude. 
-
-- Cosine similarity is generally used as a metric for measuring distance when the magnitude of the vectors does not matter. 
-- Text data is the most typical example for when to use this metric.
 
 ### Bayes Theorem
 
