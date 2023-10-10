@@ -67,7 +67,19 @@ A simple text diagram to describe a CNN: ```INPUT => CONV => RELU => FC => SOFTM
 
 The convolutional operation is implemented by making The kernel slides across the image and produces an output Value at each position.
 
-Also we convolve different Kernels and as a result obtain Different feature maps or channels.
+Convolution is using a ‘kernel’ to extract certain ‘features’ from an input image.
+
+A kernel is a matrix, which is slid across the image and multiplied with the input such that the output is enhanced in a certain desirable manner.
+
+Also we convolve different Kernels and as a result obtain Different feature maps or channels. to extract latent features.
+
+<img src="https://miro.medium.com/v2/resize:fit:780/1*Eai425FYQQSNOaahTXqtgg.gif" height="50%" width="50%" />
+
+the kernel used above is useful for sharpening the image.
+
+Convolutional filters, also called kernels are designed to detect specific patterns or features in the input data.
+
+in image processing, filters might be designed to detect edges, corners, or textures. In deep learning, the weights of these filters are learned automatically through training on large datasets.
 
 **Variants of The Convolution Operation**
 
@@ -85,6 +97,10 @@ For example,
   - A weighted average based on the distance from the central pixel.
 
 In all cases, pooling helps to make the representation become approximately invariant to small translations of the input. Invariance to translation means that if we translate the input by a small amount, the values of most of the pooled outputs do not change.
+
+Understanding the **Receptive Field** of Convolutional Layer
+
+For large inputs, we need many layers to understand the whole input. We can downsample the features by using stride, kernel_size and max_pooling. They increase the receptive field. The receptive field essentially expresses how much information a later layer contains of the first input layer. Consider the example of a 1D array of length 7, where we apply a 1D kernel of size 3. On the left we see that the 1D array length decreases from 7 to 5 in the second layer due to the convolutional operation.
 
 [Source](https://pyimagesearch.com/2021/05/14/convolutional-neural-networks-cnns-and-layer-types/)
 
