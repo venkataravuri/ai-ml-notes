@@ -63,6 +63,29 @@ Stacking a series of these layers in a specific manner yields a CNN.
 
 A simple text diagram to describe a CNN: ```INPUT => CONV => RELU => FC => SOFTMAX```
 
+**Convolution Operation**
+
+The convolutional operation is implemented by making The kernel slides across the image and produces an output Value at each position.
+
+Also we convolve different Kernels and as a result obtain Different feature maps or channels.
+
+**Variants of The Convolution Operation**
+
+|Valid Convolution|Strided Convolution|Dilated Convolution|Depth wise Convolution|
+|---|---|---|---|
+|<img src="https://miro.medium.com/v2/resize:fit:578/format:webp/1*8QgzufBR-FofT8OAjnKSow.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:436/format:webp/1*9h-pnJxNKwRi9ft9ljQatg.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:646/format:webp/1*eUjPo__YgjupAKV5rg4MSw.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:668/format:webp/1*S_pnYr5LMrWk4oXEqpj6bA.png" height="70%" weight="70%" />|<img src="" height="70%" weight="70%" />|
+|Doesn’t used any padding|kernel slides along the image with a step > 1|kernel is spread out, step > 1 between kernel elements|each output channel is connected only to one input channel|
+
+**Pooling** - A pooling function replaces the output of the net at a certain location with a summary statistic of the nearby outputs. 
+For example, 
+- **Max pooling** operation reports the maximum output within a rectangular neighborhood. 
+- Others,
+  - Average of a rectangular neighborhood
+  - L2 norm of a rectangular neighborhood
+  - A weighted average based on the distance from the central pixel.
+
+In all cases, pooling helps to make the representation become approximately invariant to small translations of the input. Invariance to translation means that if we translate the input by a small amount, the values of most of the pooled outputs do not change.
+
 [Source](https://pyimagesearch.com/2021/05/14/convolutional-neural-networks-cnns-and-layer-types/)
 
 ### NN Vs. RNN
