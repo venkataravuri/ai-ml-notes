@@ -225,6 +225,24 @@ This approach leads to faster learning rates since normalization ensures thereâ€
 
 In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batchâ€™s standard deviation.
 
+
+## Distance Measurement in Text Mining
+
+Before any distance measurement, text have to be tokenzied.
+
+4 basic distance measurements:
+- Euclidean Distance
+- Cosine Distance
+- Jaccard Similarity
+
+In NLP, we also want to find the similarity among sentence or document. 
+
+|Euclidean Distance|Jaccard similarity||
+|---|---|---|
+|Comparing the shortest distance among two objects. It uses Pythagorean Theorem which learnt from secondary school.|Jaccard similarity is based on the ratio of the intersection to the union of the sets of words that represent the documents. The higher the ratio, the more similar the documents are. ||
+|Cosine similarity is based on the angle between two vectors that represent the documents. The closer the angle is to zero, the more similar the documents are. Cosine similarity is easy to compute, especially with sparse matrices, and it can capture the overall similarity of the documents regardless of their length.||
+|<img src="https://miro.medium.com/v2/resize:fit:640/0*Bd8VtxN8ql4qw4vo" weight="50%" height="50%" />|||
+
 #### What is difference between Cosine Similarity & Ecludian Distance?
 
 <img src="https://miro.medium.com/v2/resize:fit:1170/format:webp/1*MhX64CBNBUQdQyM30jiaYA.png" width="50%" height="50%" />
