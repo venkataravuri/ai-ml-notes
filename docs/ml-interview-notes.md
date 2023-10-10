@@ -206,9 +206,33 @@ Refer to [Loss Functions Notes](https://github.com/venkataravuri/ai-ml/edit/mast
 
 ### Can you use MSE for evaluating your classification problem instead of Cross entropy?
 
+MSE doesn’t punish misclassifications enough but is the right loss for regression, where the distance between two values that can be predicted is small.
+
+For classification, cross-entropy tends to be more suitable than MSE 
+
+the cross-entropy arises as the natural cost function to use if you have a sigmoid or softmax nonlinearity in the output layer of your network, and you want to maximize the likelihood of classifying the input data correctly.
 
 ###  What is a hyperparameter? How to find the best hyperparameters?
 
+Hyperparameters are variables of which values are set by the ML engineer or any other person before training the model. These values are not automatically learned from the data.
+
+Grid Search is a powerful tool for hyperparameter tuning, In Random Search CV, the user defines a distribution of values for each hyperparameter of the model. The algorithm then randomly samples hyperparameters from these distributions to create a set of hyperparameter combinations. For example, if there are three hyperparameters with ranges of [0.1, 1.0], [10, 100], and [1, 10], the algorithm might randomly sample values of 0.4, 75, and 5, respectively, to create a hyperparameter combination.
+
+Random search is more efficient than grid search when the number of hyperparameters is large because it does not require evaluating all possible combinations of hyperparameter values.
+
+learning rate, momentum, dropout, etc
+
+Learning Rate
+
+The learning rate determines the step size at which the model adjusts its weights during each iteration of training. A high learning rate might cause the model to overshoot the optimal weights, while a low learning rate might result in slow convergence. It’s essential to find a balance. 
+
+Batch Size
+
+The batch size, which determines the number of training examples used in each gradient descent iteration, is a critical hyperparameter in deep learning. 
+
+Number of Epochs
+
+An epoch represents a full pass through the entire training dataset. Too few epochs might lead to underfitting, while too many can lead to overfitting. Finding the right number of epochs involves monitoring validation performance. 
 
 
 
