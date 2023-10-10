@@ -345,26 +345,32 @@ In neural networks, loss functions help optimize the performance of the model. T
 All machine learning models are one optimization problem or another, the loss is the objective function to minimize. In neural networks, the optimization is done with gradient descent and backpropagation. [Source](https://machinelearningmastery.com/loss-functions-in-pytorch-models/)
 
 ### Loss functions for Regression
-- Mean Absolute Error (MAE)
-- Mean Square Error (MSE)
-For details refer [this](https://machinelearningmastery.com/loss-functions-in-pytorch-models/)
+
+|Loss Function|Description|Formula|Notes|
+|---|---|---|---|
+|Mean Absolute Error (MAE) Or L1 Loss|measures the absolute difference between the true and predicted value||not sensitive to outliers and it is also not differentiable at zero.|
+|Mean Squared Error (MSE)|This loss function handles outliers in an efficient manner as outliers are detected due to the quadratic loss.||Convergence is also smooth as the gradient becomes smaller as the loss decreases.|
+|Root Mean Squared Error (RMSE)||||
+|Root Mean Squared Logarithmic Error (RMSLE)|The root mean squared logarithmic error is determined by applying log to the actual and predicted numbers and then subtracting them. RMSLE is resistant to outliers when both minor and large errors are considered||The loss function is scale independent as it is a difference of two log values which is the same as log of the ratio of the values. Due to the loss being log it penalizes underestimates more than overestimates. Same as MSLE but the root mean square version of it.|
+|Huber Loss|Huber loss is an ideal combination of quadratic and linear scoring algorithms||Huber loss is a combination of two loss functions quadratic and linear. The behaviour of the loss is defined by the value of the threshold. for loss values beyond the threshold the loss is linear else quadratic.|
+
+**Others**
+
+Quantile Loss, Log Cosh Loss and more ...
 
 ### Loss functions for classification
 
 ### Entropy
-**Entropy** measures the degree of randomness.
-https://www.javatpoint.com/entropy-in-machine-learning
-
+Entropy as a term is often used to measure the randomness in a given function/object.
 Entropy in simple words is the element of surprise expressed mathematically.
 
-#### Cross Entropy Loss
-https://datajello.com/cross-entropy-and-negative-log-likelihood/
+##### 
 
-Cross refers to the fact that it needs to relate two distributions. It’s called the cross entropy of distribution q relative to a distribution p.
-- p is the true distribution of X (this is the label of the y value in a ML problem)
-- q is the estimated (observed) distribution of X (this is the predicted value of y-hat value in a ML problem)
-
-##### Log Loss - Binary Cross-Entropy Loss
+|||||
+|---|---|---|---|
+|Log Loss (Or) Binary Cross-Entropy Loss|refers to the difference of randomness between two given features (or variables). The term keeps getting smaller as this difference decreases.||Less intuitive and may have many local minima.<br/>While applying this, the activation function in output layer must be SIGMOID.|
+|Categorical cross entropy|This comes into picture when we have multiclass classification — number of classes becomes more than 2.|||
+|Hinge Loss| Another commonly used Loss Function for classification problems — specially designed for SVM (support vector machines) classification algorithm (with labels as -1 and 1, not 0 and 1). It facilitates in finding the maximum margin of separation, from the hyperplanes to the respective classes.| | |
 
 
 ### References
