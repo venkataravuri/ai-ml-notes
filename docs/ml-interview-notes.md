@@ -325,9 +325,6 @@ resnet18.fc = nn.Linear(num_ftrs, 10)
 
 ### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
-
-### How will you implement dropout during forward and backward passes?
-
 ### Briefly explain the K-Means clustering and how can we find the best value of K.
 ### For k-means or kNN, why do we use Euclidean distance over Manhattan distance?
 
@@ -367,7 +364,7 @@ The data is spread across the median, so we can assume we’re working with norm
 
 The dropout will randomly mute some neurons in the neural network. At each training stage, individual nodes are either dropped out of the net 
 
-### How would you prevent a neural network from overfitting? How does Dropout prevent overfitting? Does it differ for train and test?
+### How would you prevent a neural network from overfitting? How does Dropout prevent overfitting? Does it differ for train and test? How will you implement dropout during forward and backward passes?
 
 Dropout is a technique to regularize in neural networks. When we drop certain nodes out, these units are not considered during a particular forward or backward pass in a network.
 
@@ -378,6 +375,8 @@ Dropout is used in the training phase to reduce the chance of overfitting. As yo
 dropout is disabled in test phase.
 
 ### Describe convolution types and the motivation behind them.
+
+Refer to, [Convolution Operations](https://github.com/venkataravuri/ai-ml/blob/master/docs/neural-networks-deeplearning.md#convolutional-neural-networks-cnn)
 
 ### Why do we need positional encoding in transformers?
 ### Describe several attention mechanisms, what are advantages and disadvantages?
