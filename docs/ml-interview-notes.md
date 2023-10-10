@@ -274,7 +274,13 @@ You can’t just remove variables, so you should use a penalized regression mode
 
 The data is spread across the median, so we can assume we’re working with normal distribution. This means that approximately 68% of the data lies at 1 standard deviation from the mean. So, around 32% of the data is unaffected.
 
-### How would you prevent a neural network from overfitting?
+The dropout will randomly mute some neurons in the neural network. At each training stage, individual nodes are either dropped out of the net 
+
+### How would you prevent a neural network from overfitting? How does Dropout prevent overfitting?
+
+Dropout is a technique to regularize in neural networks. When we drop certain nodes out, these units are not considered during a particular forward or backward pass in a network.
+
+Dropout forces a neural network to learn more robust features that are useful in conjunction with many different random subsets of the other neurons. It will make the weights spread over the input features instead of focusing on just some features.
 
 ### Explain how to apply drop-out. Does it differ for train and test?
 
