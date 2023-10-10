@@ -61,11 +61,9 @@ Clustering - Clustering is an unsupervised technique that involves the grouping,
 [Reference-1](https://stanford.edu/%7Eshervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
 [Reference-2](https://medium.com/@nerdjock/lesson-15-machine-learning-overfitting-underfitting-and-model-complexity-intuition-ba6874224a2c)
 
-### Explain regularization
-### When is 'Ridge regression' favorable over 'Lasso regression'?
+### Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?
 
-Refer to,
-- [Regularization](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
+Refer to [Regularization Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
 
 ### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 
@@ -128,8 +126,8 @@ Total error = error due to Bias + error due to Variance
 ### How do you handle data imbalance issues?
 
 Refer to,
-- [Class Imbalance data in Machine Learning](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
-- [Techniques for handling imbalanced data](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
+- [Class Imbalance data in Machine Learning Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
+- [Techniques for handling imbalanced data Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
 ### How to deal with outliers?
 
@@ -181,23 +179,23 @@ https://medium.com/intro-to-artificial-intelligence/linear-regression-using-grad
 
 ### When is One Hot encoding favored over label encoding?
 
-Refer to, [Feature Engineering]()
+Refer to [Feature Engineering Notes]()
 
 ### Define precision, recall, and F1 and discuss the trade-off between them.
 
-Refer to,
-- [Evaluation Metrics](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#evaluation-metrics)
+Refer to [Evaluation Metrics Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#evaluation-metrics)
  
 ### Explain the ROC Curve and AUC. What is the purpose of a ROC curve?
 
-Refer to,
-- [ROC](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#roc)
+Refer to [ROC Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#roc)
+
+### What is a Gradient?
+
+The Gradient is nothing but a _derivative of loss function_ with respect to the weights. It is used to updates the weights to minimize the loss function during the back propagation in neural networks.
 
 ### What are the different types of Activation Functions? Explain vanishing gradient problem? What is the exploding gradient problem when using the backpropagation technique?
 
-What is a Box-Cox transformation?
-Water Tapping problem
-
+Refer to [Activation Functions Notes]()
 
 ### What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?
 ### Can you use MSE for evaluating your classification problem instead of Cross entropy?
