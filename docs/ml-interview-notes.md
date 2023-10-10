@@ -153,11 +153,14 @@ We can use visualization,
 |Transforming and binning values|Transforming variables can also eliminate outliers. Natural log of a value reduces the variation caused by extreme values. Binning is also a form of variable transformation. Decision Tree algorithm allows to deal with outliers well due to binning of variable. We can also use the process of assigning weights to different observations.|
 |Imputing|We can also impute outliers by using mean, median, mode imputation methods. Before imputing values, we should analyze if it is natural outlier or artificial. If it is artificial, we can go with imputing values. We can also use statistical model to predict values of outlier observation and after that we can impute it with predicted values.|
 
+[Source](https://medium.com/analytics-vidhya/how-to-remove-outliers-for-machine-learning-24620c4657e8)
+
 ### How to deal with missing values?
 
 Missing data can be handled by imputing values using techniques such as mean imputation or regression imputation. Outlier values can be detected and removed using methods such as Z-score or interquartile range (IQR) based outlier detection.
 
 ### Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?
+### Mention one disadvantage of Stochastic Gradient Descent.
 
 Refer to,
 - [Gradient Descent](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#gradient-descent)
@@ -169,9 +172,12 @@ https://medium.com/intro-to-artificial-intelligence/logistic-regression-using-gr
 https://medium.com/intro-to-artificial-intelligence/multiple-linear-regression-with-gradient-descent-e37d94e60ec5
 https://medium.com/intro-to-artificial-intelligence/linear-regression-using-gradient-descent-753c58a2b0c
 
-### Explain different types of Optimizers — How is Adam optimizer different from Rmsprop?
-### Explain how Momentum differs from RMS prop optimizer?
-### Mention one disadvantage of Stochastic Gradient Descent.
+### Explain different types of Optimizers? How is 'Adam' optimizer different from 'RMSprop'? Explain how Momentum differs from RMS prop optimizer?
+
+|Stochastic gradient descent (SGD)|Adam, adaptive moment estimation|RMSprop - root mean squared propagation|Adagrad|
+|---|---|---|---|
+|Simple and widely used optimizer that updates the model parameters based on the gradient of the loss function with respect to the parameters.|uses moving averages of the gradients to automatically tune the learning rate, which can make it more efficient and easier to use than SGD|an optimizer that divides the learning rate by an exponentially decaying average of squared gradients.|an optimizer that adapts the learning rate for each parameter based on the past gradients for that parameter.|
+|sensitive to the learning rate and may require careful tuning.| It uses moving averages of the gradients to automatically tune the learning rate, which can make it more efficient and easier to use than SGD.|This can make it more stable and efficient than SGD, but it may require careful tuning of the decay rate.| This can make it effective for training with sparse gradients, but it may require careful tuning of the initial learning rate.|
 
 ### When is One Hot encoding favored over label encoding?
 
