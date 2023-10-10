@@ -132,6 +132,27 @@ Refer to,
 - [Techniques for handling imbalanced data](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
 ### How to deal with outliers?
+
+#### Methods for Detection of Outliers
+
+We can use visualization,
+
+|||
+|---|---|
+|Box Plot|It captures the summary of the data effectively and also provides insight about 25h, 50th and 75th percentile, median as well as outliers|
+|Scatter Plot|It is used when we want to determine the relationship between the 2 variables and can be used to detect any outlier(s)|
+|Inter-Quartile Range||
+|Z score method|It tells us how far away a data point is from the mean.|
+|DBSCAN (Density Based Spatial Clustering of Applications with Noise)|is focused on finding neighbors by density (MinPts) on an ‘n-dimensional sphere’ with radius ɛ. A cluster can be defined as the maximal set of ‘density connected points’ in the feature space.|
+
+#### Methods for Handling the Outliers
+
+|||
+|--|--|
+|Deleting observations|Delete outlier values if it is due to data entry error, data processing error or outlier observations are very small in numbers.|
+|Transforming and binning values|Transforming variables can also eliminate outliers. Natural log of a value reduces the variation caused by extreme values. Binning is also a form of variable transformation. Decision Tree algorithm allows to deal with outliers well due to binning of variable. We can also use the process of assigning weights to different observations.|
+|Imputing|We can also impute outliers by using mean, median, mode imputation methods. Before imputing values, we should analyze if it is natural outlier or artificial. If it is artificial, we can go with imputing values. We can also use statistical model to predict values of outlier observation and after that we can impute it with predicted values.|
+
 ### How to deal with missing values?
 
 Missing data can be handled by imputing values using techniques such as mean imputation or regression imputation. Outlier values can be detected and removed using methods such as Z-score or interquartile range (IQR) based outlier detection.
