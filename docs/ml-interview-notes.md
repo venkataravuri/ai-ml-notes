@@ -129,7 +129,8 @@ Refer to,
 - [Class Imbalance data in Machine Learning Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#class-imbalance-data-in-machine-learning)
 - [Techniques for handling imbalanced data Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#techniques-for-handling-imbalanced-data)
 
-### How to deal with outliers?
+### How to deal with outliers? What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
+
 
 #### Methods for Detection of Outliers
 
@@ -153,7 +154,7 @@ We can use visualization,
 
 [Source](https://medium.com/analytics-vidhya/how-to-remove-outliers-for-machine-learning-24620c4657e8)
 
-### How to deal with missing values?
+### How to deal with missing values? Mention three ways to handle missing or corrupted data in a dataset.?
 
 Missing data can be handled by imputing values using techniques such as mean imputation or regression imputation. Outlier values can be detected and removed using methods such as Z-score or interquartile range (IQR) based outlier detection.
 
@@ -195,10 +196,16 @@ The Gradient is nothing but a _derivative of loss function_ with respect to the 
 
 ### What are the different types of Activation Functions? Explain vanishing gradient problem? What is the exploding gradient problem when using the backpropagation technique?
 
-Refer to [Activation Functions Notes]()
+Refer to [Activation Functions Notes](https://github.com/venkataravuri/ai-ml/edit/master/docs/machine-learning.md#activation-functions)
+
+
 
 ### What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?
+
+Refer to [Loss Functions Notes](https://github.com/venkataravuri/ai-ml/edit/master/docs/machine-learning.md#loss-functions)
+
 ### Can you use MSE for evaluating your classification problem instead of Cross entropy?
+
 
 ###  What is a hyperparameter? How to find the best hyperparameters?
 
@@ -206,10 +213,7 @@ Refer to [Activation Functions Notes]()
 
 
 
-### What is the curse of dimensionality? Why do we need to reduce it?
-
-### What is PCA, why is it helpful, and how does it work?
-### What do eigenvalues and eigenvectors mean in PCA
+### What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?
 
 PCA stands for principal component analysis
 
@@ -225,14 +229,8 @@ A method for assessing the performance of a model on unseen data by partitioning
 ### Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.
 
 
-
-
-
-
 ### What is Transfer Learning? Give an example.
 
-### What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.
-### Mention three ways to handle missing or corrupted data in a dataset.?
 
 ### Cosine similarity Vs. Jaccard similarity methods to compute the similarity scores
 
