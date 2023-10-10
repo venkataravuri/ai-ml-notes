@@ -3,6 +3,7 @@
 - [Activation Functions](#activation-functions)
 - [Loss Functions](#loss-functions)
 - [Evaulation Metrics](#evaluation-metrics)
+- [Activation Functions]()
 
 ## Concepts - Statistics & Linear Algebra
 
@@ -313,49 +314,36 @@ The AUC ranges from 0 to 1, where:
 
 ## Activation Functions
 
-Activation functions transforms the weighted sum of a neuron so that the output is non-linear.
-Activation function decides whether a neuron should be activated or not.
+- Activation function decides whether a neuron should be activated or not.
+- Activation functions transforms the weighted sum of a neuron so that the output is non-linear.
 
-<img src="https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/627d12431fbd5e61913b7423_60be4975a399c635d06ea853_hero_image_activation_func_dark.png" height="35%" width="35%">
+<img src="https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/627d12431fbd5e61913b7423_60be4975a399c635d06ea853_hero_image_activation_func_dark.png" height="90%" width="90%">
 
-#### [Cheatsheet](https://miro.medium.com/v2/resize:fit:720/format:webp/1*o7sNtf4Cmou-3eSW35Sx4g.png)
+### Vanishing Gradients Vs. Exploding Gradients
 
-### Sigmoid or Logistic Activtion Function
+**Vanishing Gradient** occurs when the derivative or slope will get smaller and smaller as we go backward with every layer during backpropagation.
 
-It is generally used in logistic regression and binary classification models in the output layer.
+When weights update is very small or exponential small, the training time takes too much longer, and in the worst case, this may completely stop the neural network training.
 
-The output of sigmoid activation function lies between 0 and 1, making it perfect to model probability. Hence it is used to convert the real-valued output of a linear layer to a probability.
+**Exploding gradient** occurs when the derivatives or slope will get larger and larger as we go backward with every layer during backpropagation. This situation is the exact opposite of the vanishing gradients.
 
-The function is differentiable but saturates quickly because of the boundedness leading to a vanishing gradient when used in a deep neural network. Contributes to the vanishing gradient problem.
+This problem happens because of weights, not because of the activation function. Due to high weight values, the derivatives will also higher so that the new weight varies a lot to the older weight, and the gradient will never converge. So it may result in oscillating around minima and never come to a global minima point.
 
-https://machinelearningmastery.com/using-activation-functions-in-neural-networks/
-
-https://www.v7labs.com/blog/neural-networks-activation-functions
-
-### Softmax
-
-Extension of sigmoid activation function taking advantage of range of the output between 0 and 1. This is mainly used in the output layer of a multiclass, multinomial classification problem with a useful property of sum of the output probabilities adding up to 1.
-
-Softmax is used for multi-classification, the probabilities sum will be 1.
-
-### Tanh or hyperbolic tangent Activation Function
-tanh is also like logistic sigmoid but better. The range of the tanh function is from (-1 to 1). tanh is also sigmoidal (s - shaped).
-
-### ReLU (Rectified Linear Unit) Activation Function
-
-The ReLU is the most used activation function in the world right now.Since, it is used in almost all the convolutional neural networks or deep learning.
-
-
-### Swish
-### GeLU
-https://towardsdatascience.com/fantastic-activation-functions-and-when-to-use-them-481fe2bb2bde
-https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+||||
+|---|---|---|
+|Sigmoid or Logistic Activtion Function|It is generally used in logistic regression and binary classification models in the output layer.<br/>The output of sigmoid activation function lies between 0 and 1, making it perfect to model probability. Hence it is used to convert the real-valued output of a linear layer to a probability.<br/>Vanishing Gradient problem occurs with the sigmoid activation function because the derivatives of the sigmoid activation function are between 0 to 0.25.||
+|Softmax|Extension of sigmoid activation function taking advantage of range of the output between 0 and 1. This is mainly used in the output layer of a multiclass, multinomial classification problem with a useful property of sum of the output probabilities adding up to 1.<br/>Softmax is used for multi-classification, the probabilities sum will be 1.||
+|Tanh or hyperbolic tangent Activation Function|tanh is also like logistic sigmoid but better. The range of the tanh function is from (-1 to 1). tanh is also sigmoidal (s - shaped).<br/>A vanishing Gradient problem occurs with the tanh activation function because the derivatives of the tanh activation function are between 0–1. |
+|ReLU (Rectified Linear Unit) Activation Function|The ReLU is the most used activation function in the world right now.Since, it is used in almost all the convolutional neural networks or deep learning.||
+|Swish||
+|GeLU||
 
 ## Loss Functions
 
 In neural networks, loss functions help optimize the performance of the model. They are usually used to measure some penalty that the model incurs on its predictions, such as the deviation of the prediction away from the ground truth label.
 
 All machine learning models are one optimization problem or another, the loss is the objective function to minimize. In neural networks, the optimization is done with gradient descent and backpropagation. [Source](https://machinelearningmastery.com/loss-functions-in-pytorch-models/)
+
 ### Loss functions for Regression
 - Mean Absolute Error (MAE)
 - Mean Square Error (MSE)
@@ -378,10 +366,6 @@ Cross refers to the fact that it needs to relate two distributions. It’s calle
 
 ##### Log Loss - Binary Cross-Entropy Loss
 
-
-## Feature Engineering
-
-- [Dealing with missing values](https://www.kaggle.com/alexisbcook/missing-values)
 
 ### References
 
