@@ -1,7 +1,13 @@
-# ML Models
+# Machine Learning Algorithms & Models
 
+- [Linear Regression]()
+- [Logistic Regression]()
+- [Bayes Theorem & Navie Bayes]()
+- [Support Vector Machines]()
 - [K-Nearest Neighbor](#k-nearest-neighbor)
+- [K-Means Clustering]()
 - [Random Forest](#random-forest)
+- [Gradient Boosting - XGBoost]()
 
 ### Logisitic Regression
 
