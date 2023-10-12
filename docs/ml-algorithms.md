@@ -4,15 +4,22 @@
 
 |Regression|Classification|
 |---|---|
-|• [Linear Regression]()<br/>• [Decison Trees, Random Forest]()<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|• [Logistic Regression]()<br/>• [Bayes Theorem & Navie Bayes]()<br/>• [Support Vector Machines]()<br/>• [K-Nearest Neighbor](#k-nearest-neighbor)<br/>• [Random Forest](#random-forest)<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|
+|• [Linear Regression]()<br/>• [Decison Trees, Random Forest]()<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|• [Logistic Regression]()<br/>• [Bayes Theorem & Navie Bayes]()<br/>• [Support Vector Classifier]()<br/>• [K-Nearest Neighbor](#k-nearest-neighbor)<br/>• [Random Forest](#random-forest)<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|
   
 ## Unsupervised Learning
 - [K-Means Clustering]()
 - [Neural Networks]()
 
 ---
+
+## Linear Regression
+
+**Bias** - the constant b of a linear function ```y = ax + b```
+- It allows you to move the line up and down to fit the prediction with the data better.
+- Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
+- A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
   
-### Logisitic Regression
+## Logisitic Regression
 
 Logistic regression, by default, is limited to two-class classification problems. It can also be applied to multiclass problems.
 
@@ -98,17 +105,31 @@ xgb.train(): method to train xgboost model.
 xgb_params: key-value pairs of hyperparameters to train xgboost model.
 watchlist: list to store training and validation accuracy to evaluate the performance of the model after each training iteration. The list takes tuple of train and validation set from DMatrix wrapper, for example, watchlist = [(dtrain, 'train'), (dval, 'val')].
 
-### Additional Concepts
+## Support Vector Machines
 
-#### Bias
+- In 2D data, a Support Vector Classifier is a line. 
+- In 3D, it is a plane.
+- In 4 or more dimensions, Support Vector Classifier is a hyperplane. 
 
-A simpler way to understand what the bias is: it is somehow similar to the constant b of a linear function ```y = ax + b```
-- It allows you to move the line up and down to fit the prediction with the data better.
-- Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
-- A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
+Technically all SVCs are a hyperplane, but it is easier to call them planes in the case of 2D.
 
-##### References
+|||
+|---|---|
+|<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*-WBufd0WALi9tbHsp_Ns4w.jpeg" width="100%" height="100%"/>|<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ktT3-kieBj70EF4bezYPoA.png" width="80%" height="80%"/>|
 
-- https://github.com/kabiromohd/machine-learning-zoomcamp/blob/master/06-trees/07-boosting.md
-- https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4
+Important concepts in SVM which will be used frequently are as follows.
 
+- **Hyperplane** − It is a decision plane or space which is divided between a set of objects having different classes.
+- **Support Vectors** − Datapoints that are closest to the hyperplane are called support vectors. The separating line will be defined with the help of these data points.
+- **Kernel** — A kernel is a function used in SVM for helping to solve problems. They provide shortcuts to avoid complex calculations.
+- **Margin** − It may be defined as the gap between two lines on the closet data points of different classes. A large margin is considered a good margin and a small margin is considered as a bad margin.
+
+Support Vector Machines use **Kernal** Functions to find Support Vector Classifiers in higher dimensions. A **kernel function** is a function that takes two input data points in the original input space and calculates the inner product of their corresponding feature vectors in a transformed (higher-dimensional) feature space.
+
+|Polynomial Kernel|Radial Kernel (RBF)|
+|---|---|
+|The polynomial kernel is used to transform the input data from a lower-dimensional space to a higher-dimensional space where it is easier to separate the classes using a linear decision boundary.|Radial Kernel finds Support Vector Classifiers in infinite dimensions. It assigns a higher weight to points closer to the test point and a lower weight to points farther away (like nearest neighbors). Observations that further away have relatively little influence on the classification of a data point.|
+
+<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*T5KBJYoB32xkvAsrNapz6A.png" />
+
+In general, SVMs are suitable for classification tasks where the number of features is relatively small compared to the number of samples, and where there is a clear margin of separation between the different classes. SVMs can also handle high-dimensional data and nonlinear relationships between the features and the target variable. However, SVMs may not be suitable for very large datasets, as they can be computationally intensive and require a lot of memory.
