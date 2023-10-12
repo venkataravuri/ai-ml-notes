@@ -1,14 +1,17 @@
 # Machine Learning Algorithms & Models
 
-- [Linear Regression]()
-- [Logistic Regression]()
-- [Bayes Theorem & Navie Bayes]()
-- [Support Vector Machines]()
-- [K-Nearest Neighbor](#k-nearest-neighbor)
-- [K-Means Clustering]()
-- [Random Forest](#random-forest)
-- [Gradient Boosting - XGBoost]()
+## Supervised Learning
 
+|Regression|Classification|
+|---|---|
+|• [Linear Regression]()<br/>• [Decison Trees, Random Forest]()<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|• [Logistic Regression]()<br/>• [Bayes Theorem & Navie Bayes]()<br/>• [Support Vector Machines]()<br/>• [K-Nearest Neighbor](#k-nearest-neighbor)<br/>• [Random Forest](#random-forest)<br/>• [Gradient Boosting - XGBoost]()<br/>• [Neural Networks]()|
+  
+## Unsupervised Learning
+- [K-Means Clustering]()
+- [Neural Networks]()
+
+---
+  
 ### Logisitic Regression
 
 Logistic regression, by default, is limited to two-class classification problems. It can also be applied to multiclass problems.
