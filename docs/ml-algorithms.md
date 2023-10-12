@@ -28,6 +28,10 @@ There are various methods for calculating this distance, of which the most commo
 - Euclidian, Manhattan (for continuous)
 - Hamming distance (for categorical).
 
+|K-Nearest Neighbor Video Tutorial|
+|---|
+|[![K-Nearest Neighbor Video Tutorial](https://img.youtube.com/vi/HVXime0nQeI/mqdefault.jpg)](https://youtu.be/HVXime0nQeI)|
+
 ## K-Means Clustering
 
 Clustering is the task of _grouping a set of objects_, such that objects in the same group (cluster) are more similar to each other than to those in other groups (clusters).
@@ -47,6 +51,11 @@ Centroid-Based Clustering
 In centroid-based clustering, each cluster is represented by a central vector, called the cluster center or centroid, which is not necessarily a member of the dataset. The cluster centroid is typically defined as the mean of the points that belong to that cluster.
 
 Our goal in centroid-based clustering is to divide the data points into k clusters in such a way that the points are as close as possible to the centroids of the clusters they belong to.
+
+|K-Means Clustering Video Tutorial|Clustering with DBSCAN Video Tutorial|
+|---|---|
+|[![K-Means Clustering Video Tutorial](https://img.youtube.com/vi/4b5d3muPQmA/mqdefault.jpg)](https://youtu.be/4b5d3muPQmA)|[![Clustering with DBSCAN Video Tutorial](https://img.youtube.com/vi/RDZUdRSDOok/mqdefault.jpg)](https://youtu.be/RDZUdRSDOok)|
+
 
 ### Random Forest
 
