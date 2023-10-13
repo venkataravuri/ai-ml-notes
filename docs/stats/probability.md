@@ -1,12 +1,12 @@
 # Proabability
 
-## Proabability
+- [Introduction]()
+- [Probability Distribution]()
+- [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+
+## Introduction
 
 probability in order to convey our predictive insights with certain degree of certainty.
-
-Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
-
-Once you have chosen a probability distribution that suits your data and situation, you can use it to calculate various measures of risk, such as the expected value, which represents the most likely or typical outcome, the variance and standard deviation, which indicate the level of uncertainty or volatility of your outcome, and percentiles and confidence intervals, which show the range of possible outcomes and the probability of achieving them
 
 ## Probability Distribution
 
@@ -20,6 +20,10 @@ distribution is useful when we need to know,
 - which outcomes are most likely,
 - the spread of potential values,
 - and the likelihood of different results.
+
+Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
+
+Once you have chosen a probability distribution that suits your data and situation, you can use it to calculate various measures of risk, such as the expected value, which represents the most likely or typical outcome, the variance and standard deviation, which indicate the level of uncertainty or volatility of your outcome, and percentiles and confidence intervals, which show the range of possible outcomes and the probability of achieving them
 
 **probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
 
