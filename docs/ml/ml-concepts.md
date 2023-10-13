@@ -1,60 +1,14 @@
 # Machine Learning
-- [Concepts - Statistics & Linear Algebra]()
-- [Activation Functions](#activation-functions)
+- [Balanced and Imbalanced datasets]()
+- [Feature Engineering]()
+     - [Encoding Methodologies]()
+- [Regularization]()
 - [Loss Functions](#loss-functions)
+- [Optimization Methods]()
+- [Activation Functions](#activation-functions)
 - [Evaulation Metrics](#evaluation-metrics)
-- [Activation Functions]()
 
-## Concepts - Statistics & Linear Algebra
-
-probability in order to convey our predictive insights with certain degree of certainty.
-
-Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
-
-Once you have chosen a probability distribution that suits your data and situation, you can use it to calculate various measures of risk, such as the expected value, which represents the most likely or typical outcome, the variance and standard deviation, which indicate the level of uncertainty or volatility of your outcome, and percentiles and confidence intervals, which show the range of possible outcomes and the probability of achieving them
-
-## Probability Distribution
-
-**Probability** is the chance of event occurring success(1) or failure(0).
-
-**Distribution** means how the ‘possible values’ a variable can take and how they occur.
-
-probability distribution represents the values of a variable that holds the probabilities of an experiment
-
-distribution is useful when we need to know,
-- which outcomes are most likely,
-- the spread of potential values,
-- and the likelihood of different results.
-
-**probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
-
-**probability density function** represents the density of a **continuous** random variable lying between a specific range of values.
-
-Discrete Distributions :
-
-Discrete distributions have finitely many outcomes, equal outcomes are called Equiprobability. Events with only two possible outcomes [True/False], so any event with two outcomes can be transformed into a Bernoulli Distribution.
-
-This is a univariate probability distribution, which is the probability distribution of a single random variable. This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
-
-Check out this site to learn about 76 types of univariate distribution
-
-|Binomial Distribution|Bernoulli Distribution|Poisson Distribution|
-|---|---|---|
-|exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). ||Represents how many times an event can occur over a specific time period.|
-|||Examples, <br />• The number of users who visited a website in an interval can be thought of as a Poisson process.|
-|||The probability mass function is given by:<br/>|
-|Problem Statement: Hospital records show that of patients suffering from a specific disease, `75%` die of it. What is the probability that of six randomly selected Patients, four will recover?|||
-|Problem Statement: A (blindfolded) marksman finds that on the average, he hits the target `4` times out of `5`. If he fires `4` shots, what is a probability of (a) more than `2` hits and (b) at least `3` misses?|||
-
-https://medium.com/analytics-vidhya/probability-statistics-for-beginners-in-machine-learning-part-3-probability-distribution-9bce0567fdcf
-
-|Uniform distribution |Normal distribution (Or) Gaussian distribution (Or) Bell Curve|Exponential distribution|
-|---|---|---|
-|uniform distribution specifies an equal probability across a given range of continuous values. In other words, it is a probability distribution with a constant probability.||Describes how long it takes for a continuous process to change state. The exponential distribution is the probability distribution of the time between events in a Poisson point process.|
-||Problem Statement: We have a dataset representing the weights of students in a school. Assume that the dataset is normally distributed with a mean of 60 kg and standard deviation 15 kg, represented by 𝑁(60,15). What is the probability that a randomly selected person has a weight below 50 kgs?||
-
-
-#### What are Logits in machine learning?
+### What are Logits in machine learning?
 
 Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.
 
@@ -66,6 +20,25 @@ In a classification problem, the model’s output is usually a vector of probabi
 
 1. It’s related to the concept in information theory where you need to use log(x) bits to capture x amount of information.
 2. Computers are capable of almost anything, except exact numeric representation.
+
+## Balanced and Imbalanced datasets
+
+In machine learning, class imbalance is the issue of target class distribution.
+
+|Balanced datasets|Imbalanced datasests|
+|---|---|
+|For balanced datasets, the target class distribution is nearly equal.| For imbalanced datasest, the target distribution is not equal.|
+|Balanced datasets<br/>• A random sampling of a coin trail<br/>• Classifying images to cat or dog<br/>• Sentiment analysis of movie reviews|Class Imbalance dataset<br/>• Email spam or ham dataset<br/>• Credit card fraud detection<br/>• Network failure detections|
+
+### Techniques for handling imbalanced data
+
+|Oversampling|Undersampling|Ensemble Techniques|
+|---|---|---|
+|Increase the number of samples in minority class to match up to the number of samples of the majority class.|Decrease the number of samples in the majority class to match the number of samples of the minority class.|Ensemble methods, which combine multiple base learners to produce a more accurate and robust model, can be adapted to handle imbalanced data effectively|
+|||Bagging for Imbalanced Data - Bagging, or bootstrap aggregating, involves training multiple base learners on different random subsets of the data and combining their predictions.<br/>Boosting for Imbalanced Data - Boosting is an ensemble method that trains a series of base learners sequentially, where each learner tries to correct the errors made by its predecessor. 
+
+[Reference](https://dataaspirant.com/handle-imbalanced-data-machine-learning/)
+
 
 ## Feature Engineering
 
@@ -90,36 +63,6 @@ Ordinal data is a categorical data type where the variables have natural, ordere
 |Map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.|Labels are given on the bases of the mean. Highest the mean, highest the label<br/>Ordering the labels according to the target variable.<br/>Replace the labels by the joint probability.|Replace the categories with there count.<br/>It is used when are lots of categories of a variable.<br/>It does not create a new feature.<br/>Disadvantage: If the same labels have the same count then replaced by the same count and we will lose some valuable information.|
 |<img src="https://miro.medium.com/v2/resize:fit:550/format:webp/1*UhTyTyIIOaos5jVlbeQllw.png" height="100%" width="100%" />|||
 
-
-## Balanced and Imbalanced datasets
-
-In machine learning, class imbalance is the issue of target class distribution.
-
-|Balanced datasets|Imbalanced datasests|
-|---|---|
-|For balanced datasets, the target class distribution is nearly equal.| For imbalanced datasest, the target distribution is not equal.|
-|Balanced datasets<br/>• A random sampling of a coin trail<br/>• Classifying images to cat or dog<br/>• Sentiment analysis of movie reviews|Class Imbalance dataset<br/>• Email spam or ham dataset<br/>• Credit card fraud detection<br/>• Network failure detections|
-
-### Techniques for handling imbalanced data
-
-|Oversampling|Undersampling|Ensemble Techniques|
-|---|---|---|
-|Increase the number of samples in minority class to match up to the number of samples of the majority class.|Decrease the number of samples in the majority class to match the number of samples of the minority class.|Ensemble methods, which combine multiple base learners to produce a more accurate and robust model, can be adapted to handle imbalanced data effectively|
-|||Bagging for Imbalanced Data - Bagging, or bootstrap aggregating, involves training multiple base learners on different random subsets of the data and combining their predictions.<br/>Boosting for Imbalanced Data - Boosting is an ensemble method that trains a series of base learners sequentially, where each learner tries to correct the errors made by its predecessor. 
-
-[Reference](https://dataaspirant.com/handle-imbalanced-data-machine-learning/)
-
-#### What is distiction between Gradient and Derivative?
-
-A gradient is a vector that goes in the direction of a function’s sharpest ascend whereas a derivative quantifies the rate of shift of a function at a certain location.
-
-- The derivative of a function is the change of the function for a given input.
-- The gradient is simply a derivative vector for a multivariate function.
- - Although both ideas include calculating slopes, derivatives emphasize one variable while gradients take into account a few variables at once. [Source](https://allthedifferences.com/exploring-the-distinction-gradient-vs-derivative/)
-
-#### What is the Difference Between Gradient and Partial Derivative?
-
-A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
 
 ### Optimization Methods
 
@@ -251,9 +194,6 @@ In NLP, we also want to find the similarity among sentence or document.
 <br/>and two vectors diametrically opposed have a similarity of -1, independent of their magnitude.||
 
 #### What is difference between Cosine Similarity & Ecludian Distance?
-
-
-
 
 ### Bayes Theorem
 

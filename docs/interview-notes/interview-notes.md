@@ -1,22 +1,5 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
-## Table of Contents
-- [Statistics & Probability]()
-  - ?
-  - ? 
-- [Machine Learning Concepts]()
-  - ?
-  - ?
-- [Machine Learning Algorithms]()
-  - ?
-  - ?
-- [Neural Networks]()
-  - ?
-  - ?
-- [Model Design Questions]()
-  - ?
-  - ?
-
 ### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
 In **supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided, while in **unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
