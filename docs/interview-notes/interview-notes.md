@@ -118,6 +118,8 @@ Bias Variance Complexity:
 - Models with high bias will have low variance.
 - Model with high variance will have low bias.
 
+<img src="https://miro.medium.com/v2/resize:fit:2964/1*cz9IXO7jEtzSZqYUBC4yVw.png" width="70%" height="70%"/>
+
 ### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
 
 ### How do you handle data imbalance issues?
