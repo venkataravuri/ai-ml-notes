@@ -4,6 +4,10 @@
 
 Refer to, [Ad Click Prediction | Machine learning system design](https://medium.com/@mumbaiyachori/ad-click-prediction-machine-learning-system-design-6e553d7ccc1c)
 
+## Design food delivery ETA prediction ML Model for Uber Eats/Doordash.
+
+[ML System Design — ETA Prediction](https://mecha-mind.medium.com/ml-system-design-eta-prediction-9dc8000fd86b)
+
 ###  Design a feed recommendation system
 ### Design Youtube(Google)
 ### Design Google contact ranking(Google)
