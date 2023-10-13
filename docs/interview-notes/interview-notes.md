@@ -90,10 +90,20 @@ Instance norm normalises the contrast of the input image making the stylised ima
 
 ### Explain the bias-variance tradeoff.
 
-- **Bias** is the tendency of the model to make predictions that differ from the actual values. Bias is the difference between y prediction & y actual.
-- while **Variance** is the deviation of predictions on different samples of data.
+Bias is a phenomenon that skews the result of a model in favour or against an idea.
+
+Technically, bias is error between average model prediction and the ground truth. Moreover, it describes _how well the model matches the training dataset_.
+
+- A model with **high bias** would not match the dataset closely.
+- A **low bias** model will closely matches the training dataset.
+
+**Variance** is the variability in model prediction when using different portions of the training dataset.
 
 A model with **high bias** tries to oversimplify the model whereas a model with **high variance** fails to generalize on unseen data. Upon reducing the bias, the model becomes susceptible to high variance and vice versa. Hence, a trade-off or balance between these two measures is what defines a good predictive model.
+
+|Characterstics of high bias model|Characterstics of high variance model|
+|---|---|
+|• Failure to capture proper data trends<br/>• Potential towards underfitting<br/>• More generalized / overly simplified<br/>• High error rate|• Noice in dataset<br/>• Potential towards overfitting<br/>• Complex models<br/>• Trying to put all data points as close as possible.
 
 Bias Variance Complexity:
 - Low bias & low variance is the ideal condition in theory only, but practically it is not achievable.
@@ -103,11 +113,10 @@ Bias Variance Complexity:
 
 > A model which has _low bias_ and _high variance_ is said to be _overfitting_ which is the case where the model performs really well on the training set but fails to do so on the unseen set of instances, resulting in high values of error. One way to tackle overfitting is _Regularization_.
 
-> When the Bias increases automatically variance decreases and vice versa also.
-
-Total error = error due to Bias + error due to Variance
-
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*rW2XEw2lDyjSslo9F0O-WA.png" width="50%" height="50%" />
+
+- Models with high bias will have low variance.
+- Model with high variance will have low bias.
 
 ### While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?
 
