@@ -13,8 +13,11 @@ Refer to, [Ad Click Prediction | Machine learning system design](https://medium.
 
 ### What are the metrics for search ranking?
 
+## Build a movie/show ML recommendation system.
 
-###  Imagine you’re building a system to recommend users items similar to those they’ve bought. How would you go about building this?
+[ML system design interview-Recommendation System](https://yunrui-li.medium.com/ml-system-design-interview-recommendation-system-637df3a31eb0)
+
+## Imagine you’re building a system to recommend users items similar to those they’ve bought. How would you go about building this?
 
 - Item-item similarity matrix: Create an item-item similarity matrix to measure the similarity between pairs of items. You can use cosine similarity or Jaccard similarity methods to compute the similarity scores.
 - Item-based recommendation: Once the item-item similarity matrix is built, recommend items to users based on the items they have bought. For each item a user has purchased, find the most similar items and recommend those to the user.
