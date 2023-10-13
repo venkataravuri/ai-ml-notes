@@ -1,8 +1,9 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
-### 28 Probability Interview Questions
+### Probability Interview Questions
 
-[Probability Questions for ML Interviews](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+- [28 Probability Questions for ML Interviews](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+- [Probability and Statistics for Software Engineering Problems](https://mecha-mind.medium.com/probability-and-statistics-for-software-engineers-1c67c96a81e3)
 
 ### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
