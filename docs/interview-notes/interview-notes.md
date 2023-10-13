@@ -1,5 +1,9 @@
 # :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 
+### 28 Probability Interview Questions
+
+[Probability Questions for ML Interviews](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+
 ### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
 In **supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided, while in **unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
