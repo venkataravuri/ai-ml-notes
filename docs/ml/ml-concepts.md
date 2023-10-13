@@ -320,14 +320,23 @@ Quantile Loss, Log Cosh Loss and more ...
 Entropy as a term is often used to measure the randomness in a given function/object.
 Entropy in simple words is the element of surprise expressed mathematically.
 
-##### 
-
 |||||
 |---|---|---|---|
 |Log Loss (Or) Binary Cross-Entropy Loss|refers to the difference of randomness between two given features (or variables). The term keeps getting smaller as this difference decreases.||Less intuitive and may have many local minima.<br/>While applying this, the activation function in output layer must be SIGMOID.|
 |Categorical cross entropy|This comes into picture when we have multiclass classification — number of classes becomes more than 2.|||
 |Hinge Loss| Another commonly used Loss Function for classification problems — specially designed for SVM (support vector machines) classification algorithm (with labels as -1 and 1, not 0 and 1). It facilitates in finding the maximum margin of separation, from the hyperplanes to the respective classes.| | |
 
+## Ensemble methods
+
+Ensemble learning is a machine learning paradigm where multiple models (often called “weak learners”) are trained to solve the same problem and combined to get better results. The main hypothesis is that when weak models are correctly combined we can obtain more accurate and/or robust models.
+
+- **bagging**, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
+- **boosting**, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
+- **stacking**, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
+
+Very roughly, we can say that bagging will mainly focus at getting an ensemble model with less variance than its components whereas boosting and stacking will mainly try to produce strong models less biased than their components (even if variance can also be reduced).
+
+[Source](https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205)
 
 ### References
 
