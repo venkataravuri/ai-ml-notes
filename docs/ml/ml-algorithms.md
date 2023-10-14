@@ -41,8 +41,13 @@ KNN tries to predict the correct class for the test data by calculating the dist
 'K' value indicates the count of the nearest neighbors. We have to compute distances between test points and trained labels points. Updating distance metrics with every iteration is computationally expensive, and that’s why KNN is a lazy learning algorithm.
 
 There are various methods for calculating this distance, of which the most commonly known methods are,
-- Euclidian, Manhattan (for continuous)
-- Hamming distance (for categorical).
+
+|Manhattan Distance|Euclidian Distance|Cosine Distance|Jaccard Distance|Minkowski Distance|Hamming Distance|
+|---|---|---|---|---|---|
+|<img src="https://www.kdnuggets.com/wp-content/uploads/popular-knn-metrics-2.jpg" />|<img src="https://www.kdnuggets.com/wp-content/uploads/popular-knn-metrics-4.jpg" />|||||
+|$d=\displaystyle\sum_{i=1}^{n}\|x_i - y_i\|$|$d=\displaystyle\sum_{i=1}^{n}(x_i - y_i)^2$|$cos \theta = \frac{\overrightarrow{a} . \overrightarrow{b}}{ \|\| \overrightarrow{a} \|\|.  \|\| \overrightarrow{b} \|\|}$||||
+
+[Source](https://www.kdnuggets.com/2020/11/most-popular-distance-metrics-knn.html)
 
 |K-Nearest Neighbor Video Tutorial|
 |---|
