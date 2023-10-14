@@ -46,3 +46,7 @@ For a new user who hasn’t made any past purchases, there are several ways to h
 - Popularity-based recommendations: Another approach is to make recommendations based on popular items in the system, as this information is easily accessible and doesn’t require user-specific data.
 - Clustering: Another approach is to cluster similar users based on demographic information or browsing history and use the cluster to make recommendations.
 - Matrix Factorization: This approach decomposes the user-item matrix into two matrices, one representing users and the other items. This can be used to make recommendations based on similar users or items.
+
+### Stock Price Prediction and Time Series Analysis
+
+Stock prices fluctuate over time, understanding their patterns and trends becomes crucial for making informed investment decisions. We will explore various techniques, such as moving averages, linear regression, seasonal plots, and lag embeddings, to model and predict stock prices. 
