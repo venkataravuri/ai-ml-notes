@@ -95,9 +95,15 @@ from sklearn.ensemble import RandomForestClassifier: random forest classifier fr
 plt.plot(x, y): draw line plot for the values of y against x values.
 ```
 
-### Gradient Boosting (XGBoost)
+### Gradient Boosting & XGBoost
 
 Unlike Random Forest where each decision tree trains independently, in the Gradient Boosting Trees, the models are combined sequentially where each model takes the prediction errors made my the previous model and then tries to improve the prediction. This process continues to n number of iterations and in the end all the predictions get combined to make final prediction.
+
+XGBoost stands for E**x**treme **G**radient **Boost**ing is an ensemble learning algorithm primarily based on gradient boosting and optimization principles.
+- It builds a strong predictive model by combining the predictions of multiple weak learners, often decision trees, through an iterative process.
+- It can be used both for regression and classification tasks.
+
+The XGBoost algorithm consists of a series of decision trees that are trained sequentially. Each new tree is trained to correct the errors of the previous tree, gradually improving the model’s performance. The algorithm is called “gradient boosting” because it minimizes a loss function by iteratively adding new models that minimize the negative gradient of the loss function.
 
 XGBoost is one of the libraries which implements the gradient boosting technique. To make use of the library, we need to install with pip install xgboost. To train and evaluate the model, we need to wrap our train and validation data into a special data structure from XGBoost which is called DMatrix. This data structure is optimized to train xgboost models faster.
 
@@ -109,6 +115,20 @@ watchlist: list to store training and validation accuracy to evaluate the perfor
 - First, their _hierarchical structure_ is inherently adept at _modeling the layered relationships_ often found in tabular formats.
 - Second, they are particularly effective at _automatically detecting_ and incorporating complex, _non-linear interactions_ between features.
 - Third, these algorithms are robust to the scale of input features, allowing them to _perform well on raw datasets without the need for normalization_.
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*6ZHqQM2Ry-9WMcOm.png" />
+
+Here’s a concise technical breakdown of how XGBoost works:
+- Gradient Boosting: XGBoost follows a boosting approach where each new model corrects the errors of the previous ones, leading to incremental performance improvement.
+- Loss Function: It minimizes a loss function that quantifies the disparity between predicted and actual values, using common loss functions such as mean squared error (for regression) and log loss (for classification).
+- Gradient Descent: XGBoost employs gradient descent to minimize the loss function. It calculates the gradient of the loss concerning the current model’s predictions.
+- Additive Learning: At each boosting iteration, a new decision tree (weak learner) is added to the ensemble. This tree aims to minimize the residual errors left by the previous trees.
+- Weighted Updates: XGBoost assigns weights to data points, giving higher weights to those that are harder to predict (higher residual errors). This focuses the next model on rectifying these errors.
+- Regularization: To prevent overfitting, XGBoost incorporates regularization terms (L1 and L2) that penalize complex models, encouraging simplicity.
+- Learning Rate: It introduces a “learning rate” parameter controlling the step size of each iteration. A smaller rate slows learning, enabling finer adjustments.
+- Feature Importance: XGBoost calculates feature importance scores by evaluating each feature’s contribution to reducing the loss function across all trees.
+- Stopping Criteria: Training stops when predefined criteria are met, like a set number of trees or negligible loss improvement.
+- Prediction: To make predictions, XGBoost combines the weak learners’ predictions, each scaled by a “shrinkage” factor (learning rate).
 
 scikit-learn's XGBRegressor is an implementation of gradient boosting trees.
 
