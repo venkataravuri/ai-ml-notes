@@ -329,9 +329,10 @@ resnet18.fc = nn.Linear(num_ftrs, 10)
 
 ### Explain the difference between KNN and k-means clustering.
 
-- K-nearest neighbors represents a **supervised** **classification** algorithm used for classification, needs labelled data to train on, will give new data points accordingly to the k number or the closest data points,
+- K-nearest neighbors represents a **unsupervised** **classification** algorithm used for classification.  It works by calculating the distance of 1 test observation from all the observation of the training dataset and then finding K nearest neighbors of it.
 - k-means clustering is an **unsupervised** **clustering** algorithm that gathers and groups data into **k number of clusters**.
 
+<img src="https://www.kdnuggets.com/wp-content/uploads/popular-knn-metrics-0.png" width="50%" height="50%" />
 <img src="https://pythonprogramminglanguage.com/wp-content/uploads/2019/07/clustering.png" width="50%" height="50%" />
 
 ### Explain the difference between the normal soft margin SVM and SVM with a linear kernel.
