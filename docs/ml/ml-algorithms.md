@@ -105,6 +105,13 @@ xgb.train(): method to train xgboost model.
 xgb_params: key-value pairs of hyperparameters to train xgboost model.
 watchlist: list to store training and validation accuracy to evaluate the performance of the model after each training iteration. The list takes tuple of train and validation set from DMatrix wrapper, for example, watchlist = [(dtrain, 'train'), (dval, 'val')].
 
+**XGBoost**, excel at handling **tabular data** for a multitude of reasons.
+- First, their _hierarchical structure_ is inherently adept at _modeling the layered relationships_ often found in tabular formats.
+- Second, they are particularly effective at _automatically detecting_ and incorporating complex, _non-linear interactions_ between features.
+- Third, these algorithms are robust to the scale of input features, allowing them to _perform well on raw datasets without the need for normalization_.
+
+scikit-learn's XGBRegressor is an implementation of gradient boosting trees.
+
 ## Support Vector Machines
 
 - In 2D data, a Support Vector Classifier is a line. 
