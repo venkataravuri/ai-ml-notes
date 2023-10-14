@@ -49,4 +49,8 @@ For a new user who hasn’t made any past purchases, there are several ways to h
 
 ### Stock Price Prediction and Time Series Analysis
 
-Stock prices fluctuate over time, understanding their patterns and trends becomes crucial for making informed investment decisions. We will explore various techniques, such as moving averages, linear regression, seasonal plots, and lag embeddings, to model and predict stock prices. 
+Stock prices fluctuate over time, understanding their patterns and trends becomes crucial for making informed investment decisions. We will explore various techniques, such as moving averages, linear regression, seasonal plots, and lag embeddings, to model and predict stock prices.
+
+### What is a Marketing Attribution Platform?
+
+a Marketing Attribution Platform is a tool that allows you to track the effectiveness of your marketing campaigns. It does this by tracking the user’s journey from the first time they visit your site to the point of conversion.
