@@ -13,6 +13,7 @@
 - [While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?](#while-analyzing-your-models-performance-you-noticed-that-your-model-has-low-bias-and-high-variance-what-measures-will-you-use-to-prevent-it-describe-two-of-your-preferred-measures)
 - [What is the difference between overfitting and underfitting?](#what-is-the-difference-between-overfitting-and-underfitting)
 - [Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?](#explain-regularization-when-is-ridge-regression-favorable-over-lasso-regression)
+- [What is the degree of freedom for lasso?](#)
 - [What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?](#what-do-l1-and-l2-regularization-mean-and-when-would-you-use-l1-vs-l2-can-you-use-both)
 - [When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?](#when-there-are-highly-correlated-features-in-your-dataset-how-would-the-weights-for-l1-and-l2-end-up-being)
 - [When is One Hot encoding favored over label encoding?](#when-is-one-hot-encoding-favored-over-label-encoding)
@@ -29,7 +30,9 @@
 - [Why is a validation set necessary?](#why-is-a-validation-set-necessary)
 - [Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.](#can-k-fold-cross-validation-be-used-on-time-series-data-explain-with-suitable-reasons-in-support-of-your-answer)
 - [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
-
+- [Write term frequency–inverse document frequency function.](#)
+- [
+  
 ---
 
 ### Probability Interview Questions
