@@ -105,7 +105,9 @@ $S(i) = \frac{b(i) - a(i)}{max\{a(i),b(i)\}}$
 
 We see that the silhouette score is maximized at k = 3. So, we will take 3 clusters.
 
-### Random Forest
+[Source](https://www.analyticsvidhya.com/blog/2021/05/k-mean-getting-the-optimal-number-of-clusters/)
+
+## Random Forest
 
 Random Forest approach is an ensemble learning method based on many decision trees.
 
