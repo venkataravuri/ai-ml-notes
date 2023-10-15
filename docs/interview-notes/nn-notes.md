@@ -157,5 +157,47 @@ Deep auto-encoder
 
 ---
 
+### Explain the significance of the RELU Activation function in Convolution Neural Network.
+
+
+### Why do we use a Pooling Layer in a CNN?
+
+### What is the size of the feature map for a given input size image, Filter Size, Stride, and Padding amount?
+
+
+### An input image has been converted into a matrix of size 12 X 12 along with a filter of size 3 X 3 with a Stride of 1. Determine the size of the convoluted matrix.
+
+
+### Explain the terms “Valid Padding” and “Same Padding” in CNN.
+
+
+### What are the different types of Pooling? Explain their characteristics.
+
+
+### Does the size of the feature map always reduce upon applying the filters? Explain why or why not.
+
+
+### What is Stride? What is the effect of high Stride on the feature map?
+
+
+### Explain the role of the flattening layer in CNN.
+
+
+### List down the hyperparameters of a Pooling Layer.
+
+
+### What is the role of the Fully Connected (FC) Layer in CNN?
+
+
+### Briefly explain the two major steps of CNN i.e, Feature Learning and Classification. 
+
+
+### Let us consider a Convolutional Neural Network having three different convolutional layers in its architecture as –
+
+
+### Explain the significance of “Parameter Sharing” and “Sparsity of connections” in CNN.
+
+
 ### 
 
+<img src="https://i0.wp.com/developersbreach.com/wp-content/uploads/2020/08/cnn_banner.png?fit=1400%2C658&ssl=1" />
