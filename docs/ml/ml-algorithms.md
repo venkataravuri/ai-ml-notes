@@ -77,6 +77,33 @@ Our goal in centroid-based clustering is to divide the data points into k cluste
 |---|---|
 |[![K-Means Clustering Video Tutorial](https://img.youtube.com/vi/4b5d3muPQmA/mqdefault.jpg)](https://youtu.be/4b5d3muPQmA)|[![Clustering with DBSCAN Video Tutorial](https://img.youtube.com/vi/RDZUdRSDOok/mqdefault.jpg)](https://youtu.be/RDZUdRSDOok)|
 
+### Methods to Find the Best Value of K
+
+The ways to select an optimal number of clusters (K) are,
+
+**Elbow Curve Method**
+
+- Perform K-means clustering with all these different values of K. For each of the K values, we calculate average distances to the centroid across all data points.
+- Plot these points and find the point where the average distance from the centroid falls suddenly (“Elbow”).
+- The elbow point can be used to determine K.
+
+<img src="https://av-eks-blogoptimized.s3.amazonaws.com/62725cluster0.png" />
+
+ the elbow is at k=3 (i.e., the Sum of squared distances falls suddenly), indicating the optimal k for this dataset is 3.
+
+**Silhouette Analysis**
+
+The silhouette coefficient or silhouette score kmeans is a measure of how similar a data point is within-cluster (cohesion) compared to other clusters (separation).
+- Select a range of values of k (say 1 to 10).
+- Plot Silhouette coefﬁcient for each value of K.
+
+The equation for calculating the silhouette coefﬁcient for a particular data point: silhouette score
+
+$S(i) = \frac{b(i) - a(i)}{max\{a(i),b(i)\}}$
+
+<img src="https://av-eks-blogoptimized.s3.amazonaws.com/45136cluster5.png"/>
+
+We see that the silhouette score is maximized at k = 3. So, we will take 3 clusters.
 
 ### Random Forest
 
