@@ -1,4 +1,21 @@
+# Neural Networks - Interview Notes
 
+- [Describe several attention mechanisms, what are advantages and disadvantages?](#describe-several-attention-mechanisms-what-are-advantages-and-disadvantages)
+- [Why do we need positional encoding in transformers?](#why-do-we-need-positional-encoding-in-transformers)
+- [Describe convolution types and the motivation behind them.](#describe-convolution-types-and-the-motivation-behind-them)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
 
 ### Describe several attention mechanisms, what are advantages and disadvantages?
 
