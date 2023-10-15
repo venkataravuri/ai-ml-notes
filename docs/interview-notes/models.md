@@ -1,4 +1,25 @@
-# ML Models - Interview Notes
+# Classic Ml Models - Interview Notes
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+---
+
+### Describe Logit and Probit models and explain the difference between them.
+
+### Explain the difference between Logistic Regression and Collaborative Filtering.
 
 ### Briefly explain the K-Means clustering and how can we find the best value of K.
 
