@@ -162,13 +162,20 @@ Deep auto-encoder
 
 ### Why do we use a Pooling Layer in a CNN?
 
+
+
 ### What is the size of the feature map for a given input size image, Filter Size, Stride, and Padding amount?
 
+We can compute the spatial size of the output volume as a function of the input volume size (W), the receptive field size of the Conv Layer neurons (F), the stride with which they are applied (S), and the amount of zero padding used (P) on the border. You can convince yourself that the correct formula for calculating how many neurons “fit” is given by (W−F+2P)/S+1. For example for a 7x7 input and a 3x3 filter with stride 1 and pad 0 we would get a 5x5 output. With stride 2 we would get a 3x3 output. L
 
 ### An input image has been converted into a matrix of size 12 X 12 along with a filter of size 3 X 3 with a Stride of 1. Determine the size of the convoluted matrix.
 
+We can compute the spatial size of the output volume as a function of the input volume size (W), the receptive field size of the Conv Layer neurons (F), the stride with which they are applied (S), and the amount of zero padding used (P) on the border. You can convince yourself that the correct formula for calculating how many neurons “fit” is given by (W−F+2P)/S+1. For example for a 7x7 input and a 3x3 filter with stride 1 and pad 0 we would get a 5x5 output. With stride 2 we would get a 3x3 output.
+
 
 ### Explain the terms “Valid Padding” and “Same Padding” in CNN.
+
+Padding refers to the process of adding a layer of zeros/ones to the sides of a matrix. We perform padding so that we can smoothly implement the convolution operation.  
 
 
 ### What are the different types of Pooling? Explain their characteristics.
@@ -179,8 +186,12 @@ Deep auto-encoder
 
 ### What is Stride? What is the effect of high Stride on the feature map?
 
+Stride refers to the number of steps the filter matrix can shift after evaluating the convolution between input and filter. When the stride=1, the filter matrix shifts by one pixel; if it is 2, then the filter matrix must shift by two pixels.
+
 
 ### Explain the role of the flattening layer in CNN.
+
+The flattening layer is usually towards the end of the CNN architecture, and it is used to transform all the two-dimensional matrices into a single lengthy vector. The output of this layer is passed to the fully-connected layer.
 
 
 ### List down the hyperparameters of a Pooling Layer.
@@ -200,7 +211,11 @@ Deep auto-encoder
 
 ### What’s the difference between batch normalization and dropout layers in a CNN?
 
+
+
 ### What is the main purpose of using zero padding in a CNN?
+
+
 
 ### When would you prefer a 1D convolution over 2D convolutions?
 
