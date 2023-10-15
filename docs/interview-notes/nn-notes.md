@@ -5,7 +5,7 @@
 - [Describe convolution types and the motivation behind them.](#describe-convolution-types-and-the-motivation-behind-them)
 - [How would you prevent a neural network from overfitting? How does Dropout prevent overfitting? Does it differ for train and test? How will you implement dropout during forward and backward passes?](#how-would-you-prevent-a-neural-network-from-overfitting-how-does-dropout-prevent-overfitting-does-it-differ-for-train-and-test-how-will-you-implement-dropout-during-forward-and-backward-passes)
 - [What is Transfer Learning? Give an example.](#what-is-transfer-learning-give-an-example)
-- []()
+- [What is backpropagation?]()
 - []()
 - []()
 - []()
@@ -91,4 +91,71 @@ We’ll replace the last fully-connected layer to adapt the model to a new probl
 num_ftrs = resnet18.fc.in_features
 resnet18.fc = nn.Linear(num_ftrs, 10)
 ```
+
+---
+
+### What is backpropagation?
+
+- The goal of backpropagation is to update the weights for the neurons in order to minimize the loss function.
+- Backpropagation takes the error from the previous forward propagation and feeds this error backward through the layers to update the weights. This process is iterated until the neural network model is converged.
+
+### What is the loss function of a neural network model?
+
+---
+
+### When building a neural network model, how do you decide what should be the architecture of your model?
+
+---
+
+### What happens to the neural network gradients and weights when you initialize them with zeros?
+
+Any constant initialization scheme will perform very poorly. Consider a neural network with two hidden units, and assume we initialize all the biases to 0 and the weights with some constant α. If we forward propagate an input (x1​, x2) in this network, the output of both hidden units will be relu(αx1​+αx2​). Thus, both hidden units will have identical influence on the cost, which will lead to identical gradients. Thus, both neurons will evolve symmetrically throughout training, effectively preventing different neurons from learning different things.
+
+---
+
+### Why do neural network weights need to be randomly initialized?
+
+if you don’t initialize your weights randomly, you will end up with some problem called the symmetry problem where every neuron is going to learn kind of the same thing. To avoid that, you will make the neuron start at different places and let them evolve independently from each other as much as possible.
+
+---
+
+### Why sigmoid, Tanh is not used in hidden layers?
+
+It results in the vanishing gradient problem and convergence will be slow towards global minima. A derivative of sigmoid lies between 0 to 0.25. A derivative of Tanh lies between 0 to 1. Because of this weight updates happen very slow.
+
+---
+
+### Why does Exploding Gradient problem happen?
+
+This happens due to inappropriate weight initialization techniques. RELU works well with He initialization. Sigmoid and Tanh work well with Xavier Glorot initialization.
+
+---
+
+### When to use Sigmoid and Softmax activation?
+
+When you are solving binary classification use Sigmoid and when you use Multiclass classification use Softmax.
+
+---
+
+### How do we decide the number of hidden layers and neurons that should be used?
+
+---
+
+### What is the difference between categorical_crossentropy and sparse_categorical_crossentropy?
+
+- categorical_crossentropy (cce) produces a one-hot array containing the probable match for each category: [1,0,0] , [0,1,0], [0,0,1]
+- sparse_categorical_crossentropy (scce) produces a category index of the most likely matching category: [1], [2], [3]
+
+There are a number of situations to use scce, including:
+
+- when your classes are mutually exclusive, i.e. you don’t care at all about other close-enough predictions,
+- the number of categories is large to the prediction output becomes overwhelming.
+
+### How can a neural network be used as a tool for dimensionality reduction? 
+
+Deep auto-encoder
+
+---
+
+### 
 
