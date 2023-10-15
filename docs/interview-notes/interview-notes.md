@@ -1,4 +1,32 @@
-# :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
+# :robot: Machine Learning Concepts - :briefcase: Interview Notes :clipboard:
+
+- [Probability Interview Questions](#probability-interview-questions)
+- [Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?](#explain-the-difference-between-supervised-and-unsupervised-machine-learning-what-are-the-most-common-algorithms-for-supervised-learning-and-unsupervised-learning)
+- [How do you handle data imbalance issues?](#how-do-you-handle-data-imbalance-issues)
+- [How to deal with missing values? Mention three ways to handle missing or corrupted data in a dataset?](#how-to-deal-with-missing-values-mention-three-ways-to-handle-missing-or-corrupted-data-in-a-dataset)
+- [You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?](#you-are-given-a-data-set-with-missing-values-that-spread-along-1-standard-deviation-from-the-median-what-percentage-of-data-would-remain-unaffected)
+- [How to deal with outliers? What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.](#how-to-deal-with-outliers-what-are-the-data-preprocessing-techniques-to-handle-outliers-mention-3-ways-that-you-prefer-with-proper-explanation)
+- [What is instance normalisation?](#what-is-instance-normalisation)
+- [Explain the bias-variance tradeoff.](#explain-the-bias-variance-tradeoff)
+- [While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?](#while-analyzing-your-models-performance-you-noticed-that-your-model-has-low-bias-and-high-variance-what-measures-will-you-use-to-prevent-it-describe-two-of-your-preferred-measures)
+- [What is the difference between overfitting and underfitting?](#what-is-the-difference-between-overfitting-and-underfitting)
+- [Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?](#explain-regularization-when-is-ridge-regression-favorable-over-lasso-regression)
+- [What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?](#what-do-l1-and-l2-regularization-mean-and-when-would-you-use-l1-vs-l2-can-you-use-both)
+- [When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?](#when-there-are-highly-correlated-features-in-your-dataset-how-would-the-weights-for-l1-and-l2-end-up-being)
+- [When is One Hot encoding favored over label encoding?](#when-is-one-hot-encoding-favored-over-label-encoding)
+- [What is a Gradient?](#what-is-a-gradient)
+- [Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?](#explain-gradient-descent-and-stochastic-gradient-descent-which-one-would-you-prefer)
+- [Mention one disadvantage of Stochastic Gradient Descent.](#mention-one-disadvantage-of-stochastic-gradient-descent)
+- [Explain different types of Optimizers? How is 'Adam' optimizer different from 'RMSprop'? Explain how Momentum differs from RMS prop optimizer?](#explain-different-types-of-optimizers-how-is-adam-optimizer-different-from-rmsprop-explain-how-momentum-differs-from-rms-prop-optimizer)
+- [What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?](#what-is-the-cross-entropy-of-loss-how-does-the-loss-curve-for-cross-entropy-look-what-does-the-minus-in-cross-entropy-mean)
+- [Can you use MSE for evaluating your classification problem instead of Cross entropy?](#can-you-use-mse-for-evaluating-your-classification-problem-instead-of-cross-entropy)
+- [What is a hyperparameter? How to find the best hyperparameters?](#what-is-a-hyperparameter-how-to-find-the-best-hyperparameters)
+- [What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?](#what-is-the-curse-of-dimensionality-why-do-we-need-to-reduce-it-what-is-pca-why-is-it-helpful-and-how-does-it-work-what-do-eigenvalues-and-eigenvectors-mean-in-pca)
+- [Why is a validation set necessary?](#why-is-a-validation-set-necessary)
+- [Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.](#can-k-fold-cross-validation-be-used-on-time-series-data-explain-with-suitable-reasons-in-support-of-your-answer)
+- [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
+
+---
 
 ### Probability Interview Questions
 
