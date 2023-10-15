@@ -387,6 +387,50 @@ Refer to, [Convolution Operations](https://github.com/venkataravuri/ai-ml/blob/m
 ### Describe several attention mechanisms, what are advantages and disadvantages?
 ### What techniques for NLP data augmentation do you know?
 
+Data augmentation techniques are used to generate additional, synthetic data using the data you have. 
+
+NLP data augmentation methods provided in the following projects:
+
+- Back translation. 
+- EDA (Easy Data Augmentation).
+- NLP Albumentation.
+- NLP Aug
+
+**Back translation** - translate the text data to some language and then translate it back to the original language
+<img src="https://lh6.googleusercontent.com/x3ZAhTDLT1QVSD8gCdaBVMquM2dcYA15A-orfzXyTzhTP8m0ZKLXz_2NrJdWlTgWKRS7BimExM8RO9Ce_uVVVdRR29vGeP0VZdncDZY0GTwkctocQyYg7HK9VL5ay3QC4JhbSXBK" />
+
+**EDA** consists of four simple operations that do a surprisingly good job of preventing overfitting and helping train more robust models.
+|Synonym Replacement|Random Insertion|Random Swap|Random Deletion|
+|---|---|---|---|
+|Randomly choose n words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random.|Find a random synonym of a random word in the sentence that is not a stop word. Insert that synonym into a random position in the sentence. Do this n times.|Randomly choose two words in the sentence and swap their positions. Do this n times.|Randomly remove each word in the sentence with probability p.|
+|This **article** will focus on summarizing data augmentation **techniques** in NLP.<br/>This **write-up** will focus on summarizing data augmentation **methods** in NLP.|This **article** will focus on summarizing data augmentation **techniques** in NLP.<br/>This **article** will focus on write-up summarizing data augmentation techniques in NLP **methods**.|This **article** will focus on summarizing data augmentation **techniques** in NLP.<br/>This **techniques** will focus on summarizing data augmentation **article** in NLP.|This **article** will focus on summarizing data augmentation **techniques** in NLP.<br/>This **article** focus on summarizing data augmentation in NLP.|
+
+**NLP Albumentation**
+
+- Shuffle Sentences Transform: In this transformation, if the given text sample contains multiple sentences these sentences are shuffled to create a new sample. 
+
+For example:
+```text = ‘<Sentence1>. <Sentence2>. <Sentence4>. <Sentence4>. <Sentence5>. <Sentence5>.’```
+
+Is transformed to:
+```text = ‘<Sentence2>. <Sentence3>. <Sentence1>. <Sentence5>. <Sentence5>. <Sentence4>.’```
+
+**NLPAug** Python Package helps you with augmenting NLP for your machine learning projects. NLPAug provides all the methods discussed above.
+
+In computer vision applications data augmentations are done almost everywhere to get larger training data and make the model generalize better. 
+
+The main methods used involve:
+- cropping, 
+- flipping, 
+- zooming, 
+- rotation, 
+- noise injection, 
+- and many others.  
+
+In **computer vision**, these transformations are **done on the go using data generators**.
+
+[Source](https://neptune.ai/blog/data-augmentation-nlp)
+
 ### References 
 - [Source-1](https://medium.com/bitgrit-data-science-publication/11-machine-learning-interview-questions-77650cb89918)
 - [Source-2](https://medium.com/@reachpriyaa/how-to-crack-machine-learning-interviews-at-faang-78a2882a05c5)
