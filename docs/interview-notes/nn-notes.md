@@ -198,6 +198,16 @@ Deep auto-encoder
 ### Explain the significance of “Parameter Sharing” and “Sparsity of connections” in CNN.
 
 
-### 
+### What’s the difference between batch normalization and dropout layers in a CNN?
+
+### What is the main purpose of using zero padding in a CNN?
+
+### When would you prefer a 1D convolution over 2D convolutions?
+
+1D convolutions are typically used when the input data is 1D, such as a time series or text. 2D convolutions are typically used when the input data is 2D, such as an image.
+
+### What is deep residual learning?
+
+Deep residual learning is a neural network architecture that allows for training very deep networks by alleviating the vanishing gradient problem. This is done by adding “shortcut” or “skip” connections between layers in the network, which allows for information to flow more freely between layers. This makes it easier for the network to learn complex functions, and results in better performance on tasks such as image classification.
 
 <img src="https://i0.wp.com/developersbreach.com/wp-content/uploads/2020/08/cnn_banner.png?fit=1400%2C658&ssl=1" />
