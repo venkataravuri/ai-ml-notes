@@ -1,5 +1,7 @@
 # :robot: Machine Learning Concepts - :briefcase: Interview Notes :clipboard:
 
+- [Explain the difference between likelihood and probability.](#what-techniques-for-nlp-data-augmentation-do-you-know)
+  
 - [Probability Interview Questions](#probability-interview-questions)
 - [Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?](#explain-the-difference-between-supervised-and-unsupervised-machine-learning-what-are-the-most-common-algorithms-for-supervised-learning-and-unsupervised-learning)
 - [How do you handle data imbalance issues?](#how-do-you-handle-data-imbalance-issues)
@@ -21,6 +23,8 @@
 - [What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?](#what-is-the-cross-entropy-of-loss-how-does-the-loss-curve-for-cross-entropy-look-what-does-the-minus-in-cross-entropy-mean)
 - [Can you use MSE for evaluating your classification problem instead of Cross entropy?](#can-you-use-mse-for-evaluating-your-classification-problem-instead-of-cross-entropy)
 - [What is a hyperparameter? How to find the best hyperparameters?](#what-is-a-hyperparameter-how-to-find-the-best-hyperparameters)
+- [Define precision, recall, and F1 and discuss the trade-off between them.](#define-precision-recall-and-f1-and-discuss-the-trade-off-between-them)
+- [Explain the ROC Curve and AUC. What is the purpose of a ROC curve?](#explain-the-roc-curve-and-auc-what-is-the-purpose-of-a-roc-curve)
 - [What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?](#what-is-the-curse-of-dimensionality-why-do-we-need-to-reduce-it-what-is-pca-why-is-it-helpful-and-how-does-it-work-what-do-eigenvalues-and-eigenvectors-mean-in-pca)
 - [Why is a validation set necessary?](#why-is-a-validation-set-necessary)
 - [Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.](#can-k-fold-cross-validation-be-used-on-time-series-data-explain-with-suitable-reasons-in-support-of-your-answer)
