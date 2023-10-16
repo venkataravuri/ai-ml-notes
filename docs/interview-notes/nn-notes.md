@@ -223,10 +223,15 @@ In an image classification task with 10 classes, the fully connected layer will 
 ### What’s the difference between batch normalization and dropout layers in a CNN?
 
 
+Dropout is a _regularization technique_ that randomly drops out some fraction of the neurons in a layer during training. This helps to prevent overfitting by blocking information from certain neurons completely to make sure the _neurons do not co-adapt_. Dropout forces the network to learn more robust features that are useful in making predictions.
 
 ### What is the main purpose of using zero padding in a CNN?
 
+Zero padding is a technique used in Convolutional Neural Networks (CNNs) to preserve the original input size.
 
+It involves adding zeros to the borders of the input feature map when it is being processed by the kernel of a CNN.
+
+The main purpose of using zero padding is to avoid losing information at the boundaries of the input feature map and to control the shrinkage of dimension after applying filters larger than 1x1.
 
 ### When would you prefer a 1D convolution over 2D convolutions?
 
