@@ -222,6 +222,10 @@ In an image classification task with 10 classes, the fully connected layer will 
 
 ### What’s the difference between batch normalization and dropout layers in a CNN?
 
+Batch Norm is a normalization technique done between the layers of a Neural Network instead of in the raw data. It is done along mini-batches instead of the full data set.
+-  normalizing the inputs to take on a similar range of values can speed up learning.
+-  Batch Norm reduces the internal covariate shift of the network.
+-  it seems that Batch Norm has a regularization effect.  Because it is computed over mini-batches and not the entire data set, the model’s data distribution sees each time has some noise. This can act as a regularizer, 
 
 Dropout is a _regularization technique_ that randomly drops out some fraction of the neurons in a layer during training. This helps to prevent overfitting by blocking information from certain neurons completely to make sure the _neurons do not co-adapt_. Dropout forces the network to learn more robust features that are useful in making predictions.
 
