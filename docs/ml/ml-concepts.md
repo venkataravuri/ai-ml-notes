@@ -242,7 +242,8 @@ It provides a summary of the model’s true positive (TP), true negative (TN), f
 |**Specificity**||$\frac{(TP)}{(TP + FP)}$|• Coverage of actual negative sample.|
 |**F1 score**| is the harmonic mean of precision and recall, providing a balanced metric for situations where both precision and recall are important.|$2 . \frac{(TP)}{(TP + FN)}$|• 1 score assesses the predictive skill of a model by elaborating on its class-wise performance rather than an overall performance as done by accuracy. F1 score combines two competing metrics- precision and recall scores of a model, leading to its widespread use in recent literature.<br/>• For example, in sentiment analysis of customer reviews, F1 score is a suitable metric when dealing with imbalanced sentiment classes. It helps strike a balance between correctly identifying positive and negative sentiment reviews, taking into account both precision and recall.|
 
-F
+> The higher the recall, the more positives the model finds
+> The higher the precision, the less the model is wrong on the positives
 
 ### ROC
 ROC The receiver operating curve, also noted ROC, is the plot of TPR versus FPR by varying the threshold. These metrics are are summed up in the table below:
