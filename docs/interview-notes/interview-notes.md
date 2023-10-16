@@ -8,6 +8,7 @@
 - [How to deal with missing values? Mention three ways to handle missing or corrupted data in a dataset?](#how-to-deal-with-missing-values-mention-three-ways-to-handle-missing-or-corrupted-data-in-a-dataset)
 - [You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?](#you-are-given-a-data-set-with-missing-values-that-spread-along-1-standard-deviation-from-the-median-what-percentage-of-data-would-remain-unaffected)
 - [How to deal with outliers? What are the data preprocessing techniques to handle outliers? Mention 3 ways that you prefer, with proper explanation.](#how-to-deal-with-outliers-what-are-the-data-preprocessing-techniques-to-handle-outliers-mention-3-ways-that-you-prefer-with-proper-explanation)
+- [What is difference between Normalization, Standardization, Regularization?]()
 - [What is instance normalisation?](#what-is-instance-normalisation)
 - [Explain the bias-variance tradeoff.](#explain-the-bias-variance-tradeoff)
 - [While analyzing your model’s performance, you noticed that your model has low bias and high variance. What measures will you use to prevent it (describe two of your preferred measures)?](#while-analyzing-your-models-performance-you-noticed-that-your-model-has-low-bias-and-high-variance-what-measures-will-you-use-to-prevent-it-describe-two-of-your-preferred-measures)
@@ -114,6 +115,24 @@ L2 regularization can keep the parameter values from going too extreme. While L1
 |p(x1 ≤ x ≤ x2 \| μ, σ)|L(mean=μ, sd=σ \| X=x0) = y0|
 
 [Reference](https://medium.com/@banerjeesoumya15/probability-vs-likelihood-d2b412b0f43a)
+
+### What is difference between Normalization, Standardization, Regularization?
+
+_Normalization and standardization_ are _data preprocessing techniques_, while _regularization_ is used to _improve model performance_.
+
+- Standardization forces data points to have a _mean of 0_ and a _standard deviation of 1_.
+
+$x_{normalized} = \frac{x - \mu}{\sigma}$
+
+- Normalization is to scale it to a range from 0 to 1. This technique is generally used in the inputs of the data.
+
+$x_{normalized} = \frac{x - \mu}{x_{max} - x_{min}}$
+
+- After performing standardization and normalization, most of the data will lie between a given range, whereas _regularization doesn’t affect the data at all_.
+
+- **Standardization** must be used when **data is normally distributed**, **normalization** when **data is not normal**, and **regularization** when **data is very noisy**.
+
+- Regularization tunes the function by adding an additional penalty term in the error function. 
 
 ### What is instance normalisation?
 
