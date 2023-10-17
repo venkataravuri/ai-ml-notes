@@ -3,6 +3,7 @@
 - [ROUGE](#ROUGE)
 - [BLEU](#BLEU)
 
+---
 
 **Text Summarization**
 
@@ -15,6 +16,8 @@ There are two types of text summarization that a human, and nowadays a machine, 
 
 How do we measure the accuracy of a language-based sequence when dealing with language summarization or translation?
 
+---
+
 ## ROUGE
 
 ROUGE is used as an initial indicator of how much the machine-written summary overlaps with the human written summary, because it _does not take into account the semantic meaning and the factual accuracy_ of the summaries.
@@ -25,6 +28,8 @@ ROUGE-N measures the number of matching n-grams between the model-generated text
 
 Refer to this [article](https://medium.com/nlplanet/two-minutes-nlp-learn-the-rouge-metric-by-examples-f179cc285499) to calculate ROUGE 1 recall/precision/F1 Score and ROUGE 2 recall/precision/F1 Score.
 
+<img src="https://2.bp.blogspot.com/-Epc-MOVyeck/WrY91dsmqtI/AAAAAAAAAAM/JCP9qck4RbAMVGz7ZqTAnO2ZtkpdK_D4gCLcBGAs/s1600/rougeN.jpg" width="50%" height="50%" />
+
 #### ROUGE-L 
 
 ROUGE-L is based on the longest common subsequence (LCS) between model-generated text and a human-produced reference.
@@ -34,12 +39,16 @@ ROUGE-L is based on the longest common subsequence (LCS) between model-generated
 
 Refer to this [article](https://medium.com/nlplanet/two-minutes-nlp-learn-the-rouge-metric-by-examples-f179cc285499) to compute ROUGE-L recall, precision, and F1-score.
 
+<img src="https://image2.slideserve.com/4707631/rouge-l2-l.jpg" width="50%" height="50%" />
+
 #### ROUGE-S
 
 ROUGE-S allows us to add a degree of leniency to the n-gram matching performed with ROUGE-N and ROUGE-L. ROUGE-S is a skip-gram concurrence metric: this allows to search for consecutive words from the reference text that appear in the model output but are separated by one-or-more other words.
 
 - **BLEU focuses on precision**: how many the words (and/or n-grams) in the machine-generated text appear in the human-produced reference.
 - **ROUGE focuses on recall**: how many the words (and/or n-grams) in the human-produced references appear in the machine-generated model outputs.
+
+---
 
 ## BLEU
 
