@@ -51,3 +51,6 @@ The BLEU score is not perfect, but it’s quick and inexpensive to calculate, la
 
 https://medium.com/nlplanet/two-minutes-nlp-learn-the-bleu-metric-by-examples-df015ca73a86
 
+<img src="https://3.bp.blogspot.com/-FQarElbZHfI/XLKkRHizgYI/AAAAAAAAQnI/iN2JD-K5tscj-8Jmar6tisOtr0f43s92wCLcBGAs/s1600/BLEU1.png" width="70%" height="70%" />
+
+<img src="https://3.bp.blogspot.com/-HDoHlz3t9eo/WO1TxDJfSRI/AAAAAAAAISI/7B5FhctDglkxexKD_WSzTiR87h2B_OlXQCLcB/s1600/BLEU_94.jpg" width="70%" height="70%" />
