@@ -1,7 +1,8 @@
 # Evaluation Metrics
 
-- [ROUGE](#ROUGE)
-- [BLEU](#BLEU)
+- [ROUGE](#rouge)
+- [BLEU](#bleu)
+- [Perplexity][#perplexity]
 
 ---
 
@@ -63,3 +64,18 @@ https://medium.com/nlplanet/two-minutes-nlp-learn-the-bleu-metric-by-examples-df
 <img src="https://3.bp.blogspot.com/-FQarElbZHfI/XLKkRHizgYI/AAAAAAAAQnI/iN2JD-K5tscj-8Jmar6tisOtr0f43s92wCLcBGAs/s1600/BLEU1.png" width="70%" height="70%" />
 
 <img src="https://3.bp.blogspot.com/-HDoHlz3t9eo/WO1TxDJfSRI/AAAAAAAAISI/7B5FhctDglkxexKD_WSzTiR87h2B_OlXQCLcB/s1600/BLEU_94.jpg" width="70%" height="70%" />
+
+## Perplexity
+
+A language model is a probability distribution over sentences.
+A language model is a probability matrix between a word and the next word that occurs in the corpus of the training set
+
+Perplexity, known as PP, is “the inverse probability of the test set, normalised by the number of words”. In the Perplexity equation below, there are N words in a sentence, and each word is represented as w, where P is the probability of each w after the previous one. Also, we can expand the probability of W using the chain rule as followed.
+
+$PP(W) = P(w_1 w_2 w_3 ... w_N)^{\frac{1}{N}}$
+
+$= \sqrt[N]{\frac{1}{P(w_1 w_2 w_3 ... w_N)}}$
+
+$= \sqrt[N]{\Pi_{i=1}^{N}\frac{1}{P(w_i\|w_{i-1})}}$
+
+https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
