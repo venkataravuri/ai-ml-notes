@@ -1,8 +1,11 @@
 # Evaluation Metrics
 
+**Text Summarization, Language Translation**
 - [ROUGE](#rouge)
 - [BLEU](#bleu)
-- [Perplexity][#perplexity]
+- [Perplexity](#perplexity)
+
+**Speech Recognition**
 
 ---
 
@@ -79,3 +82,21 @@ $= \sqrt[N]{\frac{1}{P(w_1 w_2 w_3 ... w_N)}}$
 $= \sqrt[N]{\Pi_{i=1}^{N}\frac{1}{P(w_i\|w_{i-1})}}$
 
 https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
+
+---
+
+## WER - Word Error Rate
+
+Word error rate (WER) is a common metric of the performance of an automatic speech recognition (ASR) system.
+
+The WER is derived from the Levenshtein distance, working at the word level.
+
+$WER = \frac{(S + D + I)}{N}$
+
+where,
+S = Number of substitutions
+D = Number of deletions
+I = Number of insertions
+N = Number of words in the reference.
+
+
