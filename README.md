@@ -39,3 +39,4 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 - [ML Models](docs/interview-notes/models.md)
 - [Neural Netowrks](docs/interview-notes/nn-notes.md)
 - [ML System Design](docs/interview-notes/system-design.md)
+- [MLOps](docs/interview-notes/mlops.md)
