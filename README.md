@@ -37,4 +37,5 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 ## :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
 - [ML Concepts](docs/interview-notes/interview-notes.md)
 - [ML Models](docs/interview-notes/models.md)
+- [Neural Netowrks](docs/interview-notes/nn-notes.md)
 - [ML System Design](docs/interview-notes/system-design.md)
