@@ -88,7 +88,32 @@ in image processing, filters might be designed to detect edges, corners, or text
 |<img src="https://miro.medium.com/v2/resize:fit:578/format:webp/1*8QgzufBR-FofT8OAjnKSow.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:436/format:webp/1*9h-pnJxNKwRi9ft9ljQatg.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:646/format:webp/1*eUjPo__YgjupAKV5rg4MSw.png" height="70%" weight="70%" />|<img src="https://miro.medium.com/v2/resize:fit:668/format:webp/1*S_pnYr5LMrWk4oXEqpj6bA.png" height="70%" weight="70%" />|<img src="" height="70%" weight="70%" />|
 |Doesn’t used any padding|kernel slides along the image with a step > 1|kernel is spread out, step > 1 between kernel elements|each output channel is connected only to one input channel|
 
-**Pooling** - A pooling function replaces the output of the net at a certain location with a summary statistic of the nearby outputs. 
+Take an input FloatTensor with torch.Size = [10, 3, 28, 28] in NCHW order,
+and apply nn.Conv2d(in_channels=3, out_channels=16, kernel_size=(5,5), stride=(1,1), padding=(0,0))
+
+in channels cin = 3
+out channels cout = 16
+number of filters f = 16
+size of filters k = 5
+stride s = 1
+padding p = 0
+height in h = 28
+width in w = 28
+
+The formula used to calculate the output shape is:
+
+output_shape = ((input_height - kernel_size + 2 * padding) / stride) + 1
+= ((28 - 5 + 2 * 1)/(1) + 1)
+= 24
+
+Output shape: 24 x 24 x 16
+
+Conv2D calculator: https://abdumhmd.github.io/files/conv2d.html
+
+http://layer-calc.com/
+
+### Pooling
+A pooling function replaces the output of the net at a certain location with a summary statistic of the nearby outputs. 
 For example, 
 - **Max pooling** operation reports the maximum output within a rectangular neighborhood. 
 - Others,
