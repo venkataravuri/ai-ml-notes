@@ -63,7 +63,7 @@ Stacking a series of these layers in a specific manner yields a CNN.
 
 A simple text diagram to describe a CNN: ```INPUT => CONV => RELU => FC => SOFTMAX```
 
-**Convolution Operation**
+### Convolution Operation
 
 The convolutional operation is implemented by making The kernel slides across the image and produces an output Value at each position.
 
