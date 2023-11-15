@@ -112,6 +112,8 @@ Conv2D calculator: https://abdumhmd.github.io/files/conv2d.html
 
 http://layer-calc.com/
 
+https://ravivaishnav20.medium.com/visualizing-feature-maps-using-pytorch-12a48cd1e573
+
 ### Pooling
 A pooling function replaces the output of the net at a certain location with a summary statistic of the nearby outputs. 
 For example, 
