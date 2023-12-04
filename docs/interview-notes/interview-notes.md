@@ -144,16 +144,18 @@ Instance norm normalises the contrast of the input image making the stylised ima
 
 ### Explain the bias-variance tradeoff.
 
-Bias is a phenomenon that skews the result of a model in favour or against an idea.
-
-Technically, bias is error between average model prediction and the ground truth. Moreover, it describes _how well the model matches the training dataset_.
+Bias is error between average model prediction and the ground truth. Moreover, it describes _how well the model matches the training dataset_. (Upgrad: How much error the model likely to make in test data).
 
 - A model with **high bias** would not match the dataset closely.
 - A **low bias** model will closely matches the training dataset.
 
-**Variance** is the variability in model prediction when using different portions of the training dataset.
+**Variance** is the variability in model prediction when using different portions of the training dataset. (Upgrad Notes: How sensitive is the model to the input data). 
 
-A model with **high bias** tries to oversimplify the model whereas a model with **high variance** fails to generalize on unseen data. Upon reducing the bias, the model becomes susceptible to high variance and vice versa. Hence, a trade-off or balance between these two measures is what defines a good predictive model.
+A model with **high bias** tries to oversimplify the model, whereas, a model with **high variance** fails to generalize on unseen data. Upon reducing the bias, the model becomes susceptible to high variance and vice versa. 
+
+Hence, a trade-off or balance between these two measures is what defines a good predictive model.
+
+_Variance is about consistency and Bias is about correctness. Bais and Variance tradeoff is essentially correctness Vs. Consistency tradeoff, the model must be reasonably consitant and correct._
 
 |Characterstics of high bias model|Characterstics of high variance model|
 |---|---|
