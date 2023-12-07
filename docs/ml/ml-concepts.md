@@ -8,6 +8,18 @@
 - [Activation Functions](#activation-functions)
 - [Evaulation Metrics](#evaluation-metrics)
 
+### Hypothesis
+
+- __Hypothesis in Science__: Provisional explanation that fits the evidence and can be confirmed or disproved.
+- __Hypothesis in Statistics__: Probabilistic explanation about the presence of a relationship between observations.
+- __Hypothesis in Machine Learning__: Candidate model that approximates a target function for mapping examples of inputs to outputs.
+
+A hypothesis in machine learning:
+
+- __Covers the available evidence__: the training dataset.
+- __Is falsifiable (kind-of)__: a test harness is devised beforehand and used to estimate performance and compare it to a baseline model to see if is skillful or not.
+- __Can be used in new situations__: make predictions on new data.
+
 ### What are Logits in machine learning?
 
 Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.
