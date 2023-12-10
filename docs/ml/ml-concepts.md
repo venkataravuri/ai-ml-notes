@@ -20,6 +20,16 @@ A hypothesis in machine learning:
 - __Is falsifiable (kind-of)__: a test harness is devised beforehand and used to estimate performance and compare it to a baseline model to see if is skillful or not.
 - __Can be used in new situations__: make predictions on new data.
 
+**Hypothesis testing** is used to confirm your conclusion (or hypothesis) about the population parameter (which you know from EDA or your intuition).
+
+Through hypothesis testing, you can determine whether there is enough evidence to conclude if the hypothesis about the population parameter is true or not.
+
+Hypothesis Testing starts with the formulation of these two hypotheses:
+- **Null hypothesis (H₀)**: The status quo
+- **Alternate hypothesis (H₁)**: The challenge to the status quo
+
+_Either reject or fail to reject the null hypothesis_
+
 ### What are Logits in machine learning?
 
 Logits interpreted to be the unnormalised (or not-yet normalised) predictions (or outputs) of a model. These can give results, but we don't normally stop with logits, because interpreting their raw values is not easy.
