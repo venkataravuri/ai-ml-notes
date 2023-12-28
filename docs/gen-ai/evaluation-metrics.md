@@ -1,15 +1,23 @@
 # Evaluation Metrics
 
-**Text Summarization, Language Translation**
-- [ROUGE](#rouge)
-- [BLEU](#bleu)
-- [Perplexity](#perplexity)
+Evaluating machine learning models is crucial, standard accuracy-based metrics don’t always tell the full story. To thoroughly assess model performance, it is important to evaluate various capabilities beyond just accuracy or loss metrics. 
 
-**Speech Recognition**
+- For language tasks (LLMs), this includes analyzing generated text for topic coherence, semantic consistentcy, fluency, grammaticality, logical consistency and reasoning capabilities. 
+- For computer vision models, this includes analyzing capabilities on compositional tasks, bounding box overlap with ground truth, overlap between predicted and ground truth masks, robustness to corruptions like noise or blurring, and adversarial attacks. 
+- Across modalities, evaluating safety factors such as biases, discrimination, and fairness.
 
----
+Model evaluation metrics can be grouped into three main categories:
+- Generic Metrics
+- Task-oriented Metrics
+- Dataset-oriented Metrics
 
-**Text Summarization**
+<img src="../../docs/assets/EvaluationMetrics.jpg" width="60%" height="60%" />
+
+View in [MIRO Board](https://miro.com/app/board/uXjVN_e-aEM=/?share_link_id=105927867730)
+
+A quick overview of few commonly used evalution metrics along with Google Colab Notebooks to evaluate metrics.
+
+## Text Summarization Metrics
 
 **Extractive vs Abstractive**
 
@@ -18,21 +26,22 @@ There are two types of text summarization that a human, and nowadays a machine, 
 - **Extractive**: Words and phrases are directly extracted from the text.
 - **Abstractive**: Words and phrases are generated semantically consistent, ensuring the key information of the original text is maintained.
 
-How do we measure the accuracy of a language-based sequence when dealing with language summarization or translation?
-
----
-
 ## ROUGE
 
 ROUGE is used as an initial indicator of how much the machine-written summary overlaps with the human written summary, because it _does not take into account the semantic meaning and the factual accuracy_ of the summaries.
 
 #### ROUGE-N
 
-ROUGE-N measures the number of matching n-grams between the model-generated text and a human-produced reference.
+ROUGE-N calculates the ratio of matching n-grams between the candidate (model-generated text) and reference summaries (uman-produced reference text) over the total number of n-grams in the reference summaries. It is a measure of overlap content-wise between the candidate and reference summaries.
 
-Refer to this [article](https://medium.com/nlplanet/two-minutes-nlp-learn-the-rouge-metric-by-examples-f179cc285499) to calculate ROUGE 1 recall/precision/F1 Score and ROUGE 2 recall/precision/F1 Score.
+$$ROUGE-N = \frac{\sum\limits_{S \in {Reference Summaries}} \sum\limits_{gram_n \in S} Count_{match}(gram_n)}{\sum\limits_{S \in {Reference Summaries}} \sum\limits_{gram_n \in S} Count(gram_n)}$$
 
-<img src="https://2.bp.blogspot.com/-Epc-MOVyeck/WrY91dsmqtI/AAAAAAAAAAM/JCP9qck4RbAMVGz7ZqTAnO2ZtkpdK_D4gCLcBGAs/s1600/rougeN.jpg" width="50%" height="50%" />
+Where:
+- $N$: Size of n-gram
+- $Count_{match}(gram_n)$: Number of matching n-grams between the candidate and reference summaries
+- $Count(gram_n)$: Number of n-grams in the reference summaries.
+- $S$: Reference summary
+- ${Reference Summaries}$: Set of reference summaries
 
 #### ROUGE-L 
 
@@ -53,8 +62,9 @@ ROUGE-S allows us to add a degree of leniency to the n-gram matching performed w
 - **ROUGE focuses on recall**: how many the words (and/or n-grams) in the human-produced references appear in the machine-generated model outputs.
 
 ---
+## Text Translation Metrics
 
-## BLEU
+### BLEU
 
 BLEU, or the Bilingual Evaluation Understudy, is a metric for comparing a candidate translation to one or more reference translations.
 
@@ -68,7 +78,9 @@ https://medium.com/nlplanet/two-minutes-nlp-learn-the-bleu-metric-by-examples-df
 
 <img src="https://3.bp.blogspot.com/-HDoHlz3t9eo/WO1TxDJfSRI/AAAAAAAAISI/7B5FhctDglkxexKD_WSzTiR87h2B_OlXQCLcB/s1600/BLEU_94.jpg" width="70%" height="70%" />
 
-## Perplexity
+## Text Generation Metrics
+
+### Perplexity
 
 A language model is a probability distribution over sentences.
 A language model is a probability matrix between a word and the next word that occurs in the corpus of the training set
