@@ -31,7 +31,6 @@ the input tokens with a trainable tensor that can be optimized via backpropagati
 
 Soft prompt tuning is significantly more parameter-efficient than full-finetuning.
 
-
 ### Prefix Tuning
 
 Prefix tuning is to add trainable tensors to each transformer block instead of only the input embeddings, as in soft prompt tuning. 
@@ -42,5 +41,21 @@ The main idea behind prompt tuning, and parameter-efficient finetuning methods i
 to a pretrained LLM and only finetune the newly added parameters to make the LLM perform better on,
 - (a) a target dataset (for example, a domain-specific dataset like medical or legal documents)
 - and (b) a target task (for example, sentiment classification).
+
+
+## Self Attention
+
+In self-attention, every word in sequence pays attention to every other word to understand context. Self attention allows the model to relate words each other.
+
+Given a query, lookup for closest keys, return a weighted sum of associated values.
+
+## Multi-head Attention
+
+## Cross Attention
+
+## Flash Attention, Sliding Attention
+
+
+
 
 ### Finetune Llama 2
