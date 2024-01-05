@@ -1,4 +1,18 @@
-# MLOps
+# MLOps & Kubeflow
+
+**Table of Contents**
+- Overview
+- ML Pipeline Tasks
+- Kubeflow
+  - Overview & Components  
+  - Jupyter Notebooks Hub
+  - Kubeflow Pipelines
+  - Kale Jupyter Notbook to Pipeline Conversion
+  - Parameter Tuning using Katib
+  - Model Registry
+  - Kubeflow Serving
+  - Kubeflow Operators
+- Kuebflow GPUs
 
 [ml-ops.org](https://ml-ops.org/content/end-to-end-ml-workflow)
 
@@ -64,4 +78,7 @@
 
 - Experiment Tracking
 - 
+## Kubeflow
 
+### Overview
+Kubeflow enables you to set up CI/CD pipelines for your machine learning workflows. This allows you to automate the testing, validation, and deployment of models, ensuring a smooth and scalable deployment process.
