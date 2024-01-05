@@ -297,3 +297,5 @@ During the optimization process, TensorRT performs the following steps:
 - Dynamic tensor memory management: TensorRT manages the memory required for intermediate tensors during inference to minimize memory usage.
 
 TensorRT is better than TorchScript in terms of performance.
+
+[TensorRT Optimization Guide](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/pdf/TensorRT-Best-Practices.pdf)
