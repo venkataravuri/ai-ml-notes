@@ -273,5 +273,27 @@ if __name__ == '__main__':
 - KServe can leverage GPU acceleration libraries like TensorRT for optimized performance.
 - For PyTorch, KServe integrates with TorchServe to serve PyTorch models.
 
+### TorchScript
+
+- Torchscript is a way to create serializable and optimizable models from PyTorch code.
+- It is a Python scripting language that can be used as an intermediate representation (IR) for PyTorch models
+- TorchScript is used to optimize and serialize PyTorch models for deployment to production environments
+
+
 ### TensorRT & Triton Inference Server
 
+TensorRT optimizes and executes compatible subgraphs, letting deep learning frameworks execute the remaining graph
+
+- TensorRT is designed to optimize deep learning models for inference on NVIDIA GPUs, which results in faster inference times.
+- TensorRT performs various optimizations on the model graph, including layer fusion, precision calibration, and dynamic tensor memory management to enhance inference performance.
+
+During the optimization process, TensorRT performs the following steps:
+
+- Parsing: TensorRT parses the trained model to create an internal representation.
+- Layer fusion: TensorRT fuses layers in the model to reduce memory bandwidth requirements and increase throughput.
+- Precision calibration: TensorRT selects the appropriate precision for each layer in the model to maximize performance while maintaining accuracy.
+- Memory optimization: TensorRT optimizes the memory layout of the model to reduce memory bandwidth requirements and increase throughput.
+- Kernel selection: TensorRT selects the best kernel implementation for each layer in the model to maximize performance.
+- Dynamic tensor memory management: TensorRT manages the memory required for intermediate tensors during inference to minimize memory usage.
+
+TensorRT is better than TorchScript in terms of performance.
