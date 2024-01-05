@@ -120,7 +120,41 @@ Hugging Face Model Hub
 -Integrates with Hugging Face libraries like Transformers
 -Includes preprocessed datasets, notebooks, demos
 
+### Kubeflow Pipelines
+
+Pipelines are used to chain multiple steps into an ML lifecycle - data prep, train, evaluate, deploy.
+
+
+
+### What is Container Op in kubeflow pipelines? Isn't it too heavy creating containers for every step?
+
+A ContainerOp represents an execution of a Docker container as a step in the pipeline. Some key points:
+- Every step in the pipeline is wrapped as a ContainerOp. This encapsulates the environment and dependencies for that step.
+- Behind the scenes, the ContainerOp creates a Kubernetes Pod with the specified Docker image to run that step.
+- So yes, containerizing every step introduces computational overhead vs just running Python functions. The containers can be slow to spin up and add resource usage.
+- However, the benefit is that each step runs in an isolated, reproducible environment. This avoids dependency conflicts between steps.
+- ContainerOps also simplify deployment. The pipeline itself is a portable Kubernetes spec that can run on any cluster.
+
+For Python code, the func_to_container_op decorator allows you to convert Python functions to ContainerOps easily.
+
+For performance critical sections, you can optimize by:
+- Building custom slim Docker images
+- Using the **dsl.ResourceOp** construct for non-container steps
+- Group multiple steps in one ContainerOp
+-  Tuning Kubernetes Pod resources
+
+So in summary, ContainerOps trade off some performance for better encapsulation, portability and reproducibility. For a production pipeline, optimizing performance is still important.
+
+ResourceOps in Kubeflow Pipelines allow defining pipeline steps that don't execute as Kubernetes Pods or ContainerOps.
+
 ### Kubeflow Pipelines Vs Jobs
+
+- **Jobs** are standalone, reusable ML workflow steps e.g. data preprocessing, model training.
+- **Pipelines** stitch together jobs into end-to-end ML workflows with dependencies.
+
+- Use jobs to encapsulate reusable ML functions - data processing, feature engineering etc.
+- Use jobs within a pipeline to break up the pipeline into reusable components.
+- Kubeflow jobs leverage composable kustomize packages making reuse easier. Kubernetes jobs use vanilla pod templates.
 
 ## Model Serving
 
@@ -134,7 +168,7 @@ Hugging Face Model Hub
 - Inference code
 - Environment specs like Dockerfile
 - Documentation & Metadata like licenses, model cards etc
-- 
+
 Containerizing can be considered a form of model packaging, as it encapsulates the model and dependencies in a standardized unit for deployment.
 
 Model packaging formats:
@@ -142,3 +176,102 @@ Model packaging formats:
 - Docker image - Bundle model as microservice
 -  Model archival formats - ONNX, PMML
 - Python package - For use in Python apps
+
+> [Automating Kubeflow Pipelines with GitOps, GitHub Actions?](https://www.weave.works/blog/automating-kubeflow-pipelines-with-gitops-github-actions-and-weave-flagger)
+
+Why not use containers as the delivery medium for models?
+
+It is fortunate that Kubernetes supports the concept of init-containers inside a Pod. When we serve different machine learning models, we change only the model, not the serving program. This means that we can pack our models into simple model containers, and run them as the init-container of the serving program. We also include a simple copy script inside of our model containers that copies the model file from the init container into a volume so that it can be served by the model serving program.
+
+https://github.com/chanwit/wks-firekube-mlops/blob/master/example/model-serve.yaml
+
+
+### Kubeflow operators
+
+Here is a list of some of the key operators in Kubeflow:
+
+Kubeflow Pipelines operators:
+
+    Argoproj Workflow Operator - Manages and executes pipelines
+    Persistent Agent - Caches data for pipelines agents
+    ScheduledWorkflow Operator - Handles scheduled/cron workflows
+
+Notebooks operators:
+
+    Jupyter Web App Operator - Manages Jupyter notebook web interfaces
+    Notebook Controller Operator - Handles lifecycle of notebook servers
+
+Serving operators:
+
+    KFServing Operator - Manages model inference services
+    Seldon Deployment Operator - Manages running Seldon inference graphs
+    Inference Services Operator - Deprecated operator for TF Serving
+
+Training operators:
+
+    MPI Operator - Handles distributed MPI training jobs
+    PyTorch Operator - Manages PyTorch training jobs
+    TFJob Operator - Manages TensorFlow training jobs
+
+Misc operators:
+
+    Kubeflow Namespace Operator - Installs components in kubeflow namespace
+    Profile Controller - Records detailed profiles of runs
+    Studyjob Operator - Hyperparameter tuning using Katib
+    Volumes Web App - Manages PVC and volumes
+
+The core operators for pipelines, notebooks and model serving/inference provide end-to-end ML workflow functionality on Kubernetes. The training operators support orchestrated model training jobs.
+
+There are also various utility operators for management, tuning, monitoring etc. Many operators are being consolidated under KServe umbrella.
+
+### Hyperparameter tuning
+
+> Write code for hyperparameter tuning for xgboost using kubeflow pipelines? where the multi fold cross validation information is stored? how best model is detected?
+
+```python
+import kfp
+from kfp import dsl
+from kfp.components import func_to_container_op
+
+def xgboost_train(params):
+    model = xgb.XGBRegressor(**params)
+    model.fit(X_train, y_train)
+    return model
+
+@func_to_container_op
+def log_metrics(model):
+    cv_scores = cross_validate(model, X_train, y_train, cv=5)
+    print(cv_scores)
+    return model
+
+@dsl.pipeline(
+    name='XGBoost-tuning',
+    description='Tuning XGBoost hyperparameters using Katib'
+)
+def xgboost_tuning_pipeline(
+    learning_rate = hp.choice(0.01, 0.1),
+    n_estimators = hp.choice(100, 200)    
+):
+
+    xgb_train_op = dsl.components.func_to_container_op(xgboost_train)
+    best_hp = tuner.search(xgb_train_op, {
+        "learning_rate": learning_rate,
+        "n_estimators": n_estimators
+    })
+
+    final_model = xgb_train_op(best_hp.to_dict())
+    log_metrics(final_model)
+
+if __name__ == '__main__':
+    kfp.compiler.Compiler().compile(xgboost_tuning_pipeline, __file__ + '.yaml')
+```
+
+### KServe 
+
+- KServe is a Kubernetes operator for serving, managing and monitoring machine learning models on Kubernetes.
+- KServe supports multiple inference runtimes like TensorFlow, PyTorch, ONNX, XGBoost.
+- KServe can leverage GPU acceleration libraries like TensorRT for optimized performance.
+- For PyTorch, KServe integrates with TorchServe to serve PyTorch models.
+
+### TensorRT & Triton Inference Server
+
