@@ -53,9 +53,21 @@ Given a query, lookup for closest keys, return a weighted sum of associated valu
 
 ## Cross Attention
 
-## Flash Attention, Sliding Attention
+## Sliding Attention
 
+## Flash Attention
 
+**Transformers** are slow and memory-hungry on **long sequences**, since the time and memory complexity of self-attention are **quadratic in sequence length**.
 
+Flash attention uses two techniques to speedup,
+
+- **"tiling"** to "restructure the computation of attention" by splitting the input into blocks and performing softmax incrementally.
+- **I/O aware implementation of attention**: Instead of storing the matrix for backpropagation, we simply recalculate it, which is faster than the I/Os.
+
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04f9b12d-eec9-4558-86ee-b23e03807935_1600x889.jpeg" width="70%" height="70%" />
+
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3ec9eb47-c496-4a15-b8b9-ed091de6c06e_1932x680.png" width="70%" height="70%" />
+
+Source: [FlashAttention challenges ML researchers to think about systems-level improvements](https://dailyink.substack.com/p/flashattention-challenges-ml-researchers) [Long-Sequence Attention with ⚡FlashAttention⚡](https://mlnotes.substack.com/p/long-sequence-attention-with-flashattention), 
 
 ### Finetune Llama 2
