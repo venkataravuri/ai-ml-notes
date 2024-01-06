@@ -1,47 +1,4 @@
-# Finetune LLMs
-
-## Concepts
-
-### Prompt Tuning
-
-prompt tuning (different from prompting) appends a tensor to the embedded inputs of a pretrained LLM.
-The tensor is then tuned to optimize a loss function for the finetuning task and data while all other parameters in the LLM remain frozen.
-
-#### Hard Prompting
-
-Prompt tuning refers to techniques that vary the input prompt to achieve better modeling results. 
-
-For example, suppose we are interested in translating an English sentence into German. We can ask the model in various different ways, as illustrated below.
-An example of hard prompt tuning, that is, rearranging the input to get better outputs.
-
-```
-1) Translate the English sentence '{English Sentence}' into German language '{German Translation}'
-2) English: '{English Sentence}' | German: '{German Translation}'
-3) From English to German: '{English Sentence}' -> '{German Translation}'
-```
-
-Now, this concept illustrated above is referred to as **hard prompt tuning** since we directly change the discrete input tokens, which are not differentiable.
-
-[Source](https://magazine.sebastianraschka.com/p/understanding-parameter-efficient) 
-
-#### Soft Prompting
-
-In contrast to hard prompt tuning, soft prompt tuning (Lester et al. 2021) concatenates the embeddings of
-the input tokens with a trainable tensor that can be optimized via backpropagation to improve the modeling performance on a target task.
-
-Soft prompt tuning is significantly more parameter-efficient than full-finetuning.
-
-### Prefix Tuning
-
-Prefix tuning is to add trainable tensors to each transformer block instead of only the input embeddings, as in soft prompt tuning. 
-
-## Parameter-Efficient Finetuning Methods
-
-The main idea behind prompt tuning, and parameter-efficient finetuning methods in general, is to add a small number of new parameters
-to a pretrained LLM and only finetune the newly added parameters to make the LLM perform better on,
-- (a) a target dataset (for example, a domain-specific dataset like medical or legal documents)
-- and (b) a target task (for example, sentiment classification).
-
+# Transformer Architecture
 
 ## Self Attention
 
@@ -69,5 +26,60 @@ Flash attention uses two techniques to speedup,
 <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3ec9eb47-c496-4a15-b8b9-ed091de6c06e_1932x680.png" width="70%" height="70%" />
 
 Source: [FlashAttention challenges ML researchers to think about systems-level improvements](https://dailyink.substack.com/p/flashattention-challenges-ml-researchers) [Long-Sequence Attention with ⚡FlashAttention⚡](https://mlnotes.substack.com/p/long-sequence-attention-with-flashattention), 
+
+
+# Finetune LLMs
+
+## Concepts
+
+### Prompt Tuning
+
+#### Hard Prompting (Prompt Engineering)
+
+Prompt engineering is a process that allows to engineer guidelines for a pre-trained model to implement a narrow task. A human engineer's instructions are fed to an LLM for it to accomplish a specific task. These instructions are called hard prompts.
+
+For example, suppose we are interested in translating an English sentence into German. We can ask the model in various different ways, as illustrated below.
+An example of hard prompt tuning, that is, rearranging the input to get better outputs.
+
+```
+1) Translate the English sentence '{English Sentence}' into German language '{German Translation}'
+2) English: '{English Sentence}' | German: '{German Translation}'
+3) From English to German: '{English Sentence}' -> '{German Translation}'
+```
+
+Now, this concept illustrated above is referred to as **hard prompt tuning** since we directly change the discrete input tokens, which are not differentiable.
+
+[Source](https://magazine.sebastianraschka.com/p/understanding-parameter-efficient) 
+
+#### Soft Prompting
+
+In contrast to hard prompt tuning, soft prompt tuning (Lester et al. 2021) concatenates the embeddings of the input tokens with a trainable tensor that can be optimized via backpropagation to improve the modeling performance on a target task.
+
+- Prompt tuning (different from prompting) appends a tensor to the embedded inputs of a pretrained LLM.
+- The tensor is then tuned to optimize a loss function for the finetuning task and data while all other parameters in the LLM remain frozen.
+
+Soft prompt tuning is significantly more parameter-efficient than full-finetuning.
+
+### Prefix Tuning
+
+Prefix tuning is to add trainable tensors to each transformer block instead of only the input embeddings, as in soft prompt tuning.
+
+## In-context Learning vs Instruction Fine-tuning
+
+In-context learning is a technique that leverages the LLM’s ability to learn from the context of the input. By providing a few prompt-completion examples before the actual query, the LLM can infer the task and the desired output format from the examples. In-context learning does not require any additional training of the model, but it relies on the model’s pre-trained knowledge and reasoning skills.
+
+Instruction fine-tuning is a strategic extension of the traditional fine-tuning approach. Model is trained on examples of instructions and how the LLM should respond to those instructions.
+
+## Parameter-Efficient Finetuning Methods
+
+The main idea behind prompt tuning, and parameter-efficient finetuning methods in general, is to add a small number of new parameters
+to a pretrained LLM and only finetune the newly added parameters to make the LLM perform better on,
+- (a) a target dataset (for example, a domain-specific dataset like medical or legal documents)
+- and (b) a target task (for example, sentiment classification).
+
+## LoRA
+
+## Quantization
+
 
 ### Finetune Llama 2
