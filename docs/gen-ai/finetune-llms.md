@@ -1,5 +1,16 @@
 # Transformer Architecture
 
+All most all LLMs in market are based variants of the original [Vaswani et al. (2017)](https://arxiv.org/abs/1706.03762) paper that introduced transformers presented an encoder-decoder architecture.
+
+Transformer models produce a probability distribution over all potential next words given an input string of text. 
+
+- The original paper introduced encoder-decoder transformers architecture, which is more geared to tasks like translation.
+- ChatGPT and other GPT-series models are decoder-only transformers.
+
+Source: [](https://benlevinstein.substack.com/p/a-conceptual-guide-to-transformers)
+
+The main architectural innovation of transformers was the introduction of attention heads.
+
 ## Self Attention
 
 In self-attention, every word in sequence pays attention to every other word to understand context. Self attention allows the model to relate words each other.
