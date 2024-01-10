@@ -85,6 +85,19 @@ Clustering - Clustering is an unsupervised technique that involves the grouping,
 [Reference-1](https://stanford.edu/%7Eshervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
 [Reference-2](https://medium.com/@nerdjock/lesson-15-machine-learning-overfitting-underfitting-and-model-complexity-intuition-ba6874224a2c)
 
+### Covariance Vs Correlation
+
+Both _covariance_ and _correlation_ measure the relationship and the dependency between two variables. 
+- Covariance indicates the direction of the linear relationship between variables
+- Correlation measures both the strength and direction of the linear relationship between two variables.
+
+Correlation is a function of the covariance.
+
+$$\mathrm{Cov}(X,Y) = \frac{\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{n-1}$$
+
+Correlation:
+$$\rho_{X,Y} = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y} = \frac{\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\sum_{i=1}^{n}{(x_i - \bar{x})^2}} \sqrt{\sum_{i=1}^{n}{(y_i - \bar{y})^2}}}$$
+
 ### Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?
 
 Refer to [Regularization Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
