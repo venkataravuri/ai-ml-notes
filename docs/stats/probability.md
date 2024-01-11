@@ -92,6 +92,9 @@ PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is
 |Uniform Distribution|Uniform distribution specifies an equal probability across a given range of continuous values. In other words, it is a probability distribution with a constant probability.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
 |Normal distribution (Or) Gaussian distribution (Or) Bell Curve|||$$$$|<img src="" />|
 
+## References
+- [Conditional Probability Explained (with Formulas and Real-life Examples)](https://365datascience.com/tutorials/statistics-tutorials/conditional-probability/)
+
 This is a univariate probability distribution, which is the probability distribution of a single random variable. This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
 
 Check out this site to learn about 76 types of univariate distribution
