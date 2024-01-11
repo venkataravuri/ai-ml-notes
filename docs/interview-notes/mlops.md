@@ -14,6 +14,8 @@
   - Kubeflow Operators
 - Kuebflow GPUs
 
+- [7 Frameworks for Serving LLMs - a comprehensive guide into LLMs inference and serving with detailed comparison](https://betterprogramming.pub/frameworks-for-serving-llms-60b7f7b23407)
+
 ## MLOps Overview
 > A picture speaks a thousand words
 <table>
