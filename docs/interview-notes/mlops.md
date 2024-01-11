@@ -17,6 +17,7 @@
 
 - [Building and Deploying Machine Learning Pipelines](https://www.datacamp.com/tutorial/kubeflow-tutorial-building-and-deploying-machine-learning-pipelines)
 - [A Dummies’ guide to building a Kubeflow Pipeline](https://mishraprafful.medium.com/a-dummies-guide-to-build-a-kubeflow-pipeline-c1f61160cba6)
+- [How continuous batching enables 23x throughput in LLM inference while reducing p50 latency](https://www.anyscale.com/blog/continuous-batching-llm-inference)
 
 ---
 
