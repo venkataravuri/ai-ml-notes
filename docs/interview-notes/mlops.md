@@ -19,6 +19,8 @@
 - [Case Study: Amazon Ads Uses PyTorch and AWS Inferentia to Scale Models for Ads Processing](https://pytorch.org/blog/amazon-ads-case-study/)
 - [GPU - CUDA Programming Model](https://luniak.io/cuda-neural-network-implementation-part-1/)
 - [GPU - CUDA Interview questions on CUDA Programming?](https://stackoverflow.com/questions/1958320/interview-questions-on-cuda-programming)
+- [Improving GPU Utilization in Kubernetes](https://developer.nvidia.com/blog/improving-gpu-utilization-in-kubernetes/)
+- [Kubeflow pipelines (part 1) — lightweight components](https://medium.com/@gkkarobia/kubeflow-pipelines-part-1-lightweight-components-a4a3c8cb3f2d)
 
 ## MLOps Overview
 > A picture speaks a thousand words
