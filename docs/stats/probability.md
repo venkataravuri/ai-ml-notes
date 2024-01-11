@@ -2,7 +2,6 @@
 
 **Table of Contents**
 - Statistics
-  - 
 - Probability
   - [Overview]()
   - [Probability Distribution]()
