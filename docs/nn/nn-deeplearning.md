@@ -33,6 +33,8 @@ A Neural Network introductory videos with nice intutions. A 4-part series that e
 
 ## Neural Networks
 
+- [Please Stop Drawing Neural Networks Wrong](https://towardsdatascience.com/please-stop-drawing-neural-networks-wrong-ffd02b67ad77)
+
 ## Deep Learning
 
 Deep learning is a type of neural networks with multiple layers which can handle higher-level computation tasks, such as natural language processing, fraud detection, autonomous vehicle driving, and image recognition.
