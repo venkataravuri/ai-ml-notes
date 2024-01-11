@@ -108,3 +108,5 @@ to a pretrained LLM and only finetune the newly added parameters to make the LLM
 - [How to Fine-Tune an LLM Part 2: Instruction Tuning Llama 2](https://wandb.ai/capecape/alpaca_ft/reports/How-to-Fine-Tune-an-LLM-Part-2-Instruction-Tuning-Llama-2--Vmlldzo1NjY0MjE1)
 - [Fine-tune Llama 2 with Limited Resources](https://www.union.ai/blog-post/fine-tune-llama-2-with-limited-resources)
 - [Llama_2_7b_chat_hf_sharded_bf16_INFERENCE.ipynb](https://colab.research.google.com/drive/1zxwaTSvd6PSHbtyaoa7tfedAS31j_N6m)
+- [fLlama_bnb_Inference.ipynb](https://colab.research.google.com/drive/1Ow5cQ0JNv-vXsT-apCceH6Na3b4L7JyW?usp=sharing#scrollTo=tMmDSVVaIfPF)
+- []()
