@@ -21,6 +21,8 @@
 - [GPU - CUDA Interview questions on CUDA Programming?](https://stackoverflow.com/questions/1958320/interview-questions-on-cuda-programming)
 - [Improving GPU Utilization in Kubernetes](https://developer.nvidia.com/blog/improving-gpu-utilization-in-kubernetes/)
 - [Kubeflow pipelines (part 1) — lightweight components](https://medium.com/@gkkarobia/kubeflow-pipelines-part-1-lightweight-components-a4a3c8cb3f2d)
+- [Automate prompt tuning for large language models using KubeFlow Pipelines](https://developer.ibm.com/tutorials/awb-automate-prompt-tuning-for-large-language-models/)
+- [Building a ML Pipeline from Scratch with Kubeflow – MLOps Part 3](https://blogs.cisco.com/developer/machinelearningops03)
 
 ## MLOps Overview
 > A picture speaks a thousand words
