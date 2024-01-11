@@ -18,10 +18,18 @@
 - It allows you to move the line up and down to fit the prediction with the data better.
 - Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
 - A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
+
+- [Linear Regression with NumPy - Using gradient descent to perform linear regression](https://www.cs.toronto.edu/~frossard/post/linear_regression/)
+- [Linear Regression with Gradient Descent from Scratch](https://towardsdev.com/linear-regression-from-scratch-with-gradient-descent-b7ea1a7fec09)
+- [Linear Regression from scratch (Gradient Descent)](https://www.kaggle.com/code/tentotheminus9/linear-regression-from-scratch-gradient-descent)
+- [Gradient Descent From Scratch](https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc)
   
 ## Logisitic Regression
 
 Logistic regression, by default, is limited to two-class classification problems. It can also be applied to multiclass problems.
+
+- [Logistic Regression: A Classifier With a Sense of Regression - Explaining logistic regression as a classifier derived from regression concept](https://python.plainenglish.io/logistic-regression-a-classifier-with-a-sense-of-regression-83ce49ba3f5b)
+- [Multiclass Logistic Regression With Python](https://medium.com/mlearning-ai/multiclass-logistic-regression-with-python-2ee861d5772a)
 
 ### Bayes Theorem & Navie Bayes
 
