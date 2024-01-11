@@ -17,6 +17,7 @@
 
 - [7 Frameworks for Serving LLMs - a comprehensive guide into LLMs inference and serving with detailed comparison](https://betterprogramming.pub/frameworks-for-serving-llms-60b7f7b23407)
 - [Case Study: Amazon Ads Uses PyTorch and AWS Inferentia to Scale Models for Ads Processing](https://pytorch.org/blog/amazon-ads-case-study/)
+- [GPU - CUDA Programming Model](https://luniak.io/cuda-neural-network-implementation-part-1/)
 
 ## MLOps Overview
 > A picture speaks a thousand words
