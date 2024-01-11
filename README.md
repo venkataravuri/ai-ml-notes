@@ -13,7 +13,7 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
  
 ## Statistics
 - [Algebra](docs/stats/algebra.md)
-- [Probability](docs/stats/probability.md)
+- [Statistics & Probability](docs/stats/probability.md)
 
 ## Machine Learning
 - [ML Concepts](docs/ml/ml-concepts.md)
