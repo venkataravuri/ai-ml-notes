@@ -116,6 +116,8 @@ L2 regularization can keep the parameter values from going too extreme. While L1
 
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*-aJ9MXozOKv6joiX.png" width="70%" height="70%" />
 
+- [Visualizing regularization and the L1 and L2 norms](https://chiaracampagnola.io/2020/10/23/visualizing-regularization-and-the-l1-and-l2-norms/)
+
 ### Explain the difference between likelihood and probability.
 
 **Probability** is used to find the chances of occurrence of a particular event whereas **likelihood** is used to maximize the chances of occurrence of a particular event.
