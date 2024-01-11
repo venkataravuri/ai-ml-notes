@@ -16,6 +16,9 @@
 ---
 
 - [Building and Deploying Machine Learning Pipelines](https://www.datacamp.com/tutorial/kubeflow-tutorial-building-and-deploying-machine-learning-pipelines)
+- [A Dummies’ guide to building a Kubeflow Pipeline](https://mishraprafful.medium.com/a-dummies-guide-to-build-a-kubeflow-pipeline-c1f61160cba6)
+
+---
 
 - [7 Frameworks for Serving LLMs - a comprehensive guide into LLMs inference and serving with detailed comparison](https://betterprogramming.pub/frameworks-for-serving-llms-60b7f7b23407)
 - [Case Study: Amazon Ads Uses PyTorch and AWS Inferentia to Scale Models for Ads Processing](https://pytorch.org/blog/amazon-ads-case-study/)
