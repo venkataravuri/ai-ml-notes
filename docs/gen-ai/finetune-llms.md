@@ -101,3 +101,6 @@ to a pretrained LLM and only finetune the newly added parameters to make the LLM
 - [Ultimate Guide to Fine-Tuning in PyTorch : Part 1 — Pre-trained Model and Its Configuration](https://rumn.medium.com/part-1-ultimate-guide-to-fine-tuning-in-pytorch-pre-trained-model-and-its-configuration-8990194b71e)
 
 ### Finetune Llama 2
+
+- [LLaMA-2 from the Ground Up](https://cameronrwolfe.substack.com/p/llama-2-from-the-ground-up)
+- 
