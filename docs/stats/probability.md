@@ -6,7 +6,18 @@
 
 ## Introduction
 
-probability in order to convey our predictive insights with certain degree of certainty.
+Probability is a measure that quantifies the likelihood that an event will occur.
+
+e.g., we can quantify the probability of a customer purchasing a product, chances of click on an advertisment and customer chrun.
+
+### Likelihood Vs. Probability
+
+The terms "likelihood" and "probability" refer to the likelihood of events occurring.
+
+The term "probability" refers to the possibility of something happening.
+The term "Likelihood" refers to the process of determining the best data distribution given a specific situation in the data.
+
+Now suppose we flip the coin 100 times and it only lands on heads 17 times. We would say that the likelihood that the coin is fair is quite low. If the coin was actually fair, we would expect it to land on heads much more often as P(Heads) = 0.5 usually.
 
 ## Probability Distribution
 
