@@ -29,9 +29,19 @@ Using response variable’s probability distribution we can answer a lot of anal
 
 Probability distributions are divided into two types: **discrete** and **continuous**.
 
+#### Discrete Distributions
 
+Discrete distributions have finitely many outcomes, equal outcomes are called Equiprobability. Events with only two possible outcomes [True/False], so any event with two outcomes can be transformed into a Bernoulli Distribution.
 
-here are two common ways to represent a probability distribution, the probability density function (PDF) and cumulative distribution function (CDF). I suspect you're wondering most about the former. For the latter, the distribution is plotted as cumulative from zero to one, so the y-axis is the sum of the distribution up to a given value of x.
+**probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
+
+|Discrete Distributions|Description|Examples|Probability Mass Function|Graph|
+|---|---|---|---|---|
+|Bernoulli distribution|Bernoulli distribution is a discrete distribution having two possible outcomes labeled as n.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
+|Binomial distribution|Binomial distribution gives the discrete probability distribution of obtaining exactly x successes out of n Bernoulli trials.||$$P(X=x) = (\frac{n!}{(n-x)!x!}) p^n (1-p)^{(1-n)}$$|<img src="" />|
+|Geometric distribution||How many job interviews are needed before getting a first job offer <br/><br/>How many hits a cricket bat takes before it breaks?<br/><br/>In a manufacturing process how many good units are produced before the faulty unit.|$$P(X=x) = (1-p)^xp$$|<img src="" />|
+|Poission distribution|Poisson distribution is used for modeling the random arrival — like the arrival of people at the queues or calls at the support desks.|<br />• The number of users who visited a website in an interval can be thought of as a Poisson process.|$$f(x) = \frac{\lambda^x e^{-y}}{x!}$$|<img src="" />|
+|Exponential distribution|||$$f(x) = \lambda{e^{-{\lambda}x}}$$|<img src="" />|
 
 Continuous probability distribution describes the probability of a continuous random variable taking on a particular value. These types of distributions are used to model things like the height of a person, the time it takes to complete a task, or the distance a car travels.
 
@@ -43,43 +53,17 @@ Real-life uses of continuous probability distribution:
 - **Daily returns on a stock** are influenced by factors such as market conditions and company performance. Often the return rate which assumes a quantitative value is unpredictable, and random and can take infinite numbers amongst the real values, hence, it is a continuous variable. Due to the fluctuations in stock prices, the continuous probability distribution is the best to map and predict any changes in stock returns. 
 - **Wind speeds at a geographical location** are influenced by factors such as season and local weather patterns. As wind speed is a continuous variable, a continuous probability distribution can better help present and predict the range of wind speed in a location. 
 
-
-PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is the derivative of moving distance
-
-**probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
+There are two common ways to represent a probability distribution, the probability density function (PDF) and cumulative distribution function (CDF). I suspect you're wondering most about the former. For the latter, the distribution is plotted as cumulative from zero to one, so the y-axis is the sum of the distribution up to a given value of x.
 
 **probability density function** represents the density of a **continuous** random variable lying between a specific range of values.
 
-Discrete Distributions :
+PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is the derivative of moving distance
 
-Discrete distributions have finitely many outcomes, equal outcomes are called Equiprobability. Events with only two possible outcomes [True/False], so any event with two outcomes can be transformed into a Bernoulli Distribution.
+|Continuous Distributions|Description|Examples|Probability Density Function|Graph|
+|---|---|---|---|---|
+|Uniform Distribution|Uniform distribution specifies an equal probability across a given range of continuous values. In other words, it is a probability distribution with a constant probability.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
+|Normal distribution (Or) Gaussian distribution (Or) Bell Curve|||$$$$|<img src="" />|
 
 This is a univariate probability distribution, which is the probability distribution of a single random variable. This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
 
 Check out this site to learn about 76 types of univariate distribution
-
-|Distribution|Description|Examples|Probability Mass Function|Graph|
-|---|---|---|---|---|
-|Bernoulli distribution|Bernoulli distribution is a discrete distribution having two possible outcomes labeled as n.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n + (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
-|Binomial distribution|Binomial distribution gives the discrete probability distribution of obtaining exactly x successes out of n Bernoulli trials.||$$P(X=x) = (\frac{n!}{(n-x)!x!}) p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
-|Geometric distribution||How many job interviews are needed before getting a first job offer <br/><br/>How many hits a cricket bat takes before it breaks?<br/><br/>In a manufacturing process how many good units are produced before the faulty unit.|$$P(X=x) = (1-p)^xp$$|<img src="" />|
-|Poission distribution|Poisson distribution is used for modeling the random arrival — like the arrival of people at the queues or calls at the support desks.||$$f(x) = \frac{\lambda^x e^{-y}}{x!}$$|<img src="" />|
-|Exponential distribution|||$$f(x) = \lambda{e^{-{\lambda}x}}$$|<img src="" />|
-
-
-|Geometric distribution|||$$$$|<img src="" />|
-
-|Binomial Distribution|Bernoulli Distribution|Poisson Distribution|
-|---|---|---|
-| ||Represents how many times an event can occur over a specific time period.|
-|||Examples, <br />• The number of users who visited a website in an interval can be thought of as a Poisson process.|
-|||The probability mass function is given by:<br/>|
-|Problem Statement: Hospital records show that of patients suffering from a specific disease, `75%` die of it. What is the probability that of six randomly selected Patients, four will recover?|||
-|Problem Statement: A (blindfolded) marksman finds that on the average, he hits the target `4` times out of `5`. If he fires `4` shots, what is a probability of (a) more than `2` hits and (b) at least `3` misses?|||
-
-https://medium.com/analytics-vidhya/probability-statistics-for-beginners-in-machine-learning-part-3-probability-distribution-9bce0567fdcf
-
-|Uniform distribution |Normal distribution (Or) Gaussian distribution (Or) Bell Curve|Exponential distribution|
-|---|---|---|
-|uniform distribution specifies an equal probability across a given range of continuous values. In other words, it is a probability distribution with a constant probability.||Describes how long it takes for a continuous process to change state. The exponential distribution is the probability distribution of the time between events in a Poisson point process.|
-||Problem Statement: We have a dataset representing the weights of students in a school. Assume that the dataset is normally distributed with a mean of 60 kg and standard deviation 15 kg, represented by 𝑁(60,15). What is the probability that a randomly selected person has a weight below 50 kgs?||
