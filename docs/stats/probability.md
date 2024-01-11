@@ -1,10 +1,33 @@
-# Proabability
+# Statistics & Proabability
 
-- [Introduction]()
-- [Probability Distribution]()
-- [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+**Table of Contents**
+- Statistics
+  - 
+- Probability
+  - [Overview]()
+  - [Probability Distribution]()
+  - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+ 
+## Statistics
 
-## Introduction
+Statistics is a set of mathematical methods which enable us to answer important questions about data.
+
+Statistics is an important prerequisite for machine learning, it helps to select, evaluate and interpret predictive models. Statistical methods form the foundation for regression algorithms and classification algorithms.
+
+Statistics helps answer questions like:
+- Which features are the most important?
+- How should we design the experiment to develop our product strategy?
+- What performance metrics should we measure?
+- What is the most common and expected outcome?
+- How do we differentiate between noise and valid data?
+
+Statistics is divided into two categories:
+- **Descriptive Statistics** - Offers methods to summarise data by transforming raw observations into meaningful information that is easy to interpret and share. Raw observations are just data, descriptive statistics transform these observations into insights that make sense. 
+- **Inferential Statistics** - Offers methods to study experiments done on small samples of data and chalk out the inferences to the entire population (entire domain).
+
+## Probability
+
+## Overview
 
 Probability is a measure that quantifies the likelihood that an event will occur.
 
