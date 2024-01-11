@@ -10,6 +10,10 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 - [LLM-powered Autonomus AI Agents](docs/gen-ai/llm-powered-autonomous-ai-agents.md)
 - [Transformers Architecture & Fine Tuning](docs/gen-ai/finetune-llms.md)
 - [Evaluation Metrics](docs/gen-ai/evaluation-metrics.md)
+
+## Multimodality (Text + Image + Audio)
+
+- [Mulitmodality](docs/multimodality/multimodality.md)
  
 ## Statistics
 - [Algebra](docs/stats/algebra.md)
