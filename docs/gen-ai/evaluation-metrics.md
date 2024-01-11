@@ -17,6 +17,8 @@ Model evaluation metrics can be grouped into three main categories:
 
 View in [MIRO Board](https://miro.com/app/board/uXjVN_e-aEM=/?share_link_id=105927867730)
 
+- [SuperGLUE: Understanding a Sticky Benchmark for LLMs](https://deepgram.com/learn/superglue-llm-benchmark-explained)
+
 A quick overview of few commonly used evalution metrics along with Google Colab Notebooks to evaluate metrics.
 
 ## Text Summarization Metrics
