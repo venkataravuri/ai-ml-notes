@@ -21,7 +21,9 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 
 ## Machine Learning
 - [ML Concepts](docs/ml/ml-concepts.md)
-- [NLP - Natural Language Processing](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md) & [Search Concepts](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
+- [NLP - Natural Language Processing](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
+  - [Search Concepts](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
+  - [Embeddings, Vector Databases](https://github.com/venkataravuri/ai-ml-models/blob/main/5-vector-db/Readme.md)
   
 ## Neural Networks
 - [NN Concepts](docs/nn/nn-deeplearning.md)
