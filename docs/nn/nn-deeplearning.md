@@ -23,6 +23,8 @@ Learning is an Optimization Problem
 
 -Update the weights and biases to decrease loss function
 
+- [Understanding Backpropagation - A visual derivation of the equations that allow neural networks to learn](https://towardsdatascience.com/understanding-backpropagation-abcc509ca9d0)
+
 A Neural Network introductory videos with nice intutions. A 4-part series that explaines neural networks very intutively.
 
 - :tv: [What is a neural network? | Chapter 1, Deep learning](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
