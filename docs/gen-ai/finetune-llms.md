@@ -11,6 +11,12 @@ Source: [](https://benlevinstein.substack.com/p/a-conceptual-guide-to-transforme
 
 The main architectural innovation of transformers was the introduction of attention heads.
 
+### References
+
+- [Transformers Explained Visually (Part 3): Multi-head Attention, deep dive](https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853)
+- [A Gentle Introduction to Positional Encoding in Transformer Models, Part 1](https://machinelearningmastery.com/a-gentle-introduction-to-positional-encoding-in-transformer-models-part-1/)
+- 
+
 ## Self Attention
 
 In self-attention, every word in sequence pays attention to every other word to understand context. Self attention allows the model to relate words each other.
