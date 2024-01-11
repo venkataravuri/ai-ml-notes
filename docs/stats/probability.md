@@ -7,6 +7,8 @@
   - [Probability Distribution]()
   - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
  
+- [Statistics cheatsheet](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics#hypothesis-testing)
+ 
 ## Statistics
 
 Statistics is a set of mathematical methods which enable us to answer important questions about data.
