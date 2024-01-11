@@ -18,11 +18,12 @@
 - It allows you to move the line up and down to fit the prediction with the data better.
 - Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
 - A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
-
+---
 - [Linear Regression with NumPy - Using gradient descent to perform linear regression](https://www.cs.toronto.edu/~frossard/post/linear_regression/)
 - [Linear Regression with Gradient Descent from Scratch](https://towardsdev.com/linear-regression-from-scratch-with-gradient-descent-b7ea1a7fec09)
 - [Linear Regression from scratch (Gradient Descent)](https://www.kaggle.com/code/tentotheminus9/linear-regression-from-scratch-gradient-descent)
 - [Gradient Descent From Scratch](https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc)
+- [Multivariate Linear Regression from Scratch in Python](https://medium.com/@lope.ai/multivariate-linear-regression-from-scratch-in-python-5c4f219be6a)
   
 ## Logisitic Regression
 
