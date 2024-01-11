@@ -9,7 +9,7 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 - [Prompt Engineering - Knowledge Base](docs/gen-ai/prompt-engineering-resources.md)
 - [LLM-powered Autonomus AI Agents](docs/gen-ai/llm-powered-autonomous-ai-agents.md)
 - [Transformers Architecture & Fine Tuning](docs/gen-ai/finetune-llms.md)
-- [Evaluation Metrics](docs/gen-ai/evaluation-metrics.md)
+- [Benchmarking LLMs & Evaluation Metrics](docs/gen-ai/evaluation-metrics.md)
 
 ## Multimodality (Text + Image + Audio)
 
