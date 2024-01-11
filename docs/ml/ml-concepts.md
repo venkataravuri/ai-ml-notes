@@ -190,7 +190,6 @@ This approach leads to faster learning rates since normalization ensures thereâ€
 
 In a deep learning network, batch normalization affects the output of the previous activation layer by subtracting the batch mean, and then dividing by the batchâ€™s standard deviation.
 
-
 ## Distance Measurement in Text Mining
 
 Before any distance measurement, text have to be tokenzied.
@@ -303,6 +302,8 @@ The AUC ranges from 0 to 1, where:
 <img src="https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/627d12431fbd5e61913b7423_60be4975a399c635d06ea853_hero_image_activation_func_dark.png" height="90%" width="90%">
 
 ### Vanishing Gradients Vs. Exploding Gradients
+
+- [Gradient Descent From Scratch](https://towardsdatascience.com/gradient-descent-from-scratch-e8b75fa986cc)
 
 **Vanishing Gradient** occurs when the derivative or slope will get smaller and smaller as we go backward with every layer during backpropagation.
 
