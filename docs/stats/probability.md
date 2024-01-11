@@ -8,6 +8,7 @@
   - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
  
 - [Statistics cheatsheet](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics#hypothesis-testing)
+- [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
  
 ## Statistics
 
