@@ -25,6 +25,10 @@ Probability distributions describe all of the possible values that a random vari
 
 Probability distribution depends on a number of factors such as distribution's mean (average), standard deviation, skewness, and kurtosis.
 
+A probability distribution is an idealized frequency distribution.
+
+A frequency distribution describes a specific sample or dataset. It’s the number of times each possible value of a variable occurs in the dataset.
+
 Using response variable’s probability distribution we can answer a lot of analytical questions. We tend to collect a huge amount of data, fit the complex models to find interesting insights. In some cases, collecting data itself is a costly process. At times we have data for only the response variable. Instead of spending a lot of time and effort on collecting information in such a situation, a simple approach like distribution analysis can provide us more insights into the problem.
 
 Probability distributions are divided into two types: **discrete** and **continuous**.
