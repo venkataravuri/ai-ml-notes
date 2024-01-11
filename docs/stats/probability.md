@@ -21,20 +21,11 @@ Now suppose we flip the coin 100 times and it only lands on heads 17 times. We w
 
 ## Probability Distribution
 
-**Probability** is the chance of event occurring success(1) or failure(0).
+Probability distributions describe all of the possible values that a random variable can take.
 
-**Distribution** means how the ‘possible values’ a variable can take and how they occur.
-
-probability distribution represents the values of a variable that holds the probabilities of an experiment
-
-distribution is useful when we need to know,
-- which outcomes are most likely,
-- the spread of potential values,
-- and the likelihood of different results.
+Probability distribution depends on a number of factors such as distribution's mean (average), standard deviation, skewness, and kurtosis. 
 
 Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
-
-Once you have chosen a probability distribution that suits your data and situation, you can use it to calculate various measures of risk, such as the expected value, which represents the most likely or typical outcome, the variance and standard deviation, which indicate the level of uncertainty or volatility of your outcome, and percentiles and confidence intervals, which show the range of possible outcomes and the probability of achieving them
 
 **probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
 
