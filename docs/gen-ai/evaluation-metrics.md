@@ -18,6 +18,9 @@ Model evaluation metrics can be grouped into three main categories:
 View in [MIRO Board](https://miro.com/app/board/uXjVN_e-aEM=/?share_link_id=105927867730)
 
 - [SuperGLUE: Understanding a Sticky Benchmark for LLMs](https://deepgram.com/learn/superglue-llm-benchmark-explained)
+- [Benchmark of LLMs (Part 1): Glue & SuperGLUE, Adversarial NLI, Big Bench](https://medium.com/@myschang/benchmark-of-llms-part-1-glue-superglue-adversarial-nli-big-bench-8d1aed6bae12)
+- [Two minutes NLP — SuperGLUE Tasks and 2022 Leaderboard](https://medium.com/nlplanet/two-minutes-nlp-superglue-tasks-and-2022-leaderboard-492d8c849ed)
+- [GLUE Explained: Understanding BERT Through Benchmarks](https://mccormickml.com/2019/11/05/GLUE/)
 
 A quick overview of few commonly used evalution metrics along with Google Colab Notebooks to evaluate metrics.
 
