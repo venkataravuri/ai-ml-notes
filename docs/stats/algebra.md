@@ -14,3 +14,4 @@ A gradient represents the vector pointing in the direction of the steepest ascen
 
 ### References
 - [Demystifying Eigenvalues and Eigenvectors: Understanding Linear Transformations and Data Analysis](https://towardsdev.com/demystifying-eigenvalues-and-eigenvectors-understanding-linear-transformations-and-data-analysis-82b86b3fd33b)
+- [Derivatives in Data Science](https://imswapnilb.medium.com/derivatives-in-data-science-c5d7bd916f17)
