@@ -371,3 +371,4 @@ Very roughly, we can say that bagging will mainly focus at getting an ensemble m
 - https://sharkyun.medium.com/complete-guide-to-confusion-matrix-accuracy-precision-recall-and-f1-score-easy-to-understand-8772c2403df3
 - https://datascience.stackexchange.com/questions/53870/how-do-gd-batch-gd-sgd-and-mini-batch-sgd-differ
 - https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8
+- [High Bias and Variance problem in Machine Learning [Cause & Solution]](https://www.apdaga.com/2019/07/high-bias-and-variance-problem-in-machine-cause-solution.html)
