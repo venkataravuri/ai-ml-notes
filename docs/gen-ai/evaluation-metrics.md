@@ -3,6 +3,7 @@
 - [Benchmarking LLMs and what is the best LLM?](https://msandbu.org/benchmarking-llms-and-what-is-the-best-llm/)
 - [ChatGPT's training data can be exposed via a "divergence attack"](https://stackdiary.com/chatgpts-training-data-can-be-exposed-via-a-divergence-attack/)
 - [The Guide To LLM Evals: How To Build and Benchmark Your Evals](https://towardsdatascience.com/llm-evals-setup-and-the-metrics-that-matter-2cc27e8e35f3)
+- [LLM Benchmarks: How can we say that LLaMa-2 is the best?](https://medium.com/@patrykmwieczorek/llm-benchmarks-how-can-we-say-that-llama-2-is-the-best-8f546280c26c)
 
 Evaluating machine learning models is crucial, standard accuracy-based metrics don’t always tell the full story. To thoroughly assess model performance, it is important to evaluate various capabilities beyond just accuracy or loss metrics. 
 
