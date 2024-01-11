@@ -11,3 +11,6 @@ A gradient is a vector that goes in the direction of a function’s sharpest asc
 ### What is the Difference Between Gradient and Partial Derivative?
 
 A gradient represents the vector pointing in the direction of the steepest ascent of an equation and encompasses partial derivatives about all variables, whereas a partial derivative reflects the rate of shift of a function about one particular variable while keeping other variables at a single value.
+
+### References
+- [Demystifying Eigenvalues and Eigenvectors: Understanding Linear Transformations and Data Analysis](https://towardsdev.com/demystifying-eigenvalues-and-eigenvectors-understanding-linear-transformations-and-data-analysis-82b86b3fd33b)
