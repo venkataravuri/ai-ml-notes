@@ -398,3 +398,4 @@ In **computer vision**, these transformations are **done on the go using data ge
 - [Source-4](https://medium.com/@365datascience/10-machine-learning-interview-questions-and-answers-you-need-to-know-c9c78823954a)
 - [Source-5](https://medium.com/swlh/cheat-sheets-for-machine-learning-interview-topics-51c2bc2bab4f)
 - [Ace your Machine Learning Interview — Part 7](https://towardsdatascience.com/ace-your-machine-learning-interview-part-7-2688de34805f)
+- [How To Answer Any Machine Learning System Design Interview Question](https://towardsdatascience.com/how-to-answer-any-machine-learning-system-design-interview-question-a98656bb7ff0)
