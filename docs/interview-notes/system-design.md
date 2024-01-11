@@ -1,16 +1,20 @@
 # ML System Design
 
-## Build a machine learning model to predict if an _ad will be clicked_.
+### Build a machine learning model to predict if an _ad will be clicked_.
 
 Refer to, [Ad Click Prediction | Machine learning system design](https://medium.com/@mumbaiyachori/ad-click-prediction-machine-learning-system-design-6e553d7ccc1c)
 
-## Design food delivery ETA prediction ML Model for Uber Eats/Doordash.
+### Design food delivery ETA prediction ML Model for Uber Eats/Doordash.
 
 [ML System Design — ETA Prediction](https://mecha-mind.medium.com/ml-system-design-eta-prediction-9dc8000fd86b)
 
-## Design a ML System for language translation of post/comments for Facebook/LinkedIn news feed.
+### Design a ML System for language translation of post/comments for Facebook/LinkedIn news feed.
 
 [ML System Design — Language Translation](https://mecha-mind.medium.com/ml-system-design-language-translation-290eac2fb650)
+
+### How to Build a Customer Churn Prediction Model in Python? 
+
+- [How to Build a Customer Churn Prediction Model in Python? ](https://365datascience.com/tutorials/python-tutorials/how-to-build-a-customer-churn-prediction-model-in-python/)
 
 ###  Design a feed recommendation system
 ### Design Youtube(Google)
