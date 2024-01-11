@@ -1,6 +1,7 @@
 # Benchmarking LLMs & Evaluation Metrics
 
 - [Benchmarking LLMs and what is the best LLM?](https://msandbu.org/benchmarking-llms-and-what-is-the-best-llm/)
+- [ChatGPT's training data can be exposed via a "divergence attack"](https://stackdiary.com/chatgpts-training-data-can-be-exposed-via-a-divergence-attack/)
 
 Evaluating machine learning models is crucial, standard accuracy-based metrics don’t always tell the full story. To thoroughly assess model performance, it is important to evaluate various capabilities beyond just accuracy or loss metrics. 
 
