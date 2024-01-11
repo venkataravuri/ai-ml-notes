@@ -23,9 +23,28 @@ Now suppose we flip the coin 100 times and it only lands on heads 17 times. We w
 
 Probability distributions describe all of the possible values that a random variable can take.
 
-Probability distribution depends on a number of factors such as distribution's mean (average), standard deviation, skewness, and kurtosis. 
+Probability distribution depends on a number of factors such as distribution's mean (average), standard deviation, skewness, and kurtosis.
 
-Probability distributions are useful for risk management because they help you quantify and visualize the uncertainty and variability of your data, and how they affect your goals and decisions. For example, you can use a probability distribution to estimate the range of possible outcomes for a project, and the probability of achieving a certain target or deadline.
+Using response variable’s probability distribution we can answer a lot of analytical questions. We tend to collect a huge amount of data, fit the complex models to find interesting insights. In some cases, collecting data itself is a costly process. At times we have data for only the response variable. Instead of spending a lot of time and effort on collecting information in such a situation, a simple approach like distribution analysis can provide us more insights into the problem.
+
+Probability distributions are divided into two types: **discrete** and **continuous**.
+
+
+
+here are two common ways to represent a probability distribution, the probability density function (PDF) and cumulative distribution function (CDF). I suspect you're wondering most about the former. For the latter, the distribution is plotted as cumulative from zero to one, so the y-axis is the sum of the distribution up to a given value of x.
+
+Continuous probability distribution describes the probability of a continuous random variable taking on a particular value. These types of distributions are used to model things like the height of a person, the time it takes to complete a task, or the distance a car travels.
+
+<img src="https://i.stack.imgur.com/2bRvg.png" width="70%" height="70%" />
+
+Real-life uses of continuous probability distribution:
+- **Internet download speed** can be modeled through a continuous probability distribution. The internet speed can also accelerate or slow down due to different factors. As the speed can assume different values in Mbps, the internet download speed in a city can be modeled by a normal distribution with a specific mean and standard deviation.
+- **Lifetime of electronic devices** may vary from months to years, hence, making it a continuous variable. Their life is influenced by factors such as manufacturing quality and usage conditions. To present their lifetime and predict the ideal range within which they can last can be modeled as continuous probability distribution.
+- **Daily returns on a stock** are influenced by factors such as market conditions and company performance. Often the return rate which assumes a quantitative value is unpredictable, and random and can take infinite numbers amongst the real values, hence, it is a continuous variable. Due to the fluctuations in stock prices, the continuous probability distribution is the best to map and predict any changes in stock returns. 
+- **Wind speeds at a geographical location** are influenced by factors such as season and local weather patterns. As wind speed is a continuous variable, a continuous probability distribution can better help present and predict the range of wind speed in a location. 
+
+
+PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is the derivative of moving distance
 
 **probability mass function** is a function that gives the probability that a **discrete** random variable is exactly equal to some value. 
 
@@ -39,9 +58,20 @@ This is a univariate probability distribution, which is the probability distribu
 
 Check out this site to learn about 76 types of univariate distribution
 
+|Distribution|Description|Examples|Probability Mass Function|Graph|
+|---|---|---|---|---|
+|Bernoulli distribution|Bernoulli distribution is a discrete distribution having two possible outcomes labeled as n.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n + (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
+|Binomial distribution|Binomial distribution gives the discrete probability distribution of obtaining exactly x successes out of n Bernoulli trials.||$$P(X=x) = (\frac{n!}{(n-x)!x!}) p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
+|Geometric distribution||How many job interviews are needed before getting a first job offer <br/><br/>How many hits a cricket bat takes before it breaks?<br/><br/>In a manufacturing process how many good units are produced before the faulty unit.|$$P(X=x) = (1-p)^xp$$|<img src="" />|
+|Poission distribution|Poisson distribution is used for modeling the random arrival — like the arrival of people at the queues or calls at the support desks.||$$f(x) = \frac{\lambda^x e^{-y}}{x!}$$|<img src="" />|
+|Exponential distribution|||$$f(x) = \lambda{e^{-{\lambda}x}}$$|<img src="" />|
+
+
+|Geometric distribution|||$$$$|<img src="" />|
+
 |Binomial Distribution|Bernoulli Distribution|Poisson Distribution|
 |---|---|---|
-|exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). ||Represents how many times an event can occur over a specific time period.|
+| ||Represents how many times an event can occur over a specific time period.|
 |||Examples, <br />• The number of users who visited a website in an interval can be thought of as a Poisson process.|
 |||The probability mass function is given by:<br/>|
 |Problem Statement: Hospital records show that of patients suffering from a specific disease, `75%` die of it. What is the probability that of six randomly selected Patients, four will recover?|||
