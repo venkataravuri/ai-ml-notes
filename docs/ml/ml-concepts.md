@@ -248,6 +248,8 @@ Probability of Disease D given Test-positive =
 
 ## Evaluation Metrics
 
+- [Machine Learning tips and tricks cheatsheet](https://stanford.edu/%7Eshervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks#)
+
 ### Confustion Matrix
 
 A confusion matrix is a table used to evaluate the performance of a _classification model_ by comparing its predictions to the actual ground truth labels.
