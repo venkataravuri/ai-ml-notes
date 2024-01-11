@@ -40,3 +40,8 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 - [Neural Netowrks](docs/interview-notes/nn-notes.md)
 - [ML System Design](docs/interview-notes/system-design.md)
 - [MLOps](docs/interview-notes/mlops.md)
+
+
+#### References
+
+[LaTeX - A markdown language for Mathematical Formulas/Equations](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
