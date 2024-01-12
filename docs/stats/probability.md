@@ -2,11 +2,12 @@
 
 **Table of Contents**
 - [Statistics](#statistics)
-- [Probability](#probability)
-  - [Overview]()
-  - [Probability Distribution]()
-  - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
- 
+- [Descriptive Statistics](#descriptive-statistics)
+  - [Probability](#probability)
+    - [Overview]()
+    - [Probability Distribution]()
+    - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
+ - [Inferential Statistics](#inferential-statistics)
 
 - [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
  
@@ -40,37 +41,6 @@ There are 3 main types of descriptive statistics:
 - **Frequency distribution** summarize the frequency of every possible value of a variable in numbers or percentages. Frequency distribution table & Grouped frequency distribution table.
 - **Measures of central tendency** estimate the center, or average, of a data set. The mean, median and mode are 3 ways of finding the average.
 - **Measures of variability** give you a sense of how spread out the response values are. The range, standard deviation and variance each reflect different aspects of spread.
-
-### Inferential Statistics
-
-Steps in Hypothesis testing:
-
-1. Developing your initial _research hypothesis_ (the prediction that you want to investigate), it is important to restate it as a null (Ho) and alternate (Ha) hypothesis so that you can test it mathematically.
-2. Collect data in a way designed to test the hypothesis.
-3. Perform an appropriate statistical test such as t-Test
-4. Decide whether to reject or fail to reject your null hypothesis.
-5. Present the findings in your results and discussion section.
-
-**Hypothesis testing example**
-> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
-> H0: Men are, on average, not taller than women.
-> Ha: Men are, on average, taller than women.
-
-**Central Limit Theorem**
-
-The central limit theorem states that if you take sufficiently large samples from a population, the samples’ means will be normally distributed, even if the population isn’t normally distributed.
-
-The central limit theorem in statistics states that, given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. Central Limit Theorem helps you balance the time and cost of collecting all the data you need to draw conclusions about the population.
-
-Studying the population is hard, it will be extremely hard to gather data for the entire population.
-
-When we collect a sufficiently large sample of n independent observations from a population with mean μ and standard deviation σ, the sampling distribution the sample means will be nearly normal with mean = μ and standard error = σ/ √n
-
-If these samples meet Central Limit Theorem’s criteria, you can assume the distribution of the sample means can be approximated to the Normal distribution. So now you can use all the statistical tools the Normal distribution provides.
-
-From this point on, since you know the distribution at hand, you can **calculate probabilities and confidence intervals, and perform statistical tests**.
-
-- [Central Limit Theorem: a real-life application](https://towardsdatascience.com/central-limit-theorem-a-real-life-application-f638657686e1)
 
 ## Probability
 
@@ -137,6 +107,38 @@ PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is
 |---|---|---|---|---|
 |Uniform Distribution|Uniform distribution specifies an equal probability across a given range of continuous values. In other words, it is a probability distribution with a constant probability.|e.g., Exactly two mutually exclusive outcomes of a trial, like flipping a coin (heads/tails) and outcome of a match (win/loss). <br/><br/>In flipping a coin, there are two possibilities — Head or Tail. Head occurs with the probability p and tail occurs with probability 1-p.<br/><br/>Bernoulli distribution can be used to model single events like whether I get a job or not, will it rain today or not.|$$P(n) = p^n (1-p)^{(1-n)}$$|<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u689-6PVdf_Sd_9u26Y6Iw.png" />|
 |Normal distribution (Or) Gaussian distribution (Or) Bell Curve|||$$$$|<img src="" />|
+
+### Inferential Statistics
+
+Steps in Hypothesis testing:
+
+1. Developing your initial _research hypothesis_ (the prediction that you want to investigate), it is important to restate it as a null (Ho) and alternate (Ha) hypothesis so that you can test it mathematically.
+2. Collect data in a way designed to test the hypothesis.
+3. Perform an appropriate statistical test such as t-Test
+4. Decide whether to reject or fail to reject your null hypothesis.
+5. Present the findings in your results and discussion section.
+
+**Hypothesis testing example**
+> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
+> H0: Men are, on average, not taller than women.
+> Ha: Men are, on average, taller than women.
+
+**Central Limit Theorem**
+
+The central limit theorem states that if you take sufficiently large samples from a population, the samples’ means will be normally distributed, even if the population isn’t normally distributed.
+
+The central limit theorem in statistics states that, given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. Central Limit Theorem helps you balance the time and cost of collecting all the data you need to draw conclusions about the population.
+
+Studying the population is hard, it will be extremely hard to gather data for the entire population.
+
+When we collect a sufficiently large sample of n independent observations from a population with mean μ and standard deviation σ, the sampling distribution the sample means will be nearly normal with mean = μ and standard error = σ/ √n
+
+If these samples meet Central Limit Theorem’s criteria, you can assume the distribution of the sample means can be approximated to the Normal distribution. So now you can use all the statistical tools the Normal distribution provides.
+
+From this point on, since you know the distribution at hand, you can **calculate probabilities and confidence intervals, and perform statistical tests**.
+
+- [Central Limit Theorem: a real-life application](https://towardsdatascience.com/central-limit-theorem-a-real-life-application-f638657686e1)
+
 
 ## References
 - [Conditional Probability Explained (with Formulas and Real-life Examples)](https://365datascience.com/tutorials/statistics-tutorials/conditional-probability/)
