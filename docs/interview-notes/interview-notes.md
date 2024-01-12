@@ -1,8 +1,10 @@
 # :robot: Machine Learning Concepts - :briefcase: Interview Notes :clipboard:
 
-- [Explain the difference between likelihood and probability.](#what-techniques-for-nlp-data-augmentation-do-you-know)
-  
-- [Probability Interview Questions](#probability-interview-questions)
+**Table of Contents**
+
+- [Probability]()
+    - [Explain the difference between likelihood and probability.](#what-techniques-for-nlp-data-augmentation-do-you-know)
+    - [Probability Interview Questions](#probability-interview-questions)
 - [Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?](#explain-the-difference-between-supervised-and-unsupervised-machine-learning-what-are-the-most-common-algorithms-for-supervised-learning-and-unsupervised-learning)
 - [How do you handle data imbalance issues?](#how-do-you-handle-data-imbalance-issues)
 - [How to deal with missing values? Mention three ways to handle missing or corrupted data in a dataset?](#how-to-deal-with-missing-values-mention-three-ways-to-handle-missing-or-corrupted-data-in-a-dataset)
@@ -30,9 +32,10 @@
 - [What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?](#what-is-the-curse-of-dimensionality-why-do-we-need-to-reduce-it-what-is-pca-why-is-it-helpful-and-how-does-it-work-what-do-eigenvalues-and-eigenvectors-mean-in-pca)
 - [Why is a validation set necessary?](#why-is-a-validation-set-necessary)
 - [Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.](#can-k-fold-cross-validation-be-used-on-time-series-data-explain-with-suitable-reasons-in-support-of-your-answer)
-- [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
-- [Write term frequency–inverse document frequency function.](#)
-- [
+
+- [NLP]()
+    - [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
+    - [Write term frequency–inverse document frequency function.](#)
   
 ---
 
@@ -41,7 +44,7 @@
 - [28 Probability Questions for ML Interviews](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
 - [Probability and Statistics for Software Engineering Problems](https://mecha-mind.medium.com/probability-and-statistics-for-software-engineers-1c67c96a81e3)
 
-### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
+#### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
 In **supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided, while in **unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
 
@@ -55,7 +58,6 @@ In **supervised learning**, the algorithm is trained on a labelled dataset, mean
 - Linear Regression
 - Linear Support Vector Machines (SVMs)
 - Naive Bayes
-
 
 **Unsupervised learning**
 
