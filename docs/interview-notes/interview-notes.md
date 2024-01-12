@@ -117,7 +117,7 @@ Identify covariance in a linear regression model, consider the following strateg
 
 ### Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?
 
-Refer to [Regularization Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
+Refer to [Regularization Notes](../docs/ml/ml-concepts.md#regularization)
 
 ### What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?
 
