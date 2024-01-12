@@ -2,10 +2,14 @@
 
 **Table of Contents**
 
-- [Probability]()
-    - [Explain the difference between likelihood and probability.](#what-techniques-for-nlp-data-augmentation-do-you-know)
-    - [Probability Interview Questions](#probability-interview-questions)
+**Probability**
+- [Explain the difference between likelihood and probability.](#what-techniques-for-nlp-data-augmentation-do-you-know)
+- [Probability Interview Questions](#probability-interview-questions)
+
+**ML Concepts**
 - [Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?](#explain-the-difference-between-supervised-and-unsupervised-machine-learning-what-are-the-most-common-algorithms-for-supervised-learning-and-unsupervised-learning)
+
+**ML Data Processing**
 - [How do you handle data imbalance issues?](#how-do-you-handle-data-imbalance-issues)
 - [How to deal with missing values? Mention three ways to handle missing or corrupted data in a dataset?](#how-to-deal-with-missing-values-mention-three-ways-to-handle-missing-or-corrupted-data-in-a-dataset)
 - [You are given a data set with missing values that spread along 1 standard deviation from the median. What percentage of data would remain unaffected?](#you-are-given-a-data-set-with-missing-values-that-spread-along-1-standard-deviation-from-the-median-what-percentage-of-data-would-remain-unaffected)
@@ -20,6 +24,9 @@
 - [What do L1 and L2 regularization mean and when would you use L1 vs. L2? Can you use both?](#what-do-l1-and-l2-regularization-mean-and-when-would-you-use-l1-vs-l2-can-you-use-both)
 - [When there are highly correlated features in your dataset, how would the weights for L1 and L2 end up being?](#when-there-are-highly-correlated-features-in-your-dataset-how-would-the-weights-for-l1-and-l2-end-up-being)
 - [When is One Hot encoding favored over label encoding?](#when-is-one-hot-encoding-favored-over-label-encoding)
+- [What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?](#what-is-the-curse-of-dimensionality-why-do-we-need-to-reduce-it-what-is-pca-why-is-it-helpful-and-how-does-it-work-what-do-eigenvalues-and-eigenvectors-mean-in-pca)
+
+**ML Training**
 - [What is a Gradient?](#what-is-a-gradient)
 - [Explain Gradient descent and Stochastic gradient descent. Which one would you prefer?](#explain-gradient-descent-and-stochastic-gradient-descent-which-one-would-you-prefer)
 - [Mention one disadvantage of Stochastic Gradient Descent.](#mention-one-disadvantage-of-stochastic-gradient-descent)
@@ -27,15 +34,16 @@
 - [What is the cross-entropy of loss? How does the loss curve for Cross entropy look? What does the “minus” in cross-entropy mean?](#what-is-the-cross-entropy-of-loss-how-does-the-loss-curve-for-cross-entropy-look-what-does-the-minus-in-cross-entropy-mean)
 - [Can you use MSE for evaluating your classification problem instead of Cross entropy?](#can-you-use-mse-for-evaluating-your-classification-problem-instead-of-cross-entropy)
 - [What is a hyperparameter? How to find the best hyperparameters?](#what-is-a-hyperparameter-how-to-find-the-best-hyperparameters)
-- [Define precision, recall, and F1 and discuss the trade-off between them.](#define-precision-recall-and-f1-and-discuss-the-trade-off-between-them)
-- [Explain the ROC Curve and AUC. What is the purpose of a ROC curve?](#explain-the-roc-curve-and-auc-what-is-the-purpose-of-a-roc-curve)
-- [What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?](#what-is-the-curse-of-dimensionality-why-do-we-need-to-reduce-it-what-is-pca-why-is-it-helpful-and-how-does-it-work-what-do-eigenvalues-and-eigenvectors-mean-in-pca)
+
+**Validation & Metrics**
 - [Why is a validation set necessary?](#why-is-a-validation-set-necessary)
 - [Can K-fold cross-validation be used on Time Series data? Explain with suitable reasons in support of your answer.](#can-k-fold-cross-validation-be-used-on-time-series-data-explain-with-suitable-reasons-in-support-of-your-answer)
+- [Define precision, recall, and F1 and discuss the trade-off between them.](#define-precision-recall-and-f1-and-discuss-the-trade-off-between-them)
+- [Explain the ROC Curve and AUC. What is the purpose of a ROC curve?](#explain-the-roc-curve-and-auc-what-is-the-purpose-of-a-roc-curve)
 
-- [NLP]()
-    - [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
-    - [Write term frequency–inverse document frequency function.](#)
+**NLP**
+- [What techniques for NLP data augmentation do you know?](#what-techniques-for-nlp-data-augmentation-do-you-know)
+- [Write term frequency–inverse document frequency function.](#)
   
 ---
 
