@@ -2,24 +2,24 @@
 
 > "_A.I. might not replace you, but a person who uses A.I. could._"
 
-A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_curl:), videos(:tv:) and jupyter notebooks.
+A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: articles, :tv: videos and jupyter notebooks.
 
 ## AI in Real-world
 
 - [Real-world usage of AI/ML](docs/ai-in-real-world.md)
 
 ## Generative AI & LLMs
-- [Gen AI Introduction & Concepts](docs/gen-ai/generative-ai.md)
-- [Prompt Engineering - Knowledge Base](docs/gen-ai/prompt-engineering-resources.md)
+- [Gen AI Overview & Concepts](docs/gen-ai/generative-ai.md)
+  - [Transformers Architecture & Fine-tuning LLMs](docs/gen-ai/finetune-llms.md)
+  - [LLMs Benchmarking & Evaluation](docs/gen-ai/evaluation-metrics.md)
+- [Prompt Engineering Guide](docs/gen-ai/prompt-engineering-resources.md)
 - [LLM-powered Autonomus AI Agents](docs/gen-ai/llm-powered-autonomous-ai-agents.md)
-- [Transformers Architecture & Fine Tuning](docs/gen-ai/finetune-llms.md)
-- [Benchmarking LLMs & Evaluation Metrics](docs/gen-ai/evaluation-metrics.md)
 
 ## Multimodality (Text + Image + Audio)
 
 - [Mulitmodality](docs/multimodality/multimodality.md)
  
-## Basics: Algebra & Statistics
+## Basics - Algebra & Statistics
 - [Algebra](docs/stats/algebra.md)
 - [Statistics & Probability](docs/stats/probability.md)
 
@@ -44,14 +44,9 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 - [k-means](docs/ml/ml-algorithms.md)
 - [Random Forest](docs/ml/ml-algorithms.md)
   
-## :robot: Machine Learning - :briefcase: Interview Notes :clipboard:
+## Machine Learning - Interview Notes
 - [ML Concepts](docs/interview-notes/interview-notes.md)
 - [ML Models](docs/interview-notes/models.md)
 - [Neural Netowrks](docs/interview-notes/nn-notes.md)
 - [ML System Design](docs/interview-notes/system-design.md)
 - [MLOps](docs/interview-notes/mlops.md)
-
-
-#### References
-
-[LaTeX - A markdown language for Mathematical Formulas/Equations](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
