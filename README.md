@@ -6,7 +6,7 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 
 ## AI in Real-world
 
-- [Real-world AI Applications]()
+- [Real-world usage of AI/ML]()
 
 ## Generative AI & LLMs
 - [Gen AI Introduction & Concepts](docs/gen-ai/generative-ai.md)
