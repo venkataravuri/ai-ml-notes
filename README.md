@@ -44,7 +44,7 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
 - [k-means](docs/ml/ml-algorithms.md)
 - [Random Forest](docs/ml/ml-algorithms.md)
   
-## Machine Learning - Interview Notes
+## AI/ML - Interview Notes
 - [ML Concepts](docs/interview-notes/interview-notes.md)
 - [ML Models](docs/interview-notes/models.md)
 - [Neural Netowrks](docs/interview-notes/nn-notes.md)
