@@ -131,12 +131,31 @@ From this point on, since you know the distribution at hand, you can **calculate
 
 ### Hypothesis Testing
 
-Hypotheses, or predictions, are tested using statistical tests to estimate sampling errors so that valid inferences can be made.
+- __Hypothesis in Statistics__: Probabilistic explanation about the presence of a relationship between observations.
+- __Hypothesis in Machine Learning__: Candidate model that approximates a target function for mapping examples of inputs to outputs.
 
-Statistical tests come in three forms:
-- **Comparison tests** assess whether there are differences in means, medians or rankings of scores of two or more groups.
-- **Correlation tests** determine the extent to which two variables are associated.
-- **Regression tests** demonstrate whether changes in predictor variables cause changes in an outcome variable
+A hypothesis in machine learning:
+
+- __Covers the available evidence__: the training dataset.
+- __Is falsifiable (kind-of)__: a test harness is devised beforehand and used to estimate performance and compare it to a baseline model to see if is skillful or not.
+- __Can be used in new situations__: make predictions on new data.
+
+**Hypothesis testing** is used to confirm your conclusion or hypothesis about the population parameter (which you know from EDA or your intuition).
+
+Through hypothesis testing, you can determine whether there is enough evidence to conclude if the hypothesis about the population parameter is true or not.
+
+Hypothesis Testing starts with the formulation of these two hypotheses:
+- **Null hypothesis (H₀)**: The status quo
+- **Alternate hypothesis (H₁)**: The challenge to the status quo
+
+_Either reject or fail to reject the null hypothesis_
+
+**Hypothesis testing example**
+> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
+
+> H0: Men are, on average, not taller than women.
+
+> Ha: Men are, on average, taller than women.
 
 Steps in Hypothesis testing:
 
@@ -146,13 +165,10 @@ Steps in Hypothesis testing:
 4. Decide whether to reject or fail to reject your null hypothesis.
 5. Present the findings in your results and discussion section.
 
-**Hypothesis testing example**
-> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
-
-> H0: Men are, on average, not taller than women.
-
-> Ha: Men are, on average, taller than women.
-
+Statistical tests come in three forms:
+- **Comparison tests** assess whether there are differences in means, medians or rankings of scores of two or more groups.
+- **Correlation tests** determine the extent to which two variables are associated.
+- **Regression tests** demonstrate whether changes in predictor variables cause changes in an outcome variable
 
 ## References
 - [Conditional Probability Explained (with Formulas and Real-life Examples)](https://365datascience.com/tutorials/statistics-tutorials/conditional-probability/)
