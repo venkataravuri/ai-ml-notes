@@ -108,6 +108,16 @@ $$\mathrm{Cov}(X,Y) = \frac{\displaystyle\sum_{i=1}^{n} {(x_i - \bar{x})(y_i - \
 Correlation:
 $$\rho_{X,Y} = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y} = \frac{\displaystyle\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\displaystyle\sum_{i=1}^{n}{(x_i - \bar{x})^2}} \sqrt{\displaystyle\sum_{i=1}^{n}{(y_i - \bar{y})^2}}}$$
 
+High degree of covariance, it can negatively affect the performance of the linear regression model. Here are some ways that covariance affects linear regression models:
+
+1. Multicollinearity: High degree of covariance, can lead to multicollinearity. It can lead to inaccurate predictions and a lack of interpretability for the model.
+2. Overfitting: A high degree of covariance between the variables, can lead to overfitting because the model is trying to fit the noise rather than the underlying relationship.
+
+Identify covariance in a linear regression model, consider the following strategies:
+
+1. Examine the correlation matrix
+2. Conduct a **variance inflation factor** (VIF) analysis: The VIF measures the extent to which the variance of a regression coefficient estimate is increased due to covariance with other variables in the model. A VIF greater than 1 indicates that there is some degree of covariance, and VIF values greater than 5 or 10 indicate that there are significant issues with multicollinearity.
+
 ### Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?
 
 Refer to [Regularization Notes](https://github.com/venkataravuri/ai-ml/blob/master/docs/machine-learning.md#regularization)
