@@ -8,27 +8,7 @@
 - [Activation Functions](#activation-functions)
 - [Evaulation Metrics](#evaluation-metrics)
 
-### Hypothesis
-
-- __Hypothesis in Science__: Provisional explanation that fits the evidence and can be confirmed or disproved.
-- __Hypothesis in Statistics__: Probabilistic explanation about the presence of a relationship between observations.
-- __Hypothesis in Machine Learning__: Candidate model that approximates a target function for mapping examples of inputs to outputs.
-
-A hypothesis in machine learning:
-
-- __Covers the available evidence__: the training dataset.
-- __Is falsifiable (kind-of)__: a test harness is devised beforehand and used to estimate performance and compare it to a baseline model to see if is skillful or not.
-- __Can be used in new situations__: make predictions on new data.
-
-**Hypothesis testing** is used to confirm your conclusion (or hypothesis) about the population parameter (which you know from EDA or your intuition).
-
-Through hypothesis testing, you can determine whether there is enough evidence to conclude if the hypothesis about the population parameter is true or not.
-
-Hypothesis Testing starts with the formulation of these two hypotheses:
-- **Null hypothesis (H₀)**: The status quo
-- **Alternate hypothesis (H₁)**: The challenge to the status quo
-
-_Either reject or fail to reject the null hypothesis_
+- [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
 
 ### What are Logits in machine learning?
 
