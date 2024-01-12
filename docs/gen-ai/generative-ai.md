@@ -42,21 +42,29 @@ A large language model (LLM) is a deep learning algorithm that can perform a var
 
 ### What can I do with ChatGPT?
 - :star::star: https://research.aimultiple.com/chatgpt-use-cases/
-- [Coding Won’t Exist In 5 Years. This Is Why](https://javascript.plainenglish.io/coding-wont-exist-in-5-years-this-is-why-6da748ba676c)
-- SQL: https://www.sqlservercentral.com/articles/chatgpt-in-sql-server-practical-examples
 
-### Generative AI Tools
 
-#### Text to Image & Text to Video Generators
+### Gen AI Tools
+
+#### Text to Image 
 - [Midjourney](https://www.midjourney.com/showcase/recent/) is a text-to-image AI that generates visually appealing images based on text prompts.
   - [ Midjourney + ChatGPT-4 = INSANE Prompts and Images!]https://www.youtube.com/watch?v=Asg1e_IYzR8
 - [DALL-E 2](https://openai.com/dall-e-2)
+
+### Text to Video Generators
 
 #### Code Generators
 - CodeX
 - Github Copilot
 
-#### Speech Recognition - Audio to Text & Text to Audio
+- - [Coding Won’t Exist In 5 Years. This Is Why](https://javascript.plainenglish.io/coding-wont-exist-in-5-years-this-is-why-6da748ba676c)
+- SQL: https://www.sqlservercentral.com/articles/chatgpt-in-sql-server-practical-examples
+
+### Audio
+#### Speech Recognition & Transcription (Audio-to-Text)
+#### Speech Synthesis (Text-to-Audio)
+#### Voice Cloning
+
 - [Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
 
 ### Gen AI Youtube Channels
