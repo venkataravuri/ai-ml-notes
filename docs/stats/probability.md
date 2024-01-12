@@ -23,15 +23,31 @@ Statistics helps answer questions like:
 - What is the most common and expected outcome?
 - How do we differentiate between noise and valid data?
 
-Statistics is divided into two categories:
-- **Descriptive Statistics** - Offers methods to summarise data by transforming raw observations into meaningful information that is easy to interpret and share. Raw observations are just data, descriptive statistics transform these observations into insights that make sense. 
-- **Inferential Statistics** - Offers methods to study experiments done on small samples of data and chalk out the inferences to the entire population (entire domain).
 
 ### Definitions
 
 **Random sample** - A random sample is a collection of nn random variables X1,...,Xn​ that are independent and identically distributed with X.
 
 **Sample mean** - The sample mean of a random sample is used to estimate the true mean μμ of a distribution, is often noted X‾X and is defined as follows:
+
+Statistics is divided into two categories:
+- **Descriptive Statistics** - Offers methods to summarise data by transforming raw observations into meaningful information that is easy to interpret and share. Raw observations are just data, descriptive statistics transform these observations into insights that make sense. 
+- **Inferential Statistics** - Offers methods to study experiments done on small samples of data and chalk out the inferences to the entire population (entire domain).
+
+### Inferential Statistics
+
+Steps in Hypothesis testing:
+
+1. Developing your initial _research hypothesis_ (the prediction that you want to investigate), it is important to restate it as a null (Ho) and alternate (Ha) hypothesis so that you can test it mathematically.
+2. Collect data in a way designed to test the hypothesis.
+3. Perform an appropriate statistical test such as t-Test
+4. Decide whether to reject or fail to reject your null hypothesis.
+5. Present the findings in your results and discussion section.
+
+**Hypothesis testing example**
+> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
+> H0: Men are, on average, not taller than women.
+> Ha: Men are, on average, taller than women.
 
 **Central Limit Theorem**
 
