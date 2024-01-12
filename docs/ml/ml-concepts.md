@@ -2,7 +2,7 @@
 - [Balanced and Imbalanced datasets]()
 - [Feature Engineering]()
      - [Encoding Methodologies]()
-- [Regularization]()
+- [Regularization](#regularization)
 - [Loss Functions](#loss-functions)
 - [Optimization Methods]()
 - [Activation Functions](#activation-functions)
