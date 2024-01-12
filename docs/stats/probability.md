@@ -23,7 +23,6 @@ Statistics helps answer questions like:
 - What is the most common and expected outcome?
 - How do we differentiate between noise and valid data?
 
-
 ### Definitions
 
 **Random sample** - A random sample is a collection of nn random variables X1,...,Xn​ that are independent and identically distributed with X.
@@ -33,6 +32,14 @@ Statistics helps answer questions like:
 Statistics is divided into two categories:
 - **Descriptive Statistics** - Offers methods to summarise data by transforming raw observations into meaningful information that is easy to interpret and share. Raw observations are just data, descriptive statistics transform these observations into insights that make sense. 
 - **Inferential Statistics** - Offers methods to study experiments done on small samples of data and chalk out the inferences to the entire population (entire domain).
+
+### Descriptive Statistics
+
+There are 3 main types of descriptive statistics:
+
+- **Frequency distribution** summarize the frequency of every possible value of a variable in numbers or percentages. Frequency distribution table & Grouped frequency distribution table.
+- **Measures of central tendency** estimate the center, or average, of a data set. The mean, median and mode are 3 ways of finding the average.
+- **Measures of variability** give you a sense of how spread out the response values are. The range, standard deviation and variance each reflect different aspects of spread.
 
 ### Inferential Statistics
 
