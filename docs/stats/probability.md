@@ -1,13 +1,13 @@
 # Statistics & Proabability
 
 **Table of Contents**
-- Statistics
-- Probability
+- [Statistics](#statistics)
+- [Probability](#probability)
   - [Overview]()
   - [Probability Distribution]()
   - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
  
-- [Statistics cheatsheet](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics#hypothesis-testing)
+
 - [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
  
 ## Statistics
@@ -26,6 +26,20 @@ Statistics helps answer questions like:
 Statistics is divided into two categories:
 - **Descriptive Statistics** - Offers methods to summarise data by transforming raw observations into meaningful information that is easy to interpret and share. Raw observations are just data, descriptive statistics transform these observations into insights that make sense. 
 - **Inferential Statistics** - Offers methods to study experiments done on small samples of data and chalk out the inferences to the entire population (entire domain).
+
+### Definitions
+
+**Random sample** - A random sample is a collection of nn random variables X1,...,Xn​ that are independent and identically distributed with X.
+
+**Sample mean** - The sample mean of a random sample is used to estimate the true mean μμ of a distribution, is often noted X‾X and is defined as follows:
+
+**Central Limit Theorem**
+
+The central limit theorem states that if you take sufficiently large samples from a population, the samples’ means will be normally distributed, even if the population isn’t normally distributed.
+
+The central limit theorem in statistics states that, given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable’s distribution in the population.
+
+Let us have a random sample X1,...,Xn following a given distribution with mean μ and variance σ2, then we have:
 
 ## Probability
 
@@ -99,3 +113,5 @@ PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is
 This is a univariate probability distribution, which is the probability distribution of a single random variable. This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
 
 Check out this site to learn about 76 types of univariate distribution
+
+- [Statistics cheatsheet](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics#hypothesis-testing)
