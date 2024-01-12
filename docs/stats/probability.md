@@ -10,8 +10,6 @@
  - [Inferential Statistics](#inferential-statistics)
    - [Central limit Theorem]() 
    - [Hypothesis Testing]() 
-
-- [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
  
 ## Statistics
 
