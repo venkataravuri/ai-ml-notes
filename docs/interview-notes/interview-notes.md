@@ -103,10 +103,10 @@ Both _covariance_ and _correlation_ measure the relationship and the dependency 
 
 Correlation is a function of the covariance.
 
-$$\mathrm{Cov}(X,Y) = \frac{\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{n-1}$$
+$$\mathrm{Cov}(X,Y) = \frac{\displaystyle\sum_{i=1}^{n} {(x_i - \bar{x})(y_i - \bar{y})}}{n-1}$$
 
 Correlation:
-$$\rho_{X,Y} = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y} = \frac{\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\sum_{i=1}^{n}{(x_i - \bar{x})^2}} \sqrt{\sum_{i=1}^{n}{(y_i - \bar{y})^2}}}$$
+$$\rho_{X,Y} = \frac{\mathrm{Cov}(X,Y)}{\sigma_X \sigma_Y} = \frac{\displaystyle\sum_{i=1}^{n}{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\displaystyle\sum_{i=1}^{n}{(x_i - \bar{x})^2}} \sqrt{\displaystyle\sum_{i=1}^{n}{(y_i - \bar{y})^2}}}$$
 
 ### Explain regularization. When is 'Ridge regression' favorable over 'Lasso regression'?
 
