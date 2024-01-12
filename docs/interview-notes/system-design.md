@@ -1,4 +1,4 @@
-# ML System Design
+# ML System Design Interview 
 
 ### Build a machine learning model to predict if an _ad will be clicked_.
 
@@ -22,6 +22,11 @@ Refer to, [Ad Click Prediction | Machine learning system design](https://medium.
 ### Design an item replacement recommendation(Instacart)
 ### Design an ML System to optimize coupon distribution with a set budget(Netflix)
 
+### Detecting unusual spend with AWS Cost Anomaly Detection
+
+AWS Cost Anomaly Detection is an AWS Cost Management feature. This feature uses machine learning models to detect and alert on anomalous spend patterns in your deployed AWS services. WS Cost Anomaly Detection runs approximately three times a day in order to monitor for anomalies in your net unblended cost data.
+
+https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html
 
 ### What are the metrics for search ranking?
 
