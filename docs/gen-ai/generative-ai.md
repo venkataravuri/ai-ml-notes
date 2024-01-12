@@ -1,31 +1,41 @@
 # :brain: Generative AI - Learning Guide :robot:
 > "_A.I. might not replace you, but a person who uses A.I. could._"
 
-A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks to gain in-depth knowledge & skills on below topics,
-- Large Language Models (LLM) such as OpenAI's ChatGPT, Meta's LlaMa, Google's PalM and other Generative Pretrained Transformers
-- ChatGPT prompting techniques
-- Autonomous AI Agents 
-- AI Agent frameworks
+A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books:, articles and frameworks.
+
+- [Generative AI]()
+  - [ChatGPT]()
+  - [LLMs]() 
+- [Prompting Techniques]()
+- [Autonomous AI Agents]() 
 ---
 
-### What is ChatGPT? What are LLMs?
+## Generative AI
+
+Generative AI is a type of artificial intelligence technology that can produce various types of content, including text, images, audio, videos and synthetic data.
+
+### What is ChatGPT? 
 ChatGPT is a large language model that generates human-like text in response to a given text prompt. It is essentially a next word predictor. 
 
 - ChatGPT is an AI chatbot developed by OpenAI
-- ChatGPT is a Generative Pre-trained Transformer
-- ChatGPI is a Deep Neural Network
+- ChatGPT is a variant of the GPT (Generative Pre-training Transformer) model, which is a type of transformer-based neural network architecture.
+- The model is trained on a [large dataset of text](https://en.wikipedia.org/wiki/GPT-3) which contains entire internet, books, Wikipedia and more.
 
 It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
 It is showing sparks of cleverness that can accelerate automation.
 
-ChatGPT is a variant of the GPT (Generative Pre-training Transformer) model, which is a type of transformer-based neural network architecture.
-The model is trained on a [large dataset of text](https://en.wikipedia.org/wiki/GPT-3) which contains entire internet, books, Wikipedia and more.
-
-#### GPT-3 Vs. ChatGPT Vs. GPT-4
-[A Complete Comparison of ChatGPT, GPT-3, and GPT-4](https://simplified.com/blog/ai-writing/chatgpt-vs-gpt-3/)
+### What are LLMs?
 
 ### How ChatGPT works?
+
 [How GPT3 Works - Visualizations and Animations](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
+
+#### GPT Internals
+- :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
+- :tv: [Let's build GPT: from scratch, in code, spelled out](https://youtu.be/kCc8FmEb1nY)
+
+#### GPT-3 Vs. ChatGPT Vs. GPT-4
+[Comparison of GPT-3, ChatGPT and GPT-4](https://simplified.com/blog/ai-writing/chatgpt-vs-gpt-3/)
 
 ### What can I do with ChatGPT?
 - :star::star: https://research.aimultiple.com/chatgpt-use-cases/
@@ -46,9 +56,7 @@ The model is trained on a [large dataset of text](https://en.wikipedia.org/wiki/
 #### Speech Recognition - Audio to Text & Text to Audio
 - [Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
 
-## GPT Internals
-- :tv: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)
-- :tv: [Let's build GPT: from scratch, in code, spelled out](https://youtu.be/kCc8FmEb1nY)
+
 
 ### Recommended Gen AI Youtube Channels
 - :tv: [Youtube @AllaboutAI Channel](https://www.youtube.com/@AllAboutAI/videos) 🌟
