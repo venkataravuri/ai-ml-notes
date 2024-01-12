@@ -15,7 +15,7 @@ A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_
 
 - [Mulitmodality](docs/multimodality/multimodality.md)
  
-## Statistics
+## Basics: Algebra & Statistics
 - [Algebra](docs/stats/algebra.md)
 - [Statistics & Probability](docs/stats/probability.md)
 
