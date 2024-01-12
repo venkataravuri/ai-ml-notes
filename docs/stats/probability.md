@@ -37,9 +37,17 @@ Statistics is divided into two categories:
 
 The central limit theorem states that if you take sufficiently large samples from a population, the samples’ means will be normally distributed, even if the population isn’t normally distributed.
 
-The central limit theorem in statistics states that, given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable’s distribution in the population.
+The central limit theorem in statistics states that, given a sufficiently large sample size, the sampling distribution of the mean for a variable will approximate a normal distribution regardless of that variable’s distribution in the population. Central Limit Theorem helps you balance the time and cost of collecting all the data you need to draw conclusions about the population.
 
-Let us have a random sample X1,...,Xn following a given distribution with mean μ and variance σ2, then we have:
+Studying the population is hard, it will be extremely hard to gather data for the entire population.
+
+When we collect a sufficiently large sample of n independent observations from a population with mean μ and standard deviation σ, the sampling distribution the sample means will be nearly normal with mean = μ and standard error = σ/ √n
+
+If these samples meet Central Limit Theorem’s criteria, you can assume the distribution of the sample means can be approximated to the Normal distribution. So now you can use all the statistical tools the Normal distribution provides.
+
+From this point on, since you know the distribution at hand, you can **calculate probabilities and confidence intervals, and perform statistical tests**.
+
+- [Central Limit Theorem: a real-life application](https://towardsdatascience.com/central-limit-theorem-a-real-life-application-f638657686e1)
 
 ## Probability
 
