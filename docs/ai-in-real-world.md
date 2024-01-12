@@ -40,14 +40,22 @@
   </tr>
 </table>
 
-## Music & Videos
+## Music & Video Generators
 <table>
   <tr>
     <td>
-      <a href="http://www.youtube.com/watch?feature=player_embedded&v=cpraXaw7dyc" target="_blank"><img src="http://img.youtube.com/vi/cpraXaw7dyc/mqdefault.jpg" alt="Watch the video" width="320" height="180" border="10" /></a>
+      <a href="http://www.youtube.com/watch?feature=player_embedded&v=5R8xZb6J3r0" target="_blank"><img src="http://img.youtube.com/vi/5R8xZb6J3r0/mqdefault.jpg" alt="Watch the video" width="320" height="180" border="10" /></a>
     </td>
     <td>
-      <a href="http://www.youtube.com/watch?feature=player_embedded&v=cpraXaw7dyc" target="_blank"><img src="http://img.youtube.com/vi/cpraXaw7dyc/mqdefault.jpg" alt="Watch the video" width="320" height="180" border="10" /></a>
+      <a href="http://www.youtube.com/watch?feature=player_embedded&v=LsSp6maH8B0" target="_blank"><img src="http://img.youtube.com/vi/LsSp6maH8B0/mqdefault.jpg" alt="Watch the video" width="320" height="180" border="10" /></a>
     </td>
+    <td>
+      <a href="http://www.youtube.com/watch?feature=player_embedded&v=Ti_XJhn0cNY" target="_blank"><img src="http://img.youtube.com/vi/Ti_XJhn0cNY/mqdefault.jpg" alt="Watch the video" width="320" height="180" border="10" /></a>
+    </td>
+  </tr>
+    <tr>
+      <td>Video: NVIDIA: Virtual Characters with Generative AI</td>
+      <td>Video: Runway AI</td>
+      <td>Video: Eleven Labs AI - Voice Cloning</td>
   </tr>
 </table>
