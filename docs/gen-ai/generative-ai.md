@@ -7,8 +7,13 @@ A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books
 - Autonomous AI Agents 
 - AI Agent frameworks
 ---
+
 ### What is ChatGPT? What are LLMs?
-ChatGPT is an AI model that uses Neural Networks (Deeplearning) to generate human-like text in response to a given prompt. I predicts next word in a given text, based on patterns it has learned from massive dataset used during its training process. 
+ChatGPT is a large language model that generates human-like text in response to a given text prompt. It is essentially a next word predictor. 
+
+- ChatGPT is an AI chatbot developed by OpenAI
+- ChatGPT is a Generative Pre-trained Transformer
+- ChatGPI is a Deep Neural Network
 
 It can understand what we say or write, or rather, can generate knowledge from what they have learned from humans. It set to revolutionise the way we work.
 It is showing sparks of cleverness that can accelerate automation.
