@@ -7,7 +7,8 @@ A curated list of Generative AI videos :tv:, tutorials :notebook:, guides :books
   - [ChatGPT]()
   - [LLMs]() 
 - [Prompting Techniques]()
-- [Autonomous AI Agents]() 
+- [Autonomous AI Agents]()
+  
 ---
 
 ## Generative AI
@@ -25,6 +26,8 @@ It can understand what we say or write, or rather, can generate knowledge from w
 It is showing sparks of cleverness that can accelerate automation.
 
 ### What are LLMs?
+
+A large language model (LLM) is a deep learning algorithm that can perform a variety of natural language processing (NLP) tasks. Large language models use transformer models and are trained using massive datasets — hence, large. This enables them to recognize, translate, predict, or generate text or other content.
 
 ### How ChatGPT works?
 
@@ -56,9 +59,7 @@ It is showing sparks of cleverness that can accelerate automation.
 #### Speech Recognition - Audio to Text & Text to Audio
 - [Whishper - Automated Speech Recognition](https://openai.com/research/whisper)
 
-
-
-### Recommended Gen AI Youtube Channels
+### Gen AI Youtube Channels
 - :tv: [Youtube @AllaboutAI Channel](https://www.youtube.com/@AllAboutAI/videos) 🌟
 - :tv: [Youtube @mreflow Channel](https://www.youtube.com/@mreflow/videos) 🌠
 
