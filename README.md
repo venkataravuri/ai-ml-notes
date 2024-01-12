@@ -4,6 +4,10 @@
 
 A curated list of awesome AI & ML tutorials(:orange_book:), articles(:page_with_curl:), videos(:tv:) and jupyter notebooks.
 
+## AI in Real-world
+
+- [Real-world AI Applications]()
+
 ## Generative AI & LLMs
 - [Gen AI Introduction & Concepts](docs/gen-ai/generative-ai.md)
 - [Prompt Engineering - Knowledge Base](docs/gen-ai/prompt-engineering-resources.md)
