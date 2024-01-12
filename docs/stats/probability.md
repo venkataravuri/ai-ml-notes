@@ -8,6 +8,8 @@
     - [Probability Distribution]()
     - [Probability Questions](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
  - [Inferential Statistics](#inferential-statistics)
+   - [Central limit Theorem]() 
+   - [Hypothesis Testing]() 
 
 - [Information Theory (Entropy, KL Divergence, Cross Entropy)](https://gaussian37.github.io/ml-concept-infomation_theory/)
  
@@ -110,18 +112,7 @@ PDF is the derivative of CDF, i.e., the rate of CDF's change, just like speed is
 
 ### Inferential Statistics
 
-Steps in Hypothesis testing:
 
-1. Developing your initial _research hypothesis_ (the prediction that you want to investigate), it is important to restate it as a null (Ho) and alternate (Ha) hypothesis so that you can test it mathematically.
-2. Collect data in a way designed to test the hypothesis.
-3. Perform an appropriate statistical test such as t-Test
-4. Decide whether to reject or fail to reject your null hypothesis.
-5. Present the findings in your results and discussion section.
-
-**Hypothesis testing example**
-> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
-> H0: Men are, on average, not taller than women.
-> Ha: Men are, on average, taller than women.
 
 **Central Limit Theorem**
 
@@ -138,6 +129,31 @@ If these samples meet Central Limit Theorem’s criteria, you can assume the dis
 From this point on, since you know the distribution at hand, you can **calculate probabilities and confidence intervals, and perform statistical tests**.
 
 - [Central Limit Theorem: a real-life application](https://towardsdatascience.com/central-limit-theorem-a-real-life-application-f638657686e1)
+
+
+### Hypothesis Testing
+
+Hypotheses, or predictions, are tested using statistical tests to estimate sampling errors so that valid inferences can be made.
+
+Statistical tests come in three forms:
+- **Comparison tests** assess whether there are differences in means, medians or rankings of scores of two or more groups.
+- **Correlation tests** determine the extent to which two variables are associated.
+- **Regression tests** demonstrate whether changes in predictor variables cause changes in an outcome variable
+
+Steps in Hypothesis testing:
+
+1. Developing your initial _research hypothesis_ (the prediction that you want to investigate), it is important to restate it as a null (Ho) and alternate (Ha) hypothesis so that you can test it mathematically.
+2. Collect data in a way designed to test the hypothesis.
+3. Perform an appropriate statistical test such as t-Test
+4. Decide whether to reject or fail to reject your null hypothesis.
+5. Present the findings in your results and discussion section.
+
+**Hypothesis testing example**
+> You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology, you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
+
+> H0: Men are, on average, not taller than women.
+
+> Ha: Men are, on average, taller than women.
 
 
 ## References
