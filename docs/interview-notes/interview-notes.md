@@ -52,25 +52,22 @@
 - [28 Probability Questions for ML Interviews](https://mecha-mind.medium.com/probability-questions-for-ml-interviews-692fadf0ac12)
 - [Probability and Statistics for Software Engineering Problems](https://mecha-mind.medium.com/probability-and-statistics-for-software-engineers-1c67c96a81e3)
 
-#### Explain the difference between supervised and unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
+#### Explain the difference between Supervised and Unsupervised machine learning? What are the most common algorithms for supervised learning and unsupervised learning?
 
-In **supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided, while in **unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
+- In **Supervised learning**, the algorithm is trained on a labelled dataset, meaning the desired output is provided.
+- In **Unsupervised learning**, the algorithm must find patterns and relationships in an unlabeled dataset.
 
-**Supervised Learning Model Types**
+**Supervised Learning Algorithms**
 
-- In regression models, the output is continuous
-- In classification models, the output is discrete.
-
-**Models**
-
-- Linear Regression
-- Linear Support Vector Machines (SVMs)
-- Naive Bayes
+- Regression models (the output is continuous)
+  - Linear Regression
+  - Linear Support Vector Machines (SVMs)
+  - Naive Bayes
+- Classification models (the output is discrete)
 
 **Unsupervised learning**
-
-Principal Component Analysis (PCA)
-Clustering - Clustering is an unsupervised technique that involves the grouping, or clustering, of data points.
+- Principal Component Analysis (PCA)
+- Clustering - Clustering is an unsupervised technique that involves the grouping, or clustering, of data points.
   - K-Means Clustering
 
 ### What is the difference between overfitting and underfitting?
