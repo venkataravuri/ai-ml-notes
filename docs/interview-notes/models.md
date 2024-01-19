@@ -19,6 +19,14 @@
 
 ### Describe Logit and Probit models and explain the difference between them.
 
+**Logit** model is also called _logistic regression_ model. The logit model is based on the **logistic** function (also called the **sigmoid** function).
+
+**Probit** model is similar to logit model, but it is based on the probit function instead of the logistic function. In probit model, the cumulative distribution function Φ of standard normal distribution is used to model the relationship between the predictors and the probability of the event occurring.
+
+The main difference between Logit and Probit models lies in the choice of the link function used to model the relationship between the predictor variables and the probability of the event occurring. In the case of the logit model, we use a** logistic or sigmoid** function while in case of probit models, the probit **link function Φ** used is a cumulative distribution function of the standard normal distribution. 
+
+Logit models assume that the error term follows a logistic distribution, while Probit models assume that the error term follows a normal distribution.
+
 ### Explain the difference between Logistic Regression and Collaborative Filtering.
 
 ### Briefly explain the K-Means clustering and how can we find the best value of K.
