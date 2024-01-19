@@ -27,7 +27,9 @@ The main difference between Logit and Probit models lies in the choice of the li
 
 Logit models assume that the error term follows a logistic distribution, while Probit models assume that the error term follows a normal distribution.
 
-### Explain the difference between Logistic Regression and Collaborative Filtering.
+### What are different type of recommendaiton systems? How Recommenders Work? What are different Deep Neural Network Models for Recommendation?
+
+https://www.nvidia.com/en-us/glossary/recommendation-system/
 
 ### Briefly explain the K-Means clustering and how can we find the best value of K.
 
