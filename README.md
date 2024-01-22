@@ -28,6 +28,7 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
 - [NLP](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
   - [Lexical/Keyword Search](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
   - [Semantic Search / Vector Search]()
+  - [Vector Search Indexes])()
   - [Vector DBs](https://github.com/venkataravuri/ai-ml-models/blob/main/5-vector-db/Readme.md)
   
 ## Neural Networks
