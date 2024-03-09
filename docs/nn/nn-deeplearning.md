@@ -153,23 +153,27 @@ Overfitting example (a sine curve vs 9-degree polynomial)
 
 Regularization
 
-Early Stoppage - Stop training (or at least save a checkpoint) when performance on the validation set decreases
+Most common regularization methods are,
 
-Dropout - Randomly remove some nodes in the network (along with incoming and outgoing edges)
-- Usually p >= 0.5 (pis probability of keeping node)
-- Input layers pshould be much higher (and use noise instead of dropout)
+1) Early Stopping - Stop training (or at least save a checkpoint) when performance on the validation set decreases. Monitor model performance on a validation set and stop training when performance degrades.
+
+2) Dropout - Randomly remove some nodes in the network (along with incoming and outgoing edges). Probabilistically remove nodes during training.
+- Usually p >= 0.5 (p is probability of keeping node)
+- Input layers p should be much higher (and use noise instead of dropout)
 - Most deep learning frameworks come with a dropout layer
 
-
-Regularization: Weight Penalty (aka Weight Decay)
-
-
-Batch Normalization (BatchNorm, BN)
-- Normalize hidden layer inputsto mini-batch mean & variance
+3) Batch Normalization (BatchNorm, BN)
+- Normalize hidden layer inputs to mini-batch mean & variance
 - Reduces impact of earlier layers on later layers
 
 
+4) Weight Penalty (aka Weight Decay) - The simplest and perhaps most common regularization method is to add a penalty to the loss function in proportion to the size of the weights in the model. Penalize the model during training based on the magnitude of the weights.
 
+5) Weight Constraint: Constrain the magnitude of weights to be within a range or below a limit.
+
+6) Activity Regularization: Penalize the model during training base on the magnitude of the activations.
+
+7) Noise: Add statistical noise to inputs during training.
 
 # References
 
