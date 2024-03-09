@@ -144,23 +144,27 @@ the log magnifies the mistake in the classification, so the misclassification wi
 
 when designing a neural network multi-class classifier, you can you CrossEntropyLoss with no activation, or you can use NLLLoss with log-SoftMax activation.
 
-#### Overfitting & Regularization
+#### Underfitting, overfitting, and generalization
 
-Help the network generalize to data it hasn’t seen.
+A good classifier will learn a decision boundary that correctly classifies most of the training data and generalizes to novel data.
 
-Overfitting: The error decreases in the training set but increases in the test set
-Overfitting example (a sine curve vs 9-degree polynomial)
+Overfitting: The error decreases in the training set but increases in the test set. Overfitting example (a sine curve vs 9-degree polynomial)
 
 Regularization
+
 
 Most common regularization methods are,
 
 1) Early Stopping - Stop training (or at least save a checkpoint) when performance on the validation set decreases. Monitor model performance on a validation set and stop training when performance degrades.
 
-2) Dropout - Randomly remove some nodes in the network (along with incoming and outgoing edges). Probabilistically remove nodes during training.
+<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*b4lf4K0PswVYZXdI.png" />
+
+3) Dropout - Randomly remove some nodes in the network (along with incoming and outgoing edges). Probabilistically remove nodes during training.
 - Usually p >= 0.5 (p is probability of keeping node)
 - Input layers p should be much higher (and use noise instead of dropout)
 - Most deep learning frameworks come with a dropout layer
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*YCofAkhSErYvlpRT.png" />
 
 3) Batch Normalization (BatchNorm, BN)
 - Normalize hidden layer inputs to mini-batch mean & variance
