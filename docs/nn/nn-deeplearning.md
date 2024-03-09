@@ -179,6 +179,22 @@ Most common regularization methods are,
 
 7) Noise: Add statistical noise to inputs during training.
 
+### Vanshing Gradient Problem
+
+Neural networks are trained by gradient descent. TDuring neural network training, stochastic gradient descent (SGD) computes the gradient of the loss functions w.r.t. its weights in the network. However, in some cases, this gradient becomes exceedingly small – hence the term “vanishing gradient.”
+
+SGD updates a weight based on its gradient, the update is proportional to that gradient. If the gradient is vanishingly small, then the update will be vanishingly small too.
+
+Due to this, the network learns very slowly. Also, if the adjustments are too small, the network can get stuck in a rut and stop improving altogether. 
+
+How to identify if your model suffers from a vanishing gradient problem:
+
+- If the loss decreases very slowly over time while training.
+- If you observe erratic behavior or diverging training curves.
+- If the gradients in the early layer of the network are becoming increasingly small while propagating backward.
+
+
+
 # References
 
 - [Deep Learning Course](https://fleuret.org/dlc/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_458)
