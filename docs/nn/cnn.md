@@ -17,7 +17,7 @@ AlexNet CNN Sample below,
 ### Convolution Operation
 
 - Convolution operation in CNNs is to extract features from the input image or feature map by applying different filters to an input image, the network can identify edges, lines, curves, and textures that are important for recognition tasks.
-- Convolution uses a ‘kernel’ or 'filters' to extract certain ‘features’ from an input image.
+- Convolution uses a ‘kernel’ or 'filters' or ' feature detectors' to extract certain ‘features’ from an input image.
 - The convolutional operation is implemented by making The 'kernel' or 'filter' slides across the image and produces an output Value at each position.
 - Convolutional layers can learn to recognize low-level features such as edges and corners, and then combine them to detect more complex features such as shapes and patterns.
 - A kernel is a matrix, which is slid across the image and multiplied with the input such that the output is enhanced in a certain desirable manner.
@@ -25,6 +25,8 @@ AlexNet CNN Sample below,
 
 The kernel animation for sharpening the image is shown below,
 <img src="https://miro.medium.com/v2/resize:fit:780/1*Eai425FYQQSNOaahTXqtgg.gif" height="40%" width="40%" />
+
+In CNNs, a feature map is the output of a convolutional layer representing specific features in the input image or feature map.
 
 #### Variants of The Convolution Operation
 
@@ -72,6 +74,9 @@ For example,
   - A weighted average based on the distance from the central pixel.
 
 In all cases, pooling helps to make the representation become approximately invariant to small translations of the input. Invariance to translation means that if we translate the input by a small amount, the values of most of the pooled outputs do not change.
+
+Pooling is then applied over the feature maps for invariance to translation.
+
 
 Understanding the **Receptive Field** of Convolutional Layer
 
