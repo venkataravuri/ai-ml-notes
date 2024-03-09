@@ -164,6 +164,8 @@ Most common regularization methods are,
 - Input layers p should be much higher (and use noise instead of dropout)
 - Most deep learning frameworks come with a dropout layer
 
+- Dropout is not used after training when making a prediction with the fit network.
+
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*YCofAkhSErYvlpRT.png" />
 
 3) Batch Normalization (BatchNorm, BN)
