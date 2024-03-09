@@ -193,7 +193,13 @@ How to identify if your model suffers from a vanishing gradient problem:
 - If you observe erratic behavior or diverging training curves.
 - If the gradients in the early layer of the network are becoming increasingly small while propagating backward.
 
+Residual connections mainly help mitigate the vanishing gradient problem.
 
+### Residual Connections in NN
+
+Residual connections mainly help mitigate the vanishing gradient problem. During the back-propagation, the signal gets multiplied by the derivative of the activation function. In the case of ReLU, it means that in approximately half of the cases, the gradient is zero. Without the residual connections, a large part of the training signal would get lost during back-propagation. Residual connections reduce effect because summation is linear with respect to derivative, so each residual block also gets a signal that is not affected by the vanishing gradient. The summation operations of residual connections form a path in the computation graphs where the gradient does not get lost.
+
+Another effect of residual connections is that the information stays local in the Transformer layer stack. The self-attention mechanism allows an arbitrary information flow in the network and thus arbitrary permuting the input tokens. The residual connections, however, always "remind" the representation of what the original state was. To some extent, the residual connections give a guarantee that contextual representations of the input tokens really represent the tokens.
 
 # References
 
