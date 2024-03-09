@@ -32,7 +32,7 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
   
 ## Neural Networks
 - [NN Concepts](docs/nn/nn-deeplearning.md)
-- [Convolutional Neural Networks](docs/nn/)
+- [Convolutional Neural Networks](docs/nn/cnn.md)
 - [GAN](docs/nn/)
 - [Diffusion](docs/nn/)
 
@@ -49,5 +49,6 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
 - [ML Concepts](docs/interview-notes/interview-notes.md)
 - [ML Models](docs/interview-notes/models.md)
 - [Neural Netowrks](docs/interview-notes/nn-notes.md)
+  - [CNN](docs/interview-notes/cnn-interview-notes.md)
 - [ML System Design](docs/interview-notes/system-design.md)
 - [MLOps](docs/interview-notes/mlops.md)
