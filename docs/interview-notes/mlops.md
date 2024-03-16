@@ -67,7 +67,14 @@
 - Model Packaging
   - .pkl
   - ONNX
-  - 
+  - Containerization
+
+ONNX (Open Neural Network Exchange), an open-source format for representing deep learning models, was developed by Microsoft and is now managed by the Linux Foundation.
+ONNX resolves this issue by providing a standard format that multiple deep learning frameworks, including TensorFlow, PyTorch, and Caffe2 can use.
+With ONNX, models can be trained in one framework and then easily exported to other frameworks for inference, making it convenient for developers to experiment with different deep learning frameworks and tools without having to rewrite their models every time they switch frameworks.  It can execute models on various hardware platforms, including CPUs, GPUs, and FPGAs, making deploying models on various devices easy.
+
+Spawn up a shared-persistent storage across the cluster to store models
+
 
 ### Explain training pipelines? What experiment pipelines?
 
