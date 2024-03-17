@@ -115,6 +115,10 @@ Ridge Regression :
 
 This type of regularized regression has a penalty term representing half the square of L2 norm added to the cost function. This forces the learning algorithm to not only fit the data but also keep the model weights as small as possible. The equation for Ridge Regression is shown below.
 
+This term tends to shrink all of the weight coefficients, but unlike L1 regularization, it does not set any weight coefficients to zero.
+
+L2 regularization, or Ridge regularization, adds a term to the cost function that is proportional to the square of the weight coefficients:
+
 ```math
 J(\theta)_{Ridge} = MSE(\theta) + \lambda.(\frac{1}{2}).\displaystyle\sum_{i=1}^{n}(\theta^2_{i})
 ```
@@ -124,15 +128,24 @@ J(\theta)_{Ridge} = MSE(\theta) + \lambda.(\frac{1}{2}).\displaystyle\sum_{i=1}^
 
 The shrinkage hyperparameter λ (lambda) controls the amount of regularization and needs to be chosen properly because if λ = 0, then Ridge Regression is the same as Linear Regression and on the other hand, if λ is very large, then all weights end up very close to zero resulting in an underfitting model. One good way to select the right λ is to perform cross-validation.
 
-#### Lasso Regression
+#### Lasso Regression known as L1 regularization
+
+This type of regularization is also known as Lasso regularization. It adds a term to the cost function that is proportional to the absolute value of the weight coefficients:
+
+```math
+J(\theta)_{Ridge} = MSE(\theta) + \lambda.\displaystyle\sum_{i=1}^{n}(|\theta_{i}|)
+```
+
+
+
+
+It tends to shrink some of the weight coefficients to zero. The sum of the term is multiplied by lambda, which controls the amount of regularization. If lambda is too high, the model will be simple, and the risk of underfitting arises.
 
 Short for Least Absolute Shrinkage and Selection Operator Regression, this type of Regularized Regression uses the L1 norm instead of half the square of L2 norm as the penalty term in the cost function. An important characteristic of Lasso Regression is that it tends to completely eliminate the weights of the least important features and thus, automatically performs feature selection.
 
 > The L1 norm is the sum of the magnitudes of the differences between predicted and target values over the feature vector or could be understood as the sum of absolute differences. Its also known as Manhattan Distance, Taxicab Norm, and Mean Absolute Error (MAE).
 
-```math
-J(\theta)_{Ridge} = MSE(\theta) + \lambda.\displaystyle\sum_{i=1}^{n}(|\theta_{i}|)
-```
+
 <p align="center">Lasso Regression Cost Function</p>
 
 The shrinkage hyperparameter λ works similar to as in Ridge Regression, too little results in no regularization and too much ends up in an underfit model.
