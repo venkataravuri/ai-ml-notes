@@ -69,6 +69,9 @@
   - ONNX
   - Containerization
 
+
+TorchServe provides a utility to package all the model artifacts into a single TorchServe Model Archive File (MAR). After model artifacts are packaged into a MAR file, you then upload to the model-store under the model storage path.
+
 ONNX (Open Neural Network Exchange), an open-source format for representing deep learning models, was developed by Microsoft and is now managed by the Linux Foundation.
 ONNX resolves this issue by providing a standard format that multiple deep learning frameworks, including TensorFlow, PyTorch, and Caffe2 can use.
 With ONNX, models can be trained in one framework and then easily exported to other frameworks for inference, making it convenient for developers to experiment with different deep learning frameworks and tools without having to rewrite their models every time they switch frameworks.  It can execute models on various hardware platforms, including CPUs, GPUs, and FPGAs, making deploying models on various devices easy.
@@ -338,6 +341,27 @@ if __name__ == '__main__':
 - KServe supports multiple inference runtimes like TensorFlow, PyTorch, ONNX, XGBoost.
 - KServe can leverage GPU acceleration libraries like TensorRT for optimized performance.
 - For PyTorch, KServe integrates with TorchServe to serve PyTorch models.
+
+Deploy a PyTorch Model with TorchServe InferenceService
+
+KServe supports the implementation of Knative Pod Autoscaler (KPA) and Kubernetes’ Horizontal Pod Autoscaler (HPA). 
+
+KServe by default selects the TorchServe runtime when you specify the model format pytorch 
+
+```
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "torchserve-mnist-v2"
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: pytorch
+      protocolVersion: v2  
+      storageUri: gs://kfserving-examples/models/torchserve/image_classifier/v2
+```
+
 
 ### TorchScript
 
