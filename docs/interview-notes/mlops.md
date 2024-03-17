@@ -251,6 +251,47 @@ There are also various utility operators for management, tuning, monitoring etc.
 
 ### Hyperparameter tuning
 
+Hyperparameter tuning aims to find the best combination of hyperparameters to optimize a specific metric (e.g., accuracy, loss) for a given model.
+
+Katib (AutoML) supports hyperparameter tuning, early stopping, and neural architecture search (NAS).
+Katib is agnostic to ML frameworks and can tune hyperparameters for applications written in any language.
+
+Katib automates this process by exploring different hyperparameter configurations to find the optimal settings for your model.
+
+    or applications written in any language.
+
+Creating a Hyperparameter Tuning Experiment:
+
+    Define an Experiment in Katib:
+        Specify the objective metric (e.g., validation accuracy).
+        Define the search space for hyperparameters (min/max values or allowable values).
+        Choose a search algorithm (e.g., Bayesian optimization, random search).
+        Create the Katib Experiment using Kubernetes Custom Resource Definitions (CRDs).
+
+Running Trials:
+
+    Katib runs several training jobs (Trials) within each Experiment.
+    Each Trial tests a different set of hyperparameter configurations.
+    The training code evaluates each Trial with varying hyperparameters.
+
+Optimization Process:
+
+    Katib optimizes the objective metric by exploring different hyperparameter combinations.
+    It uses algorithms like Bayesian optimization, Tree of Parzen Estimators, and more.
+    At the end of the Experiment, Katib outputs the optimized hyperparameter values.
+
+Example: Hyperparameter Tuning for a Neural Network:
+
+    Suppose we’re training a neural network for image classification.
+    We define an Experiment in Katib:
+        Objective: Maximize validation accuracy.
+        Search space: Learning rate (0.001 to 0.1), batch size (16 to 128), and dropout rate (0.1 to 0.5).
+        Search algorithm: Bayesian optimization.
+    Katib runs multiple Trials, each with different hyperparameter values.
+    After several Trials, Katib identifies the best hyperparameters for maximizing validation accuracy.
+
+
+
 > Write code for hyperparameter tuning for xgboost using kubeflow pipelines? where the multi fold cross validation information is stored? how best model is detected?
 
 ```python
