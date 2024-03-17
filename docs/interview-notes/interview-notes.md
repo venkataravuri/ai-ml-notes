@@ -312,7 +312,7 @@ the cross-entropy arises as the natural cost function to use if you have a sigmo
 
 ###  What is a hyperparameter? How to find the best hyperparameters?
 
-Hyperparameters are variables of which values are set by the ML engineer or any other person before training the model. These values are not automatically learned from the data.
+Hyperparameters are variables which are external to the model, whose values are not automatically learned from the data.
 
 Grid Search is a powerful tool for hyperparameter tuning, In Random Search CV, the user defines a distribution of values for each hyperparameter of the model. The algorithm then randomly samples hyperparameters from these distributions to create a set of hyperparameter combinations. For example, if there are three hyperparameters with ranges of [0.1, 1.0], [10, 100], and [1, 10], the algorithm might randomly sample values of 0.4, 75, and 5, respectively, to create a hyperparameter combination.
 
@@ -320,17 +320,24 @@ Random search is more efficient than grid search when the number of hyperparamet
 
 learning rate, momentum, dropout, etc
 
-Learning Rate
+Learning Rate - determines the step size at which the model adjusts its weights during each iteration of training. A high learning rate might cause the model to overshoot the optimal weights, while a low learning rate might result in slow convergence. It’s essential to find a balance. 
 
-The learning rate determines the step size at which the model adjusts its weights during each iteration of training. A high learning rate might cause the model to overshoot the optimal weights, while a low learning rate might result in slow convergence. It’s essential to find a balance. 
+Batch size - indicates number of training examples used in each gradient descent iteration, is a critical hyperparameter in deep learning. 
 
-Batch Size
+Number of Epochs - An epoch represents a full pass through the entire training dataset. Too few epochs might lead to underfitting, while too many can lead to overfitting. Finding the right number of epochs involves monitoring validation performance. 
 
-The batch size, which determines the number of training examples used in each gradient descent iteration, is a critical hyperparameter in deep learning. 
+The k in k-nearest neighbors.
+The C and sigma hyperparameters for support vector machines.
 
-Number of Epochs
+### Model Parameter Vs. Model Hyperparameter
 
-An epoch represents a full pass through the entire training dataset. Too few epochs might lead to underfitting, while too many can lead to overfitting. Finding the right number of epochs involves monitoring validation performance. 
+A model parameter is a configuration variable that is internal to the model and whose values are learned from training data.
+
+Examples of model parameters include:
+- The weights in an artificial neural network.
+- The support vectors in a support vector machine.
+- The coefficients in a linear regression or logistic regression.
+
 
 ### What is the curse of dimensionality? Why do we need to reduce it? What is PCA, why is it helpful, and how does it work? What do eigenvalues and eigenvectors mean in PCA?
 
