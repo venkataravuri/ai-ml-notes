@@ -152,19 +152,32 @@ L2 regularization can keep the parameter values from going too extreme. While L1
 
 _Normalization and standardization_ are _data preprocessing techniques_, while _regularization_ is used to _improve model performance_.
 
-- Standardization forces data points to have a _mean of 0_ and a _standard deviation of 1_.
+Normalization (also called, Min-Max normalization) is a scaling technique such that when it is applied the features will be rescaled so that the data will fall in the range of [0,1]
 
-$x_{normalized} = \frac{x - \mu}{\sigma}$
-
-- Normalization is to scale it to a range from 0 to 1. This technique is generally used in the inputs of the data.
+Normalized form of each feature can be calculated as follows,
 
 $x_{normalized} = \frac{x - \mu}{x_{max} - x_{min}}$
 
+Normalization is applied in image processing, where pixel intensities have to be normalized to fit within a certain range (i.e., 0 to 255 for the RGB color range). Also, a typical neural network algorithm requires data on a 0–1 scale.
+
+Standardization (also called, Z-score normalization) is a scaling technique such that when it is applied the features will be rescaled so that they’ll have the properties of a standard normal distribution with mean,μ=0 and standard deviation, σ=1; where μ is the mean (average) and σ is the standard deviation from the mean.
+
+Standard scores (also called z scores) of the samples are calculated as follows,
+
+$x_{normalized} = \frac{x - \mu}{\sigma}$
+
+This scales the features in a way that they range between [-1,1]
+
+In clustering analyses, standardization may be especially crucial in order to compare similarities between features based on certain distance measures. Another prominent example is the Principal Component Analysis, where we usually prefer standardization over normalization since we are interested in the components that maximize the variance.
+
+- **Standardization** must be used when **data is normally distributed**
+- **normalization** when **data is not normal**
+
 - After performing standardization and normalization, most of the data will lie between a given range, whereas _regularization doesn’t affect the data at all_.
 
-- **Standardization** must be used when **data is normally distributed**, **normalization** when **data is not normal**, and **regularization** when **data is very noisy**.
+-  **regularization** when **data is very noisy**.
 
-- Regularization tunes the function by adding an additional penalty term in the error function. 
+- Regularization tunes the function by adding an additional penalty term in the error function.
 
 ### What is instance normalisation?
 
