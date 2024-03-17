@@ -67,8 +67,17 @@
 - Model Packaging
   - .pkl
   - ONNX
+  - TorchScript
   - Containerization
 
+pickle (and joblib by extension), has some issues regarding maintainability and security. Because of this,
+
+- Never unpickle untrusted data as it could lead to malicious code being executed upon loading.
+- While models saved using one version of scikit-learn might load in other versions, this is entirely unsupported and inadvisable.
+
+ONNX is a binary serialization of the model
+
+Predictive Model Markup Language (PMML) format might be a better approach than using pickle alone.
 
 TorchServe provides a utility to package all the model artifacts into a single TorchServe Model Archive File (MAR). After model artifacts are packaged into a MAR file, you then upload to the model-store under the model storage path.
 
@@ -78,6 +87,7 @@ With ONNX, models can be trained in one framework and then easily exported to ot
 
 Spawn up a shared-persistent storage across the cluster to store models
 
+ONNX uses protobuf to serialize the graph
 
 ### Explain training pipelines? What experiment pipelines?
 
@@ -341,6 +351,17 @@ if __name__ == '__main__':
 - KServe supports multiple inference runtimes like TensorFlow, PyTorch, ONNX, XGBoost.
 - KServe can leverage GPU acceleration libraries like TensorRT for optimized performance.
 - For PyTorch, KServe integrates with TorchServe to serve PyTorch models.
+
+KServe provides a Kubernetes Custom Resource Definition for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model serving use cases by providing performant, high abstraction interfaces for common ML frameworks like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX.
+
+It encapsulates the complexity of autoscaling, networking, health checking, and server configuration to bring cutting edge serving features like GPU Autoscaling, Scale to Zero, and Canary Rollouts to your ML deployments. It enables a simple, pluggable, and complete story for Production ML Serving including prediction, pre-processing, post-processing and explainability. 
+
+Model Serving Runtimes¶
+
+KServe provides a simple Kubernetes CRD to enable deploying single or multiple trained models onto model serving runtimes such as TFServing, TorchServe, Triton Inference Server. In addition ModelServer is the Python model serving runtime implemented in KServe itself with prediction v1 protocol, MLServer implements the prediction v2 protocol with both REST and gRPC. These model serving runtimes are able to provide out-of-the-box model serving, but you could also choose to build your own model server for more complex use case. 
+
+SKLearn MLServer
+TorchServe
 
 Deploy a PyTorch Model with TorchServe InferenceService
 
