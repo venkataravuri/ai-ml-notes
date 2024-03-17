@@ -119,7 +119,7 @@ Kubeflow enables you to set up CI/CD pipelines for your machine learning workflo
 
 ### Where models are stored in Kubeflow? What is a model registry (Or) model repository? Is your models stored in S3? What are popular tools for model store/registry? How models are versioned?
 
-Here are some key points about model storage and registries in Kubeflow:
+https://github.com/kubeflow/model-registry is th answers. Looks like its still in alpha version
 
     Kubeflow provides a centralized model repository for storing, versioning, and managing ML models. This is called the Kubeflow Model Registry.
 
