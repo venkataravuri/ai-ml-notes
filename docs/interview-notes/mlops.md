@@ -441,3 +441,26 @@ GPU’s Performance (P) States,
 - P6-P12 is the power state when the GPU is operating at a low power level to an idle state. The higher the P number, the lower the performance.
 
 ### How to setup experiements in Kubeflow?
+
+
+### Feature Store
+
+
+
+
+### How to use AWS EFS to store training datasets and availble for Kubeflow pods
+
+use Amazon EFS as the storage layer to store our training datasets. 
+
+use Kubeflow on Amazon EKS to implement model parallelism and use Amazon EFS as persistent storage to share datasets. 
+
+<img src="https://d2908q01vomqb2.cloudfront.net/e1822db470e60d090affd0956d743cb0e7cdf113/2022/11/16/1_Architecture-of-Kubeflow-on-Amazon-EKS-with-Amazon-EFS.png" />
+
+[Machine Learning with Kubeflow on Amazon EKS with Amazon EFS](https://aws.amazon.com/blogs/storage/machine-learning-with-kubeflow-on-amazon-eks-with-amazon-efs/)
+
+### How to sync data between S3 to EFS?
+
+use DataSync to transfer data from an Amazon EFS file system to an Amazon S3 bucket
+
+
+Model parallelism is a distributed training method in which the deep learning model is partitioned across multiple devices, within or across instances. 
