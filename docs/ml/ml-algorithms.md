@@ -138,7 +138,18 @@ from sklearn.ensemble import RandomForestClassifier: random forest classifier fr
 plt.plot(x, y): draw line plot for the values of y against x values.
 ```
 
+## Boossting Vs. Bagging
+
+Random forest uses a technique called bagging to build full decision trees in parallel from random bootstrap samples of the data set. The final prediction is an average of all of the decision tree predictions.
+
+<img src="https://www.nvidia.com/content/dam/en-zz/Solutions/glossary/data-science/xgboost/img-3.png" />
+
+In boosting, the trees are built sequentially such that each subsequent tree aims to reduce the errors of the previous tree. Each tree learns from its predecessors and updates the residual errors. 
+
 ### Gradient Boosting & XGBoost
+
+The term “gradient boosting” comes from the idea of “boosting” or improving a single weak model by combining it with a number of other weak models in order to generate a collectively strong model. Gradient boosting is an extension of boosting where the process of additively generating weak models is formalized as a gradient descent algorithm over an objective function.
+
 
 Unlike Random Forest where each decision tree trains independently, in the Gradient Boosting Trees, the models are combined sequentially where each model takes the prediction errors made my the previous model and then tries to improve the prediction. This process continues to n number of iterations and in the end all the predictions get combined to make final prediction.
 
@@ -153,6 +164,8 @@ XGBoost is one of the libraries which implements the gradient boosting technique
 xgb.train(): method to train xgboost model.
 xgb_params: key-value pairs of hyperparameters to train xgboost model.
 watchlist: list to store training and validation accuracy to evaluate the performance of the model after each training iteration. The list takes tuple of train and validation set from DMatrix wrapper, for example, watchlist = [(dtrain, 'train'), (dval, 'val')].
+
+[XGBoost example step-by-step](https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/)
 
 **XGBoost**, excel at handling **tabular data** for a multitude of reasons.
 - First, their _hierarchical structure_ is inherently adept at _modeling the layered relationships_ often found in tabular formats.
@@ -174,6 +187,15 @@ Here’s a concise technical breakdown of how XGBoost works:
 - Prediction: To make predictions, XGBoost combines the weak learners’ predictions, each scaled by a “shrinkage” factor (learning rate).
 
 scikit-learn's XGBRegressor is an implementation of gradient boosting trees.
+### XGBoost Hyperparameters
+
+here are six (6) hyperparameters for XGBoost that are the most important , which is defined as those with the highest probability of the algorithm yielding the most accurate, unbiased results the quickest without over-fitting: 
+- (1) how many sub-trees to train;
+- (2) the maximum tree depth (a regularization hyperparameter);
+- (3) the learning rate;
+- (4) the L1 (reg_alpha) and L2 (reg_ lambda) regularization rates that determine the extremity of weights on the leaves;
+- (5) the complexity control (gamma=γ), a pseudo- regularization hyperparameter; and
+- (6) minimum child weight, another regularization hyperparameter. 
 
 ## Support Vector Machines
 
