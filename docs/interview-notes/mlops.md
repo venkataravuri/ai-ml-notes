@@ -412,3 +412,32 @@ During the optimization process, TensorRT performs the following steps:
 TensorRT is better than TorchScript in terms of performance.
 
 [TensorRT Optimization Guide](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/pdf/TensorRT-Best-Practices.pdf)
+
+## GPU Monitoring
+
+- nvidia-smi
+- gpustat
+- nvtop & nvitop
+- nvidia_gpu_exporter & promotheous
+- DCGM Prometheus exporters to monitor GPU statistics in real time.
+
+[GPU Monitoring Tools](https://lambdalabs.com/blog/keeping-an-eye-on-your-gpus-2)
+
+### Explain critical GPU performance measures?    nvidia-smi -q -d PERFORMANCE
+
+- Clock Speed: nvidia-smi -q -d CLOCK
+- Power Consumption: nvidia-smi -q -d POWER
+- Memory Usage: nvidia-smi -q -d MEMORY
+- Performance: nvidia-smi -q -d PERFORMANCE  # Displays the “P” state of a GPU. P state refers to the current performance of a GPU. 
+- Temperature: 
+
+#### What are P States in GPU? 
+
+P state refers to the current performance of a GPU. 
+
+GPU’s Performance (P) States,
+- P0 and P1 are the power states when the GPU is operating at its highest performance level. 
+- P2/P3 is the power state when the GPU is operating at a lower performance level. 
+- P6-P12 is the power state when the GPU is operating at a low power level to an idle state. The higher the P number, the lower the performance.
+
+### How to setup experiements in Kubeflow?
