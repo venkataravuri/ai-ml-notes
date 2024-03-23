@@ -61,7 +61,9 @@ Credits: Andrej Karpathy, :boom: See his one-liner [profile](https://karpathy.ai
 
 #### LLM Configuration Settings
 
-**Temperature** - LLMs are non-deterministic by design, temparature setting can tweak their behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs. [ChatGPT Playground](https://platform.openai.com/playground)
+**Temperature** - LLMs are non-deterministic by design, temparature setting can tweak their behaviour. Lower temperature makes model more deterministic, results pick highest probable next token. Increasing temperature could lead to more randomness encouraging more diverse or creative outputs.
+
+Refer to, [Demystifying the Temperature Parameter: A Visual Guide to Understanding its Role in Large Language Models](https://ai.plainenglish.io/understanding-llama2-kv-cache-grouped-query-attention-rotary-embedding-and-more-c17e5f49a6d7)
 
 **Top-K, Top-p Sampling** - LLM takes in an input sequence of tokens and then tries to predict the next token, by generating a discrete probability distribution over all possible tokens. 
 - [Top-K sampling](https://peterchng.com/blog/2023/05/02/token-selection-strategies-top-k-top-p-and-temperature/)
