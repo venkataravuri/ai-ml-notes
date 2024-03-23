@@ -18,6 +18,12 @@ The main architectural innovation of transformers was the introduction of attent
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Explaining ChatGPT to Anyone in <20 Minutes](https://cameronrwolfe.substack.com/p/explaining-chatgpt-to-anyone-in-20)
 
+### Rotary Position Embedding (RoPE)
+
+LLaMA2 adopts Rotary Position Embedding (RoPE) in place of traditional absolute positional encoding. 
+
+Read more about RoPE at, [Rotary Embedding](https://ai.plainenglish.io/understanding-llama2-kv-cache-grouped-query-attention-rotary-embedding-and-more-c17e5f49a6d7)
+
 ## Self Attention
 
 In self-attention, every word in sequence pays attention to every other word to understand context. Self attention allows the model to relate words each other.
@@ -27,6 +33,12 @@ Given a query, lookup for closest keys, return a weighted sum of associated valu
 ## Multi-head Attention
 
 ## Cross Attention
+
+## Grouped Query Attention
+
+GQA addresess memory bandwidth challenges during the autoregressive decoding of Transformer models. The primary issue stems from the need to load decoder weights and attention keys/values at each processing step, which consumes excessive memory.
+
+Read more about MPA & GPA at, [Grouped Query Attention](https://ai.plainenglish.io/understanding-llama2-kv-cache-grouped-query-attention-rotary-embedding-and-more-c17e5f49a6d7)
 
 ## Sliding Attention
 
@@ -45,6 +57,7 @@ Flash attention uses two techniques to speedup,
 
 Source: [FlashAttention challenges ML researchers to think about systems-level improvements](https://dailyink.substack.com/p/flashattention-challenges-ml-researchers) [Long-Sequence Attention with ⚡FlashAttention⚡](https://mlnotes.substack.com/p/long-sequence-attention-with-flashattention), 
 
+### KV Caching
 
 # Finetune LLMs
 
