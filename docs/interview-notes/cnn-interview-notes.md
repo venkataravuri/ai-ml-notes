@@ -83,3 +83,9 @@ The main purpose of using zero padding is to avoid losing information at the bou
 ### When would you prefer a 1D convolution over 2D convolutions?
 
 1D convolutions are typically used when the input data is 1D, such as a time series or text. 2D convolutions are typically used when the input data is 2D, such as an image.
+
+### Which CNNs are you used?
+
+ EfficientNet-B0
+ 
+https://theaisummer.com/cnn-architectures/
