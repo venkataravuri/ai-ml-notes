@@ -445,7 +445,26 @@ GPU’s Performance (P) States,
 
 ### Feature Store
 
+Built a comprehensive framework for feature creation, versioning, and serving in both real-time and batch modes.
 
+It uses offline store (S3) & online store (AWS Redshift)
+
+Data Infrastructure Layer: Where It All Begins
+The Data Infrastructure Layer is the backbone of your feature store. It’s responsible for the initial stages of your data pipeline, including data ingestion, processing, and storage.
+
+Serving Layer: API-Driven Feature Access
+
+The Serving Layer is your “customer service desk,” the interface where external applications and services request and receive feature data.
+
+Application Layer: The Control Tower
+
+The Application Layer serves as the orchestrator for your feature store. 
+
+ [Feature Store Architecture and How to Build One](https://mlengineering.medium.com/feature-store-architecture-and-how-to-build-one-qwak-5bc10553dce1)
+
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*s7DcLpFkf4bN2eU7.png" />
+
+comply with GDPR or similar regulations, 
 
 
 ### How to use AWS EFS to store training datasets and availble for Kubeflow pods
@@ -464,3 +483,14 @@ use DataSync to transfer data from an Amazon EFS file system to an Amazon S3 buc
 
 
 Model parallelism is a distributed training method in which the deep learning model is partitioned across multiple devices, within or across instances. 
+
+## What are different pipelines?
+
+Feature pipelines - Transforms data into features and labels; feature pipeline retrieves data from outside sources, transforms them, and loads them into the feature store
+Training Pipeline - Train models with features and labels;  training pipeline fetches data from the feature store for model training, sends training metadata to an experiment tracker for later analysis, and places the resulting model in the model registry.
+Inference Pipeliens - Make predictions with few models and new features; inference pipeline loads a model from the model registry. It uses the feature store to retrieve properly transformed features, which it feeds to the model to make predictions that it exposes to downstream applications.
+
+
+ training pipeline can easily load snapshots of training data from tables of features (feature groups). In particular, a feature store should provide point-in-time consistent snapshots of feature data so that your models do not suffer from future data leakage.
+
+
