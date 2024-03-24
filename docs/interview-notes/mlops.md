@@ -493,4 +493,23 @@ Inference Pipeliens - Make predictions with few models and new features; inferen
 
  training pipeline can easily load snapshots of training data from tables of features (feature groups). In particular, a feature store should provide point-in-time consistent snapshots of feature data so that your models do not suffer from future data leakage.
 
+## Nvidia GPU Operator
+
+NVIDIA GPU Operator uses the operator framework within Kubernetes to automate the management of all NVIDIA software components needed to provision GPU nodes. These components include the NVIDIA drivers (to enable CUDA), Kubernetes device plugin for GPUs, the NVIDIA Container Runtime, automatic node labelling, DCGM based monitoring and others.
+
+The GPU Operator allows administrators of Kubernetes clusters to manage GPU nodes just like CPU nodes in the cluster. Instead of provisioning a special OS image for GPU nodes, administrators can rely on a standard OS image for both CPU and GPU nodes and then rely on the GPU Operator to provision the required software components for GPUs.
+
+### Time-Slicing GPUs
+
+The NVIDIA GPU Operator enables oversubscription of GPUs through a set of extended options for the NVIDIA Kubernetes Device Plugin. GPU time-slicing enables workloads that are scheduled on oversubscribed GPUs to interleave with one another.
+
+This mechanism for enabling time-slicing of GPUs in Kubernetes enables a system administrator to define a set of replicas for a GPU, each of which can be handed out independently to a pod to run workloads on. Unlike Multi-Instance GPU (MIG), there is no memory or fault-isolation between replicas, but for some workloads this is better than not being able to share at all. Internally, GPU time-slicing is used to multiplex workloads from replicas of the same underlying GPU.
+
+A typical resource request provides exclusive access to GPUs. A request for a time-sliced GPU provides shared access. A request for more than one time-sliced GPU does not guarantee that the pod receives access to a proportional amount of GPU compute power.
+
+A request for more than one time-sliced GPU only specifies that the pod receives access to a GPU that is shared by other pods. Each pod can run as many processes on the underlying GPU without a limit. The GPU simply provides an equal share of time to all GPU processes, across all of the pods.
+
+### Multi-Instance GPU
+
+Multi-Instance GPU (MIG) allows GPUs based on the NVIDIA Ampere architecture (such as NVIDIA A100) to be securely partitioned into separate GPU Instances for CUDA applications. 
 
