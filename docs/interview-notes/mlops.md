@@ -427,6 +427,9 @@ TensorRT is better than TorchScript in terms of performance.
 
 [TensorRT Optimization Guide](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/pdf/TensorRT-Best-Practices.pdf)
 
+
+[Accelerating Inference Up to 6x Faster in PyTorch with Torch-TensorRT]https://developer.nvidia.com/blog/accelerating-inference-up-to-6x-faster-in-pytorch-with-torch-tensorrt/
+
 ## GPU Monitoring
 
 - nvidia-smi
