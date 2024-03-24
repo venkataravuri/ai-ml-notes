@@ -196,6 +196,9 @@ In NLP, we also want to find the similarity among sentence or document.
 
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*FTVRr_Wqz-3_k6Mk6G4kew.png" width="50% height="50%" />
 
+<img src="https://github.com/venkataravuri/ai-ml-notes/assets/3113165/51c46ddb-28b3-455e-93fb-6e532ffb0c31" />
+
+
 |Euclidean Distance|Cosine similarity|Jaccard similarity|
 |---|---|---|
 |Comparing the shortest distance among two objects. It uses Pythagorean Theorem which learnt from secondary school.|Jaccard similarity is based on the ratio of the intersection to the union of the sets of words that represent the documents. The higher the ratio, the more similar the documents are. |Cosine similarity is based on the angle between two vectors that represent the documents. The closer the angle is to zero, the more similar the documents are. Cosine similarity is easy to compute, especially with sparse matrices, and it can capture the overall similarity of the documents regardless of their length.||
