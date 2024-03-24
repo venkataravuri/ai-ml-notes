@@ -513,3 +513,23 @@ A request for more than one time-sliced GPU only specifies that the pod receives
 
 Multi-Instance GPU (MIG) allows GPUs based on the NVIDIA Ampere architecture (such as NVIDIA A100) to be securely partitioned into separate GPU Instances for CUDA applications. 
 
+If the cluster has multiple node pools with different GPU types, you can specify the GPU type by the following code.
+
+```
+import kfp.dsl as dsl
+gpu_op = dsl.ContainerOp(name='gpu-op', ...).set_gpu_limit(2)
+gpu_op.add_node_selector_constraint('cloud.google.com/gke-accelerator', 'nvidia-tesla-p4')
+```
+
+The code above will be compiled into Kubernetes Pod spec:
+
+```
+container:
+  ...
+  resources:
+    limits:
+      nvidia.com/gpu: "2"
+nodeSelector:
+  cloud.google.com/gke-accelerator: nvidia-tesla-p4
+```
+
