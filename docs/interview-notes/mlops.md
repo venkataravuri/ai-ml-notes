@@ -392,6 +392,20 @@ spec:
 - It is a Python scripting language that can be used as an intermediate representation (IR) for PyTorch models
 - TorchScript is used to optimize and serialize PyTorch models for deployment to production environments
 
+orchScript is one of the most important parts of the Pytorch ecosystem, allowing portable, efficient and nearly seamless deployment. With just a few lines of torch.jit code and some simple model changes you can export an asset that runs anywhere libtorch does. It’s an important toolset to master if you want to run your models outside the lab at high efficiency.
+
+Good introductory material is already available for starting to work with TorchScript including execution in the C++ libtorch runtime, and reference material is also provided. This article is a collection of topics going beyond the basics of your first export.
+Tracing vs Scripting #
+
+Pytorch provides two methods for generating TorchScript from your model code — tracing and scripting — but which should you use? Let’s recap how they work:
+
+    Tracing. When using torch.jit.trace you’ll provide your model and sample input as arguments. The input will be fed through the model as in regular inference and the executed operations will be traced and recorded into TorchScript. Logical structure will be frozen into the path taken during this sample execution.
+
+    Scripting. When using torch.jit.script you’ll simply provide your model as an argument. TorchScript will be generated from the static inspection of the nn.Module contents (recursively).
+
+It’s not obvious from the tutorial documentation, but choosing which method to use is a fairly simple and fluid choice:
+
+[Mastering TorchScript: Tracing vs Scripting, Device Pinning, Direct Graph Modification](https://paulbridger.com/posts/mastering-torchscript/)
 
 ### TensorRT & Triton Inference Server
 
