@@ -410,6 +410,39 @@ PyTorch provides two primary approaches to create TorchScript models:
 
 https://towardsdatascience.com/pytorch-jit-and-torchscript-c2a77bac0fff
 
+How to save/load TorchScript modules?
+
+TorchScript saves/loads modules into an archive format. This archive is a standalone representation of the model and can be loaded into an entirely separate process.
+
+```
+    Saving a module torch.jit.save(traced_model,’traced_bert.pt’)
+    Loading a module loaded = torch.jit.load('traced_bert.pt')
+```
+
+How to view the PyTorch IR captured by TorchScript?
+
+    Example 1: Use traced_model.code to view PyTorch IR
+    Skipping this as it’s very verbose
+    Example 2: Use script_cell_gpu.code to view PyTorch IR
+    
+```
+def forward(self,
+    input: Tensor) -> Tensor:
+  _0 = self.fc
+  _1 = self.avgpool
+  _2 = self.layer4
+  _3 = self.layer3
+  _4 = self.layer2
+  _5 = self.layer1
+  _6 = self.maxpool
+  _7 = self.relu
+  _8 = (self.bn1).forward((self.conv1).forward(input, ), )
+  _9 = (_5).forward((_6).forward((_7).forward(_8, ), ), )
+  _10 = (_2).forward((_3).forward((_4).forward(_9, ), ), )
+  input0 = torch.flatten((_1).forward(_10, ), 1, -1)
+  return (_0).forward(input0, )
+  ```
+
 ### TensorRT & Triton Inference Server
 
 TensorRT optimizes and executes compatible subgraphs, letting deep learning frameworks execute the remaining graph
