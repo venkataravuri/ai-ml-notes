@@ -203,6 +203,18 @@ Residual connections mainly help mitigate the vanishing gradient problem. During
 
 Another effect of residual connections is that the information stays local in the Transformer layer stack. The self-attention mechanism allows an arbitrary information flow in the network and thus arbitrary permuting the input tokens. The residual connections, however, always "remind" the representation of what the original state was. To some extent, the residual connections give a guarantee that contextual representations of the input tokens really represent the tokens.
 
+
+# PyTorch
+
+## Pytorch JIT
+
+A deep learning framework is said to use eager execution (or eager evaluation) if it builds its computational graph (the set of steps needed to perform forward or backwards propagation through the network) at runtime. PyTorch is the classic example of a framework which is eagerly evaluated. Every forward pass through a PyTorch model constructs an autograd computational graph; the subsequent call to backwards then consumes (and destroys!) this graph (for more on PyTorch autograd, see here).
+
+Constructing and deconstructing objects in this way paves the way to a good developer experience. The code that’s actually executing the mathematical operations involved is ultimately a C++ or CUDA kernel, but the result of each individual operation is immediately transferred to (and accessible from) the Python process, because the Python process is the “intelligent” part—it’s what’s managing the computational graph as a whole. This is why debugging in PyTorch is as simple as dropping import pdb; pdb.set_trace() in the middle of your code.
+
+Alternatively, one may make use of graph execution. Graph execution pushes the management of the computational graph down to the kernel level (e.g. to a C++ process) by adding an additional compilation step to the process. The state is not surfaced back to the Python process until after execution is complete.
+
+
 # References
 
 - [Deep Learning Course](https://fleuret.org/dlc/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_458)
