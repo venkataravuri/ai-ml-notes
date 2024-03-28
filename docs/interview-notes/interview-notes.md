@@ -329,6 +329,41 @@ Number of Epochs - An epoch represents a full pass through the entire training d
 The k in k-nearest neighbors.
 The C and sigma hyperparameters for support vector machines.
 
+
+    Number of Layers: The number of layers in the neural network. This includes the input layer, hidden layers, and the output layer1.
+    Number of Nodes/Neurons: The number of nodes or neurons in each layer1.
+    Learning Rate: This controls how much to change the model in response to the estimated error each time the model weights are updated1.
+    Batch Size: The number of training examples utilized in one iteration1.
+    Number of Iterations: The number of epochs or the number of times the learning algorithm will work through the entire training dataset2.
+    Activation Function: The function used to transform the input signal into an output signal1.
+    Loss Function: The method of evaluating how well specific algorithm models the given data1.
+    Optimizer: The method used to adjust the attributes of the neural network such as weights and learning rate in order to reduce the losses1.
+    Dropout Rate: The proportion of neurons which are randomly selected to be ignored during training2.
+    Regularization Parameters: These parameters help to avoid overfitting2.
+    Momentum: This is a method that helps accelerate gradients vectors in the right directions, thus leading to faster converging2.
+    Weight Initialization Methods: The method or strategy used to set the initial random weights of neural networks2.
+
+These hyperparameters play a crucial role in the performance of a neural network and they are usually tuned to optimize the performance1.
+
+
+
+weight initialization methods used in neural networks. Here are some of the most common ones:
+
+    Zero Initialization: As the name suggests, all the weights are assigned zero as the initial value. This kind of initialization is highly ineffective as neurons learn the same feature during each iteration1.
+
+    Random Initialization: This assigns random values except for zeros as weights to neuron paths. However, assigning values randomly to the weights, problems such as Overfitting, Vanishing Gradient Problem, Exploding Gradient Problem might occur1. Random Initialization can be of two kinds:
+        Random Normal: The weights are initialized from values in a normal distribution1.
+        Random Uniform: The weights are initialized from values in a uniform distribution1.
+
+    Xavier/Glorot Initialization: This method initializes weights with a distribution based on the number of input and output neurons, providing a good starting point when the activation function is Sigmoid or Tanh2.
+
+    He Initialization: Similar to Xavier initialization, but it’s designed for layers with ReLU activation. It draws samples from a truncated normal distribution centered on 0 with sqrt(2/n) as the standard deviation, where n is the number of input units2.
+
+These methods help in starting the training process from a point that’s not too far off from the optimal solution, speeding up convergence, and improving the final performance of the network12.
+
+
+
+
 ### Model Parameter Vs. Model Hyperparameter
 
 A model parameter is a configuration variable that is internal to the model and whose values are learned from training data.
