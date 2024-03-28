@@ -44,11 +44,13 @@ In machine learning, class imbalance is the issue of target class distribution.
 
 ## Feature Engineering
 
-### Encoding Methodologies
+These methods can help improve the performance of machine learning models by providing more meaningful and relevant information1.
 
-### Nominal Encoding - Where Order of data does not matter
+### Encoding Categorical Variables
 
-Nominal data is defined as data that is used for naming or labelling variables, without any quantitative value.
+#### Nominal Encoding - Where Order of data does not matter
+
+Convert Naming or label variables (categorical variables) into a numerical format for ML models to process them efficiently.
 
 |One Hot Encoding|One Hot Encoding with many categorical (like Pincode)|Mean Encoding|Frequency Encoding|
 |---|---|---|---|
@@ -65,6 +67,33 @@ Ordinal data is a categorical data type where the variables have natural, ordere
 |Map each categorical feature value to an integer number starting from 0 to cardinality-1, where cardinality is the count of the feature’s distinct values.|Map each category to a new feature vector that contains 1 and 0 denoting the presence of the feature or not. The number of new feature vectors depends on the categories which we want to keep.|Labels are given on the bases of the mean. Highest the mean, highest the label<br/>Ordering the labels according to the target variable.<br/>Replace the labels by the joint probability.|Replace the categories with there count.<br/>It is used when are lots of categories of a variable.<br/>It does not create a new feature.<br/>Disadvantage: If the same labels have the same count then replaced by the same count and we will lose some valuable information.|
 |<img src="https://miro.medium.com/v2/resize:fit:550/format:webp/1*UhTyTyIIOaos5jVlbeQllw.png" height="100%" width="100%" />|||
 
+### Binning or Discretization
+
+Binning or Discretization is the process of transforming continuous numerical variables into discrete categorical ‘bins’ for grouped analysis.
+
+In a marketing dataset, the age of customers can be discretized into bins (like 18-25, 26-35, etc.) to create age groups, which can be more meaningful for analysis.
+
+### Date and Time Features
+Extracting features from date and time such as day of the week, month, quarter, year, etc
+
+### Feature Interaction
+Creating new features by combining two or more features
+
+ In a credit scoring model, interaction between features like income and loan amount can be important. If the loan amount is small compared to the income, the likelihood of loan repayment might be higher.
+
+### Feature Scaling
+
+This method is used to standardize the range of independent variables or features of data.
+
+### Feature Transformation
+
+This includes methods like logarithmic transformation, square root transformation, etc., to transform the feature to fit non-linear relationships.
+
+### Text Data Preprocessing
+
+This involves cleaning and converting text data into a format that can be used by machine learning algorithms.
+
+In a sentiment analysis task, raw text reviews can be preprocessed by techniques like tokenization, stopword removal, and stemming to prepare the data for a machine learning model.
 
 ### Optimization Methods
 
