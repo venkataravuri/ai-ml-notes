@@ -77,6 +77,9 @@ In all cases, pooling helps to make the representation become approximately inva
 
 Pooling is then applied over the feature maps for invariance to translation.
 
+- Since pooling takes a statistical aggregate over multiple regions of an image, it **makes the network invariant to 'local transformations'** (such as the face being tilted a little, or an object being located in a different region than what the training data had seen).
+- Pooling reduces the number of parameters and computation, it also controls overfitting.
+- Pooling reduces the width and height, thereby reducing the number of parameters and the amount of computation (since with less number of parameters there will be fewer computations involved in feedforward/backpropagation etc.).
 
 Understanding the **Receptive Field** of Convolutional Layer
 
