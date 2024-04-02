@@ -9,41 +9,41 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
 - [Real-world usage of AI/ML](docs/ai-in-real-world.md)
 
 ## Generative AI & LLMs
-- [Gen AI Overview & Concepts](docs/gen-ai/generative-ai.md)
-  - [Transformers Architecture & Fine-tuning LLMs](docs/gen-ai/finetune-llms.md)
-  - [LLMs Benchmarking & Evaluation](docs/gen-ai/evaluation-metrics.md)
+- [Overview & Concepts](docs/gen-ai/generative-ai.md)
 - [Prompt Engineering Guide](docs/gen-ai/prompt-engineering-resources.md)
+- [LLMs Architecture](docs/gen-ai/finetune-llms.md)
+- [LLMs Benchmarking & Evaluation](docs/gen-ai/evaluation-metrics.md)
 - [LLM-powered Autonomus AI Agents](docs/gen-ai/llm-powered-autonomous-ai-agents.md)
-
-## Multimodality (Text + Image + Audio)
-
-- [Mulitmodality](docs/multimodality/multimodality.md)
+- [Fine-tune LLMs](docs/gen-ai/finetune-llms.md)
  
 ## Basics - Algebra & Statistics
 - [Algebra](docs/stats/algebra.md)
 - [Statistics & Probability](docs/stats/probability.md)
 
 ## Machine Learning
-- [ML Concepts](docs/ml/ml-concepts.md)
+- [Concepts](docs/ml/ml-concepts.md)
+- Traditional ML Models
+  - [Linear regression](docs/ml/ml-algorithms.md)
+  - [Logistic regression](docs/ml/ml-algorithms.md)
+  - [k-nearest neighbors](docs/ml/ml-algorithms.md)
+  - [Support vector machines](docs/ml/ml-algorithms.md)
+  - [Naïve bayes](docs/ml/ml-algorithms.md)
+  - [k-means](docs/ml/ml-algorithms.md)
+  - [Random Forest](docs/ml/ml-algorithms.md)
 - [NLP](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
-  - [Lexical/Keyword Search & Semantic/Vector Search](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
-  - [Vector DBs](https://github.com/venkataravuri/ai-ml-models/blob/main/5-vector-db/Readme.md)
+  - [Lexical/Keyword Search](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
+  - [Semantic/Vector Search](https://github.com/venkataravuri/awesome-tech-articles-blogs/blob/master/topics/architecture-design/search.md)
       - [Vector Search Indexes](docs/vector-search-index.md)
+      - [Vector DBs](https://github.com/venkataravuri/ai-ml-models/blob/main/5-vector-db/Readme.md)
   
 ## Neural Networks
-- [NN Concepts](docs/nn/nn-deeplearning.md)
+- [Concepts](docs/nn/nn-deeplearning.md)
 - [Convolutional Neural Networks](docs/nn/cnn.md)
 - [GAN](docs/nn/)
 - [Diffusion](docs/nn/)
 
-## Traditional ML Models
-- [Linear regression](docs/ml/ml-algorithms.md)
-- [Logistic regression](docs/ml/ml-algorithms.md)
-- [k-nearest neighbors](docs/ml/ml-algorithms.md)
-- [Support vector machines](docs/ml/ml-algorithms.md)
-- [Naïve bayes](docs/ml/ml-algorithms.md)
-- [k-means](docs/ml/ml-algorithms.md)
-- [Random Forest](docs/ml/ml-algorithms.md)
+## Multimodality (Text + Image + Audio)
+- [Mulitmodality](docs/multimodality/multimodality.md)
   
 ## AI/ML - Interview Notes
 - [ML Concepts](docs/interview-notes/interview-notes.md)
