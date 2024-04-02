@@ -1,3 +1,5 @@
+**ARIMA, State Space Models, VAR, Error Correction Models etc.)**
+
 Key concept in ARIMA is **Autocorrelation**. 
 
 How does it different from the typical correlation? First of all, correlation relates two different sets of observations (eg. between housing prices and the number of available public amenities) 
