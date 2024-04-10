@@ -50,6 +50,14 @@ Probability is a measure that quantifies the likelihood that an event will occur
 
 e.g., we can quantify the probability of a customer purchasing a product, chances of click on an advertisment and customer chrun.
 
+### Probability Vs. Odds Ratio Vs. Log Odds
+
+Probability, odds ratios and log odds are all the same thing, just expressed in different ways. It’s similar to the idea of scientific notation: the number 1,000 can be written as 1.0*103 or even 1*10*10*10.
+
+- **Probability** is the probability an event happens. For example, there might be an 80% chance of rain today.
+- **Odds** (more technically the odds of success) is defined as probability of success/probability of failure. So the odds of a success (80% chance of rain) has an accompanying odds of failure (20% chance it doesn’t rain); as an equation (the “odds ratio“), that’s .8/.2 = 4.
+- **Log odds** is the logarithm of the odds. Ln(4) = 1.38629436 ≅ 1.386.
+
 ### Likelihood Vs. Probability
 
 The terms "likelihood" and "probability" refer to the likelihood of events occurring.
