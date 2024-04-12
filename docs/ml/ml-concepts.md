@@ -2,6 +2,7 @@
 - [Balanced and Imbalanced datasets]()
 - [Feature Engineering]()
      - [Encoding Methodologies]()
+     - [Feature Selection & Elemination](#feature-selection--elemination)
 - [Regularization](#regularization)
 - [Loss Functions](#loss-functions)
 - [Optimization Methods]()
@@ -94,6 +95,23 @@ This includes methods like logarithmic transformation, square root transformatio
 This involves cleaning and converting text data into a format that can be used by machine learning algorithms.
 
 In a sentiment analysis task, raw text reviews can be preprocessed by techniques like tokenization, stopword removal, and stemming to prepare the data for a machine learning model.
+
+## Feature Selection & Elemination
+
+Methods for optimal feature selection,
+
+- Manual Feature Elimination
+     - Drop features that are least helpful in prediction (high p-value)
+     - Drop features that are redundant (using correlations, VIF)
+- Automated Approach
+     - Recursive Feature Elimination (RFE)
+ 
+**Variance Inflation Factor (VIF)**
+
+VIF helps explain the relationship of one independent variable with all the other independent variables. The formulation of VIF is given below,
+$$\frac{1}{1-R_{i}^{2}}$$
+
+The common heuristic for VIF is that while a VIF greater than 10 is definitely high, a VIF of greater than 5 should also not be ignored and inspected appropriately.
 
 ### Optimization Methods
 
