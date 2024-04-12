@@ -19,12 +19,13 @@
 - Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
 - A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
 
+The null hypothesis for a simple linear regression model is 𝐻0: 𝛽1=0
+
 The strength of the linear regression model can be assessed using 2 metrics,
 - R-Squared (R²) or Coefficient of Determination
 - Residual Standard Error (RSE)
 
  $$R^{2} = 1 - \frac{RSS}{TSS}$$
-
 
 - R-Squared can take any value between 0 and 1
 - Larger the R-squared value, the better the regression model fits the observations
@@ -119,7 +120,7 @@ The ways to select an optimal number of clusters (K) are,
 
  the elbow is at k=3 (i.e., the Sum of squared distances falls suddenly), indicating the optimal k for this dataset is 3.
 
-**Silhouette Analysis**
+**Silhouette Score**
 
 The silhouette coefficient or silhouette score kmeans is a measure of how similar a data point is within-cluster (cohesion) compared to other clusters (separation).
 - Select a range of values of k (say 1 to 10).
