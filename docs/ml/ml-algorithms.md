@@ -20,17 +20,20 @@
 - A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
 
 The strength of the linear regression model can be assessed using 2 metrics,
-- R² or Coefficient of Determination
+- R-Squared (R²) or Coefficient of Determination
 - Residual Standard Error (RSE)
 
  $$R^{2} = 1 - \frac{RSS}{TSS}$$
 
 
+- R-Squared can take any value between 0 and 1
+- Larger the R-squared value, the better the regression model fits the observations
+
 RSS (Residual Sum of Squares) is defined as follows:
 
  $$\displaystyle\sum_{i=1}^{n} (y_i - (\alpha + \beta{x_i}))^{2}$$
 
-TSS (Total sum of squares) is the sum of errors of the data points from mean of response variable.
+TSS(Total Sum of Squares) is defined as the sum of all squared differences between the observed dependent variable and its mean
 
  $$\displaystyle\sum_{i=1}^{n} (y_i - \bar{y})^{2}$$
   
