@@ -18,6 +18,22 @@
 - It allows you to move the line up and down to fit the prediction with the data better.
 - Without b, the line always goes through the origin (0, 0) and you may get a poorer fit.
 - A bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.
+
+The strength of the linear regression model can be assessed using 2 metrics,
+- R² or Coefficient of Determination
+- Residual Standard Error (RSE)
+
+ $$R^{2} = 1 - \frac{RSS}{TSS}$$
+
+
+RSS (Residual Sum of Squares) is defined as follows:
+
+ $$\displaystyle\sum_{i=1}^{n} (y_i - (\alpha + \beta{x_i}))^{2}$$
+
+TSS (Total sum of squares) is the sum of errors of the data points from mean of response variable.
+
+ $$\displaystyle\sum_{i=1}^{n} (y_i - \bar{y})^{2}$$
+  
 ---
 - [Linear Regression with NumPy - Using gradient descent to perform linear regression](https://www.cs.toronto.edu/~frossard/post/linear_regression/)
 - [Linear Regression with Gradient Descent from Scratch](https://towardsdev.com/linear-regression-from-scratch-with-gradient-descent-b7ea1a7fec09)
