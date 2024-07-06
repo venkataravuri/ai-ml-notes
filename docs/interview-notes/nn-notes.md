@@ -226,3 +226,15 @@ Deep auto-encoder
 Deep residual learning is a neural network architecture that allows for training very deep networks by alleviating the vanishing gradient problem. This is done by adding “shortcut” or “skip” connections between layers in the network, which allows for information to flow more freely between layers. This makes it easier for the network to learn complex functions, and results in better performance on tasks such as image classification.
 
 <img src="https://i0.wp.com/developersbreach.com/wp-content/uploads/2020/08/cnn_banner.png?fit=1400%2C658&ssl=1" />
+
+### Latent Space Vs. Embedding Vectors
+
+Latent space is a lower-dimensional space that captures the essential features of the input data. In simpler terms, it is a compressed representation of the original data where each dimension corresponds to a specific feature or characteristic.
+
+Embedding vectors, or embeddings for short, encode relatively high-dimensional data into relatively low-dimensional vectors.
+
+A fundamental property of embeddings is that they encode distance or similarity. This means that embeddings capture the semantics of the data such that similar inputs are close in the embeddings space.
+
+Latent space is typically used synonymously with embedding space – the space into which embedding vectors are mapped.
+
+we can think of the latent space as any feature space that contains the features, often a compressed version of the original input features.
