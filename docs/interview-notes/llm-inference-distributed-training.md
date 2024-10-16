@@ -2,7 +2,19 @@
 
     What is torch.distributed and how does it enable distributed training in PyTorch?
     How does PyTorch’s torchrun utility work, and what are its benefits compared to torch.distributed.launch?
-    Explain the different backends available in torch.distributed. When would you use nccl versus gloo?
+### Explain the different backends available in torch.distributed. When would you use NCCL versus Gloo?
+
+The choice largely depends on the **type of tensors** used (CPU vs. GPU) to decide between NCCL (NVIDIA Collective Communications Library) and Gloo for distributed training in PyTorch.
+
+|Feature/Use Case|NCCL|Gloo|
+|---|---|---|
+|Tensor Type|GPU Tensors|CPU Tensors|
+|Performance on GPUs|High, optimized for NVIDIA hardware|Lower compared to NCCL|
+|Multi-Node Support|Excellent with InfiniBand|Good but less optimized than NCCL|
+|Fallback Option|Not applicable|Recommended if NCCL fails|
+|Network Type|Best with high-speed interconnects|Suitable for Ethernet|
+|Mixed Environments Support|Yes (GPU only)|Yes (CPU + GPU)|
+
     How does distributed data parallel (DDP) differ from data parallel (DP) in PyTorch?
     What are the key challenges when training deep learning models on multiple nodes and GPUs?
 
