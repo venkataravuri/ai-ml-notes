@@ -1,10 +1,32 @@
 ## PyTorch and Distributed Training Basics
 
-    What is torch.distributed and how does it enable distributed training in PyTorch?
-    How does PyTorch’s torchrun utility work, and what are its benefits compared to torch.distributed.launch?
+### What is `torch.distributed` and how does it enable distributed training in PyTorch? How does PyTorch’s `torchrun` utility work?
+
+The `torch.distributed` package in PyTorch is designed to facilitate distributed training across multiple nodes and GPUs. It provides a set of communication primitives and tools to enable efficient parallelism.
+- **Multiprocess Parallelism**: torch.distributed allows for synchronous training across multiple processes, which can run on one or more machines. Each process can manage its own model parameters and optimizers, which are synchronized during training.
+- **Communication Primitives**: It includes various collective operations such as all-reduce, broadcast, and gather, which are essential for synchronizing gradients and model parameters among different processes.
+- **Backend Support**: The package supports different backends like NCCL (for GPU communication), Gloo (for CPU and GPU), and MPI, providing flexibility based on the hardware configuration.
+
+`torchrun` is a utility introduced to simplify launching distributed training jobs in PyTorch. 
+- **Fault Tolerance**: torchrun includes built-in mechanisms to handle worker failures gracefully. If a worker fails, it can automatically restart the processes from the last saved snapshot of the training job.
+- **Elasticity**: It supports dynamic scaling of resources, allowing the number of nodes to change between minimum and maximum sizes during job execution. 
+```sh
+torchrun --nnodes=2 --nproc_per_node=4 --rdzv-backend=c10d --rdzv-endpoint=<host>:<port> your_training_script.py
+```
+**rdzv** refers to **rendezvous**, which is a mechanism used to manage the initialization and coordination mechanism that allows multiple distributed processes to find each other and establish a communication framework across different nodes.
+rdzv-backend, specifies the backend used for the rendezvous process. In this case, c10d: A backend that uses a strongly consistent key-value store for managing worker groups. etcd is another alternative.
+
+### Rank vs. World Size vs. Local Rank
+
+- **Rank**: An unique identifier assigned to each process within a distributed training setup. It is an integer that ranges from '0' to 'world_size - 1'.
+- **World Size**: Refers to the total number of processes participating in the distributed training job. It is essentially the size of the entire group of processes.
+- **Local Rank**: An identifier for a process within its local node (machine). It is particularly useful when multiple processes are running on the same machine, each using a different GPU. Local rank helps assign specific GPU devices to each process.
+
 ### Explain the different backends available in torch.distributed. When would you use NCCL versus Gloo?
 
-The choice largely depends on the **type of tensors** used (CPU vs. GPU) to decide between NCCL (NVIDIA Collective Communications Library) and Gloo for distributed training in PyTorch.
+The choice largely depends on the **type of tensors** communication used (CPU vs. GPU) to decide between NCCL (NVIDIA Collective Communications Library) and Gloo for distributed training in PyTorch.
+
+NCCL library is specifically designed for high-performance inter-GPU communication. It implements collective communication primitives (like all-reduce, broadcast, etc.) that allow GPUs to efficiently share data during training.
 
 |Feature/Use Case|NCCL|Gloo|
 |---|---|---|
@@ -15,16 +37,18 @@ The choice largely depends on the **type of tensors** used (CPU vs. GPU) to deci
 |Network Type|Best with high-speed interconnects|Suitable for Ethernet|
 |Mixed Environments Support|Yes (GPU only)|Yes (CPU + GPU)|
 
-    How does distributed data parallel (DDP) differ from data parallel (DP) in PyTorch?
-    What are the key challenges when training deep learning models on multiple nodes and GPUs?
+### How does distributed data parallel (DDP) differ from data parallel (DP) in PyTorch?
 
 ## Fully Sharded Data Parallel (FSDP)
 
-    What is Fully Sharded Data Parallel (FSDP) and how does it differ from standard DDP?
-    How does FSDP manage memory usage compared to DDP, and when would you use FSDP over DDP?
-    Explain how FSDP handles parameter sharding and gradient sharding during training.
-    What are some challenges related to gradient accumulation when using FSDP?
-    How do you ensure efficient model checkpointing and loading in FSDP?
+### What is Fully Sharded Data Parallel (FSDP) and how does it differ from standard DDP?
+    
+### How does FSDP manage memory usage compared to DDP, and when would you use FSDP over DDP?
+
+### Explain how FSDP handles parameter sharding and gradient sharding during training.
+
+### What are some challenges related to gradient accumulation when using FSDP?
+### How do you ensure efficient model checkpointing and loading in FSDP?
 
 ## Model Architecture and Scaling
 
