@@ -42,7 +42,37 @@ NCCL library is specifically designed for high-performance inter-GPU communicati
 ## Fully Sharded Data Parallel (FSDP)
 
 ### What is Fully Sharded Data Parallel (FSDP) and how does it differ from standard DDP?
-    
+
+In DDP, each process maintains a complete replica of the model's parameters, gradients, and optimizer states. This means that every GPU has its own copy of the entire model.
+
+The backward pass, DDP uses `all-reduce` operations to synchronize gradients across all replicas.
+
+FSDP addresses memory limitations by sharding model parameters, gradients, and optimizer states across multiple GPUs. Each process only holds a portion of the model, significantly reducing memory consumption on each GPU.
+
+Communication Overhead: While FSDP reduces the overall memory footprint, it incurs additional communication costs due to the need for operations like all_gather and reduce_scatter during training. This can lead to increased communication volume but is optimized through techniques like overlapping computation and communication.
+
+In forward path
+
+    Run all_gather to collect all shards from all ranks to recover the full parameter in this FSDP unit
+
+    Run forward computation
+
+    Discard parameter shards it has just collected
+
+In backward path
+
+    Run all_gather to collect all shards from all ranks to recover the full parameter in this FSDP unit
+
+    Run backward computation
+
+    Run reduce_scatter to sync gradients
+
+    Discard parameters.
+
+FSDP’s sharding is to decompose the DDP gradient all-reduce into reduce-scatter and all-gather.
+
+<img src="https://pytorch.org/tutorials/_images/fsdp_sharding.png" />
+
 ### How does FSDP manage memory usage compared to DDP, and when would you use FSDP over DDP?
 
 ### Explain how FSDP handles parameter sharding and gradient sharding during training.
