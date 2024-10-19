@@ -61,7 +61,7 @@ In text-to-image models like Stable Diffusion or Flux.1, there’s also a compon
 
 The text guidance is done using a CLIP model (Contrastive Language-Image Pretraining). The loss here minimizes the distance between the image representation and the corresponding text representation, ensuring the generated image is aligned with the text.
 
-What is the significance of cross-attention mechanisms in enhancing the performance of multi-modal latent diffusion models?
+### What is the significance of cross-attention mechanisms in enhancing the performance of multi-modal latent diffusion models?
 
 n multi-modal models, you have different types of data (modalities) coming in—for example, a text description ("a cat sitting by the window") and an image (or its latent representation). These modalities have different structures (text is sequential, and images are spatial), and a major challenge is learning how to align them meaningfully.
 Cross-attention addresses this by enabling the model to focus on the relevant parts of the text while generating or understanding the image. Here's how:
@@ -74,3 +74,15 @@ The model computes attention weights based on how similar the queries (from the 
 Example:
 
 If the text prompt is "a cat sitting by the window" and the model is generating or denoising a latent image, the cross-attention mechanism allows the model to attend to the "cat" part of the prompt when focusing on the cat's shape in the image, and to the "window" part of the prompt when focusing on the window's features.
+
+### What metrics would you use to evaluate the performance of a latent diffusion model in generating images?
+
+- Fréchet Inception Distance (FID)
+
+Description: FID compares the statistics of generated images to real images using features extracted by an Inception network. Specifically, it measures the distance between the distribution of real images and the distribution of generated images.
+
+- Inception Score (IS)
+
+Description: Inception Score measures the quality and diversity of generated images. It uses an Inception network to classify the generated images into categories. A higher IS means the images are both high-quality and diverse.
+
+
