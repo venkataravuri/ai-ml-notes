@@ -54,3 +54,4 @@ A curated list of awesome AI & ML :orange_book: tutorials, :page_with_curl: arti
 - [MLOps](docs/interview-notes/mlops.md)
 - [Huggingface](docs/interview-notes/huggingface.md)
 - [Latent Diffusion](docs/interview-notes/diffusion.md)
+- [Finetune LLMs](docs/interview-notes/finetune.md)
