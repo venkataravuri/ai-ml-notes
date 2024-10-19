@@ -1,8 +1,4 @@
-Tips
-
-Finetuning distilled models such as Flux.1 Schnell and Dev does not give you better results.
-
-[Huggingface diffuser tutorial](https://huggingface.co/docs/diffusers/index)
+# Latent Diffusion Interview Questions
 
 ### What are some common loss functions used in training LDMs, and how do they contribute to the model's performance?
 
