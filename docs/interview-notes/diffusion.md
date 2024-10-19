@@ -1,4 +1,6 @@
+Tips
 
+Finetuning distilled models such as Flux.1 Schnell and Dev does not give you better results.
 
 [Huggingface diffuser tutorial](https://huggingface.co/docs/diffusers/index)
 
